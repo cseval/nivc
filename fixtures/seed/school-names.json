@@ -1,0 +1,4082 @@
+[
+  {
+    "id": "a-m-corpus-christi-1",
+    "sourceName": "A&M-Corpus Christi",
+    "standardName": "A&M-Corpus Christi",
+    "division": "D1",
+    "seenIn": "Southland, big12, bigten, caa, cusa, mw, pac12, southland, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "abilene-christian-2",
+    "sourceName": "Abilene Christian",
+    "standardName": "Abilene Christian",
+    "division": "D1",
+    "seenIn": "UAC, american, big12, bigwest, sec, southland, summit, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "air-force-3",
+    "sourceName": "Air Force",
+    "standardName": "Air Force",
+    "division": "D1",
+    "seenIn": "Mountain West, acc, big12, bigsky, bigwest, maac, mw, mvc, socon, summit, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "akron-4",
+    "sourceName": "Akron",
+    "standardName": "Akron",
+    "division": "D1",
+    "seenIn": "MAC, bigeast, cusa, horizon, mac, meac, mvc, sec, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "alabama-5",
+    "sourceName": "Alabama",
+    "standardName": "Alabama",
+    "division": "D1",
+    "seenIn": "SEC, acc, bigten, bigwest, cusa, sec, socon, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "alabama-a-m-6",
+    "sourceName": "Alabama A&M",
+    "standardName": "Alabama A&M",
+    "division": "D1",
+    "seenIn": "SWAC, asun, atlantic10, cusa, mac, meac, mvc, ovc, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "alabama-st-7",
+    "sourceName": "Alabama St.",
+    "standardName": "Alabama St.",
+    "division": "D1",
+    "seenIn": "american, asun, bigsouth, caa, mac, meac, southland, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "alabama-state-8",
+    "sourceName": "Alabama State",
+    "standardName": "Alabama St.",
+    "division": "D1",
+    "seenIn": "SWAC, socon, swac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "alcorn-9",
+    "sourceName": "Alcorn",
+    "standardName": "Alcorn",
+    "division": "D1",
+    "seenIn": "acc, american, nec, southland, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "alcorn-state-10",
+    "sourceName": "Alcorn State",
+    "standardName": "Alcorn",
+    "division": "D1",
+    "seenIn": "SWAC, sec, swac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "american-11",
+    "sourceName": "American",
+    "standardName": "American",
+    "division": "D1",
+    "seenIn": "Patriot, acc, big12, bigeast, bigten, horizon, mac, meac, patriot, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "app-state-12",
+    "sourceName": "App State",
+    "standardName": "App State",
+    "division": "D1",
+    "seenIn": "Sun Belt, acc, americaeast, american, asun, bigsouth, caa, socon, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "arizona-13",
+    "sourceName": "Arizona",
+    "standardName": "Arizona",
+    "division": "D1",
+    "seenIn": "Big 12, american, big12, bigeast, bigten, bigwest, pac12, swac, uac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "arizona-st-14",
+    "sourceName": "Arizona St.",
+    "standardName": "Arizona St.",
+    "division": "D1",
+    "seenIn": "acc, bigeast, bigwest, ivy, mw, patriot, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "arizona-state-15",
+    "sourceName": "Arizona State",
+    "standardName": "Arizona St.",
+    "division": "D1",
+    "seenIn": "Big 12, big12, bigten, sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "ark-pine-bluff-16",
+    "sourceName": "Ark.-Pine Bluff",
+    "standardName": "Ark.-Pine Bluff",
+    "division": "D1",
+    "seenIn": "horizon, meac, nec, ovc, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "arkansas-pine-bluff-17",
+    "sourceName": "Arkansas-Pine Bluff",
+    "standardName": "Ark.-Pine Bluff",
+    "division": "D1",
+    "seenIn": "SWAC, swac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "arkansas-18",
+    "sourceName": "Arkansas",
+    "standardName": "Arkansas",
+    "division": "D1",
+    "seenIn": "SEC, acc, american, bigten, caa, horizon, meac, ovc, sec, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "arkansas-st-19",
+    "sourceName": "Arkansas St.",
+    "standardName": "Arkansas St.",
+    "division": "D1",
+    "seenIn": "american, asun, bigten, bigwest, horizon, mac, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "arkansas-state-20",
+    "sourceName": "Arkansas State",
+    "standardName": "Arkansas St.",
+    "division": "D1",
+    "seenIn": "Sun Belt, sec, sunbelt",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "army-west-point-21",
+    "sourceName": "Army West Point",
+    "standardName": "Army West Point",
+    "division": "D1",
+    "seenIn": "Patriot, americaeast, bigten, caa, cusa, maac, mac, patriot, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "auburn-22",
+    "sourceName": "Auburn",
+    "standardName": "Auburn",
+    "division": "D1",
+    "seenIn": "SEC, acc, american, bigeast, bigten, cusa, mac, mvc, sec, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "austin-peay-23",
+    "sourceName": "Austin Peay",
+    "standardName": "Austin Peay",
+    "division": "D1",
+    "seenIn": "UAC, atlantic10, bigeast, bigsouth, horizon, mac, mvc, ovc, socon, summit, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ball-st-24",
+    "sourceName": "Ball St.",
+    "standardName": "Ball St.",
+    "division": "D1",
+    "seenIn": "acc, asun, atlantic10, big12, bigeast, caa, cusa, horizon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ball-state-25",
+    "sourceName": "Ball State",
+    "standardName": "Ball St.",
+    "division": "D1",
+    "seenIn": "MAC, bigten, mac, socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "baylor-26",
+    "sourceName": "Baylor",
+    "standardName": "Baylor",
+    "division": "D1",
+    "seenIn": "Big 12, acc, american, big12, bigten, mw, sec, southland, sunbelt, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "bellarmine-27",
+    "sourceName": "Bellarmine",
+    "standardName": "Bellarmine",
+    "division": "D1",
+    "seenIn": "ASUN, asun, bigeast, bigsouth, bigten, cusa, horizon, meac, mvc, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "belmont-28",
+    "sourceName": "Belmont",
+    "standardName": "Belmont",
+    "division": "D1",
+    "seenIn": "MVC, acc, asun, bigsky, cusa, mw, mvc, sec, socon, sunbelt, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "bethune-cookman-29",
+    "sourceName": "Bethune-Cookman",
+    "standardName": "Bethune-Cookman",
+    "division": "D1",
+    "seenIn": "SWAC, american, asun, bigsouth, bigwest, caa, meac, socon, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "binghamton-30",
+    "sourceName": "Binghamton",
+    "standardName": "Binghamton",
+    "division": "D1",
+    "seenIn": "America East, acc, americaeast, american, horizon, ivy, maac, mac, mvc, nec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "boise-st-31",
+    "sourceName": "Boise St.",
+    "standardName": "Boise St.",
+    "division": "D1",
+    "seenIn": "bigsky, bigsouth, bigwest, cusa, summit, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "boise-state-32",
+    "sourceName": "Boise State",
+    "standardName": "Boise St.",
+    "division": "D1",
+    "seenIn": "big12, mw",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "boise-state-university-33",
+    "sourceName": "Boise State University",
+    "standardName": "Boise St.",
+    "division": "D1",
+    "seenIn": "Pac-12, pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "boston-college-34",
+    "sourceName": "Boston College",
+    "standardName": "Boston College",
+    "division": "D1",
+    "seenIn": "ACC, acc, americaeast, american, ivy, maac, mw, nec, patriot, sec, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "bowie-st-35",
+    "sourceName": "Bowie St.",
+    "standardName": "Bowie St.",
+    "division": "NCAA D-II",
+    "seenIn": "meac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "bowling-green-36",
+    "sourceName": "Bowling Green",
+    "standardName": "Bowling Green",
+    "division": "D1",
+    "seenIn": "MAC, atlantic10, bigeast, bigten, horizon, mac, pac12, patriot, sec, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "bradley-37",
+    "sourceName": "Bradley",
+    "standardName": "Bradley",
+    "division": "D1",
+    "seenIn": "MVC, americaeast, atlantic10, bigsky, cusa, horizon, mac, mvc, ovc, southland, summit, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "brown-38",
+    "sourceName": "Brown",
+    "standardName": "Brown",
+    "division": "D1",
+    "seenIn": "Ivy League, americaeast, atlantic10, bigeast, bigwest, cusa, ivy, maac, nec, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "bryant-39",
+    "sourceName": "Bryant",
+    "standardName": "Bryant",
+    "division": "D1",
+    "seenIn": "America East, americaeast, american, atlantic10, bigeast, bigten, caa, ivy, maac, nec, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "bucknell-40",
+    "sourceName": "Bucknell",
+    "standardName": "Bucknell",
+    "division": "D1",
+    "seenIn": "Patriot, acc, americaeast, maac, mac, meac, nec, patriot, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "buffalo-41",
+    "sourceName": "Buffalo",
+    "standardName": "Buffalo",
+    "division": "D1",
+    "seenIn": "MAC, acc, americaeast, asun, atlantic10, bigsouth, ivy, maac, mac, mvc, nec, ovc, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "butler-42",
+    "sourceName": "Butler",
+    "standardName": "Butler",
+    "division": "D1",
+    "seenIn": "Big East, acc, asun, bigeast, bigsouth, bigten, horizon, mac, nec, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "byu-43",
+    "sourceName": "BYU",
+    "standardName": "BYU",
+    "division": "D1",
+    "seenIn": "Big 12, acc, asun, big12, bigsky, bigten, bigwest, ovc, pac12",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "cal-poly-44",
+    "sourceName": "Cal Poly",
+    "standardName": "Cal Poly",
+    "division": "D1",
+    "seenIn": "Big West, acc, big12, bigten, bigwest, mw, ovc, pac12, sec, sunbelt, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "cal-st-fullerton-45",
+    "sourceName": "Cal St. Fullerton",
+    "standardName": "Cal St. Fullerton",
+    "division": "D1",
+    "seenIn": "american, bigsky, bigsouth, mac, pac12, socon, southland, summit, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "cal-state-fullerton-46",
+    "sourceName": "Cal State Fullerton",
+    "standardName": "Cal St. Fullerton",
+    "division": "D1",
+    "seenIn": "Big West, bigwest, cusa",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "cal-47",
+    "sourceName": "Cal",
+    "standardName": "California",
+    "division": "D1",
+    "seenIn": "sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "california-48",
+    "sourceName": "California",
+    "standardName": "California",
+    "division": "D1",
+    "seenIn": "ACC, acc, atlantic10, bigwest, mw, pac12, southland, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "california-baptist-49",
+    "sourceName": "California Baptist",
+    "standardName": "California Baptist",
+    "division": "D1",
+    "seenIn": "Big West, bigsky, bigwest, cusa, maac, mw, summit, swac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "california-baptist-university-50",
+    "sourceName": "California Baptist University",
+    "standardName": "California Baptist",
+    "division": "D1",
+    "seenIn": "pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "campbell-51",
+    "sourceName": "Campbell",
+    "standardName": "Campbell",
+    "division": "D1",
+    "seenIn": "CAA, acc, american, asun, big12, bigeast, bigten, caa, mac, ovc, socon, southland, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "canisius-52",
+    "sourceName": "Canisius",
+    "standardName": "Canisius",
+    "division": "D1",
+    "seenIn": "MAAC, acc, americaeast, atlantic10, horizon, ivy, maac, mac, mvc, nec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "central-ark-53",
+    "sourceName": "Central Ark.",
+    "standardName": "Central Ark.",
+    "division": "D1",
+    "seenIn": "big12, bigten, bigwest, mw",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "central-arkansas-54",
+    "sourceName": "Central Arkansas",
+    "standardName": "Central Ark.",
+    "division": "D1",
+    "seenIn": "UAC, asun, sunbelt, uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "uca-55",
+    "sourceName": "UCA",
+    "standardName": "Central Ark.",
+    "division": "D1",
+    "seenIn": "sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "central-conn-st-56",
+    "sourceName": "Central Conn. St.",
+    "standardName": "Central Conn. St.",
+    "division": "D1",
+    "seenIn": "americaeast, atlantic10, bigeast, cusa, ivy, maac, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "central-connecticut-57",
+    "sourceName": "Central Connecticut",
+    "standardName": "Central Conn. St.",
+    "division": "D1",
+    "seenIn": "NEC, nec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "central-mich-58",
+    "sourceName": "Central Mich.",
+    "standardName": "Central Mich.",
+    "division": "D1",
+    "seenIn": "asun, bigeast, bigsky, bigten, cusa, horizon, mvc, pac12, summit, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "central-michigan-59",
+    "sourceName": "Central Michigan",
+    "standardName": "Central Mich.",
+    "division": "D1",
+    "seenIn": "MAC, mac, sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "charleston-so-60",
+    "sourceName": "Charleston So.",
+    "standardName": "Charleston So.",
+    "division": "D1",
+    "seenIn": "acc, bigeast, bigsky, bigwest, caa, meac, socon, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "charleston-southern-61",
+    "sourceName": "Charleston Southern",
+    "standardName": "Charleston So.",
+    "division": "D1",
+    "seenIn": "Big South, bigsouth",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "charlotte-62",
+    "sourceName": "Charlotte",
+    "standardName": "Charlotte",
+    "division": "D1",
+    "seenIn": "American, acc, americaeast, american, asun, atlantic10, caa, sec, socon, southland, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "chattanooga-63",
+    "sourceName": "Chattanooga",
+    "standardName": "Chattanooga",
+    "division": "D1",
+    "seenIn": "SoCon, american, asun, bigsouth, mac, meac, mvc, ovc, socon, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "chicago-st-64",
+    "sourceName": "Chicago St.",
+    "standardName": "Chicago St.",
+    "division": "D1",
+    "seenIn": "bigsky, summit, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "chicago-state-65",
+    "sourceName": "Chicago State",
+    "standardName": "Chicago St.",
+    "division": "D1",
+    "seenIn": "NEC, nec, ovc, bigwest",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "chicago-state-university-66",
+    "sourceName": "Chicago State University",
+    "standardName": "Chicago St.",
+    "division": "D1",
+    "seenIn": "horizon, mac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "cincinnati-67",
+    "sourceName": "Cincinnati",
+    "standardName": "Cincinnati",
+    "division": "D1",
+    "seenIn": "Big 12, acc, big12, bigeast, bigten, horizon, mac, mvc, ovc, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "claflin-68",
+    "sourceName": "Claflin",
+    "standardName": "Claflin",
+    "division": "NCAA D-II",
+    "seenIn": "meac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "clemson-69",
+    "sourceName": "Clemson",
+    "standardName": "Clemson",
+    "division": "D1",
+    "seenIn": "ACC, acc, americaeast, american, bigeast, bigsouth, sec, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "cleveland-st-70",
+    "sourceName": "Cleveland St.",
+    "standardName": "Cleveland St.",
+    "division": "D1",
+    "seenIn": "bigsouth, maac, mac, meac, mvc, ovc, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "cleveland-state-71",
+    "sourceName": "Cleveland State",
+    "standardName": "Cleveland St.",
+    "division": "D1",
+    "seenIn": "Horizon, horizon, nec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "coastal-carolina-72",
+    "sourceName": "Coastal Carolina",
+    "standardName": "Coastal Carolina",
+    "division": "D1",
+    "seenIn": "Sun Belt, acc, asun, bigeast, bigten, sec, socon, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "charleston-73",
+    "sourceName": "Charleston",
+    "standardName": "Col. of Charleston",
+    "division": "D1",
+    "seenIn": "CAA, caa, socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "col-of-charleston-74",
+    "sourceName": "Col. of Charleston",
+    "standardName": "Col. of Charleston",
+    "division": "D1",
+    "seenIn": "acc, american, atlantic10, bigsouth, horizon, meac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "college-of-charleston-75",
+    "sourceName": "College of Charleston",
+    "standardName": "Col. of Charleston",
+    "division": "D1",
+    "seenIn": "asun, sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "colgate-76",
+    "sourceName": "Colgate",
+    "standardName": "Colgate",
+    "division": "D1",
+    "seenIn": "Patriot, americaeast, big12, bigeast, caa, ivy, maac, ovc, patriot, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "colorado-77",
+    "sourceName": "Colorado",
+    "standardName": "Colorado",
+    "division": "D1",
+    "seenIn": "Big 12, american, big12, bigsky, bigten, bigwest, mw, pac12, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "colorado-st-78",
+    "sourceName": "Colorado St.",
+    "standardName": "Colorado St.",
+    "division": "D1",
+    "seenIn": "acc, big12, bigsky, bigwest, summit, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "colorado-state-79",
+    "sourceName": "Colorado State",
+    "standardName": "Colorado St.",
+    "division": "D1",
+    "seenIn": "mw",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "colorado-state-university-80",
+    "sourceName": "Colorado State University",
+    "standardName": "Colorado St.",
+    "division": "D1",
+    "seenIn": "Pac-12, pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "columbia-81",
+    "sourceName": "Columbia",
+    "standardName": "Columbia",
+    "division": "D1",
+    "seenIn": "Ivy League, horizon, ivy, maac, mac, mvc, nec, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "coppin-st-82",
+    "sourceName": "Coppin St.",
+    "standardName": "Coppin St.",
+    "division": "D1",
+    "seenIn": "acc, atlantic10, bigeast, caa, horizon, ivy, maac, mac, mvc, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "coppin-state-83",
+    "sourceName": "Coppin State",
+    "standardName": "Coppin St.",
+    "division": "D1",
+    "seenIn": "MEAC, meac, nec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "cornell-84",
+    "sourceName": "Cornell",
+    "standardName": "Cornell",
+    "division": "D1",
+    "seenIn": "Ivy League, acc, americaeast, american, bigten, ivy, mac, meac, nec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "creighton-85",
+    "sourceName": "Creighton",
+    "standardName": "Creighton",
+    "division": "D1",
+    "seenIn": "Big East, acc, american, big12, bigeast, bigten, mvc, sec, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "cal-state-bakersfield-86",
+    "sourceName": "Cal State Bakersfield",
+    "standardName": "CSU Bakersfield",
+    "division": "D1",
+    "seenIn": "Big West, bigwest",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "csu-bakersfield-87",
+    "sourceName": "CSU Bakersfield",
+    "standardName": "CSU Bakersfield",
+    "division": "D1",
+    "seenIn": "american, bigsky, mw, pac12, southland, uac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "csun-88",
+    "sourceName": "CSUN",
+    "standardName": "CSUN",
+    "division": "D1",
+    "seenIn": "Big West, big12, bigwest, mw, mvc, pac12, uac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "dartmouth-89",
+    "sourceName": "Dartmouth",
+    "standardName": "Dartmouth",
+    "division": "D1",
+    "seenIn": "Ivy League, acc, americaeast, caa, ivy, maac, mac, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "davidson-90",
+    "sourceName": "Davidson",
+    "standardName": "Davidson",
+    "division": "D1",
+    "seenIn": "Atlantic 10, acc, american, asun, atlantic10, big12, bigeast, bigsouth, caa, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "dayton-91",
+    "sourceName": "Dayton",
+    "standardName": "Dayton",
+    "division": "D1",
+    "seenIn": "Atlantic 10, acc, american, atlantic10, big12, bigeast, cusa, horizon, mac, ovc, sec, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "delaware-92",
+    "sourceName": "Delaware",
+    "standardName": "Delaware",
+    "division": "D1",
+    "seenIn": "CUSA, atlantic10, bigsky, bigten, caa, cusa, maac, nec, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "delaware-st-93",
+    "sourceName": "Delaware St.",
+    "standardName": "Delaware St.",
+    "division": "D1",
+    "seenIn": "americaeast, atlantic10, maac, patriot, socon, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "delaware-state-94",
+    "sourceName": "Delaware State",
+    "standardName": "Delaware St.",
+    "division": "D1",
+    "seenIn": "MEAC, meac, nec, swac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "denver-95",
+    "sourceName": "Denver",
+    "standardName": "Denver",
+    "division": "D1",
+    "seenIn": "WCC, big12, bigsky, bigwest, cusa, maac, mw, ovc, southland, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "depaul-96",
+    "sourceName": "DePaul",
+    "standardName": "DePaul",
+    "division": "D1",
+    "seenIn": "Big East, atlantic10, bigeast, bigsky, bigten, horizon, mac, mvc, sec, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "dillard-97",
+    "sourceName": "Dillard",
+    "standardName": "Dillard",
+    "division": "NAIA",
+    "seenIn": "swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "drake-98",
+    "sourceName": "Drake",
+    "standardName": "Drake",
+    "division": "D1",
+    "seenIn": "MVC, big12, bigeast, bigsouth, bigten, bigwest, horizon, mvc, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "duke-99",
+    "sourceName": "Duke",
+    "standardName": "Duke",
+    "division": "D1",
+    "seenIn": "ACC, acc, american, asun, bigeast, bigsouth, cusa, mvc, nec, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "duquesne-100",
+    "sourceName": "Duquesne",
+    "standardName": "Duquesne",
+    "division": "D1",
+    "seenIn": "Atlantic 10, acc, atlantic10, caa, horizon, maac, mac, meac, nec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "east-carolina-101",
+    "sourceName": "East Carolina",
+    "standardName": "East Carolina",
+    "division": "D1",
+    "seenIn": "American, acc, american, bigsouth, bigten, caa, socon, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "east-texas-a-m-102",
+    "sourceName": "East Texas A&M",
+    "standardName": "East Texas A&M",
+    "division": "D1",
+    "seenIn": "Southland, american, big12, bigeast, horizon, maac, mvc, pac12, sec, southland, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "eastern-ill-103",
+    "sourceName": "Eastern Ill.",
+    "standardName": "Eastern Ill.",
+    "division": "D1",
+    "seenIn": "acc, atlantic10, big12, bigten, bigwest, mw, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "eastern-illinois-104",
+    "sourceName": "Eastern Illinois",
+    "standardName": "Eastern Ill.",
+    "division": "D1",
+    "seenIn": "OVC, ovc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "eastern-illinois-university-105",
+    "sourceName": "Eastern Illinois University",
+    "standardName": "Eastern Ill.",
+    "division": "D1",
+    "seenIn": "horizon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "eastern-kentucky-106",
+    "sourceName": "Eastern Kentucky",
+    "standardName": "Eastern Ky.",
+    "division": "D1",
+    "seenIn": "UAC, uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "eastern-ky-107",
+    "sourceName": "Eastern Ky.",
+    "standardName": "Eastern Ky.",
+    "division": "D1",
+    "seenIn": "american, bigsouth, cusa, pac12, socon, sunbelt, swac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "eastern-mich-108",
+    "sourceName": "Eastern Mich.",
+    "standardName": "Eastern Mich.",
+    "division": "D1",
+    "seenIn": "american, atlantic10, bigsky, bigten, horizon, ivy, mvc, ovc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "eastern-michigan-109",
+    "sourceName": "Eastern Michigan",
+    "standardName": "Eastern Mich.",
+    "division": "D1",
+    "seenIn": "MAC, caa, mac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "eastern-wash-110",
+    "sourceName": "Eastern Wash.",
+    "standardName": "Eastern Wash.",
+    "division": "D1",
+    "seenIn": "bigwest, mw, nec, pac12, summit, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "eastern-washington-111",
+    "sourceName": "Eastern Washington",
+    "standardName": "Eastern Wash.",
+    "division": "D1",
+    "seenIn": "Big Sky, bigsky",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "elon-112",
+    "sourceName": "Elon",
+    "standardName": "Elon",
+    "division": "D1",
+    "seenIn": "CAA, atlantic10, bigeast, bigsouth, caa, horizon, mac, meac, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "erskine-113",
+    "sourceName": "Erskine",
+    "standardName": "Erskine",
+    "division": "NCAA D-II",
+    "seenIn": "swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "etsu-114",
+    "sourceName": "ETSU",
+    "standardName": "ETSU",
+    "division": "D1",
+    "seenIn": "SoCon, acc, american, atlantic10, caa, cusa, mac, sec, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "evansville-115",
+    "sourceName": "Evansville",
+    "standardName": "Evansville",
+    "division": "D1",
+    "seenIn": "MVC, asun, bigten, horizon, mac, mvc, ovc, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "fairfield-116",
+    "sourceName": "Fairfield",
+    "standardName": "Fairfield",
+    "division": "D1",
+    "seenIn": "MAAC, caa, cusa, ivy, maac, nec, ovc, patriot, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "fdu-117",
+    "sourceName": "FDU",
+    "standardName": "FDU",
+    "division": "D1",
+    "seenIn": "NEC, acc, americaeast, atlantic10, bigeast, ivy, maac, mac, mvc, nec, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "fgcu-118",
+    "sourceName": "FGCU",
+    "standardName": "FGCU",
+    "division": "D1",
+    "seenIn": "ASUN, acc, american, asun, atlantic10, big12, bigten, sec, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "fiu-119",
+    "sourceName": "FIU",
+    "standardName": "FIU",
+    "division": "D1",
+    "seenIn": "CUSA, acc, american, asun, caa, cusa, maac, mac, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "fau-120",
+    "sourceName": "FAU",
+    "standardName": "Fla. Atlantic",
+    "division": "D1",
+    "seenIn": "asun, sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "fla-atlantic-121",
+    "sourceName": "Fla. Atlantic",
+    "standardName": "Fla. Atlantic",
+    "division": "D1",
+    "seenIn": "atlantic10, big12, maac, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "florida-atlantic-122",
+    "sourceName": "Florida Atlantic",
+    "standardName": "Fla. Atlantic",
+    "division": "D1",
+    "seenIn": "American, american, cusa",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "fla-southern-123",
+    "sourceName": "Fla. Southern",
+    "standardName": "Fla. Southern",
+    "division": "NCAA D-II",
+    "seenIn": "asun",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "florida-124",
+    "sourceName": "Florida",
+    "standardName": "Florida",
+    "division": "D1",
+    "seenIn": "SEC, acc, american, big12, bigten, caa, sec, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "florida-a-m-125",
+    "sourceName": "Florida A&M",
+    "standardName": "Florida A&M",
+    "division": "D1",
+    "seenIn": "SWAC, asun, bigeast, bigsky, bigwest, caa, cusa, meac, socon, southland, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "florida-st-126",
+    "sourceName": "Florida St.",
+    "standardName": "Florida St.",
+    "division": "D1",
+    "seenIn": "asun, atlantic10, cusa, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "florida-state-127",
+    "sourceName": "Florida State",
+    "standardName": "Florida St.",
+    "division": "D1",
+    "seenIn": "ACC, acc, big12, sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "fordham-128",
+    "sourceName": "Fordham",
+    "standardName": "Fordham",
+    "division": "D1",
+    "seenIn": "Atlantic 10, americaeast, american, asun, atlantic10, bigeast, cusa, maac, nec, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "fresno-st-129",
+    "sourceName": "Fresno St.",
+    "standardName": "Fresno St.",
+    "division": "D1",
+    "seenIn": "bigsky, bigwest, cusa, horizon, mac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "fresno-state-130",
+    "sourceName": "Fresno State",
+    "standardName": "Fresno St.",
+    "division": "D1",
+    "seenIn": "Pac-12, bigten, mw, pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "furman-131",
+    "sourceName": "Furman",
+    "standardName": "Furman",
+    "division": "D1",
+    "seenIn": "SoCon, acc, americaeast, asun, atlantic10, bigsouth, caa, mac, sec, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ga-southern-132",
+    "sourceName": "Ga. Southern",
+    "standardName": "Ga. Southern",
+    "division": "D1",
+    "seenIn": "acc, american, atlantic10, big12, bigsouth, cusa, mw, socon, swac, uac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "georgia-southern-133",
+    "sourceName": "Georgia Southern",
+    "standardName": "Ga. Southern",
+    "division": "D1",
+    "seenIn": "Sun Belt, asun, sunbelt",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "gardner-webb-134",
+    "sourceName": "Gardner-Webb",
+    "standardName": "Gardner-Webb",
+    "division": "D1",
+    "seenIn": "Big South, bigsouth, caa, horizon, meac, mvc, ovc, patriot, socon, southland, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "george-mason-135",
+    "sourceName": "George Mason",
+    "standardName": "George Mason",
+    "division": "D1",
+    "seenIn": "Atlantic 10, americaeast, atlantic10, bigeast, bigten, caa, meac, patriot, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "george-washington-136",
+    "sourceName": "George Washington",
+    "standardName": "George Washington",
+    "division": "D1",
+    "seenIn": "Atlantic 10, acc, americaeast, american, asun, atlantic10, bigeast, meac, patriot, sec, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "georgetown-137",
+    "sourceName": "Georgetown",
+    "standardName": "Georgetown",
+    "division": "D1",
+    "seenIn": "Big East, acc, americaeast, atlantic10, big12, bigeast, bigten, meac, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "georgia-138",
+    "sourceName": "Georgia",
+    "standardName": "Georgia",
+    "division": "D1",
+    "seenIn": "SEC, acc, american, asun, atlantic10, bigten, cusa, sec, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "georgia-st-139",
+    "sourceName": "Georgia St.",
+    "standardName": "Georgia St.",
+    "division": "D1",
+    "seenIn": "american, bigsky, bigsouth, mvc, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "georgia-state-140",
+    "sourceName": "Georgia State",
+    "standardName": "Georgia St.",
+    "division": "D1",
+    "seenIn": "Sun Belt, cusa, sec, socon, sunbelt",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "georgia-tech-141",
+    "sourceName": "Georgia Tech",
+    "standardName": "Georgia Tech",
+    "division": "D1",
+    "seenIn": "ACC, acc, atlantic10, big12, bigeast, bigten, caa, mw, mvc, ovc, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "gonzaga-142",
+    "sourceName": "Gonzaga",
+    "standardName": "Gonzaga",
+    "division": "D1",
+    "seenIn": "american, bigsky, bigwest, horizon, southland, summit, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "gonzaga-university-143",
+    "sourceName": "Gonzaga University",
+    "standardName": "Gonzaga",
+    "division": "D1",
+    "seenIn": "Pac-12, pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "grambling-144",
+    "sourceName": "Grambling",
+    "standardName": "Grambling",
+    "division": "D1",
+    "seenIn": "bigsouth, sec, southland, summit, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "grambling-state-145",
+    "sourceName": "Grambling State",
+    "standardName": "Grambling",
+    "division": "D1",
+    "seenIn": "SWAC, swac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "gcu-146",
+    "sourceName": "GCU",
+    "standardName": "Grand Canyon",
+    "division": "D1",
+    "seenIn": "bigwest",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "grand-canyon-147",
+    "sourceName": "Grand Canyon",
+    "standardName": "Grand Canyon",
+    "division": "D1",
+    "seenIn": "Mountain West, american, big12, bigsky, sec, summit, sunbelt, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "green-bay-148",
+    "sourceName": "Green Bay",
+    "standardName": "Green Bay",
+    "division": "D1",
+    "seenIn": "Horizon, acc, bigten, horizon, mac, mvc, nec, ovc, patriot, socon, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "hampton-149",
+    "sourceName": "Hampton",
+    "standardName": "Hampton",
+    "division": "D1",
+    "seenIn": "CAA, american, atlantic10, bigsouth, caa, cusa, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "hampton-university-150",
+    "sourceName": "Hampton University",
+    "standardName": "Hampton",
+    "division": "D1",
+    "seenIn": "meac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "harvard-151",
+    "sourceName": "Harvard",
+    "standardName": "Harvard",
+    "division": "D1",
+    "seenIn": "Ivy League, bigeast, bigsouth, caa, ivy, maac, meac, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "hawai-i-152",
+    "sourceName": "Hawai‘i",
+    "standardName": "Hawaii",
+    "division": "D1",
+    "seenIn": "Mountain West, big12, bigsky, bigten, bigwest, mw, southland, sunbelt, uac, wcc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "henderson-st-153",
+    "sourceName": "Henderson St.",
+    "standardName": "Henderson St.",
+    "division": "NCAA D-II",
+    "seenIn": "swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "high-point-154",
+    "sourceName": "High Point",
+    "standardName": "High Point",
+    "division": "D1",
+    "seenIn": "Big South, acc, asun, bigeast, bigsouth, bigten, caa, cusa, horizon, socon, southland",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "hofstra-155",
+    "sourceName": "Hofstra",
+    "standardName": "Hofstra",
+    "division": "D1",
+    "seenIn": "CAA, bigeast, bigsouth, bigten, caa, cusa, ivy, maac, patriot, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "holy-cross-156",
+    "sourceName": "Holy Cross",
+    "standardName": "Holy Cross",
+    "division": "D1",
+    "seenIn": "Patriot, atlantic10, bigeast, caa, ivy, maac, nec, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "houston-157",
+    "sourceName": "Houston",
+    "standardName": "Houston",
+    "division": "D1",
+    "seenIn": "Big 12, acc, american, big12, bigten, pac12, sec, southland, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "hcu-158",
+    "sourceName": "HCU",
+    "standardName": "Houston Christian",
+    "division": "D1",
+    "seenIn": "Southland, southland",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "houston-baptist-159",
+    "sourceName": "Houston Baptist",
+    "standardName": "Houston Christian",
+    "division": "D1",
+    "seenIn": "uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "houston-christian-160",
+    "sourceName": "Houston Christian",
+    "standardName": "Houston Christian",
+    "division": "D1",
+    "seenIn": "american, big12, maac, pac12, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "howard-161",
+    "sourceName": "Howard",
+    "standardName": "Howard",
+    "division": "D1",
+    "seenIn": "MEAC, acc, americaeast, atlantic10, bigeast, bigten, caa, horizon, ivy, meac, patriot, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "idaho-162",
+    "sourceName": "Idaho",
+    "standardName": "Idaho",
+    "division": "D1",
+    "seenIn": "Big Sky, bigsky, bigwest, caa, maac, ovc, sec, southland, summit, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "idaho-st-163",
+    "sourceName": "Idaho St.",
+    "standardName": "Idaho St.",
+    "division": "D1",
+    "seenIn": "american, cusa, mw, pac12, southland, summit, uac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "idaho-state-164",
+    "sourceName": "Idaho State",
+    "standardName": "Idaho St.",
+    "division": "D1",
+    "seenIn": "Big Sky, bigsky, socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "illinois-165",
+    "sourceName": "Illinois",
+    "standardName": "Illinois",
+    "division": "D1",
+    "seenIn": "Big Ten, acc, american, big12, bigeast, bigten, ovc, sec, southland, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "illinois-st-166",
+    "sourceName": "Illinois St.",
+    "standardName": "Illinois St.",
+    "division": "D1",
+    "seenIn": "americaeast, bigeast, horizon, maac, mac, nec, ovc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "illinois-state-167",
+    "sourceName": "Illinois State",
+    "standardName": "Illinois St.",
+    "division": "D1",
+    "seenIn": "MVC, mvc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "indiana-168",
+    "sourceName": "Indiana",
+    "standardName": "Indiana",
+    "division": "D1",
+    "seenIn": "Big Ten, acc, bigten, bigwest, ovc, sec, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "indiana-st-169",
+    "sourceName": "Indiana St.",
+    "standardName": "Indiana St.",
+    "division": "D1",
+    "seenIn": "cusa, horizon, ivy, mac, nec, patriot, southland, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "indiana-state-170",
+    "sourceName": "Indiana State",
+    "standardName": "Indiana St.",
+    "division": "D1",
+    "seenIn": "MVC, mvc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "iona-171",
+    "sourceName": "Iona",
+    "standardName": "Iona",
+    "division": "D1",
+    "seenIn": "MAAC, americaeast, bigeast, ivy, maac, nec, patriot, southland, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "iowa-172",
+    "sourceName": "Iowa",
+    "standardName": "Iowa",
+    "division": "D1",
+    "seenIn": "Big Ten, americaeast, asun, big12, bigten, cusa, maac, mvc, patriot, sec, southland, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "iowa-st-173",
+    "sourceName": "Iowa St.",
+    "standardName": "Iowa St.",
+    "division": "D1",
+    "seenIn": "acc, atlantic10, bigeast, bigwest, mw, mvc, pac12, patriot, southland",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "iowa-state-174",
+    "sourceName": "Iowa State",
+    "standardName": "Iowa St.",
+    "division": "D1",
+    "seenIn": "Big 12, big12, bigten",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "iu-indy-175",
+    "sourceName": "IU Indy",
+    "standardName": "IU Indy",
+    "division": "D1",
+    "seenIn": "Horizon, american, bigeast, bigten, bigwest, horizon, mac, pac12, southland, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "jackson-st-176",
+    "sourceName": "Jackson St.",
+    "standardName": "Jackson St.",
+    "division": "D1",
+    "seenIn": "ovc, socon, southland, summit, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "jackson-state-177",
+    "sourceName": "Jackson State",
+    "standardName": "Jackson St.",
+    "division": "D1",
+    "seenIn": "SWAC, sec, sunbelt, swac, uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "jacksonville-178",
+    "sourceName": "Jacksonville",
+    "standardName": "Jacksonville",
+    "division": "D1",
+    "seenIn": "ASUN, acc, asun, bigeast, bigsouth, cusa, horizon, mac, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "jacksonville-st-179",
+    "sourceName": "Jacksonville St.",
+    "standardName": "Jacksonville St.",
+    "division": "D1",
+    "seenIn": "bigeast, bigsouth, southland, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "jacksonville-state-180",
+    "sourceName": "Jacksonville State",
+    "standardName": "Jacksonville St.",
+    "division": "D1",
+    "seenIn": "asun, sec, socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "jax-state-181",
+    "sourceName": "Jax State",
+    "standardName": "Jacksonville St.",
+    "division": "D1",
+    "seenIn": "CUSA, cusa",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "james-madison-182",
+    "sourceName": "James Madison",
+    "standardName": "James Madison",
+    "division": "D1",
+    "seenIn": "Sun Belt, acc, atlantic10, cusa, pac12, patriot, socon, sunbelt, uac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "kansas-183",
+    "sourceName": "Kansas",
+    "standardName": "Kansas",
+    "division": "D1",
+    "seenIn": "Big 12, acc, american, asun, big12, sec, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "kansas-city-184",
+    "sourceName": "Kansas City",
+    "standardName": "Kansas City",
+    "division": "D1",
+    "seenIn": "Summit League, atlantic10, bigsouth, bigwest, cusa, horizon, mac, mvc, ovc, summit, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "kansas-st-185",
+    "sourceName": "Kansas St.",
+    "standardName": "Kansas St.",
+    "division": "D1",
+    "seenIn": "bigeast, bigsky, bigwest, caa, mw, mvc, southland, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "kansas-state-186",
+    "sourceName": "Kansas State",
+    "standardName": "Kansas St.",
+    "division": "D1",
+    "seenIn": "Big 12, big12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "kennesaw-st-187",
+    "sourceName": "Kennesaw St.",
+    "standardName": "Kennesaw St.",
+    "division": "D1",
+    "seenIn": "american, atlantic10, caa, nec, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "kennesaw-state-188",
+    "sourceName": "Kennesaw State",
+    "standardName": "Kennesaw St.",
+    "division": "D1",
+    "seenIn": "CUSA, asun, cusa, sec, socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "kent-st-189",
+    "sourceName": "Kent St.",
+    "standardName": "Kent St.",
+    "division": "D1",
+    "seenIn": "acc, caa, horizon, ivy, maac, meac, nec, patriot, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "kent-state-190",
+    "sourceName": "Kent State",
+    "standardName": "Kent St.",
+    "division": "D1",
+    "seenIn": "MAC, cusa, mac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "kentucky-191",
+    "sourceName": "Kentucky",
+    "standardName": "Kentucky",
+    "division": "D1",
+    "seenIn": "SEC, acc, american, big12, bigten, pac12, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "lafayette-192",
+    "sourceName": "Lafayette",
+    "standardName": "Lafayette",
+    "division": "D1",
+    "seenIn": "Patriot, americaeast, atlantic10, bigsky, cusa, ivy, maac, nec, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "lamar-193",
+    "sourceName": "Lamar",
+    "standardName": "Lamar University",
+    "division": "D1",
+    "seenIn": "Southland, cusa, southland, uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "lamar-university-194",
+    "sourceName": "Lamar University",
+    "standardName": "Lamar University",
+    "division": "D1",
+    "seenIn": "american, big12, bigsouth, bigwest, cusa, summit, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "le-moyne-195",
+    "sourceName": "Le Moyne",
+    "standardName": "Le Moyne",
+    "division": "D1",
+    "seenIn": "NEC, americaeast, caa, cusa, maac, meac, mvc, nec, patriot, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "lehigh-196",
+    "sourceName": "Lehigh",
+    "standardName": "Lehigh",
+    "division": "D1",
+    "seenIn": "Patriot, americaeast, big12, bigsouth, horizon, maac, mac, meac, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "liberty-197",
+    "sourceName": "Liberty",
+    "standardName": "Liberty",
+    "division": "D1",
+    "seenIn": "CUSA, acc, bigsouth, caa, cusa, maac, mac, patriot, sec, socon, southland, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "lindenwood-198",
+    "sourceName": "Lindenwood",
+    "standardName": "Lindenwood",
+    "division": "D1",
+    "seenIn": "OVC, atlantic10, bigsky, bigten, cusa, horizon, mac, mvc, ovc, southland",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "lipscomb-199",
+    "sourceName": "Lipscomb",
+    "standardName": "Lipscomb",
+    "division": "D1",
+    "seenIn": "ASUN, acc, american, asun, big12, bigten, caa, mvc, pac12, sec, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "little-rock-200",
+    "sourceName": "Little Rock",
+    "standardName": "Little Rock",
+    "division": "D1",
+    "seenIn": "UAC, american, bigsky, cusa, maac, mw, mvc, ovc, socon, southland, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "liu-201",
+    "sourceName": "LIU",
+    "standardName": "LIU",
+    "division": "D1",
+    "seenIn": "NEC, acc, bigeast, bigten, horizon, nec, pac12",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "lmu-202",
+    "sourceName": "LMU",
+    "standardName": "LMU (CA)",
+    "division": "D1",
+    "seenIn": "WCC, wcc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "lmu-ca-203",
+    "sourceName": "LMU (CA)",
+    "standardName": "LMU (CA)",
+    "division": "D1",
+    "seenIn": "bigsky, bigwest, ivy, mw, southland",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "loyola-marymount-204",
+    "sourceName": "Loyola Marymount",
+    "standardName": "LMU (CA)",
+    "division": "D1",
+    "seenIn": "sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "long-beach-st-205",
+    "sourceName": "Long Beach St.",
+    "standardName": "Long Beach St.",
+    "division": "D1",
+    "seenIn": "big12, ivy, mw, ovc, pac12, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "long-beach-state-206",
+    "sourceName": "Long Beach State",
+    "standardName": "Long Beach St.",
+    "division": "D1",
+    "seenIn": "Big West, bigten, bigwest",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "louisiana-207",
+    "sourceName": "Louisiana",
+    "standardName": "Louisiana",
+    "division": "D1",
+    "seenIn": "Sun Belt, acc, american, caa, cusa, pac12, southland, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "louisiana-lafayette-208",
+    "sourceName": "Louisiana Lafayette",
+    "standardName": "Louisiana",
+    "division": "D1",
+    "seenIn": "sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "louisiana-tech-209",
+    "sourceName": "Louisiana Tech",
+    "standardName": "Louisiana Tech",
+    "division": "D1",
+    "seenIn": "Sun Belt, maac, mac, nec, southland, summit, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "louisville-210",
+    "sourceName": "Louisville",
+    "standardName": "Louisville",
+    "division": "D1",
+    "seenIn": "ACC, acc, american, atlantic10, big12, bigeast, bigten, cusa, mvc, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "loyola-211",
+    "sourceName": "Loyola",
+    "standardName": "Loyola Chicago",
+    "division": "D1",
+    "seenIn": "mvc",
+    "matchingNote": "Conference or corroborating match resolves ambiguity"
+  },
+  {
+    "id": "loyola-chicago-212",
+    "sourceName": "Loyola Chicago",
+    "standardName": "Loyola Chicago",
+    "division": "D1",
+    "seenIn": "Atlantic 10, acc, atlantic10, big12, bigeast, ovc, southland, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "loyola-213",
+    "sourceName": "Loyola",
+    "standardName": "Loyola Maryland",
+    "division": "D1",
+    "seenIn": "bigeast",
+    "matchingNote": "Conference or corroborating match resolves ambiguity"
+  },
+  {
+    "id": "loyola-maryland-214",
+    "sourceName": "Loyola Maryland",
+    "standardName": "Loyola Maryland",
+    "division": "D1",
+    "seenIn": "Patriot, atlantic10, caa, maac, meac, patriot, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "lsu-215",
+    "sourceName": "LSU",
+    "standardName": "LSU",
+    "division": "D1",
+    "seenIn": "SEC, acc, american, bigten, sec, southland",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "manhattan-216",
+    "sourceName": "Manhattan",
+    "standardName": "Manhattan",
+    "division": "D1",
+    "seenIn": "MAAC, americaeast, american, atlantic10, bigeast, caa, ivy, maac, nec, patriot, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "marist-217",
+    "sourceName": "Marist",
+    "standardName": "Marist",
+    "division": "D1",
+    "seenIn": "MAAC, americaeast, atlantic10, bigsky, cusa, horizon, maac, mvc, ovc, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "marquette-218",
+    "sourceName": "Marquette",
+    "standardName": "Marquette",
+    "division": "D1",
+    "seenIn": "Big East, acc, american, atlantic10, bigeast, bigten, horizon, sec, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "marshall-219",
+    "sourceName": "Marshall",
+    "standardName": "Marshall",
+    "division": "D1",
+    "seenIn": "Sun Belt, acc, horizon, maac, mac, mvc, ovc, patriot, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "maryland-220",
+    "sourceName": "Maryland",
+    "standardName": "Maryland",
+    "division": "D1",
+    "seenIn": "Big Ten, american, atlantic10, bigeast, bigten, caa, ivy, maac, meac, sec, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "mcneese-221",
+    "sourceName": "McNeese",
+    "standardName": "McNeese",
+    "division": "D1",
+    "seenIn": "Southland, american, bigten, bigwest, cusa, mac, southland, summit, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "memphis-222",
+    "sourceName": "Memphis",
+    "standardName": "Memphis",
+    "division": "D1",
+    "seenIn": "American, acc, american, asun, caa, sec, southland, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "mercer-223",
+    "sourceName": "Mercer",
+    "standardName": "Mercer",
+    "division": "D1",
+    "seenIn": "SoCon, bigsky, bigsouth, socon, southland, summit, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "mercyhurst-224",
+    "sourceName": "Mercyhurst",
+    "standardName": "Mercyhurst",
+    "division": "D1",
+    "seenIn": "NEC, atlantic10, bigsouth, horizon, ivy, maac, mac, meac, nec, ovc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "merrimack-225",
+    "sourceName": "Merrimack",
+    "standardName": "Merrimack",
+    "division": "D1",
+    "seenIn": "MAAC, americaeast, american, asun, atlantic10, bigeast, cusa, ivy, maac, meac, mvc, ovc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "miami-226",
+    "sourceName": "Miami",
+    "standardName": "Miami (FL)",
+    "division": "D1",
+    "seenIn": "ACC, acc",
+    "matchingNote": "Conference or corroborating match resolves ambiguity"
+  },
+  {
+    "id": "miami-fl-227",
+    "sourceName": "Miami (FL)",
+    "standardName": "Miami (FL)",
+    "division": "D1",
+    "seenIn": "american, bigten, sec, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "miami-228",
+    "sourceName": "Miami",
+    "standardName": "Miami (OH)",
+    "division": "D1",
+    "seenIn": "MAC, mac",
+    "matchingNote": "Conference or corroborating match resolves ambiguity"
+  },
+  {
+    "id": "miami-oh-229",
+    "sourceName": "Miami (OH)",
+    "standardName": "Miami (OH)",
+    "division": "D1",
+    "seenIn": "bigwest, cusa, horizon, meac, mvc, southland, summit, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "michigan-230",
+    "sourceName": "Michigan",
+    "standardName": "Michigan",
+    "division": "D1",
+    "seenIn": "Big Ten, acc, american, big12, bigten, ivy, mac, mvc, nec, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "michigan-st-231",
+    "sourceName": "Michigan St.",
+    "standardName": "Michigan St.",
+    "division": "D1",
+    "seenIn": "acc, big12, horizon, mac, mvc, nec, ovc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "michigan-state-232",
+    "sourceName": "Michigan State",
+    "standardName": "Michigan St.",
+    "division": "D1",
+    "seenIn": "Big Ten, bigten, sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "middle-tenn-233",
+    "sourceName": "Middle Tenn.",
+    "standardName": "Middle Tenn.",
+    "division": "D1",
+    "seenIn": "bigsky, bigsouth, ivy, maac, mvc, nec, pac12, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "mtsu-234",
+    "sourceName": "MTSU",
+    "standardName": "Middle Tenn.",
+    "division": "D1",
+    "seenIn": "CUSA, cusa",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "milwaukee-235",
+    "sourceName": "Milwaukee",
+    "standardName": "Milwaukee",
+    "division": "D1",
+    "seenIn": "Horizon, bigeast, bigsky, bigten, horizon, mac, mvc, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "minnesota-236",
+    "sourceName": "Minnesota",
+    "standardName": "Minnesota",
+    "division": "D1",
+    "seenIn": "Big Ten, acc, big12, bigeast, bigten, sec, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "mississippi-st-237",
+    "sourceName": "Mississippi St.",
+    "standardName": "Mississippi St.",
+    "division": "D1",
+    "seenIn": "acc, american, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "mississippi-state-238",
+    "sourceName": "Mississippi State",
+    "standardName": "Mississippi St.",
+    "division": "D1",
+    "seenIn": "SEC, bigten, sec, sunbelt, swac, uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "mississippi-val-239",
+    "sourceName": "Mississippi Val.",
+    "standardName": "Mississippi Val.",
+    "division": "D1",
+    "seenIn": "meac, southland, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "mississippi-valley-state-240",
+    "sourceName": "Mississippi Valley State",
+    "standardName": "Mississippi Val.",
+    "division": "D1",
+    "seenIn": "SWAC, swac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "missouri-241",
+    "sourceName": "Missouri",
+    "standardName": "Missouri",
+    "division": "D1",
+    "seenIn": "SEC, acc, american, asun, atlantic10, bigsky, bigten, caa, mac, ovc, sec, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "missouri-s-t-242",
+    "sourceName": "Missouri S&T",
+    "standardName": "Missouri S&T",
+    "division": "NCAA D-II",
+    "seenIn": "swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "missouri-st-243",
+    "sourceName": "Missouri St.",
+    "standardName": "Missouri St.",
+    "division": "D1",
+    "seenIn": "atlantic10, bigsky, bigten, ovc, southland, summit, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "missouri-state-244",
+    "sourceName": "Missouri State",
+    "standardName": "Missouri St.",
+    "division": "D1",
+    "seenIn": "CUSA, american, cusa, mvc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "montana-245",
+    "sourceName": "Montana",
+    "standardName": "Montana",
+    "division": "D1",
+    "seenIn": "Big Sky, american, bigsky, bigwest, horizon, mac, pac12, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "montana-st-246",
+    "sourceName": "Montana St.",
+    "standardName": "Montana St.",
+    "division": "D1",
+    "seenIn": "bigsouth, cusa, horizon, maac, mvc, patriot, summit, sunbelt, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "montana-state-247",
+    "sourceName": "Montana State",
+    "standardName": "Montana St.",
+    "division": "D1",
+    "seenIn": "Big Sky, bigsky, socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "montreat-248",
+    "sourceName": "Montreat",
+    "standardName": "Montreat",
+    "division": "NAIA",
+    "seenIn": "bigsouth",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "morehead-st-249",
+    "sourceName": "Morehead St.",
+    "standardName": "Morehead St.",
+    "division": "D1",
+    "seenIn": "big12, bigten, horizon, maac, nec, patriot, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "morehead-state-250",
+    "sourceName": "Morehead State",
+    "standardName": "Morehead St.",
+    "division": "D1",
+    "seenIn": "OVC, ovc, sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "morgan-st-251",
+    "sourceName": "Morgan St.",
+    "standardName": "Morgan St.",
+    "division": "D1",
+    "seenIn": "atlantic10, bigeast, bigsouth, caa, horizon, maac, mac, nec, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "morgan-state-252",
+    "sourceName": "Morgan State",
+    "standardName": "Morgan St.",
+    "division": "D1",
+    "seenIn": "MEAC, meac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "murray-st-253",
+    "sourceName": "Murray St.",
+    "standardName": "Murray St.",
+    "division": "D1",
+    "seenIn": "bigsky, cusa, horizon, mac, southland, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "murray-state-254",
+    "sourceName": "Murray State",
+    "standardName": "Murray St.",
+    "division": "D1",
+    "seenIn": "MVC, mvc, ovc, socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "n-c-a-t-255",
+    "sourceName": "N.C. A&T",
+    "standardName": "N.C. A&T",
+    "division": "D1",
+    "seenIn": "CAA, acc, americaeast, american, asun, atlantic10, caa, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "north-carolina-a-t-256",
+    "sourceName": "North Carolina A&T",
+    "standardName": "N.C. A&T",
+    "division": "D1",
+    "seenIn": "bigsouth, socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "north-carolina-a-t-state-257",
+    "sourceName": "North Carolina A&T State",
+    "standardName": "N.C. A&T",
+    "division": "D1",
+    "seenIn": "meac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "n-c-central-258",
+    "sourceName": "N.C. Central",
+    "standardName": "N.C. Central",
+    "division": "D1",
+    "seenIn": "bigsouth, caa, socon, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "north-carolina-central-259",
+    "sourceName": "North Carolina Central",
+    "standardName": "N.C. Central",
+    "division": "D1",
+    "seenIn": "MEAC, meac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "navy-260",
+    "sourceName": "Navy",
+    "standardName": "Navy",
+    "division": "D1",
+    "seenIn": "Patriot, caa, horizon, ivy, mac, meac, mvc, patriot, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "nc-state-261",
+    "sourceName": "NC State",
+    "standardName": "NC State",
+    "division": "D1",
+    "seenIn": "ACC, acc, american, atlantic10, big12, bigten, caa, horizon, mvc, sec, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "nebraska-262",
+    "sourceName": "Nebraska",
+    "standardName": "Nebraska",
+    "division": "D1",
+    "seenIn": "Big Ten, acc, asun, big12, bigeast, bigten, mw, sec, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "nevada-263",
+    "sourceName": "Nevada",
+    "standardName": "Nevada",
+    "division": "D1",
+    "seenIn": "Mountain West, big12, bigsky, bigwest, mw, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "new-hampshire-264",
+    "sourceName": "New Hampshire",
+    "standardName": "New Hampshire",
+    "division": "D1",
+    "seenIn": "America East, acc, americaeast, bigeast, ivy, maac, nec, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "new-haven-265",
+    "sourceName": "New Haven",
+    "standardName": "New Haven",
+    "division": "D1",
+    "seenIn": "NEC, americaeast, american, atlantic10, bigeast, cusa, ivy, maac, meac, nec, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "new-mexico-266",
+    "sourceName": "New Mexico",
+    "standardName": "New Mexico",
+    "division": "D1",
+    "seenIn": "Mountain West, acc, american, big12, bigsky, bigten, bigwest, cusa, mw, pac12, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "new-mexico-st-267",
+    "sourceName": "New Mexico St.",
+    "standardName": "New Mexico St.",
+    "division": "D1",
+    "seenIn": "american, bigsky, bigwest, mw, mvc, ovc, pac12, southland, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "nm-state-268",
+    "sourceName": "NM State",
+    "standardName": "New Mexico St.",
+    "division": "D1",
+    "seenIn": "CUSA, cusa",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "lsu-new-orleans-269",
+    "sourceName": "LSU New Orleans",
+    "standardName": "New Orleans",
+    "division": "D1",
+    "seenIn": "Southland, american, bigsky, bigsouth, bigwest, southland, swac, uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "new-orleans-270",
+    "sourceName": "New Orleans",
+    "standardName": "New Orleans",
+    "division": "D1",
+    "seenIn": "bigwest, mw, nec, socon, summit, swac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "niagara-271",
+    "sourceName": "Niagara",
+    "standardName": "Niagara",
+    "division": "D1",
+    "seenIn": "MAAC, ivy, maac, mac, mvc, nec, patriot, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "nicholls-272",
+    "sourceName": "Nicholls",
+    "standardName": "Nicholls",
+    "division": "D1",
+    "seenIn": "Southland, cusa, mac, nec, southland, summit, swac, meac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "niu-273",
+    "sourceName": "NIU",
+    "standardName": "NIU",
+    "division": "D1",
+    "seenIn": "bigsky, nec, ovc, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "northern-illinois-274",
+    "sourceName": "Northern Illinois",
+    "standardName": "NIU",
+    "division": "D1",
+    "seenIn": "mac, mvc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "northern-illinois-university-275",
+    "sourceName": "Northern Illinois University",
+    "standardName": "NIU",
+    "division": "D1",
+    "seenIn": "Horizon, horizon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "njit-276",
+    "sourceName": "NJIT",
+    "standardName": "NJIT",
+    "division": "D1",
+    "seenIn": "America East, americaeast, bigeast, maac, meac, mvc, nec, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "norfolk-st-277",
+    "sourceName": "Norfolk St.",
+    "standardName": "Norfolk St.",
+    "division": "D1",
+    "seenIn": "asun, bigsouth, caa, ivy, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "norfolk-state-278",
+    "sourceName": "Norfolk State",
+    "standardName": "Norfolk St.",
+    "division": "D1",
+    "seenIn": "MEAC, meac, socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "north-ala-279",
+    "sourceName": "North Ala.",
+    "standardName": "North Ala.",
+    "division": "D1",
+    "seenIn": "acc, cusa, ovc, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "north-alabama-280",
+    "sourceName": "North Alabama",
+    "standardName": "North Ala.",
+    "division": "D1",
+    "seenIn": "UAC, socon, uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "north-carolina-281",
+    "sourceName": "North Carolina",
+    "standardName": "North Carolina",
+    "division": "D1",
+    "seenIn": "ACC, acc, asun, atlantic10, bigten, caa, pac12, sec, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "north-dakota-282",
+    "sourceName": "North Dakota",
+    "standardName": "North Dakota",
+    "division": "D1",
+    "seenIn": "Summit League, bigsky, bigwest, cusa, maac, nec, socon, southland, summit, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ndsu-283",
+    "sourceName": "NDSU",
+    "standardName": "North Dakota St.",
+    "division": "D1",
+    "seenIn": "mw",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "north-dakota-st-284",
+    "sourceName": "North Dakota St.",
+    "standardName": "North Dakota St.",
+    "division": "D1",
+    "seenIn": "american, bigsky, socon, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "north-dakota-state-285",
+    "sourceName": "North Dakota State",
+    "standardName": "North Dakota St.",
+    "division": "D1",
+    "seenIn": "Summit League, summit",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "north-dakota-state-university-286",
+    "sourceName": "North Dakota State University",
+    "standardName": "North Dakota St.",
+    "division": "D1",
+    "seenIn": "pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "north-florida-287",
+    "sourceName": "North Florida",
+    "standardName": "North Florida",
+    "division": "D1",
+    "seenIn": "ASUN, acc, american, asun, atlantic10, caa, cusa, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "unf-288",
+    "sourceName": "UNF",
+    "standardName": "North Florida",
+    "division": "D1",
+    "seenIn": "sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "north-texas-289",
+    "sourceName": "North Texas",
+    "standardName": "North Texas",
+    "division": "D1",
+    "seenIn": "big12, bigwest, pac12, sec, southland, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "unt-290",
+    "sourceName": "UNT",
+    "standardName": "North Texas",
+    "division": "D1",
+    "seenIn": "American, american",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "northeastern-291",
+    "sourceName": "Northeastern",
+    "standardName": "Northeastern",
+    "division": "D1",
+    "seenIn": "CAA, americaeast, caa, ivy, maac, patriot, sec, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "northern-ariz-292",
+    "sourceName": "Northern Ariz.",
+    "standardName": "Northern Ariz.",
+    "division": "D1",
+    "seenIn": "bigwest, mvc, ovc, sec, southland, summit, swac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "northern-arizona-293",
+    "sourceName": "Northern Arizona",
+    "standardName": "Northern Ariz.",
+    "division": "D1",
+    "seenIn": "Big Sky, bigsky",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "northern-colo-294",
+    "sourceName": "Northern Colo.",
+    "standardName": "Northern Colo.",
+    "division": "D1",
+    "seenIn": "american, cusa, mw, mvc, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "northern-colorado-295",
+    "sourceName": "Northern Colorado",
+    "standardName": "Northern Colo.",
+    "division": "D1",
+    "seenIn": "Big Sky, big12, bigsky",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "university-of-northern-colorado-296",
+    "sourceName": "University of Northern Colorado",
+    "standardName": "Northern Colo.",
+    "division": "D1",
+    "seenIn": "pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "northern-kentucky-297",
+    "sourceName": "Northern Kentucky",
+    "standardName": "Northern Ky.",
+    "division": "D1",
+    "seenIn": "Horizon, horizon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "northern-ky-298",
+    "sourceName": "Northern Ky.",
+    "standardName": "Northern Ky.",
+    "division": "D1",
+    "seenIn": "acc, atlantic10, bigten, caa, mac, pac12, patriot, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "northwestern-299",
+    "sourceName": "Northwestern",
+    "standardName": "Northwestern",
+    "division": "D1",
+    "seenIn": "Big Ten, acc, atlantic10, bigeast, bigten, horizon, mac, nec, patriot, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "northwestern-st-300",
+    "sourceName": "Northwestern St.",
+    "standardName": "Northwestern St.",
+    "division": "D1",
+    "seenIn": "bigsouth, cusa, mvc, socon, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "northwestern-state-301",
+    "sourceName": "Northwestern State",
+    "standardName": "Northwestern St.",
+    "division": "D1",
+    "seenIn": "Southland, southland",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "notre-dame-302",
+    "sourceName": "Notre Dame",
+    "standardName": "Notre Dame",
+    "division": "D1",
+    "seenIn": "ACC, acc, atlantic10, bigeast, caa, horizon, mac, ovc, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "oakland-303",
+    "sourceName": "Oakland",
+    "standardName": "Oakland",
+    "division": "D1",
+    "seenIn": "Horizon, americaeast, american, big12, bigsky, bigten, horizon, maac, mac, mvc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ohio-304",
+    "sourceName": "Ohio",
+    "standardName": "Ohio",
+    "division": "D1",
+    "seenIn": "MAC, acc, bigeast, bigsouth, bigten, horizon, maac, mac, meac, nec, patriot, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ohio-st-305",
+    "sourceName": "Ohio St.",
+    "standardName": "Ohio St.",
+    "division": "D1",
+    "seenIn": "acc, bigsouth, horizon, mac, ovc, pac12",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ohio-state-306",
+    "sourceName": "Ohio State",
+    "standardName": "Ohio St.",
+    "division": "D1",
+    "seenIn": "Big Ten, bigten, sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "oklahoma-307",
+    "sourceName": "Oklahoma",
+    "standardName": "Oklahoma",
+    "division": "D1",
+    "seenIn": "SEC, acc, bigten, cusa, pac12, sec, socon, southland, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "old-dominion-308",
+    "sourceName": "Old Dominion",
+    "standardName": "Old Dominion",
+    "division": "D1",
+    "seenIn": "Sun Belt, acc, american, bigeast, bigsouth, bigten, caa, meac, patriot, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ole-miss-309",
+    "sourceName": "Ole Miss",
+    "standardName": "Ole Miss",
+    "division": "D1",
+    "seenIn": "SEC, acc, american, big12, bigsky, bigten, sec, southland, sunbelt, uac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "omaha-310",
+    "sourceName": "Omaha",
+    "standardName": "Omaha",
+    "division": "D1",
+    "seenIn": "Summit League, big12, bigsky, bigwest, mac, mvc, pac12, summit, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "oral-roberts-311",
+    "sourceName": "Oral Roberts",
+    "standardName": "Oral Roberts",
+    "division": "D1",
+    "seenIn": "Summit League, american, bigsky, bigwest, nec, pac12, southland, summit, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "oregon-312",
+    "sourceName": "Oregon",
+    "standardName": "Oregon",
+    "division": "D1",
+    "seenIn": "Big Ten, big12, bigsky, bigten, cusa, mw, nec, ovc, pac12, sec, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "oregon-st-313",
+    "sourceName": "Oregon St.",
+    "standardName": "Oregon St.",
+    "division": "D1",
+    "seenIn": "big12, bigsky, bigwest",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "oregon-state-314",
+    "sourceName": "Oregon State",
+    "standardName": "Oregon St.",
+    "division": "D1",
+    "seenIn": "Pac-12, bigten, pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "pacific-315",
+    "sourceName": "Pacific",
+    "standardName": "Pacific",
+    "division": "D1",
+    "seenIn": "WCC, acc, bigsky, bigwest, cusa, mw, pac12, southland, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "penn-316",
+    "sourceName": "Penn",
+    "standardName": "Penn",
+    "division": "D1",
+    "seenIn": "Ivy League, americaeast, atlantic10, bigeast, bigten, caa, ivy, maac, meac, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "penn-st-317",
+    "sourceName": "Penn St.",
+    "standardName": "Penn St.",
+    "division": "D1",
+    "seenIn": "acc, american, bigeast, bigsouth, mac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "penn-state-318",
+    "sourceName": "Penn State",
+    "standardName": "Penn St.",
+    "division": "D1",
+    "seenIn": "Big Ten, bigten, caa, sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "pepperdine-319",
+    "sourceName": "Pepperdine",
+    "standardName": "Pepperdine",
+    "division": "D1",
+    "seenIn": "WCC, american, big12, bigeast, bigten, bigwest, cusa, summit, sunbelt, uac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "pitt-320",
+    "sourceName": "Pitt",
+    "standardName": "Pittsburgh",
+    "division": "D1",
+    "seenIn": "ACC, acc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "pittsburgh-321",
+    "sourceName": "Pittsburgh",
+    "standardName": "Pittsburgh",
+    "division": "D1",
+    "seenIn": "asun, big12, bigeast, bigsouth, bigten, horizon, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "portland-322",
+    "sourceName": "Portland",
+    "standardName": "Portland",
+    "division": "D1",
+    "seenIn": "WCC, bigsky, bigwest, mw, summit, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "portland-st-323",
+    "sourceName": "Portland St.",
+    "standardName": "Portland St.",
+    "division": "D1",
+    "seenIn": "big12, bigeast, horizon, mw, mvc, ovc, pac12, southland, swac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "portland-state-324",
+    "sourceName": "Portland State",
+    "standardName": "Portland St.",
+    "division": "D1",
+    "seenIn": "Big Sky, bigsky, bigten",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "prairie-view-325",
+    "sourceName": "Prairie View",
+    "standardName": "Prairie View",
+    "division": "D1",
+    "seenIn": "big12, bigsky, bigsouth, bigwest, southland, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "prairie-view-a-m-326",
+    "sourceName": "Prairie View A&M",
+    "standardName": "Prairie View",
+    "division": "D1",
+    "seenIn": "SWAC, swac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "presbyterian-327",
+    "sourceName": "Presbyterian",
+    "standardName": "Presbyterian",
+    "division": "D1",
+    "seenIn": "Big South, asun, bigsouth, caa, mac, socon, southland, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "princeton-328",
+    "sourceName": "Princeton",
+    "standardName": "Princeton",
+    "division": "D1",
+    "seenIn": "Ivy League, american, big12, bigeast, bigten, ivy, maac, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "providence-329",
+    "sourceName": "Providence",
+    "standardName": "Providence",
+    "division": "D1",
+    "seenIn": "Big East, americaeast, atlantic10, bigeast, ivy, maac, nec, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "purdue-330",
+    "sourceName": "Purdue",
+    "standardName": "Purdue",
+    "division": "D1",
+    "seenIn": "Big Ten, acc, americaeast, big12, bigeast, bigten, horizon, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "purdue-fort-wayne-331",
+    "sourceName": "Purdue Fort Wayne",
+    "standardName": "Purdue Fort Wayne",
+    "division": "D1",
+    "seenIn": "Horizon, asun, bigten, horizon, ivy, mac, mvc, nec, ovc, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "queens-332",
+    "sourceName": "Queens",
+    "standardName": "Queens (NC)",
+    "division": "D1",
+    "seenIn": "ASUN, asun, sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "queens-nc-333",
+    "sourceName": "Queens (NC)",
+    "standardName": "Queens (NC)",
+    "division": "D1",
+    "seenIn": "acc, american, atlantic10, bigsouth, caa, mac, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "quinnipiac-334",
+    "sourceName": "Quinnipiac",
+    "standardName": "Quinnipiac",
+    "division": "D1",
+    "seenIn": "MAAC, acc, americaeast, atlantic10, ivy, maac, meac, mw, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "radford-335",
+    "sourceName": "Radford",
+    "standardName": "Radford",
+    "division": "D1",
+    "seenIn": "Big South, american, asun, bigsouth, bigwest, caa, cusa, meac, mvc, socon, summit, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "rhode-island-336",
+    "sourceName": "Rhode Island",
+    "standardName": "Rhode Island",
+    "division": "D1",
+    "seenIn": "Atlantic 10, americaeast, atlantic10, bigeast, ivy, maac, meac, nec, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "rice-337",
+    "sourceName": "Rice",
+    "standardName": "Rice",
+    "division": "D1",
+    "seenIn": "American, acc, american, big12, bigeast, bigten, mvc, sec, southland, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "rider-338",
+    "sourceName": "Rider",
+    "standardName": "Rider",
+    "division": "D1",
+    "seenIn": "MAAC, american, atlantic10, bigeast, bigten, caa, cusa, ivy, maac, southland",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "robert-morris-339",
+    "sourceName": "Robert Morris",
+    "standardName": "Robert Morris",
+    "division": "D1",
+    "seenIn": "Horizon, acc, atlantic10, big12, caa, horizon, maac, mac, meac, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "rutgers-340",
+    "sourceName": "Rutgers",
+    "standardName": "Rutgers",
+    "division": "D1",
+    "seenIn": "Big Ten, americaeast, asun, bigeast, bigten, caa, cusa, horizon, ivy, maac, mvc, nec, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "rutgers-camden-341",
+    "sourceName": "Rutgers-Camden",
+    "standardName": "Rutgers-Camden",
+    "division": "NCAA D-III",
+    "seenIn": "meac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "sacramento-st-342",
+    "sourceName": "Sacramento St.",
+    "standardName": "Sacramento St.",
+    "division": "D1",
+    "seenIn": "acc, big12, bigeast, mw, pac12, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "sacramento-state-343",
+    "sourceName": "Sacramento State",
+    "standardName": "Sacramento St.",
+    "division": "D1",
+    "seenIn": "Big West, bigsky, bigwest, wcc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "sacred-heart-344",
+    "sourceName": "Sacred Heart",
+    "standardName": "Sacred Heart",
+    "division": "D1",
+    "seenIn": "MAAC, americaeast, bigeast, bigsky, bigten, bigwest, ivy, maac, nec, patriot, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "saint-louis-345",
+    "sourceName": "Saint Louis",
+    "standardName": "Saint Louis",
+    "division": "D1",
+    "seenIn": "Atlantic 10, atlantic10, bigeast, cusa, maac, mac, mvc, ovc, summit, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "saint-mary-s-346",
+    "sourceName": "Saint Mary's",
+    "standardName": "Saint Mary's (CA)",
+    "division": "D1",
+    "seenIn": "WCC, wcc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "saint-mary-s-ca-347",
+    "sourceName": "Saint Mary's (CA)",
+    "standardName": "Saint Mary's (CA)",
+    "division": "D1",
+    "seenIn": "acc, big12, bigsky, bigwest, mw, pac12",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "saint-peter-s-348",
+    "sourceName": "Saint Peter's",
+    "standardName": "Saint Peter's",
+    "division": "D1",
+    "seenIn": "MAAC, americaeast, bigeast, bigten, caa, ivy, maac, meac, nec, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "sam-houston-349",
+    "sourceName": "Sam Houston",
+    "standardName": "Sam Houston",
+    "division": "D1",
+    "seenIn": "CUSA, bigwest, cusa, mac, patriot, southland, summit, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "samford-350",
+    "sourceName": "Samford",
+    "standardName": "Samford",
+    "division": "D1",
+    "seenIn": "SoCon, american, bigwest, cusa, mvc, sec, socon, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "san-diego-351",
+    "sourceName": "San Diego",
+    "standardName": "San Diego",
+    "division": "D1",
+    "seenIn": "WCC, acc, big12, bigten, mw, pac12, sunbelt, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "san-diego-st-352",
+    "sourceName": "San Diego St.",
+    "standardName": "San Diego St.",
+    "division": "D1",
+    "seenIn": "acc, horizon, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "san-diego-state-353",
+    "sourceName": "San Diego State",
+    "standardName": "San Diego St.",
+    "division": "D1",
+    "seenIn": "big12, bigten, bigwest, mw",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "san-diego-state-university-354",
+    "sourceName": "San Diego State University",
+    "standardName": "San Diego St.",
+    "division": "D1",
+    "seenIn": "Pac-12, pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "san-francisco-355",
+    "sourceName": "San Francisco",
+    "standardName": "San Francisco",
+    "division": "D1",
+    "seenIn": "WCC, american, bigsky, bigwest, mw, mvc, pac12, sunbelt, swac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "san-jose-st-356",
+    "sourceName": "San Jose St.",
+    "standardName": "San Jose St.",
+    "division": "D1",
+    "seenIn": "acc, bigsky, bigwest, mvc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "san-jose-state-357",
+    "sourceName": "San José State",
+    "standardName": "San Jose St.",
+    "division": "D1",
+    "seenIn": "Mountain West, mw, southland, wcc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "santa-clara-358",
+    "sourceName": "Santa Clara",
+    "standardName": "Santa Clara",
+    "division": "D1",
+    "seenIn": "WCC, acc, atlantic10, big12, bigwest, caa, horizon, ivy, maac, ovc, pac12, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "seattle-u-359",
+    "sourceName": "Seattle U",
+    "standardName": "Seattle U",
+    "division": "D1",
+    "seenIn": "WCC, bigsky, bigwest, nec, pac12, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "seton-hall-360",
+    "sourceName": "Seton Hall",
+    "standardName": "Seton Hall",
+    "division": "D1",
+    "seenIn": "Big East, americaeast, bigeast, bigsouth, bigten, cusa, ivy, maac, mvc, nec, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "sfa-361",
+    "sourceName": "SFA",
+    "standardName": "SFA",
+    "division": "D1",
+    "seenIn": "Southland, acc, american, atlantic10, bigsky, pac12, southland, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "stephen-f-austin-362",
+    "sourceName": "Stephen F. Austin",
+    "standardName": "SFA",
+    "division": "D1",
+    "seenIn": "cusa, sec, uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "siena-363",
+    "sourceName": "Siena",
+    "standardName": "Siena",
+    "division": "D1",
+    "seenIn": "MAAC, atlantic10, horizon, maac, meac, nec, ovc, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "siue-364",
+    "sourceName": "SIUE",
+    "standardName": "SIUE",
+    "division": "D1",
+    "seenIn": "OVC, american, bigsky, bigsouth, horizon, maac, mvc, nec, ovc, sec, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "smu-365",
+    "sourceName": "SMU",
+    "standardName": "SMU",
+    "division": "D1",
+    "seenIn": "ACC, acc, american, big12, bigten, ivy, mw, pac12, sec, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "south-alabama-366",
+    "sourceName": "South Alabama",
+    "standardName": "South Alabama",
+    "division": "D1",
+    "seenIn": "Sun Belt, american, asun, cusa, mvc, sec, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "south-carolina-367",
+    "sourceName": "South Carolina",
+    "standardName": "South Carolina",
+    "division": "D1",
+    "seenIn": "SEC, acc, bigten, caa, sec, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "south-carolina-st-368",
+    "sourceName": "South Carolina St.",
+    "standardName": "South Carolina St.",
+    "division": "D1",
+    "seenIn": "bigsouth, caa, mac, swac, meac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "south-carolina-state-369",
+    "sourceName": "South Carolina State",
+    "standardName": "South Carolina St.",
+    "division": "D1",
+    "seenIn": "MEAC, meac, socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "south-dakota-370",
+    "sourceName": "South Dakota",
+    "standardName": "South Dakota",
+    "division": "D1",
+    "seenIn": "Summit League, bigeast, bigten, bigwest, horizon, mw, mvc, pac12, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "south-dakota-st-371",
+    "sourceName": "South Dakota St.",
+    "standardName": "South Dakota St.",
+    "division": "D1",
+    "seenIn": "american, bigeast, bigsky, bigwest, mvc, ovc, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "south-dakota-state-372",
+    "sourceName": "South Dakota State",
+    "standardName": "South Dakota St.",
+    "division": "D1",
+    "seenIn": "Summit League, big12, bigten, summit",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "south-fla-373",
+    "sourceName": "South Fla.",
+    "standardName": "South Fla.",
+    "division": "D1",
+    "seenIn": "acc, atlantic10, big12, bigten, pac12, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "south-florida-374",
+    "sourceName": "South Florida",
+    "standardName": "South Fla.",
+    "division": "D1",
+    "seenIn": "American, american",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "usf-375",
+    "sourceName": "USF",
+    "standardName": "South Fla.",
+    "division": "D1",
+    "seenIn": "bigeast, sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "southeast-missouri-376",
+    "sourceName": "Southeast Missouri",
+    "standardName": "Southeast Mo. St.",
+    "division": "D1",
+    "seenIn": "OVC, ovc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "southeast-mo-st-377",
+    "sourceName": "Southeast Mo. St.",
+    "standardName": "Southeast Mo. St.",
+    "division": "D1",
+    "seenIn": "atlantic10, cusa, maac, mvc, summit, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "southeast-mo-state-378",
+    "sourceName": "Southeast Mo. State",
+    "standardName": "Southeast Mo. St.",
+    "division": "D1",
+    "seenIn": "bigten",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "se-louisiana-379",
+    "sourceName": "SE Louisiana",
+    "standardName": "Southeastern La.",
+    "division": "D1",
+    "seenIn": "sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "southeastern-380",
+    "sourceName": "Southeastern",
+    "standardName": "Southeastern La.",
+    "division": "D1",
+    "seenIn": "Southland, american, southland, sunbelt",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "southeastern-la-381",
+    "sourceName": "Southeastern La.",
+    "standardName": "Southeastern La.",
+    "division": "D1",
+    "seenIn": "american, bigsky, bigwest, mw, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "southern-california-382",
+    "sourceName": "Southern California",
+    "standardName": "Southern California",
+    "division": "D1",
+    "seenIn": "big12, bigeast, bigwest, mw, pac12, sec, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "usc-383",
+    "sourceName": "USC",
+    "standardName": "Southern California",
+    "division": "D1",
+    "seenIn": "Big Ten, bigten",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "southern-ill-384",
+    "sourceName": "Southern Ill.",
+    "standardName": "Southern Ill.",
+    "division": "D1",
+    "seenIn": "atlantic10, bigsouth, bigten, cusa, maac, ovc, southland, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "southern-illinois-385",
+    "sourceName": "Southern Illinois",
+    "standardName": "Southern Ill.",
+    "division": "D1",
+    "seenIn": "MVC, mvc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "southern-ind-386",
+    "sourceName": "Southern Ind.",
+    "standardName": "Southern Ind.",
+    "division": "D1",
+    "seenIn": "acc, bigeast, bigsouth, bigten, caa, mac, mvc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "southern-indiana-387",
+    "sourceName": "Southern Indiana",
+    "standardName": "Southern Ind.",
+    "division": "D1",
+    "seenIn": "OVC, ovc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "university-of-southern-indiana-388",
+    "sourceName": "University of Southern Indiana",
+    "standardName": "Southern Ind.",
+    "division": "D1",
+    "seenIn": "horizon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "smu-389",
+    "sourceName": "SMU",
+    "standardName": "Southern Miss.",
+    "division": "D1",
+    "seenIn": "asun",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "southern-miss-390",
+    "sourceName": "Southern Miss",
+    "standardName": "Southern Miss.",
+    "division": "D1",
+    "seenIn": "Sun Belt, american, cusa, sec, southland, sunbelt, swac, uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "southern-391",
+    "sourceName": "Southern",
+    "standardName": "Southern U.",
+    "division": "D1",
+    "seenIn": "SWAC, sec, swac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "southern-u-392",
+    "sourceName": "Southern U.",
+    "standardName": "Southern U.",
+    "division": "D1",
+    "seenIn": "asun, cusa, southland, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "southern-utah-393",
+    "sourceName": "Southern Utah",
+    "standardName": "Southern Utah",
+    "division": "D1",
+    "seenIn": "Big Sky, bigsky, bigwest, cusa, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "southern-utah-university-394",
+    "sourceName": "Southern Utah University",
+    "standardName": "Southern Utah",
+    "division": "D1",
+    "seenIn": "pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "suno-395",
+    "sourceName": "SUNO",
+    "standardName": "Southern-New Orleans",
+    "division": "NAIA",
+    "seenIn": "swac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "southwest-minn-st-396",
+    "sourceName": "Southwest Minn. St.",
+    "standardName": "Southwest Minn. St.",
+    "division": "NCAA D-II",
+    "seenIn": "asun",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "st-john-s-397",
+    "sourceName": "St. John's",
+    "standardName": "St. John's (NY)",
+    "division": "D1",
+    "seenIn": "Big East, bigeast",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "st-john-s-ny-398",
+    "sourceName": "St. John's (NY)",
+    "standardName": "St. John's (NY)",
+    "division": "D1",
+    "seenIn": "americaeast, american, atlantic10, bigsouth, bigten, caa, ivy, maac, nec, southland, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "st-thomas-399",
+    "sourceName": "St. Thomas",
+    "standardName": "St. Thomas (MN)",
+    "division": "D1",
+    "seenIn": "Summit League, summit",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "st-thomas-mn-400",
+    "sourceName": "St. Thomas (MN)",
+    "standardName": "St. Thomas (MN)",
+    "division": "D1",
+    "seenIn": "acc, big12, bigeast, bigsky, bigten, horizon, mac, mw, mvc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "stanford-401",
+    "sourceName": "Stanford",
+    "standardName": "Stanford",
+    "division": "D1",
+    "seenIn": "ACC, acc, american, big12, bigeast, bigten, bigwest, mac, sec, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "stetson-402",
+    "sourceName": "Stetson",
+    "standardName": "Stetson",
+    "division": "D1",
+    "seenIn": "ASUN, american, asun, big12, caa, cusa, maac, mac, socon, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "stonehill-403",
+    "sourceName": "Stonehill",
+    "standardName": "Stonehill",
+    "division": "D1",
+    "seenIn": "NEC, acc, americaeast, bigeast, horizon, ivy, maac, mvc, nec, patriot, southland, summit, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "stony-brook-404",
+    "sourceName": "Stony Brook",
+    "standardName": "Stony Brook",
+    "division": "D1",
+    "seenIn": "CAA, acc, big12, bigten, caa, cusa, horizon, ivy, maac, meac, patriot, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "syracuse-405",
+    "sourceName": "Syracuse",
+    "standardName": "Syracuse",
+    "division": "D1",
+    "seenIn": "ACC, acc, americaeast, big12, bigten, ivy, maac, mac, meac, nec, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "tampa-406",
+    "sourceName": "Tampa",
+    "standardName": "Tampa",
+    "division": "NCAA D-II",
+    "seenIn": "asun",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "tarleton-407",
+    "sourceName": "Tarleton",
+    "standardName": "Tarleton St.",
+    "division": "D1",
+    "seenIn": "cusa",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "tarleton-st-408",
+    "sourceName": "Tarleton St.",
+    "standardName": "Tarleton St.",
+    "division": "D1",
+    "seenIn": "american, big12, bigwest, southland, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "tarleton-state-409",
+    "sourceName": "Tarleton State",
+    "standardName": "Tarleton St.",
+    "division": "D1",
+    "seenIn": "UAC, uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "tcu-410",
+    "sourceName": "TCU",
+    "standardName": "TCU",
+    "division": "D1",
+    "seenIn": "Big 12, acc, american, atlantic10, big12, bigten, ivy, mw, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "temple-411",
+    "sourceName": "Temple",
+    "standardName": "Temple",
+    "division": "D1",
+    "seenIn": "American, americaeast, american, atlantic10, ivy, maac, nec, sunbelt, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "tennessee-412",
+    "sourceName": "Tennessee",
+    "standardName": "Tennessee",
+    "division": "D1",
+    "seenIn": "SEC, acc, american, asun, bigten, maac, ovc, patriot, sec, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "tennessee-st-413",
+    "sourceName": "Tennessee St.",
+    "standardName": "Tennessee St.",
+    "division": "D1",
+    "seenIn": "american, mvc, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "tennessee-state-414",
+    "sourceName": "Tennessee State",
+    "standardName": "Tennessee St.",
+    "division": "D1",
+    "seenIn": "OVC, ovc, socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "tennessee-state-university-415",
+    "sourceName": "Tennessee State University",
+    "standardName": "Tennessee St.",
+    "division": "D1",
+    "seenIn": "horizon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "tennessee-tech-416",
+    "sourceName": "Tennessee Tech",
+    "standardName": "Tennessee Tech",
+    "division": "D1",
+    "seenIn": "SoCon, american, bigsky, bigsouth, mw, ovc, socon, summit, sunbelt, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "tennessee-tech-university-417",
+    "sourceName": "Tennessee Tech University",
+    "standardName": "Tennessee Tech",
+    "division": "D1",
+    "seenIn": "horizon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "texas-418",
+    "sourceName": "Texas",
+    "standardName": "Texas",
+    "division": "D1",
+    "seenIn": "SEC, acc, big12, bigeast, bigten, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "texas-a-m-419",
+    "sourceName": "Texas A&M",
+    "standardName": "Texas A&M",
+    "division": "D1",
+    "seenIn": "SEC, acc, bigeast, bigten, bigwest, sec, southland, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "texas-southern-420",
+    "sourceName": "Texas Southern",
+    "standardName": "Texas Southern",
+    "division": "D1",
+    "seenIn": "SWAC, american, big12, bigsky, bigwest, mvc, southland, swac, uac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "texas-st-421",
+    "sourceName": "Texas St.",
+    "standardName": "Texas St.",
+    "division": "D1",
+    "seenIn": "american, big12, mw, southland, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "texas-state-422",
+    "sourceName": "Texas State",
+    "standardName": "Texas St.",
+    "division": "D1",
+    "seenIn": "sec, sunbelt",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "texas-state-university-423",
+    "sourceName": "Texas State University",
+    "standardName": "Texas St.",
+    "division": "D1",
+    "seenIn": "Pac-12, pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "texas-tech-424",
+    "sourceName": "Texas Tech",
+    "standardName": "Texas Tech",
+    "division": "D1",
+    "seenIn": "Big 12, asun, big12, bigsky, bigten, bigwest, mw, southland, summit, swac, uac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "the-citadel-425",
+    "sourceName": "The Citadel",
+    "standardName": "The Citadel",
+    "division": "D1",
+    "seenIn": "SoCon, bigsouth, bigwest, caa, cusa, meac, mvc, nec, socon, southland, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "toledo-426",
+    "sourceName": "Toledo",
+    "standardName": "Toledo",
+    "division": "D1",
+    "seenIn": "MAC, acc, americaeast, atlantic10, big12, horizon, mac, mvc, patriot, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "towson-427",
+    "sourceName": "Towson",
+    "standardName": "Towson",
+    "division": "D1",
+    "seenIn": "CAA, bigsky, caa, horizon, maac, meac, ovc, patriot, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "troy-428",
+    "sourceName": "Troy",
+    "standardName": "Troy",
+    "division": "D1",
+    "seenIn": "Sun Belt, american, mvc, sec, socon, southland, sunbelt, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "tulane-429",
+    "sourceName": "Tulane",
+    "standardName": "Tulane",
+    "division": "D1",
+    "seenIn": "American, acc, american, asun, bigwest, cusa, sec, socon, southland, summit, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "tulsa-430",
+    "sourceName": "Tulsa",
+    "standardName": "Tulsa",
+    "division": "D1",
+    "seenIn": "American, acc, american, big12, bigeast, cusa, mw, sec, summit, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "tuskegee-431",
+    "sourceName": "Tuskegee",
+    "standardName": "Tuskegee",
+    "division": "NCAA D-II",
+    "seenIn": "meac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "uab-432",
+    "sourceName": "UAB",
+    "standardName": "UAB",
+    "division": "D1",
+    "seenIn": "American, american, bigeast, bigsky, horizon, maac, mac, mvc, ovc, sec, socon, southland, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ualbany-433",
+    "sourceName": "UAlbany",
+    "standardName": "UAlbany",
+    "division": "D1",
+    "seenIn": "America East, acc, americaeast, big12, bigten, caa, ivy, maac, meac, patriot",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "uc-davis-434",
+    "sourceName": "UC Davis",
+    "standardName": "UC Davis",
+    "division": "D1",
+    "seenIn": "Mountain West, acc, big12, bigsky, bigten, bigwest, mw, pac12, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "uc-irvine-435",
+    "sourceName": "UC Irvine",
+    "standardName": "UC Irvine",
+    "division": "D1",
+    "seenIn": "Big West, bigsky, bigten, bigwest, cusa, horizon, mw, pac12, southland",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "uc-riverside-436",
+    "sourceName": "UC Riverside",
+    "standardName": "UC Riverside",
+    "division": "D1",
+    "seenIn": "Big West, bigsky, bigwest, sec, socon, southland, summit, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "uc-san-diego-437",
+    "sourceName": "UC San Diego",
+    "standardName": "UC San Diego",
+    "division": "D1",
+    "seenIn": "Big West, acc, bigsky, bigwest, cusa, mw, pac12, southland, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "uc-santa-barbara-438",
+    "sourceName": "UC Santa Barbara",
+    "standardName": "UC Santa Barbara",
+    "division": "D1",
+    "seenIn": "Big West, big12, bigten, bigwest, mw, pac12, summit, swac, uac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ucf-439",
+    "sourceName": "UCF",
+    "standardName": "UCF",
+    "division": "D1",
+    "seenIn": "Big 12, acc, americaeast, asun, atlantic10, big12, bigeast, bigten, caa, horizon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ucla-440",
+    "sourceName": "UCLA",
+    "standardName": "UCLA",
+    "division": "D1",
+    "seenIn": "Big Ten, acc, big12, bigten, bigwest, mw, pac12, sec, southland",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "uconn-441",
+    "sourceName": "UConn",
+    "standardName": "UConn",
+    "division": "D1",
+    "seenIn": "Big East, americaeast, asun, atlantic10, bigeast, bigsouth, bigten, caa, ivy, maac, meac, nec, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "uic-442",
+    "sourceName": "UIC",
+    "standardName": "UIC",
+    "division": "D1",
+    "seenIn": "MVC, atlantic10, bigeast, bigsky, horizon, mac, mvc, ovc, sec, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "uiw-443",
+    "sourceName": "UIW",
+    "standardName": "UIW",
+    "division": "D1",
+    "seenIn": "Southland, american, big12, bigten, cusa, mw, mvc, sec, southland, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ulm-444",
+    "sourceName": "ULM",
+    "standardName": "ULM",
+    "division": "D1",
+    "seenIn": "Sun Belt, american, cusa, mvc, southland, summit, sunbelt, swac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "umbc-445",
+    "sourceName": "UMBC",
+    "standardName": "UMBC",
+    "division": "D1",
+    "seenIn": "America East, americaeast, american, atlantic10, big12, bigeast, maac, mac, southland",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "maryland-eastern-shore-446",
+    "sourceName": "Maryland Eastern Shore",
+    "standardName": "UMES",
+    "division": "D1",
+    "seenIn": "MEAC, meac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "umes-447",
+    "sourceName": "UMES",
+    "standardName": "UMES",
+    "division": "D1",
+    "seenIn": "atlantic10, bigten, caa, horizon, maac, patriot, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "unc-asheville-448",
+    "sourceName": "UNC Asheville",
+    "standardName": "UNC Asheville",
+    "division": "D1",
+    "seenIn": "Big South, asun, bigeast, bigsouth, caa, cusa, ivy, mac, meac, nec, pac12, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "unc-greensboro-449",
+    "sourceName": "UNC Greensboro",
+    "standardName": "UNC Greensboro",
+    "division": "D1",
+    "seenIn": "SoCon, acc, american, atlantic10, caa, meac, sec, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "uncw-450",
+    "sourceName": "UNCW",
+    "standardName": "UNCW",
+    "division": "D1",
+    "seenIn": "CAA, acc, asun, bigsouth, caa, cusa, ivy, meac, nec, socon, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "northern-iowa-451",
+    "sourceName": "Northern Iowa",
+    "standardName": "UNI",
+    "division": "D1",
+    "seenIn": "big12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "uni-452",
+    "sourceName": "UNI",
+    "standardName": "UNI",
+    "division": "D1",
+    "seenIn": "MVC, acc, american, atlantic10, bigeast, bigwest, mw, mvc, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "unlv-453",
+    "sourceName": "UNLV",
+    "standardName": "UNLV",
+    "division": "D1",
+    "seenIn": "Mountain West, big12, bigsky, bigten, bigwest, mw, pac12, southland, summit, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "south-carolina-upstate-454",
+    "sourceName": "South Carolina Upstate",
+    "standardName": "USC Upstate",
+    "division": "D1",
+    "seenIn": "socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "usc-upstate-455",
+    "sourceName": "USC Upstate",
+    "standardName": "USC Upstate",
+    "division": "D1",
+    "seenIn": "Big South, acc, asun, bigeast, bigsouth, caa, meac, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ut-arlington-456",
+    "sourceName": "UT Arlington",
+    "standardName": "UT Arlington",
+    "division": "D1",
+    "seenIn": "UAC, american, cusa, mac, ovc, pac12, patriot, southland, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "uta-457",
+    "sourceName": "UTA",
+    "standardName": "UT Arlington",
+    "division": "D1",
+    "seenIn": "sec, sunbelt",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "ut-martin-458",
+    "sourceName": "UT Martin",
+    "standardName": "UT Martin",
+    "division": "D1",
+    "seenIn": "OVC, mvc, ovc, socon, summit, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "ut-tyler-459",
+    "sourceName": "UT Tyler",
+    "standardName": "UT Tyler",
+    "division": "NCAA D-II",
+    "seenIn": "swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "university-of-utah-460",
+    "sourceName": "University of Utah",
+    "standardName": "Utah",
+    "division": "D1",
+    "seenIn": "mw",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "utah-461",
+    "sourceName": "Utah",
+    "standardName": "Utah",
+    "division": "D1",
+    "seenIn": "Big 12, acc, big12, bigsky, bigten, bigwest, pac12",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "utah-st-462",
+    "sourceName": "Utah St.",
+    "standardName": "Utah St.",
+    "division": "D1",
+    "seenIn": "american, big12, bigsky, bigwest",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "utah-state-463",
+    "sourceName": "Utah State",
+    "standardName": "Utah St.",
+    "division": "D1",
+    "seenIn": "bigten, sec, uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "utah-state-university-464",
+    "sourceName": "Utah State University",
+    "standardName": "Utah St.",
+    "division": "D1",
+    "seenIn": "Pac-12, pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "utah-tech-465",
+    "sourceName": "Utah Tech",
+    "standardName": "Utah Tech",
+    "division": "D1",
+    "seenIn": "Big Sky, big12, bigsky, bigwest, mw, pac12, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "utah-valley-466",
+    "sourceName": "Utah Valley",
+    "standardName": "Utah Valley",
+    "division": "D1",
+    "seenIn": "Big West, big12, bigsky, bigsouth, bigwest, mw, mvc, pac12, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "utep-467",
+    "sourceName": "UTEP",
+    "standardName": "UTEP",
+    "division": "D1",
+    "seenIn": "Mountain West, american, big12, bigwest, cusa, mw, pac12, southland, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "utrgv-468",
+    "sourceName": "UTRGV",
+    "standardName": "UTRGV",
+    "division": "D1",
+    "seenIn": "Southland, americaeast, big12, bigsky, cusa, mw, mvc, ovc, pac12, southland, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "utsa-469",
+    "sourceName": "UTSA",
+    "standardName": "UTSA",
+    "division": "D1",
+    "seenIn": "American, american, big12, horizon, ovc, pac12, sec, southland, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "valparaiso-470",
+    "sourceName": "Valparaiso",
+    "standardName": "Valparaiso",
+    "division": "D1",
+    "seenIn": "MVC, american, big12, bigten, horizon, maac, mac, meac, mvc, nec, ovc, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "vanderbilt-471",
+    "sourceName": "Vanderbilt",
+    "standardName": "Vanderbilt",
+    "division": "D1",
+    "seenIn": "SEC, acc, american, asun, bigten, caa, mvc, sec, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "vcu-472",
+    "sourceName": "VCU",
+    "standardName": "VCU",
+    "division": "D1",
+    "seenIn": "Atlantic 10, acc, asun, atlantic10, big12, cusa, mac, socon",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "villanova-473",
+    "sourceName": "Villanova",
+    "standardName": "Villanova",
+    "division": "D1",
+    "seenIn": "Big East, americaeast, big12, bigeast, bigten, bigwest, ivy, patriot, summit, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "virginia-474",
+    "sourceName": "Virginia",
+    "standardName": "Virginia",
+    "division": "D1",
+    "seenIn": "ACC, acc, atlantic10, big12, bigten, caa, cusa, patriot, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "virginia-tech-475",
+    "sourceName": "Virginia Tech",
+    "standardName": "Virginia Tech",
+    "division": "D1",
+    "seenIn": "ACC, acc, bigsouth, bigten, caa, horizon, mac, meac, nec, sec, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "wake-forest-476",
+    "sourceName": "Wake Forest",
+    "standardName": "Wake Forest",
+    "division": "D1",
+    "seenIn": "ACC, acc, american, atlantic10, big12, bigeast, caa, sec, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "washington-477",
+    "sourceName": "Washington",
+    "standardName": "Washington",
+    "division": "D1",
+    "seenIn": "Big Ten, asun, bigten, bigwest, horizon, pac12, sec, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "washington-st-478",
+    "sourceName": "Washington St.",
+    "standardName": "Washington St.",
+    "division": "D1",
+    "seenIn": "asun, bigsky, bigwest, mac, nec, summit",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "washington-state-479",
+    "sourceName": "Washington State",
+    "standardName": "Washington St.",
+    "division": "D1",
+    "seenIn": "bigten",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "washington-state-university-480",
+    "sourceName": "Washington State University",
+    "standardName": "Washington St.",
+    "division": "D1",
+    "seenIn": "Pac-12, pac12",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "weber-st-481",
+    "sourceName": "Weber St.",
+    "standardName": "Weber St.",
+    "division": "D1",
+    "seenIn": "big12, bigwest, mw, mvc, pac12, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "weber-state-482",
+    "sourceName": "Weber State",
+    "standardName": "Weber St.",
+    "division": "D1",
+    "seenIn": "Big Sky, bigsky",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "west-florida-483",
+    "sourceName": "West Florida",
+    "standardName": "West Florida",
+    "division": "D1",
+    "seenIn": "ASUN, asun, big12, bigsouth, bigten, caa, swac, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "west-ga-484",
+    "sourceName": "West Ga.",
+    "standardName": "West Ga.",
+    "division": "D1",
+    "seenIn": "bigsouth, cusa, ovc, southland, sunbelt, swac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "west-georgia-485",
+    "sourceName": "West Georgia",
+    "standardName": "West Ga.",
+    "division": "D1",
+    "seenIn": "UAC, socon, uac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "west-virginia-486",
+    "sourceName": "West Virginia",
+    "standardName": "West Virginia",
+    "division": "D1",
+    "seenIn": "Big 12, americaeast, american, asun, atlantic10, big12, mac, patriot, southland, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "western-caro-487",
+    "sourceName": "Western Caro.",
+    "standardName": "Western Caro.",
+    "division": "D1",
+    "seenIn": "acc, asun, bigeast, bigsouth, caa, cusa, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "western-carolina-488",
+    "sourceName": "Western Carolina",
+    "standardName": "Western Caro.",
+    "division": "D1",
+    "seenIn": "SoCon, socon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "western-ill-489",
+    "sourceName": "Western Ill.",
+    "standardName": "Western Ill.",
+    "division": "D1",
+    "seenIn": "bigsky, caa, horizon, mvc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "western-illinois-490",
+    "sourceName": "Western Illinois",
+    "standardName": "Western Ill.",
+    "division": "D1",
+    "seenIn": "OVC, ovc, sec, summit",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "western-ky-491",
+    "sourceName": "Western Ky.",
+    "standardName": "Western Ky.",
+    "division": "D1",
+    "seenIn": "acc, atlantic10, bigten, horizon, mac, ovc, socon, uac, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "wku-492",
+    "sourceName": "WKU",
+    "standardName": "Western Ky.",
+    "division": "D1",
+    "seenIn": "CUSA, cusa, sec, sunbelt",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "western-mich-493",
+    "sourceName": "Western Mich.",
+    "standardName": "Western Mich.",
+    "division": "D1",
+    "seenIn": "bigeast, bigten, horizon, nec, patriot, summit, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "western-michigan-494",
+    "sourceName": "Western Michigan",
+    "standardName": "Western Mich.",
+    "division": "D1",
+    "seenIn": "MAC, mac, mvc",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "wheeling-495",
+    "sourceName": "Wheeling",
+    "standardName": "Wheeling",
+    "division": "NCAA D-II",
+    "seenIn": "asun",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "wichita-st-496",
+    "sourceName": "Wichita St.",
+    "standardName": "Wichita St.",
+    "division": "D1",
+    "seenIn": "asun, big12, bigsky, southland, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "wichita-state-497",
+    "sourceName": "Wichita State",
+    "standardName": "Wichita St.",
+    "division": "D1",
+    "seenIn": "American, american, cusa, mvc, sec",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "wiley-498",
+    "sourceName": "Wiley",
+    "standardName": "Wiley",
+    "division": "NAIA",
+    "seenIn": "southland",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "wiley-college-499",
+    "sourceName": "Wiley College",
+    "standardName": "Wiley",
+    "division": "NAIA",
+    "seenIn": "swac",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "william-mary-500",
+    "sourceName": "William & Mary",
+    "standardName": "William & Mary",
+    "division": "D1",
+    "seenIn": "CAA, acc, asun, caa, mac, meac, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "winthrop-501",
+    "sourceName": "Winthrop",
+    "standardName": "Winthrop",
+    "division": "D1",
+    "seenIn": "Big South, acc, atlantic10, bigsouth, bigten, caa, horizon, meac, ovc, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "wisconsin-502",
+    "sourceName": "Wisconsin",
+    "standardName": "Wisconsin",
+    "division": "D1",
+    "seenIn": "Big Ten, acc, bigeast, bigten, horizon, sec",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "wofford-503",
+    "sourceName": "Wofford",
+    "standardName": "Wofford",
+    "division": "D1",
+    "seenIn": "SoCon, acc, american, atlantic10, bigsouth, sec, socon, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "wright-st-504",
+    "sourceName": "Wright St.",
+    "standardName": "Wright St.",
+    "division": "D1",
+    "seenIn": "acc, asun, atlantic10, bigeast, bigsouth, cusa, mac, mvc, ovc, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "wright-state-505",
+    "sourceName": "Wright State",
+    "standardName": "Wright St.",
+    "division": "D1",
+    "seenIn": "Horizon, horizon",
+    "matchingNote": "Reviewed alias"
+  },
+  {
+    "id": "wyoming-506",
+    "sourceName": "Wyoming",
+    "standardName": "Wyoming",
+    "division": "D1",
+    "seenIn": "Mountain West, big12, bigsky, bigwest, mw, ovc, pac12, summit, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "xavier-507",
+    "sourceName": "Xavier",
+    "standardName": "Xavier",
+    "division": "D1",
+    "seenIn": "Big East, acc, atlantic10, big12, bigeast, caa, mac, ovc, uac",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "yale-508",
+    "sourceName": "Yale",
+    "standardName": "Yale",
+    "division": "D1",
+    "seenIn": "Ivy League, acc, big12, bigeast, caa, ivy, maac, nec, wcc",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "youngstown-st-509",
+    "sourceName": "Youngstown St.",
+    "standardName": "Youngstown St.",
+    "division": "D1",
+    "seenIn": "atlantic10, bigeast, bigsouth, bigten, maac, nec, ovc, sunbelt",
+    "matchingNote": "Exact name"
+  },
+  {
+    "id": "youngstown-state-510",
+    "sourceName": "Youngstown State",
+    "standardName": "Youngstown St.",
+    "division": "D1",
+    "seenIn": "Horizon, horizon, mac",
+    "matchingNote": "Reviewed alias"
+  }
+]

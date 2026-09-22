@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Refresh",
+    "details": "Click Refresh 2026 on Tracking in Excel desktop for Windows. Allow the workbook’s macro when Excel prompts. Save as .xlsm."
+  },
+  {
+    "topic": "What refresh does",
+    "details": "Downloads current conference standings and results, removes duplicate reports, updates base and adjusted estimates, preserves outreach fields and saves a backup."
+  },
+  {
+    "topic": "Refresh time",
+    "details": "Several minutes are normal. The status line names the source being read. Keep Excel open until it reports completion."
+  },
+  {
+    "topic": "Portability",
+    "details": "The refresh program is embedded in this workbook and uses Windows PowerShell. No Python or separate companion file is required."
+  },
+  {
+    "topic": "Historical comparison",
+    "details": "Column B is the fixed 2025 NCAA rank. Column F is the adjusted 2026 estimate; G is the base rank. Neither 2026 column is an official NCAA release."
+  },
+  {
+    "topic": "Calculation",
+    "details": "Base RPI = 25% D1 win percentage + 50% opponents’ win percentage + 25% opponents’ opponents’ win percentage. Separate bonuses and penalties use current base-rank bands and editable assumptions on RPI rules."
+  },
+  {
+    "topic": "Method source",
+    "details": "https://ncaaorg.s3.amazonaws.com/championships/sports/volleyball/d1/women/2025-26D1WVB_PreChampsManual.pdf"
+  },
+  {
+    "topic": "Data quality",
+    "details": "Overall and conference standings are copied as published. Tracking E shows the conference win–loss record and does not feed the RPI calculation. Overall standings differences are visible in Tracking U and RPI calculation O."
+  },
+  {
+    "topic": "Names",
+    "details": "Use the standardized school name when entering notes. LSU New Orleans is linked to its 2025 NCAA name New Orleans. Source aliases are visible in School names."
+  },
+  {
+    "topic": "Division changes",
+    "details": "West Florida is included in the 2026 D1 field. Saint Francis remains for its 2025 rank and outreach history, with no 2026 D1 estimate."
+  },
+  {
+    "topic": "Membership evidence",
+    "details": "https://goargos.com/news/2026/8/26/womens-volleyball-uwf-volleyball-selected-8th-in-asun-preseason-poll.aspx | https://www.francis.edu/D3TransitionFAQ"
+  },
+  {
+    "topic": "Non-D1 opponents",
+    "details": "Non-D1 games do not affect base RPI. Losses to non-D1 schools can incur adjustment penalties. Only reviewed non-NCAA opponents count in the weak nonconference schedule share."
+  },
+  {
+    "topic": "Division references",
+    "details": "NCAA Division II membership directory: https://web3.ncaa.org/directory/memberList?division=II&type=12 | Rutgers-Camden: https://www.rutgers.edu/athletics | Montreat: https://montreatcavaliers.com/sports/2021/11/24/quick-facts"
+  },
+  {
+    "topic": "New or ambiguous name",
+    "details": "The refresh stops and reports the school requiring review. It never silently treats an unmatched name as a non-D1 team."
+  },
+  {
+    "topic": "Duplicate rule",
+    "details": "Match date, both standardized schools and set score identify a duplicate report. Dates are converted to the game’s local time. Conflicting scores stop the refresh for review."
+  },
+  {
+    "topic": "Same-day doubleheaders",
+    "details": "If the same schools play more than once on the same day, those games require a separate match identifier and review before refreshing."
+  },
+  {
+    "topic": "Source corrections",
+    "details": "Two reviewed match-specific corrections are retained: Jacksonville’s Aug. 29 opponent is Southern Miss., and Arkansas-Pine Bluff’s Sept. 5 opponent is Division II Missouri S&T. Evidence is recorded in Matches."
+  },
+  {
+    "topic": "School data limits",
+    "details": "An estimate depends on the completeness of the published match feeds. All 32 conference feeds were read; the checks below compare results with their standings."
+  },
+  {
+    "topic": "Backups",
+    "details": "A copy is saved before a refresh changes data. Local workbooks use a backups folder beside the workbook; cloud paths use Documents/NIVC RPI Backups."
+  },
+  {
+    "topic": "Safe failure",
+    "details": "If a website changes or returns incomplete data, the saved rankings and notes are retained and the error appears in Tracking A6."
+  },
+  {
+    "topic": "Verified discrepancy: Temple",
+    "details": "Standings say 6-5; completed results say 7-4. Temple’s recap confirms the Sept. 11 win over New Haven. https://owlsports.com/news/2026/9/11/womens-volleyball-owls-make-strong-statement-in-match-two-of-bearcat-classic"
+  },
+  {
+    "topic": "Verified discrepancy: UC Davis",
+    "details": "Standings say 3-8; completed results say 4-7. The Sept. 19 recap confirms the win over UCSB. https://ucdavisaggies.com/news/2026/9/19/womens-volleyball-aggies-wrap-up-non-conference-play-in-four-set-win-against-ucsb.aspx"
+  },
+  {
+    "topic": "Verified discrepancy: Loyola Maryland",
+    "details": "Standings say 3-7; completed results say 2-8. Loyola’s recap confirms the Sept. 4 loss to Towson. https://loyolagreyhounds.com/news/2026/9/4/womens-volleyball-volleyball-rallies-against-towson-but-tigers-hold-on-for-win.aspx"
+  },
+  {
+    "topic": "Other standings differences",
+    "details": "Chicago State: 0-8 published / 0-12 results. Delaware State: 9-2 / 9-5. Western Kentucky: 6-5 / 6-6. Portland: 8-2 / 7-2; its WCC schedule lists the Portland State win twice. These notes describe the initial Sept. 21 snapshot; current flags recalculate."
+  }
+]

@@ -1,0 +1,92 @@
+{
+  "topWinBandEnd": 25,
+  "secondWinBandEnd": 50,
+  "strongNonconfBandEnd": 75,
+  "firstLossBandStart": 288,
+  "firstLossBandEnd": 312,
+  "severeLossBandStart": 313,
+  "weakNonconfBandStart": 263,
+  "scheduleThreshold": 0.5,
+  "topWinBonus": 0.0026,
+  "secondWinBonus": 0.0013,
+  "firstLossPenalty": 0.0013,
+  "severeLossPenalty": 0.0026,
+  "scheduleBonus": 0.0026,
+  "schedulePenalty": 0.0026,
+  "status": "Ready",
+  "winWeight": 0.25,
+  "opponentWeight": 0.5,
+  "opponentsOpponentWeight": 0.25,
+  "definitions": [
+    {
+      "label": "Top-win band ends",
+      "basis": "Published band: 2025–26 NCAA pre-championship manual, Factor IV.",
+      "application": "Win vs ranks 1–25"
+    },
+    {
+      "label": "Second win band ends",
+      "basis": "Published band: 2025–26 NCAA pre-championship manual, Factor IV.",
+      "application": "Win vs ranks 26–50"
+    },
+    {
+      "label": "Strong nonconference band ends",
+      "basis": "Published band: 2025–26 NCAA pre-championship manual, Factor IV.",
+      "application": "Opponent base rank 1–75"
+    },
+    {
+      "label": "First loss band starts",
+      "basis": "Published band: 2025–26 NCAA pre-championship manual, Factor IV.",
+      "application": "Loss vs ranks 288–312"
+    },
+    {
+      "label": "First loss band ends",
+      "basis": "Published band: 2025–26 NCAA pre-championship manual, Factor IV.",
+      "application": "Loss vs ranks 288–312"
+    },
+    {
+      "label": "Severe loss band starts",
+      "basis": "Published band: 2025–26 NCAA pre-championship manual, Factor IV.",
+      "application": "Loss vs ranks 313–last or any non-D1 school"
+    },
+    {
+      "label": "Weak nonconference band starts",
+      "basis": "Published band: 2025–26 NCAA pre-championship manual, Factor IV.",
+      "application": "Opponent rank 263–last, or non-NCAA opponent"
+    },
+    {
+      "label": "Scheduling threshold",
+      "basis": "Interpretation: at least 50% of completed nonconference matches.",
+      "application": "Not the future full-season schedule"
+    },
+    {
+      "label": "Top-win bonus",
+      "basis": "Working amount, inferred from 2019 NCAA tables; not confirmed for 2026.",
+      "application": "Added per win in first band"
+    },
+    {
+      "label": "Second-band win bonus",
+      "basis": "Working amount, inferred from 2019 NCAA tables; not confirmed for 2026.",
+      "application": "Added per win in second band"
+    },
+    {
+      "label": "First-band loss penalty",
+      "basis": "Working amount, inferred from 2019 NCAA tables; not confirmed for 2026.",
+      "application": "Subtracted per loss in first loss band"
+    },
+    {
+      "label": "Severe loss penalty",
+      "basis": "Working amount, inferred from 2019 NCAA tables; not confirmed for 2026.",
+      "application": "Subtracted per loss in severe band or vs non-D1"
+    },
+    {
+      "label": "Strong-schedule bonus",
+      "basis": "Working amount, inferred from 2019 NCAA tables; not confirmed for 2026.",
+      "application": "Added once when strong share meets threshold"
+    },
+    {
+      "label": "Weak-schedule penalty",
+      "basis": "Working amount, inferred from 2019 NCAA tables; not confirmed for 2026.",
+      "application": "Subtracted once when weak share meets threshold"
+    }
+  ]
+}

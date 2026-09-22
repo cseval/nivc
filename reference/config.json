@@ -1,0 +1,6511 @@
+{
+  "season": 2026,
+  "conferences": [
+    {
+      "id": "acc",
+      "name": "ACC",
+      "base": "https://admin.theacc.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://admin.theacc.com/standings.aspx?path=wvball",
+        "stats": "https://admin.theacc.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "americaeast",
+      "name": "America East",
+      "base": "https://americaeast.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://americaeast.com/standings.aspx?path=wvball",
+        "stats": "https://americaeast.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "american",
+      "name": "American",
+      "base": "https://theamerican.org",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://theamerican.org/standings.aspx?path=wvball",
+        "stats": "https://theamerican.org/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "asun",
+      "name": "ASUN",
+      "base": "https://asunsports.org",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://asunsports.org/standings.aspx?path=wvball",
+        "stats": "https://asunsports.org/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "atlantic10",
+      "name": "Atlantic 10",
+      "base": "https://atlantic10.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://atlantic10.com/standings.aspx?path=wvball",
+        "stats": "https://atlantic10.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "big12",
+      "name": "Big 12",
+      "base": "https://big12sports.com",
+      "sport": "vb",
+      "urls": {
+        "standings": "https://big12sports.com/standings.aspx?path=vb",
+        "stats": "https://big12sports.com/stats.aspx?path=vb&year=2026"
+      }
+    },
+    {
+      "id": "bigeast",
+      "name": "Big East",
+      "base": "https://www.bigeast.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://www.bigeast.com/standings.aspx?path=wvball",
+        "stats": "https://www.bigeast.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "bigsky",
+      "name": "Big Sky",
+      "base": "https://bigskyconf.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://bigskyconf.com/standings.aspx?path=wvball",
+        "stats": "https://bigskyconf.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "bigsouth",
+      "name": "Big South",
+      "base": "https://bigsouthsports.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://bigsouthsports.com/standings.aspx?path=wvball",
+        "stats": "https://bigsouthsports.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "bigten",
+      "name": "Big Ten",
+      "base": "https://bigten.org",
+      "sport": "wvb",
+      "urls": {
+        "standings": "https://bigten.org/wvb/standings/2026/",
+        "stats": "https://bigten.org/wvb/schedule/2026/"
+      }
+    },
+    {
+      "id": "bigwest",
+      "name": "Big West",
+      "base": "https://bigwest.org",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://bigwest.org/standings.aspx?path=wvball",
+        "stats": "https://bigwest.org/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "caa",
+      "name": "CAA",
+      "base": "https://caasports.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://caasports.com/standings.aspx?path=wvball",
+        "stats": "https://caasports.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "cusa",
+      "name": "CUSA",
+      "base": "https://conferenceusa.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://conferenceusa.com/standings.aspx?path=wvball",
+        "stats": "https://conferenceusa.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "horizon",
+      "name": "Horizon",
+      "base": "https://horizonleague.org",
+      "sport": "vball",
+      "urls": {
+        "standings": "https://horizonleague.org/standings.aspx?path=vball",
+        "stats": "https://horizonleague.org/stats.aspx?path=vball&year=2026"
+      }
+    },
+    {
+      "id": "ivy",
+      "name": "Ivy League",
+      "base": "https://ivyleague.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://ivyleague.com/standings.aspx?path=wvball",
+        "stats": "https://ivyleague.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "maac",
+      "name": "MAAC",
+      "base": "https://maacsports.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://maacsports.com/standings.aspx?path=wvball",
+        "stats": "https://maacsports.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "mac",
+      "name": "MAC",
+      "base": "https://getsomemaction.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://getsomemaction.com/standings.aspx?path=wvball",
+        "stats": "https://getsomemaction.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "meac",
+      "name": "MEAC",
+      "base": "https://meacsports.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://meacsports.com/standings.aspx?path=wvball",
+        "stats": "https://meacsports.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "mw",
+      "name": "Mountain West",
+      "base": "https://themw.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://themw.com/standings.aspx?path=wvball",
+        "stats": "https://themw.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "mvc",
+      "name": "MVC",
+      "base": "https://mvc-sports.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://mvc-sports.com/standings.aspx?path=wvball",
+        "stats": "https://mvc-sports.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "nec",
+      "name": "NEC",
+      "base": "https://northeastconference.org",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://northeastconference.org/standings.aspx?path=wvball",
+        "stats": "https://northeastconference.org/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "ovc",
+      "name": "OVC",
+      "base": "https://ovcsports.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://ovcsports.com/standings.aspx?path=wvball",
+        "stats": "https://ovcsports.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "pac12",
+      "name": "Pac-12",
+      "base": "https://pac-12.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://pac-12.com/standings.aspx?path=wvball",
+        "stats": "https://pac-12.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "patriot",
+      "name": "Patriot",
+      "base": "https://patriotleague.org",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://patriotleague.org/standings.aspx?path=wvball",
+        "stats": "https://patriotleague.org/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "sec",
+      "name": "SEC",
+      "base": "https://www.secsports.com",
+      "sport": "volleyball",
+      "urls": {
+        "standings": "https://www.secsports.com/standings/volleyball",
+        "stats": "https://www.secsports.com/schedule/volleyball"
+      }
+    },
+    {
+      "id": "socon",
+      "name": "SoCon",
+      "base": "https://soconsports.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://soconsports.com/wvb/standings/2026/",
+        "stats": "https://soconsports.com/wvb/schedule/2026/"
+      }
+    },
+    {
+      "id": "southland",
+      "name": "Southland",
+      "base": "https://southland.org",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://southland.org/standings.aspx?path=wvball",
+        "stats": "https://southland.org/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "summit",
+      "name": "Summit League",
+      "base": "https://thesummitleague.org",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://thesummitleague.org/standings.aspx?path=wvball",
+        "stats": "https://thesummitleague.org/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "sunbelt",
+      "name": "Sun Belt",
+      "base": "https://sunbeltsports.org",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://sunbeltsports.org/standings.aspx?path=wvball",
+        "stats": "https://sunbeltsports.org/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "swac",
+      "name": "SWAC",
+      "base": "https://swac.org",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://swac.org/standings.aspx?standings=102",
+        "stats": "https://swac.org/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "uac",
+      "name": "UAC",
+      "base": "https://uacsports.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://uacsports.com/standings.aspx?path=wvball",
+        "stats": "https://uacsports.com/stats.aspx?path=wvball&year=2026"
+      }
+    },
+    {
+      "id": "wcc",
+      "name": "WCC",
+      "base": "https://wccsports.com",
+      "sport": "wvball",
+      "urls": {
+        "standings": "https://wccsports.com/standings.aspx?path=wvball",
+        "stats": "https://wccsports.com/stats.aspx?path=wvball&year=2026"
+      }
+    }
+  ],
+  "aliases": {
+    "nebraska": {
+      "raw": "Nebraska",
+      "canonical": "Nebraska"
+    },
+    "texas": {
+      "raw": "Texas",
+      "canonical": "Texas"
+    },
+    "kentucky": {
+      "raw": "Kentucky",
+      "canonical": "Kentucky"
+    },
+    "texasam": {
+      "raw": "Texas A&M",
+      "canonical": "Texas A&M"
+    },
+    "pittsburgh": {
+      "raw": "Pittsburgh",
+      "canonical": "Pittsburgh"
+    },
+    "arizonast": {
+      "raw": "Arizona St.",
+      "canonical": "Arizona St."
+    },
+    "creighton": {
+      "raw": "Creighton",
+      "canonical": "Creighton"
+    },
+    "wisconsin": {
+      "raw": "Wisconsin",
+      "canonical": "Wisconsin"
+    },
+    "stanford": {
+      "raw": "Stanford",
+      "canonical": "Stanford"
+    },
+    "purdue": {
+      "raw": "Purdue",
+      "canonical": "Purdue"
+    },
+    "smu": {
+      "raw": "SMU",
+      "canonical": "SMU"
+    },
+    "louisville": {
+      "raw": "Louisville",
+      "canonical": "Louisville"
+    },
+    "minnesota": {
+      "raw": "Minnesota",
+      "canonical": "Minnesota"
+    },
+    "kansas": {
+      "raw": "Kansas",
+      "canonical": "Kansas"
+    },
+    "southerncalifornia": {
+      "raw": "Southern California",
+      "canonical": "Southern California"
+    },
+    "indiana": {
+      "raw": "Indiana",
+      "canonical": "Indiana"
+    },
+    "miamifl": {
+      "raw": "Miami (FL)",
+      "canonical": "Miami (FL)"
+    },
+    "byu": {
+      "raw": "BYU",
+      "canonical": "BYU"
+    },
+    "utep": {
+      "raw": "UTEP",
+      "canonical": "UTEP"
+    },
+    "tcu": {
+      "raw": "TCU",
+      "canonical": "TCU"
+    },
+    "utahst": {
+      "raw": "Utah St.",
+      "canonical": "Utah St."
+    },
+    "colorado": {
+      "raw": "Colorado",
+      "canonical": "Colorado"
+    },
+    "baylor": {
+      "raw": "Baylor",
+      "canonical": "Baylor"
+    },
+    "uni": {
+      "raw": "UNI",
+      "canonical": "UNI"
+    },
+    "tennessee": {
+      "raw": "Tennessee",
+      "canonical": "Tennessee"
+    },
+    "iowast": {
+      "raw": "Iowa St.",
+      "canonical": "Iowa St."
+    },
+    "xavier": {
+      "raw": "Xavier",
+      "canonical": "Xavier"
+    },
+    "rice": {
+      "raw": "Rice",
+      "canonical": "Rice"
+    },
+    "pennst": {
+      "raw": "Penn St.",
+      "canonical": "Penn St."
+    },
+    "westernky": {
+      "raw": "Western Ky.",
+      "canonical": "Western Ky."
+    },
+    "kansasst": {
+      "raw": "Kansas St.",
+      "canonical": "Kansas St."
+    },
+    "marquette": {
+      "raw": "Marquette",
+      "canonical": "Marquette"
+    },
+    "sandiego": {
+      "raw": "San Diego",
+      "canonical": "San Diego"
+    },
+    "florida": {
+      "raw": "Florida",
+      "canonical": "Florida"
+    },
+    "ucla": {
+      "raw": "UCLA",
+      "canonical": "UCLA"
+    },
+    "southdakotast": {
+      "raw": "South Dakota St.",
+      "canonical": "South Dakota St."
+    },
+    "tulsa": {
+      "raw": "Tulsa",
+      "canonical": "Tulsa"
+    },
+    "arizona": {
+      "raw": "Arizona",
+      "canonical": "Arizona"
+    },
+    "villanova": {
+      "raw": "Villanova",
+      "canonical": "Villanova"
+    },
+    "michigan": {
+      "raw": "Michigan",
+      "canonical": "Michigan"
+    },
+    "utah": {
+      "raw": "Utah",
+      "canonical": "Utah"
+    },
+    "calpoly": {
+      "raw": "Cal Poly",
+      "canonical": "Cal Poly"
+    },
+    "northcarolina": {
+      "raw": "North Carolina",
+      "canonical": "North Carolina"
+    },
+    "pepperdine": {
+      "raw": "Pepperdine",
+      "canonical": "Pepperdine"
+    },
+    "texasst": {
+      "raw": "Texas St.",
+      "canonical": "Texas St."
+    },
+    "southfla": {
+      "raw": "South Fla.",
+      "canonical": "South Fla."
+    },
+    "jamesmadison": {
+      "raw": "James Madison",
+      "canonical": "James Madison"
+    },
+    "georgiatech": {
+      "raw": "Georgia Tech",
+      "canonical": "Georgia Tech"
+    },
+    "ucdavis": {
+      "raw": "UC Davis",
+      "canonical": "UC Davis"
+    },
+    "dayton": {
+      "raw": "Dayton",
+      "canonical": "Dayton"
+    },
+    "ucsantabarbara": {
+      "raw": "UC Santa Barbara",
+      "canonical": "UC Santa Barbara"
+    },
+    "missouri": {
+      "raw": "Missouri",
+      "canonical": "Missouri"
+    },
+    "cincinnati": {
+      "raw": "Cincinnati",
+      "canonical": "Cincinnati"
+    },
+    "auburn": {
+      "raw": "Auburn",
+      "canonical": "Auburn"
+    },
+    "arkansasst": {
+      "raw": "Arkansas St.",
+      "canonical": "Arkansas St."
+    },
+    "ballst": {
+      "raw": "Ball St.",
+      "canonical": "Ball St."
+    },
+    "washington": {
+      "raw": "Washington",
+      "canonical": "Washington"
+    },
+    "oregon": {
+      "raw": "Oregon",
+      "canonical": "Oregon"
+    },
+    "wichitast": {
+      "raw": "Wichita St.",
+      "canonical": "Wichita St."
+    },
+    "illinois": {
+      "raw": "Illinois",
+      "canonical": "Illinois"
+    },
+    "american": {
+      "raw": "American",
+      "canonical": "American"
+    },
+    "floridast": {
+      "raw": "Florida St.",
+      "canonical": "Florida St."
+    },
+    "ucf": {
+      "raw": "UCF",
+      "canonical": "UCF"
+    },
+    "drake": {
+      "raw": "Drake",
+      "canonical": "Drake"
+    },
+    "coloradost": {
+      "raw": "Colorado St.",
+      "canonical": "Colorado St."
+    },
+    "sfa": {
+      "raw": "SFA",
+      "canonical": "SFA"
+    },
+    "oklahoma": {
+      "raw": "Oklahoma",
+      "canonical": "Oklahoma"
+    },
+    "hofstra": {
+      "raw": "Hofstra",
+      "canonical": "Hofstra"
+    },
+    "fgcu": {
+      "raw": "FGCU",
+      "canonical": "FGCU"
+    },
+    "easternky": {
+      "raw": "Eastern Ky.",
+      "canonical": "Eastern Ky."
+    },
+    "michiganst": {
+      "raw": "Michigan St.",
+      "canonical": "Michigan St."
+    },
+    "southdakota": {
+      "raw": "South Dakota",
+      "canonical": "South Dakota"
+    },
+    "stthomasmn": {
+      "raw": "St. Thomas (MN)",
+      "canonical": "St. Thomas (MN)"
+    },
+    "uconn": {
+      "raw": "UConn",
+      "canonical": "UConn"
+    },
+    "boisest": {
+      "raw": "Boise St.",
+      "canonical": "Boise St."
+    },
+    "etsu": {
+      "raw": "ETSU",
+      "canonical": "ETSU"
+    },
+    "longbeachst": {
+      "raw": "Long Beach St.",
+      "canonical": "Long Beach St."
+    },
+    "olemiss": {
+      "raw": "Ole Miss",
+      "canonical": "Ole Miss"
+    },
+    "flaatlantic": {
+      "raw": "Fla. Atlantic",
+      "canonical": "Fla. Atlantic"
+    },
+    "georgia": {
+      "raw": "Georgia",
+      "canonical": "Georgia"
+    },
+    "fiu": {
+      "raw": "FIU",
+      "canonical": "FIU"
+    },
+    "utrgv": {
+      "raw": "UTRGV",
+      "canonical": "UTRGV"
+    },
+    "lsu": {
+      "raw": "LSU",
+      "canonical": "LSU"
+    },
+    "princeton": {
+      "raw": "Princeton",
+      "canonical": "Princeton"
+    },
+    "highpoint": {
+      "raw": "High Point",
+      "canonical": "High Point"
+    },
+    "jacksonville": {
+      "raw": "Jacksonville",
+      "canonical": "Jacksonville"
+    },
+    "grandcanyon": {
+      "raw": "Grand Canyon",
+      "canonical": "Grand Canyon"
+    },
+    "kennesawst": {
+      "raw": "Kennesaw St.",
+      "canonical": "Kennesaw St."
+    },
+    "northtexas": {
+      "raw": "North Texas",
+      "canonical": "North Texas"
+    },
+    "westvirginia": {
+      "raw": "West Virginia",
+      "canonical": "West Virginia"
+    },
+    "armywestpoint": {
+      "raw": "Army West Point",
+      "canonical": "Army West Point"
+    },
+    "utahtech": {
+      "raw": "Utah Tech",
+      "canonical": "Utah Tech"
+    },
+    "moreheadst": {
+      "raw": "Morehead St.",
+      "canonical": "Morehead St."
+    },
+    "clemson": {
+      "raw": "Clemson",
+      "canonical": "Clemson"
+    },
+    "coastalcarolina": {
+      "raw": "Coastal Carolina",
+      "canonical": "Coastal Carolina"
+    },
+    "toledo": {
+      "raw": "Toledo",
+      "canonical": "Toledo"
+    },
+    "northerncolo": {
+      "raw": "Northern Colo.",
+      "canonical": "Northern Colo."
+    },
+    "colgate": {
+      "raw": "Colgate",
+      "canonical": "Colgate"
+    },
+    "northwestern": {
+      "raw": "Northwestern",
+      "canonical": "Northwestern"
+    },
+    "wyoming": {
+      "raw": "Wyoming",
+      "canonical": "Wyoming"
+    },
+    "campbell": {
+      "raw": "Campbell",
+      "canonical": "Campbell"
+    },
+    "southalabama": {
+      "raw": "South Alabama",
+      "canonical": "South Alabama"
+    },
+    "alabama": {
+      "raw": "Alabama",
+      "canonical": "Alabama"
+    },
+    "fairfield": {
+      "raw": "Fairfield",
+      "canonical": "Fairfield"
+    },
+    "centralark": {
+      "raw": "Central Ark.",
+      "canonical": "Central Ark."
+    },
+    "uic": {
+      "raw": "UIC",
+      "canonical": "UIC"
+    },
+    "oregonst": {
+      "raw": "Oregon St.",
+      "canonical": "Oregon St."
+    },
+    "easternill": {
+      "raw": "Eastern Ill.",
+      "canonical": "Eastern Ill."
+    },
+    "mississippist": {
+      "raw": "Mississippi St.",
+      "canonical": "Mississippi St."
+    },
+    "yale": {
+      "raw": "Yale",
+      "canonical": "Yale"
+    },
+    "winthrop": {
+      "raw": "Winthrop",
+      "canonical": "Winthrop"
+    },
+    "southcarolina": {
+      "raw": "South Carolina",
+      "canonical": "South Carolina"
+    },
+    "northernky": {
+      "raw": "Northern Ky.",
+      "canonical": "Northern Ky."
+    },
+    "loyolachicago": {
+      "raw": "Loyola Chicago",
+      "canonical": "Loyola Chicago"
+    },
+    "wrightst": {
+      "raw": "Wright St.",
+      "canonical": "Wright St."
+    },
+    "colofcharleston": {
+      "raw": "Col. of Charleston",
+      "canonical": "Col. of Charleston"
+    },
+    "iowa": {
+      "raw": "Iowa",
+      "canonical": "Iowa"
+    },
+    "vanderbilt": {
+      "raw": "Vanderbilt",
+      "canonical": "Vanderbilt"
+    },
+    "ncstate": {
+      "raw": "NC State",
+      "canonical": "NC State"
+    },
+    "utahvalley": {
+      "raw": "Utah Valley",
+      "canonical": "Utah Valley"
+    },
+    "notredame": {
+      "raw": "Notre Dame",
+      "canonical": "Notre Dame"
+    },
+    "liberty": {
+      "raw": "Liberty",
+      "canonical": "Liberty"
+    },
+    "appstate": {
+      "raw": "App State",
+      "canonical": "App State"
+    },
+    "gasouthern": {
+      "raw": "Ga. Southern",
+      "canonical": "Ga. Southern"
+    },
+    "charlotte": {
+      "raw": "Charlotte",
+      "canonical": "Charlotte"
+    },
+    "vcu": {
+      "raw": "VCU",
+      "canonical": "VCU"
+    },
+    "northernariz": {
+      "raw": "Northern Ariz.",
+      "canonical": "Northern Ariz."
+    },
+    "georgiast": {
+      "raw": "Georgia St.",
+      "canonical": "Georgia St."
+    },
+    "wofford": {
+      "raw": "Wofford",
+      "canonical": "Wofford"
+    },
+    "bowlinggreen": {
+      "raw": "Bowling Green",
+      "canonical": "Bowling Green"
+    },
+    "georgetown": {
+      "raw": "Georgetown",
+      "canonical": "Georgetown"
+    },
+    "georgewashington": {
+      "raw": "George Washington",
+      "canonical": "George Washington"
+    },
+    "temple": {
+      "raw": "Temple",
+      "canonical": "Temple"
+    },
+    "virginia": {
+      "raw": "Virginia",
+      "canonical": "Virginia"
+    },
+    "uiw": {
+      "raw": "UIW",
+      "canonical": "UIW"
+    },
+    "southeasternla": {
+      "raw": "Southeastern La.",
+      "canonical": "Southeastern La."
+    },
+    "ncat": {
+      "raw": "N.C. A&T",
+      "canonical": "N.C. A&T"
+    },
+    "valparaiso": {
+      "raw": "Valparaiso",
+      "canonical": "Valparaiso"
+    },
+    "denver": {
+      "raw": "Denver",
+      "canonical": "Denver"
+    },
+    "sacramentost": {
+      "raw": "Sacramento St.",
+      "canonical": "Sacramento St."
+    },
+    "westernmich": {
+      "raw": "Western Mich.",
+      "canonical": "Western Mich."
+    },
+    "southernind": {
+      "raw": "Southern Ind.",
+      "canonical": "Southern Ind."
+    },
+    "towson": {
+      "raw": "Towson",
+      "canonical": "Towson"
+    },
+    "louisiana": {
+      "raw": "Louisiana",
+      "canonical": "Louisiana"
+    },
+    "cornell": {
+      "raw": "Cornell",
+      "canonical": "Cornell"
+    },
+    "georgemason": {
+      "raw": "George Mason",
+      "canonical": "George Mason"
+    },
+    "wakeforest": {
+      "raw": "Wake Forest",
+      "canonical": "Wake Forest"
+    },
+    "akron": {
+      "raw": "Akron",
+      "canonical": "Akron"
+    },
+    "furman": {
+      "raw": "Furman",
+      "canonical": "Furman"
+    },
+    "depaul": {
+      "raw": "DePaul",
+      "canonical": "DePaul"
+    },
+    "montana": {
+      "raw": "Montana",
+      "canonical": "Montana"
+    },
+    "lipscomb": {
+      "raw": "Lipscomb",
+      "canonical": "Lipscomb"
+    },
+    "uab": {
+      "raw": "UAB",
+      "canonical": "UAB"
+    },
+    "washingtonst": {
+      "raw": "Washington St.",
+      "canonical": "Washington St."
+    },
+    "illinoisst": {
+      "raw": "Illinois St.",
+      "canonical": "Illinois St."
+    },
+    "utsa": {
+      "raw": "UTSA",
+      "canonical": "UTSA"
+    },
+    "duquesne": {
+      "raw": "Duquesne",
+      "canonical": "Duquesne"
+    },
+    "northdakotast": {
+      "raw": "North Dakota St.",
+      "canonical": "North Dakota St."
+    },
+    "brown": {
+      "raw": "Brown",
+      "canonical": "Brown"
+    },
+    "southernmiss": {
+      "raw": "Southern Miss",
+      "canonical": "Southern Miss."
+    },
+    "hawaii": {
+      "raw": "Hawaii",
+      "canonical": "Hawaii"
+    },
+    "weberst": {
+      "raw": "Weber St.",
+      "canonical": "Weber St."
+    },
+    "houston": {
+      "raw": "Houston",
+      "canonical": "Houston"
+    },
+    "miamioh": {
+      "raw": "Miami (OH)",
+      "canonical": "Miami (OH)"
+    },
+    "southeastmost": {
+      "raw": "Southeast Mo. St.",
+      "canonical": "Southeast Mo. St."
+    },
+    "santaclara": {
+      "raw": "Santa Clara",
+      "canonical": "Santa Clara"
+    },
+    "marshall": {
+      "raw": "Marshall",
+      "canonical": "Marshall"
+    },
+    "california": {
+      "raw": "California",
+      "canonical": "California"
+    },
+    "syracuse": {
+      "raw": "Syracuse",
+      "canonical": "Syracuse"
+    },
+    "sandiegost": {
+      "raw": "San Diego St.",
+      "canonical": "San Diego St."
+    },
+    "umbc": {
+      "raw": "UMBC",
+      "canonical": "UMBC"
+    },
+    "eastcarolina": {
+      "raw": "East Carolina",
+      "canonical": "East Carolina"
+    },
+    "queensnc": {
+      "raw": "Queens (NC)",
+      "canonical": "Queens (NC)"
+    },
+    "troy": {
+      "raw": "Troy",
+      "canonical": "Troy"
+    },
+    "stonybrook": {
+      "raw": "Stony Brook",
+      "canonical": "Stony Brook"
+    },
+    "bostoncollege": {
+      "raw": "Boston College",
+      "canonical": "Boston College"
+    },
+    "ohio": {
+      "raw": "Ohio",
+      "canonical": "Ohio"
+    },
+    "arkansas": {
+      "raw": "Arkansas",
+      "canonical": "Arkansas"
+    },
+    "rutgers": {
+      "raw": "Rutgers",
+      "canonical": "Rutgers"
+    },
+    "csun": {
+      "raw": "CSUN",
+      "canonical": "CSUN"
+    },
+    "northflorida": {
+      "raw": "North Florida",
+      "canonical": "North Florida"
+    },
+    "sanjosest": {
+      "raw": "San Jose St.",
+      "canonical": "San Jose St."
+    },
+    "ualbany": {
+      "raw": "UAlbany",
+      "canonical": "UAlbany"
+    },
+    "butler": {
+      "raw": "Butler",
+      "canonical": "Butler"
+    },
+    "tarletonst": {
+      "raw": "Tarleton St.",
+      "canonical": "Tarleton St."
+    },
+    "samford": {
+      "raw": "Samford",
+      "canonical": "Samford"
+    },
+    "missourist": {
+      "raw": "Missouri St.",
+      "canonical": "Missouri St."
+    },
+    "ohiost": {
+      "raw": "Ohio St.",
+      "canonical": "Ohio St."
+    },
+    "texastech": {
+      "raw": "Texas Tech",
+      "canonical": "Texas Tech"
+    },
+    "uncgreensboro": {
+      "raw": "UNC Greensboro",
+      "canonical": "UNC Greensboro"
+    },
+    "airforce": {
+      "raw": "Air Force",
+      "canonical": "Air Force"
+    },
+    "stjohnsny": {
+      "raw": "St. John's (NY)",
+      "canonical": "St. John's (NY)"
+    },
+    "amcorpuschristi": {
+      "raw": "A&M-Corpus Christi",
+      "canonical": "A&M-Corpus Christi"
+    },
+    "unlv": {
+      "raw": "UNLV",
+      "canonical": "UNLV"
+    },
+    "jacksonvillest": {
+      "raw": "Jacksonville St.",
+      "canonical": "Jacksonville St."
+    },
+    "maryland": {
+      "raw": "Maryland",
+      "canonical": "Maryland"
+    },
+    "coppinst": {
+      "raw": "Coppin St.",
+      "canonical": "Coppin St."
+    },
+    "tulane": {
+      "raw": "Tulane",
+      "canonical": "Tulane"
+    },
+    "howard": {
+      "raw": "Howard",
+      "canonical": "Howard"
+    },
+    "lehigh": {
+      "raw": "Lehigh",
+      "canonical": "Lehigh"
+    },
+    "bucknell": {
+      "raw": "Bucknell",
+      "canonical": "Bucknell"
+    },
+    "samhouston": {
+      "raw": "Sam Houston",
+      "canonical": "Sam Houston"
+    },
+    "binghamton": {
+      "raw": "Binghamton",
+      "canonical": "Binghamton"
+    },
+    "lmuca": {
+      "raw": "LMU (CA)",
+      "canonical": "LMU (CA)"
+    },
+    "navy": {
+      "raw": "Navy",
+      "canonical": "Navy"
+    },
+    "northala": {
+      "raw": "North Ala.",
+      "canonical": "North Ala."
+    },
+    "gonzaga": {
+      "raw": "Gonzaga",
+      "canonical": "Gonzaga"
+    },
+    "iuindy": {
+      "raw": "IU Indy",
+      "canonical": "IU Indy"
+    },
+    "montanast": {
+      "raw": "Montana St.",
+      "canonical": "Montana St."
+    },
+    "saintmarysca": {
+      "raw": "Saint Mary's (CA)",
+      "canonical": "Saint Mary's (CA)"
+    },
+    "ucirvine": {
+      "raw": "UC Irvine",
+      "canonical": "UC Irvine"
+    },
+    "littlerock": {
+      "raw": "Little Rock",
+      "canonical": "Little Rock"
+    },
+    "bradley": {
+      "raw": "Bradley",
+      "canonical": "Bradley"
+    },
+    "saintfrancis": {
+      "raw": "Saint Francis",
+      "canonical": "Saint Francis"
+    },
+    "davidson": {
+      "raw": "Davidson",
+      "canonical": "Davidson"
+    },
+    "niu": {
+      "raw": "NIU",
+      "canonical": "NIU"
+    },
+    "saintlouis": {
+      "raw": "Saint Louis",
+      "canonical": "Saint Louis"
+    },
+    "quinnipiac": {
+      "raw": "Quinnipiac",
+      "canonical": "Quinnipiac"
+    },
+    "omaha": {
+      "raw": "Omaha",
+      "canonical": "Omaha"
+    },
+    "bryant": {
+      "raw": "Bryant",
+      "canonical": "Bryant"
+    },
+    "rider": {
+      "raw": "Rider",
+      "canonical": "Rider"
+    },
+    "williammary": {
+      "raw": "William & Mary",
+      "canonical": "William & Mary"
+    },
+    "liu": {
+      "raw": "LIU",
+      "canonical": "LIU"
+    },
+    "newmexico": {
+      "raw": "New Mexico",
+      "canonical": "New Mexico"
+    },
+    "stetson": {
+      "raw": "Stetson",
+      "canonical": "Stetson"
+    },
+    "idahost": {
+      "raw": "Idaho St.",
+      "canonical": "Idaho St."
+    },
+    "penn": {
+      "raw": "Penn",
+      "canonical": "Penn"
+    },
+    "portland": {
+      "raw": "Portland",
+      "canonical": "Portland"
+    },
+    "belmont": {
+      "raw": "Belmont",
+      "canonical": "Belmont"
+    },
+    "chattanooga": {
+      "raw": "Chattanooga",
+      "canonical": "Chattanooga"
+    },
+    "uncasheville": {
+      "raw": "UNC Asheville",
+      "canonical": "UNC Asheville"
+    },
+    "olddominion": {
+      "raw": "Old Dominion",
+      "canonical": "Old Dominion"
+    },
+    "lamaruniversity": {
+      "raw": "Lamar University",
+      "canonical": "Lamar University"
+    },
+    "virginiatech": {
+      "raw": "Virginia Tech",
+      "canonical": "Virginia Tech"
+    },
+    "tennesseetech": {
+      "raw": "Tennessee Tech",
+      "canonical": "Tennessee Tech"
+    },
+    "bellarmine": {
+      "raw": "Bellarmine",
+      "canonical": "Bellarmine"
+    },
+    "providence": {
+      "raw": "Providence",
+      "canonical": "Providence"
+    },
+    "charlestonso": {
+      "raw": "Charleston So.",
+      "canonical": "Charleston So."
+    },
+    "southernill": {
+      "raw": "Southern Ill.",
+      "canonical": "Southern Ill."
+    },
+    "middletenn": {
+      "raw": "Middle Tenn.",
+      "canonical": "Middle Tenn."
+    },
+    "youngstownst": {
+      "raw": "Youngstown St.",
+      "canonical": "Youngstown St."
+    },
+    "memphis": {
+      "raw": "Memphis",
+      "canonical": "Memphis"
+    },
+    "milwaukee": {
+      "raw": "Milwaukee",
+      "canonical": "Milwaukee"
+    },
+    "newmexicost": {
+      "raw": "New Mexico St.",
+      "canonical": "New Mexico St."
+    },
+    "centralmich": {
+      "raw": "Central Mich.",
+      "canonical": "Central Mich."
+    },
+    "abilenechristian": {
+      "raw": "Abilene Christian",
+      "canonical": "Abilene Christian"
+    },
+    "easternmich": {
+      "raw": "Eastern Mich.",
+      "canonical": "Eastern Mich."
+    },
+    "buffalo": {
+      "raw": "Buffalo",
+      "canonical": "Buffalo"
+    },
+    "uscupstate": {
+      "raw": "USC Upstate",
+      "canonical": "USC Upstate"
+    },
+    "newhampshire": {
+      "raw": "New Hampshire",
+      "canonical": "New Hampshire"
+    },
+    "easttexasam": {
+      "raw": "East Texas A&M",
+      "canonical": "East Texas A&M"
+    },
+    "prairieview": {
+      "raw": "Prairie View",
+      "canonical": "Prairie View"
+    },
+    "greenbay": {
+      "raw": "Green Bay",
+      "canonical": "Green Bay"
+    },
+    "northeastern": {
+      "raw": "Northeastern",
+      "canonical": "Northeastern"
+    },
+    "fdu": {
+      "raw": "FDU",
+      "canonical": "FDU"
+    },
+    "fordham": {
+      "raw": "Fordham",
+      "canonical": "Fordham"
+    },
+    "houstonchristian": {
+      "raw": "Houston Christian",
+      "canonical": "Houston Christian"
+    },
+    "radford": {
+      "raw": "Radford",
+      "canonical": "Radford"
+    },
+    "delaware": {
+      "raw": "Delaware",
+      "canonical": "Delaware"
+    },
+    "duke": {
+      "raw": "Duke",
+      "canonical": "Duke"
+    },
+    "bethunecookman": {
+      "raw": "Bethune-Cookman",
+      "canonical": "Bethune-Cookman"
+    },
+    "portlandst": {
+      "raw": "Portland St.",
+      "canonical": "Portland St."
+    },
+    "mercer": {
+      "raw": "Mercer",
+      "canonical": "Mercer"
+    },
+    "sanfrancisco": {
+      "raw": "San Francisco",
+      "canonical": "San Francisco"
+    },
+    "fresnost": {
+      "raw": "Fresno St.",
+      "canonical": "Fresno St."
+    },
+    "dartmouth": {
+      "raw": "Dartmouth",
+      "canonical": "Dartmouth"
+    },
+    "elon": {
+      "raw": "Elon",
+      "canonical": "Elon"
+    },
+    "utarlington": {
+      "raw": "UT Arlington",
+      "canonical": "UT Arlington"
+    },
+    "indianast": {
+      "raw": "Indiana St.",
+      "canonical": "Indiana St."
+    },
+    "lindenwood": {
+      "raw": "Lindenwood",
+      "canonical": "Lindenwood"
+    },
+    "westerncaro": {
+      "raw": "Western Caro.",
+      "canonical": "Western Caro."
+    },
+    "floridaam": {
+      "raw": "Florida A&M",
+      "canonical": "Florida A&M"
+    },
+    "ucsandiego": {
+      "raw": "UC San Diego",
+      "canonical": "UC San Diego"
+    },
+    "ucriverside": {
+      "raw": "UC Riverside",
+      "canonical": "UC Riverside"
+    },
+    "nevada": {
+      "raw": "Nevada",
+      "canonical": "Nevada"
+    },
+    "ulm": {
+      "raw": "ULM",
+      "canonical": "ULM"
+    },
+    "louisianatech": {
+      "raw": "Louisiana Tech",
+      "canonical": "Louisiana Tech"
+    },
+    "gardnerwebb": {
+      "raw": "Gardner-Webb",
+      "canonical": "Gardner-Webb"
+    },
+    "harvard": {
+      "raw": "Harvard",
+      "canonical": "Harvard"
+    },
+    "loyolamaryland": {
+      "raw": "Loyola Maryland",
+      "canonical": "Loyola Maryland"
+    },
+    "alabamaam": {
+      "raw": "Alabama A&M",
+      "canonical": "Alabama A&M"
+    },
+    "presbyterian": {
+      "raw": "Presbyterian",
+      "canonical": "Presbyterian"
+    },
+    "evansville": {
+      "raw": "Evansville",
+      "canonical": "Evansville"
+    },
+    "alabamast": {
+      "raw": "Alabama St.",
+      "canonical": "Alabama St."
+    },
+    "uncw": {
+      "raw": "UNCW",
+      "canonical": "UNCW"
+    },
+    "setonhall": {
+      "raw": "Seton Hall",
+      "canonical": "Seton Hall"
+    },
+    "delawarest": {
+      "raw": "Delaware St.",
+      "canonical": "Delaware St."
+    },
+    "californiabaptist": {
+      "raw": "California Baptist",
+      "canonical": "California Baptist"
+    },
+    "kentst": {
+      "raw": "Kent St.",
+      "canonical": "Kent St."
+    },
+    "siue": {
+      "raw": "SIUE",
+      "canonical": "SIUE"
+    },
+    "mcneese": {
+      "raw": "McNeese",
+      "canonical": "McNeese"
+    },
+    "sacredheart": {
+      "raw": "Sacred Heart",
+      "canonical": "Sacred Heart"
+    },
+    "lafayette": {
+      "raw": "Lafayette",
+      "canonical": "Lafayette"
+    },
+    "umes": {
+      "raw": "UMES",
+      "canonical": "UMES"
+    },
+    "canisius": {
+      "raw": "Canisius",
+      "canonical": "Canisius"
+    },
+    "robertmorris": {
+      "raw": "Robert Morris",
+      "canonical": "Robert Morris"
+    },
+    "niagara": {
+      "raw": "Niagara",
+      "canonical": "Niagara"
+    },
+    "jacksonst": {
+      "raw": "Jackson St.",
+      "canonical": "Jackson St."
+    },
+    "murrayst": {
+      "raw": "Murray St.",
+      "canonical": "Murray St."
+    },
+    "rhodeisland": {
+      "raw": "Rhode Island",
+      "canonical": "Rhode Island"
+    },
+    "csubakersfield": {
+      "raw": "CSU Bakersfield",
+      "canonical": "CSU Bakersfield"
+    },
+    "northdakota": {
+      "raw": "North Dakota",
+      "canonical": "North Dakota"
+    },
+    "pacific": {
+      "raw": "Pacific",
+      "canonical": "Pacific"
+    },
+    "clevelandst": {
+      "raw": "Cleveland St.",
+      "canonical": "Cleveland St."
+    },
+    "oakland": {
+      "raw": "Oakland",
+      "canonical": "Oakland"
+    },
+    "nicholls": {
+      "raw": "Nicholls",
+      "canonical": "Nicholls"
+    },
+    "marist": {
+      "raw": "Marist",
+      "canonical": "Marist"
+    },
+    "neworleans": {
+      "raw": "New Orleans",
+      "canonical": "New Orleans"
+    },
+    "seattleu": {
+      "raw": "Seattle U",
+      "canonical": "Seattle U"
+    },
+    "calstfullerton": {
+      "raw": "Cal St. Fullerton",
+      "canonical": "Cal St. Fullerton"
+    },
+    "nccentral": {
+      "raw": "N.C. Central",
+      "canonical": "N.C. Central"
+    },
+    "morganst": {
+      "raw": "Morgan St.",
+      "canonical": "Morgan St."
+    },
+    "siena": {
+      "raw": "Siena",
+      "canonical": "Siena"
+    },
+    "mercyhurst": {
+      "raw": "Mercyhurst",
+      "canonical": "Mercyhurst"
+    },
+    "southernutah": {
+      "raw": "Southern Utah",
+      "canonical": "Southern Utah"
+    },
+    "southernu": {
+      "raw": "Southern U.",
+      "canonical": "Southern U."
+    },
+    "austinpeay": {
+      "raw": "Austin Peay",
+      "canonical": "Austin Peay"
+    },
+    "merrimack": {
+      "raw": "Merrimack",
+      "canonical": "Merrimack"
+    },
+    "texassouthern": {
+      "raw": "Texas Southern",
+      "canonical": "Texas Southern"
+    },
+    "oralroberts": {
+      "raw": "Oral Roberts",
+      "canonical": "Oral Roberts"
+    },
+    "kansascity": {
+      "raw": "Kansas City",
+      "canonical": "Kansas City"
+    },
+    "iona": {
+      "raw": "Iona",
+      "canonical": "Iona"
+    },
+    "westga": {
+      "raw": "West Ga.",
+      "canonical": "West Ga."
+    },
+    "holycross": {
+      "raw": "Holy Cross",
+      "canonical": "Holy Cross"
+    },
+    "idaho": {
+      "raw": "Idaho",
+      "canonical": "Idaho"
+    },
+    "westernill": {
+      "raw": "Western Ill.",
+      "canonical": "Western Ill."
+    },
+    "thecitadel": {
+      "raw": "The Citadel",
+      "canonical": "The Citadel"
+    },
+    "norfolkst": {
+      "raw": "Norfolk St.",
+      "canonical": "Norfolk St."
+    },
+    "easternwash": {
+      "raw": "Eastern Wash.",
+      "canonical": "Eastern Wash."
+    },
+    "njit": {
+      "raw": "NJIT",
+      "canonical": "NJIT"
+    },
+    "columbia": {
+      "raw": "Columbia",
+      "canonical": "Columbia"
+    },
+    "utmartin": {
+      "raw": "UT Martin",
+      "canonical": "UT Martin"
+    },
+    "hampton": {
+      "raw": "Hampton",
+      "canonical": "Hampton"
+    },
+    "purduefortwayne": {
+      "raw": "Purdue Fort Wayne",
+      "canonical": "Purdue Fort Wayne"
+    },
+    "northwesternst": {
+      "raw": "Northwestern St.",
+      "canonical": "Northwestern St."
+    },
+    "centralconnst": {
+      "raw": "Central Conn. St.",
+      "canonical": "Central Conn. St."
+    },
+    "southcarolinast": {
+      "raw": "South Carolina St.",
+      "canonical": "South Carolina St."
+    },
+    "saintpeters": {
+      "raw": "Saint Peter's",
+      "canonical": "Saint Peter's"
+    },
+    "grambling": {
+      "raw": "Grambling",
+      "canonical": "Grambling"
+    },
+    "manhattan": {
+      "raw": "Manhattan",
+      "canonical": "Manhattan"
+    },
+    "stonehill": {
+      "raw": "Stonehill",
+      "canonical": "Stonehill"
+    },
+    "newhaven": {
+      "raw": "New Haven",
+      "canonical": "New Haven"
+    },
+    "chicagost": {
+      "raw": "Chicago St.",
+      "canonical": "Chicago St."
+    },
+    "lemoyne": {
+      "raw": "Le Moyne",
+      "canonical": "Le Moyne"
+    },
+    "tennesseest": {
+      "raw": "Tennessee St.",
+      "canonical": "Tennessee St."
+    },
+    "mississippival": {
+      "raw": "Mississippi Val.",
+      "canonical": "Mississippi Val."
+    },
+    "alcorn": {
+      "raw": "Alcorn",
+      "canonical": "Alcorn"
+    },
+    "arkpinebluff": {
+      "raw": "Ark.-Pine Bluff",
+      "canonical": "Ark.-Pine Bluff"
+    },
+    "tampa": {
+      "raw": "Tampa",
+      "canonical": "Tampa"
+    },
+    "flasouthern": {
+      "raw": "Fla. Southern",
+      "canonical": "Fla. Southern"
+    },
+    "southwestminnst": {
+      "raw": "Southwest Minn. St.",
+      "canonical": "Southwest Minn. St."
+    },
+    "wheeling": {
+      "raw": "Wheeling",
+      "canonical": "Wheeling"
+    },
+    "montreat": {
+      "raw": "Montreat",
+      "canonical": "Montreat"
+    },
+    "claflin": {
+      "raw": "Claflin",
+      "canonical": "Claflin"
+    },
+    "bowiest": {
+      "raw": "Bowie St.",
+      "canonical": "Bowie St."
+    },
+    "tuskegee": {
+      "raw": "Tuskegee",
+      "canonical": "Tuskegee"
+    },
+    "rutgerscamden": {
+      "raw": "Rutgers-Camden",
+      "canonical": "Rutgers-Camden"
+    },
+    "dillard": {
+      "raw": "Dillard",
+      "canonical": "Dillard"
+    },
+    "wiley": {
+      "raw": "Wiley",
+      "canonical": "Wiley"
+    },
+    "hendersonst": {
+      "raw": "Henderson St.",
+      "canonical": "Henderson St."
+    },
+    "uttyler": {
+      "raw": "UT Tyler",
+      "canonical": "UT Tyler"
+    },
+    "erskine": {
+      "raw": "Erskine",
+      "canonical": "Erskine"
+    },
+    "southernneworleans": {
+      "raw": "Southern-New Orleans",
+      "canonical": "Southern-New Orleans"
+    },
+    "pitt": {
+      "raw": "Pitt",
+      "canonical": "Pittsburgh"
+    },
+    "unt": {
+      "raw": "UNT",
+      "canonical": "North Texas"
+    },
+    "queens": {
+      "raw": "Queens",
+      "canonical": "Queens (NC)"
+    },
+    "usc": {
+      "raw": "USC",
+      "canonical": "Southern California"
+    },
+    "calstatebakersfield": {
+      "raw": "Cal State Bakersfield",
+      "canonical": "CSU Bakersfield"
+    },
+    "charleston": {
+      "raw": "Charleston",
+      "canonical": "Col. of Charleston"
+    },
+    "collegeofcharleston": {
+      "raw": "College of Charleston",
+      "canonical": "Col. of Charleston"
+    },
+    "mtsu": {
+      "raw": "MTSU",
+      "canonical": "Middle Tenn."
+    },
+    "wku": {
+      "raw": "WKU",
+      "canonical": "Western Ky."
+    },
+    "nmstate": {
+      "raw": "NM State",
+      "canonical": "New Mexico St."
+    },
+    "jaxstate": {
+      "raw": "Jax State",
+      "canonical": "Jacksonville St."
+    },
+    "northernillinois": {
+      "raw": "Northern Illinois",
+      "canonical": "NIU"
+    },
+    "northernillinoisuniversity": {
+      "raw": "Northern Illinois University",
+      "canonical": "NIU"
+    },
+    "northcarolinacentral": {
+      "raw": "North Carolina Central",
+      "canonical": "N.C. Central"
+    },
+    "marylandeasternshore": {
+      "raw": "Maryland Eastern Shore",
+      "canonical": "UMES"
+    },
+    "sanjosstate": {
+      "raw": "San Jos\ufffd State",
+      "canonical": "San Jose St."
+    },
+    "centralconnecticut": {
+      "raw": "Central Connecticut",
+      "canonical": "Central Conn. St."
+    },
+    "southeastmissouri": {
+      "raw": "Southeast Missouri",
+      "canonical": "Southeast Mo. St."
+    },
+    "southeastern": {
+      "raw": "Southeastern",
+      "canonical": "Southeastern La."
+    },
+    "hcu": {
+      "raw": "HCU",
+      "canonical": "Houston Christian"
+    },
+    "lsuneworleans": {
+      "raw": "LSU New Orleans",
+      "canonical": "New Orleans"
+    },
+    "southern": {
+      "raw": "Southern",
+      "canonical": "Southern U."
+    },
+    "mississippivalleystate": {
+      "raw": "Mississippi Valley State",
+      "canonical": "Mississippi Val."
+    },
+    "gramblingstate": {
+      "raw": "Grambling State",
+      "canonical": "Grambling"
+    },
+    "alcornstate": {
+      "raw": "Alcorn State",
+      "canonical": "Alcorn"
+    },
+    "prairieviewam": {
+      "raw": "Prairie View A&M",
+      "canonical": "Prairie View"
+    },
+    "fau": {
+      "raw": "FAU",
+      "canonical": "Fla. Atlantic"
+    },
+    "stephenfaustin": {
+      "raw": "Stephen F. Austin",
+      "canonical": "SFA"
+    },
+    "northerniowa": {
+      "raw": "Northern Iowa",
+      "canonical": "UNI"
+    },
+    "gcu": {
+      "raw": "GCU",
+      "canonical": "Grand Canyon"
+    },
+    "usf": {
+      "raw": "USF",
+      "canonical": "South Fla."
+    },
+    "northcarolinaat": {
+      "raw": "North Carolina A&T",
+      "canonical": "N.C. A&T"
+    },
+    "northcarolinaatstate": {
+      "raw": "North Carolina A&T State",
+      "canonical": "N.C. A&T"
+    },
+    "universityofsouthernindiana": {
+      "raw": "University of Southern Indiana",
+      "canonical": "Southern Ind."
+    },
+    "universityofnortherncolorado": {
+      "raw": "University of Northern Colorado",
+      "canonical": "Northern Colo."
+    },
+    "universityofutah": {
+      "raw": "University of Utah",
+      "canonical": "Utah"
+    },
+    "ndsu": {
+      "raw": "NDSU",
+      "canonical": "North Dakota St."
+    },
+    "houstonbaptist": {
+      "raw": "Houston Baptist",
+      "canonical": "Houston Christian"
+    },
+    "uta": {
+      "raw": "UTA",
+      "canonical": "UT Arlington"
+    },
+    "tarleton": {
+      "raw": "Tarleton",
+      "canonical": "Tarleton St."
+    },
+    "arkansaspinebluff": {
+      "raw": "Arkansas Pine Bluff",
+      "canonical": "Ark.-Pine Bluff"
+    },
+    "selouisiana": {
+      "raw": "SE Louisiana",
+      "canonical": "Southeastern La."
+    },
+    "louisianalafayette": {
+      "raw": "Louisiana Lafayette",
+      "canonical": "Louisiana"
+    },
+    "southcarolinaupstate": {
+      "raw": "South Carolina Upstate",
+      "canonical": "USC Upstate"
+    },
+    "unf": {
+      "raw": "UNF",
+      "canonical": "North Florida"
+    },
+    "loyolamarymount": {
+      "raw": "Loyola Marymount",
+      "canonical": "LMU (CA)"
+    },
+    "uca": {
+      "raw": "UCA",
+      "canonical": "Central Ark."
+    },
+    "cal": {
+      "raw": "Cal",
+      "canonical": "California"
+    },
+    "suno": {
+      "raw": "SUNO",
+      "canonical": "Southern-New Orleans"
+    },
+    "wileycollege": {
+      "raw": "Wiley College",
+      "canonical": "Wiley"
+    },
+    "floridastate": {
+      "raw": "Florida State",
+      "canonical": "Florida St."
+    },
+    "floridaatlantic": {
+      "raw": "Florida Atlantic",
+      "canonical": "Fla. Atlantic"
+    },
+    "wichitastate": {
+      "raw": "Wichita State",
+      "canonical": "Wichita St."
+    },
+    "southflorida": {
+      "raw": "South Florida",
+      "canonical": "South Fla."
+    },
+    "westflorida": {
+      "raw": "West Florida",
+      "canonical": "West Florida"
+    },
+    "kansasstate": {
+      "raw": "Kansas State",
+      "canonical": "Kansas St."
+    },
+    "arizonastate": {
+      "raw": "Arizona State",
+      "canonical": "Arizona St."
+    },
+    "iowastate": {
+      "raw": "Iowa State",
+      "canonical": "Iowa St."
+    },
+    "stjohns": {
+      "raw": "St. John's",
+      "canonical": "St. John's (NY)"
+    },
+    "weberstate": {
+      "raw": "Weber State",
+      "canonical": "Weber St."
+    },
+    "idahostate": {
+      "raw": "Idaho State",
+      "canonical": "Idaho St."
+    },
+    "montanastate": {
+      "raw": "Montana State",
+      "canonical": "Montana St."
+    },
+    "northernarizona": {
+      "raw": "Northern Arizona",
+      "canonical": "Northern Ariz."
+    },
+    "easternwashington": {
+      "raw": "Eastern Washington",
+      "canonical": "Eastern Wash."
+    },
+    "northerncolorado": {
+      "raw": "Northern Colorado",
+      "canonical": "Northern Colo."
+    },
+    "portlandstate": {
+      "raw": "Portland State",
+      "canonical": "Portland St."
+    },
+    "charlestonsouthern": {
+      "raw": "Charleston Southern",
+      "canonical": "Charleston So."
+    },
+    "michiganstate": {
+      "raw": "Michigan State",
+      "canonical": "Michigan St."
+    },
+    "pennstate": {
+      "raw": "Penn State",
+      "canonical": "Penn St."
+    },
+    "ohiostate": {
+      "raw": "Ohio State",
+      "canonical": "Ohio St."
+    },
+    "longbeachstate": {
+      "raw": "Long Beach State",
+      "canonical": "Long Beach St."
+    },
+    "sacramentostate": {
+      "raw": "Sacramento State",
+      "canonical": "Sacramento St."
+    },
+    "calstatefullerton": {
+      "raw": "Cal State Fullerton",
+      "canonical": "Cal St. Fullerton"
+    },
+    "missouristate": {
+      "raw": "Missouri State",
+      "canonical": "Missouri St."
+    },
+    "kennesawstate": {
+      "raw": "Kennesaw State",
+      "canonical": "Kennesaw St."
+    },
+    "wrightstate": {
+      "raw": "Wright State",
+      "canonical": "Wright St."
+    },
+    "northernkentucky": {
+      "raw": "Northern Kentucky",
+      "canonical": "Northern Ky."
+    },
+    "youngstownstate": {
+      "raw": "Youngstown State",
+      "canonical": "Youngstown St."
+    },
+    "clevelandstate": {
+      "raw": "Cleveland State",
+      "canonical": "Cleveland St."
+    },
+    "ballstate": {
+      "raw": "Ball State",
+      "canonical": "Ball St."
+    },
+    "westernmichigan": {
+      "raw": "Western Michigan",
+      "canonical": "Western Mich."
+    },
+    "kentstate": {
+      "raw": "Kent State",
+      "canonical": "Kent St."
+    },
+    "easternmichigan": {
+      "raw": "Eastern Michigan",
+      "canonical": "Eastern Mich."
+    },
+    "centralmichigan": {
+      "raw": "Central Michigan",
+      "canonical": "Central Mich."
+    },
+    "delawarestate": {
+      "raw": "Delaware State",
+      "canonical": "Delaware St."
+    },
+    "coppinstate": {
+      "raw": "Coppin State",
+      "canonical": "Coppin St."
+    },
+    "norfolkstate": {
+      "raw": "Norfolk State",
+      "canonical": "Norfolk St."
+    },
+    "southcarolinastate": {
+      "raw": "South Carolina State",
+      "canonical": "South Carolina St."
+    },
+    "morganstate": {
+      "raw": "Morgan State",
+      "canonical": "Morgan St."
+    },
+    "sanjosestate": {
+      "raw": "San Jose State",
+      "canonical": "San Jose St."
+    },
+    "illinoisstate": {
+      "raw": "Illinois State",
+      "canonical": "Illinois St."
+    },
+    "indianastate": {
+      "raw": "Indiana State",
+      "canonical": "Indiana St."
+    },
+    "southernillinois": {
+      "raw": "Southern Illinois",
+      "canonical": "Southern Ill."
+    },
+    "murraystate": {
+      "raw": "Murray State",
+      "canonical": "Murray St."
+    },
+    "chicagostate": {
+      "raw": "Chicago State",
+      "canonical": "Chicago St."
+    },
+    "southernindiana": {
+      "raw": "Southern Indiana",
+      "canonical": "Southern Ind."
+    },
+    "moreheadstate": {
+      "raw": "Morehead State",
+      "canonical": "Morehead St."
+    },
+    "easternillinois": {
+      "raw": "Eastern Illinois",
+      "canonical": "Eastern Ill."
+    },
+    "tennesseestate": {
+      "raw": "Tennessee State",
+      "canonical": "Tennessee St."
+    },
+    "westernillinois": {
+      "raw": "Western Illinois",
+      "canonical": "Western Ill."
+    },
+    "coloradostateuniversity": {
+      "raw": "Colorado State University",
+      "canonical": "Colorado St."
+    },
+    "boisestateuniversity": {
+      "raw": "Boise State University",
+      "canonical": "Boise St."
+    },
+    "sandiegostateuniversity": {
+      "raw": "San Diego State University",
+      "canonical": "San Diego St."
+    },
+    "washingtonstateuniversity": {
+      "raw": "Washington State University",
+      "canonical": "Washington St."
+    },
+    "fresnostate": {
+      "raw": "Fresno State",
+      "canonical": "Fresno St."
+    },
+    "oregonstate": {
+      "raw": "Oregon State",
+      "canonical": "Oregon St."
+    },
+    "texasstateuniversity": {
+      "raw": "Texas State University",
+      "canonical": "Texas St."
+    },
+    "gonzagauniversity": {
+      "raw": "Gonzaga University",
+      "canonical": "Gonzaga"
+    },
+    "utahstateuniversity": {
+      "raw": "Utah State University",
+      "canonical": "Utah St."
+    },
+    "mississippistate": {
+      "raw": "Mississippi State",
+      "canonical": "Mississippi St."
+    },
+    "westerncarolina": {
+      "raw": "Western Carolina",
+      "canonical": "Western Caro."
+    },
+    "northwesternstate": {
+      "raw": "Northwestern State",
+      "canonical": "Northwestern St."
+    },
+    "lamar": {
+      "raw": "Lamar",
+      "canonical": "Lamar University"
+    },
+    "northdakotastate": {
+      "raw": "North Dakota State",
+      "canonical": "North Dakota St."
+    },
+    "southdakotastate": {
+      "raw": "South Dakota State",
+      "canonical": "South Dakota St."
+    },
+    "stthomas": {
+      "raw": "St. Thomas",
+      "canonical": "St. Thomas (MN)"
+    },
+    "georgiasouthern": {
+      "raw": "Georgia Southern",
+      "canonical": "Ga. Southern"
+    },
+    "georgiastate": {
+      "raw": "Georgia State",
+      "canonical": "Georgia St."
+    },
+    "arkansasstate": {
+      "raw": "Arkansas State",
+      "canonical": "Arkansas St."
+    },
+    "jacksonstate": {
+      "raw": "Jackson State",
+      "canonical": "Jackson St."
+    },
+    "alabamastate": {
+      "raw": "Alabama State",
+      "canonical": "Alabama St."
+    },
+    "easternkentucky": {
+      "raw": "Eastern Kentucky",
+      "canonical": "Eastern Ky."
+    },
+    "northalabama": {
+      "raw": "North Alabama",
+      "canonical": "North Ala."
+    },
+    "westgeorgia": {
+      "raw": "West Georgia",
+      "canonical": "West Ga."
+    },
+    "tarletonstate": {
+      "raw": "Tarleton State",
+      "canonical": "Tarleton St."
+    },
+    "centralarkansas": {
+      "raw": "Central Arkansas",
+      "canonical": "Central Ark."
+    },
+    "lmu": {
+      "raw": "LMU",
+      "canonical": "LMU (CA)"
+    },
+    "saintmarys": {
+      "raw": "Saint Mary's",
+      "canonical": "Saint Mary's (CA)"
+    },
+    "jacksonvillestate": {
+      "raw": "Jacksonville State",
+      "canonical": "Jacksonville St."
+    },
+    "sandiegostate": {
+      "raw": "San Diego State",
+      "canonical": "San Diego St."
+    },
+    "boisestate": {
+      "raw": "Boise State",
+      "canonical": "Boise St."
+    },
+    "washingtonstate": {
+      "raw": "Washington State",
+      "canonical": "Washington St."
+    },
+    "utahstate": {
+      "raw": "Utah State",
+      "canonical": "Utah St."
+    },
+    "southeastmostate": {
+      "raw": "Southeast Mo. State",
+      "canonical": "Southeast Mo. St."
+    },
+    "chicagostateuniversity": {
+      "raw": "Chicago State University",
+      "canonical": "Chicago St."
+    },
+    "tennesseestateuniversity": {
+      "raw": "Tennessee State University",
+      "canonical": "Tennessee St."
+    },
+    "tennesseetechuniversity": {
+      "raw": "Tennessee Tech University",
+      "canonical": "Tennessee Tech"
+    },
+    "easternillinoisuniversity": {
+      "raw": "Eastern Illinois University",
+      "canonical": "Eastern Ill."
+    },
+    "hamptonuniversity": {
+      "raw": "Hampton University",
+      "canonical": "Hampton"
+    },
+    "coloradostate": {
+      "raw": "Colorado State",
+      "canonical": "Colorado St."
+    },
+    "northdakotastateuniversity": {
+      "raw": "North Dakota State University",
+      "canonical": "North Dakota St."
+    },
+    "southernutahuniversity": {
+      "raw": "Southern Utah University",
+      "canonical": "Southern Utah"
+    },
+    "californiabaptistuniversity": {
+      "raw": "California Baptist University",
+      "canonical": "California Baptist"
+    },
+    "texasstate": {
+      "raw": "Texas State",
+      "canonical": "Texas St."
+    },
+    "southernuniversity": {
+      "raw": "Southern University",
+      "canonical": "Southern U."
+    },
+    "universityofpittsburgh": {
+      "raw": "University of Pittsburgh",
+      "canonical": "Pittsburgh"
+    },
+    "universityofconnecticut": {
+      "raw": "University of Connecticut",
+      "canonical": "UConn"
+    },
+    "universityofsouthernmississippi": {
+      "raw": "University of Southern Mississippi",
+      "canonical": "Southern Miss."
+    },
+    "floridainternationaluniversity": {
+      "raw": "Florida International University",
+      "canonical": "FIU"
+    },
+    "texasamcorpuschristi": {
+      "raw": "Texas A&M - Corpus Christi",
+      "canonical": "A&M-Corpus Christi"
+    },
+    "uapb": {
+      "raw": "UAPB",
+      "canonical": "Ark.-Pine Bluff"
+    },
+    "stonehillcollege": {
+      "raw": "Stonehill College",
+      "canonical": "Stonehill"
+    },
+    "seattle": {
+      "raw": "Seattle",
+      "canonical": "Seattle U"
+    },
+    "nebraskauniversity": {
+      "raw": "Nebraska University",
+      "canonical": "Nebraska"
+    },
+    "universityofnebraska": {
+      "raw": "University of Nebraska",
+      "canonical": "Nebraska"
+    },
+    "texasuniversity": {
+      "raw": "Texas University",
+      "canonical": "Texas"
+    },
+    "universityoftexas": {
+      "raw": "University of Texas",
+      "canonical": "Texas"
+    },
+    "kentuckyuniversity": {
+      "raw": "Kentucky University",
+      "canonical": "Kentucky"
+    },
+    "universityofkentucky": {
+      "raw": "University of Kentucky",
+      "canonical": "Kentucky"
+    },
+    "texasamuniversity": {
+      "raw": "Texas A&M University",
+      "canonical": "Texas A&M"
+    },
+    "universityoftexasam": {
+      "raw": "University of Texas A&M",
+      "canonical": "Texas A&M"
+    },
+    "pittsburghuniversity": {
+      "raw": "Pittsburgh University",
+      "canonical": "Pittsburgh"
+    },
+    "arizonastuniversity": {
+      "raw": "Arizona St. University",
+      "canonical": "Arizona St."
+    },
+    "universityofarizonast": {
+      "raw": "University of Arizona St.",
+      "canonical": "Arizona St."
+    },
+    "creightonuniversity": {
+      "raw": "Creighton University",
+      "canonical": "Creighton"
+    },
+    "universityofcreighton": {
+      "raw": "University of Creighton",
+      "canonical": "Creighton"
+    },
+    "wisconsinuniversity": {
+      "raw": "Wisconsin University",
+      "canonical": "Wisconsin"
+    },
+    "universityofwisconsin": {
+      "raw": "University of Wisconsin",
+      "canonical": "Wisconsin"
+    },
+    "stanforduniversity": {
+      "raw": "Stanford University",
+      "canonical": "Stanford"
+    },
+    "universityofstanford": {
+      "raw": "University of Stanford",
+      "canonical": "Stanford"
+    },
+    "purdueuniversity": {
+      "raw": "Purdue University",
+      "canonical": "Purdue"
+    },
+    "universityofpurdue": {
+      "raw": "University of Purdue",
+      "canonical": "Purdue"
+    },
+    "smuuniversity": {
+      "raw": "SMU University",
+      "canonical": "SMU"
+    },
+    "universityofsmu": {
+      "raw": "University of SMU",
+      "canonical": "SMU"
+    },
+    "louisvilleuniversity": {
+      "raw": "Louisville University",
+      "canonical": "Louisville"
+    },
+    "universityoflouisville": {
+      "raw": "University of Louisville",
+      "canonical": "Louisville"
+    },
+    "minnesotauniversity": {
+      "raw": "Minnesota University",
+      "canonical": "Minnesota"
+    },
+    "universityofminnesota": {
+      "raw": "University of Minnesota",
+      "canonical": "Minnesota"
+    },
+    "kansasuniversity": {
+      "raw": "Kansas University",
+      "canonical": "Kansas"
+    },
+    "universityofkansas": {
+      "raw": "University of Kansas",
+      "canonical": "Kansas"
+    },
+    "southerncaliforniauniversity": {
+      "raw": "Southern California University",
+      "canonical": "Southern California"
+    },
+    "universityofsoutherncalifornia": {
+      "raw": "University of Southern California",
+      "canonical": "Southern California"
+    },
+    "indianauniversity": {
+      "raw": "Indiana University",
+      "canonical": "Indiana"
+    },
+    "universityofindiana": {
+      "raw": "University of Indiana",
+      "canonical": "Indiana"
+    },
+    "miamifluniversity": {
+      "raw": "Miami (FL) University",
+      "canonical": "Miami (FL)"
+    },
+    "universityofmiamifl": {
+      "raw": "University of Miami (FL)",
+      "canonical": "Miami (FL)"
+    },
+    "byuuniversity": {
+      "raw": "BYU University",
+      "canonical": "BYU"
+    },
+    "universityofbyu": {
+      "raw": "University of BYU",
+      "canonical": "BYU"
+    },
+    "utepuniversity": {
+      "raw": "UTEP University",
+      "canonical": "UTEP"
+    },
+    "universityofutep": {
+      "raw": "University of UTEP",
+      "canonical": "UTEP"
+    },
+    "tcuuniversity": {
+      "raw": "TCU University",
+      "canonical": "TCU"
+    },
+    "universityoftcu": {
+      "raw": "University of TCU",
+      "canonical": "TCU"
+    },
+    "utahstuniversity": {
+      "raw": "Utah St. University",
+      "canonical": "Utah St."
+    },
+    "universityofutahst": {
+      "raw": "University of Utah St.",
+      "canonical": "Utah St."
+    },
+    "coloradouniversity": {
+      "raw": "Colorado University",
+      "canonical": "Colorado"
+    },
+    "universityofcolorado": {
+      "raw": "University of Colorado",
+      "canonical": "Colorado"
+    },
+    "bayloruniversity": {
+      "raw": "Baylor University",
+      "canonical": "Baylor"
+    },
+    "universityofbaylor": {
+      "raw": "University of Baylor",
+      "canonical": "Baylor"
+    },
+    "uniuniversity": {
+      "raw": "UNI University",
+      "canonical": "UNI"
+    },
+    "universityofuni": {
+      "raw": "University of UNI",
+      "canonical": "UNI"
+    },
+    "tennesseeuniversity": {
+      "raw": "Tennessee University",
+      "canonical": "Tennessee"
+    },
+    "universityoftennessee": {
+      "raw": "University of Tennessee",
+      "canonical": "Tennessee"
+    },
+    "iowastuniversity": {
+      "raw": "Iowa St. University",
+      "canonical": "Iowa St."
+    },
+    "universityofiowast": {
+      "raw": "University of Iowa St.",
+      "canonical": "Iowa St."
+    },
+    "xavieruniversity": {
+      "raw": "Xavier University",
+      "canonical": "Xavier"
+    },
+    "universityofxavier": {
+      "raw": "University of Xavier",
+      "canonical": "Xavier"
+    },
+    "riceuniversity": {
+      "raw": "Rice University",
+      "canonical": "Rice"
+    },
+    "universityofrice": {
+      "raw": "University of Rice",
+      "canonical": "Rice"
+    },
+    "pennstuniversity": {
+      "raw": "Penn St. University",
+      "canonical": "Penn St."
+    },
+    "universityofpennst": {
+      "raw": "University of Penn St.",
+      "canonical": "Penn St."
+    },
+    "westernkyuniversity": {
+      "raw": "Western Ky. University",
+      "canonical": "Western Ky."
+    },
+    "universityofwesternky": {
+      "raw": "University of Western Ky.",
+      "canonical": "Western Ky."
+    },
+    "kansasstuniversity": {
+      "raw": "Kansas St. University",
+      "canonical": "Kansas St."
+    },
+    "universityofkansasst": {
+      "raw": "University of Kansas St.",
+      "canonical": "Kansas St."
+    },
+    "marquetteuniversity": {
+      "raw": "Marquette University",
+      "canonical": "Marquette"
+    },
+    "universityofmarquette": {
+      "raw": "University of Marquette",
+      "canonical": "Marquette"
+    },
+    "sandiegouniversity": {
+      "raw": "San Diego University",
+      "canonical": "San Diego"
+    },
+    "universityofsandiego": {
+      "raw": "University of San Diego",
+      "canonical": "San Diego"
+    },
+    "floridauniversity": {
+      "raw": "Florida University",
+      "canonical": "Florida"
+    },
+    "universityofflorida": {
+      "raw": "University of Florida",
+      "canonical": "Florida"
+    },
+    "uclauniversity": {
+      "raw": "UCLA University",
+      "canonical": "UCLA"
+    },
+    "universityofucla": {
+      "raw": "University of UCLA",
+      "canonical": "UCLA"
+    },
+    "southdakotastuniversity": {
+      "raw": "South Dakota St. University",
+      "canonical": "South Dakota St."
+    },
+    "universityofsouthdakotast": {
+      "raw": "University of South Dakota St.",
+      "canonical": "South Dakota St."
+    },
+    "tulsauniversity": {
+      "raw": "Tulsa University",
+      "canonical": "Tulsa"
+    },
+    "universityoftulsa": {
+      "raw": "University of Tulsa",
+      "canonical": "Tulsa"
+    },
+    "arizonauniversity": {
+      "raw": "Arizona University",
+      "canonical": "Arizona"
+    },
+    "universityofarizona": {
+      "raw": "University of Arizona",
+      "canonical": "Arizona"
+    },
+    "villanovauniversity": {
+      "raw": "Villanova University",
+      "canonical": "Villanova"
+    },
+    "universityofvillanova": {
+      "raw": "University of Villanova",
+      "canonical": "Villanova"
+    },
+    "michiganuniversity": {
+      "raw": "Michigan University",
+      "canonical": "Michigan"
+    },
+    "universityofmichigan": {
+      "raw": "University of Michigan",
+      "canonical": "Michigan"
+    },
+    "utahuniversity": {
+      "raw": "Utah University",
+      "canonical": "Utah"
+    },
+    "calpolyuniversity": {
+      "raw": "Cal Poly University",
+      "canonical": "Cal Poly"
+    },
+    "universityofcalpoly": {
+      "raw": "University of Cal Poly",
+      "canonical": "Cal Poly"
+    },
+    "northcarolinauniversity": {
+      "raw": "North Carolina University",
+      "canonical": "North Carolina"
+    },
+    "universityofnorthcarolina": {
+      "raw": "University of North Carolina",
+      "canonical": "North Carolina"
+    },
+    "pepperdineuniversity": {
+      "raw": "Pepperdine University",
+      "canonical": "Pepperdine"
+    },
+    "universityofpepperdine": {
+      "raw": "University of Pepperdine",
+      "canonical": "Pepperdine"
+    },
+    "texasstuniversity": {
+      "raw": "Texas St. University",
+      "canonical": "Texas St."
+    },
+    "universityoftexasst": {
+      "raw": "University of Texas St.",
+      "canonical": "Texas St."
+    },
+    "southflauniversity": {
+      "raw": "South Fla. University",
+      "canonical": "South Fla."
+    },
+    "universityofsouthfla": {
+      "raw": "University of South Fla.",
+      "canonical": "South Fla."
+    },
+    "jamesmadisonuniversity": {
+      "raw": "James Madison University",
+      "canonical": "James Madison"
+    },
+    "universityofjamesmadison": {
+      "raw": "University of James Madison",
+      "canonical": "James Madison"
+    },
+    "georgiatechuniversity": {
+      "raw": "Georgia Tech University",
+      "canonical": "Georgia Tech"
+    },
+    "universityofgeorgiatech": {
+      "raw": "University of Georgia Tech",
+      "canonical": "Georgia Tech"
+    },
+    "ucdavisuniversity": {
+      "raw": "UC Davis University",
+      "canonical": "UC Davis"
+    },
+    "universityofucdavis": {
+      "raw": "University of UC Davis",
+      "canonical": "UC Davis"
+    },
+    "daytonuniversity": {
+      "raw": "Dayton University",
+      "canonical": "Dayton"
+    },
+    "universityofdayton": {
+      "raw": "University of Dayton",
+      "canonical": "Dayton"
+    },
+    "ucsantabarbarauniversity": {
+      "raw": "UC Santa Barbara University",
+      "canonical": "UC Santa Barbara"
+    },
+    "universityofucsantabarbara": {
+      "raw": "University of UC Santa Barbara",
+      "canonical": "UC Santa Barbara"
+    },
+    "missouriuniversity": {
+      "raw": "Missouri University",
+      "canonical": "Missouri"
+    },
+    "universityofmissouri": {
+      "raw": "University of Missouri",
+      "canonical": "Missouri"
+    },
+    "cincinnatiuniversity": {
+      "raw": "Cincinnati University",
+      "canonical": "Cincinnati"
+    },
+    "universityofcincinnati": {
+      "raw": "University of Cincinnati",
+      "canonical": "Cincinnati"
+    },
+    "auburnuniversity": {
+      "raw": "Auburn University",
+      "canonical": "Auburn"
+    },
+    "universityofauburn": {
+      "raw": "University of Auburn",
+      "canonical": "Auburn"
+    },
+    "arkansasstuniversity": {
+      "raw": "Arkansas St. University",
+      "canonical": "Arkansas St."
+    },
+    "universityofarkansasst": {
+      "raw": "University of Arkansas St.",
+      "canonical": "Arkansas St."
+    },
+    "ballstuniversity": {
+      "raw": "Ball St. University",
+      "canonical": "Ball St."
+    },
+    "universityofballst": {
+      "raw": "University of Ball St.",
+      "canonical": "Ball St."
+    },
+    "washingtonuniversity": {
+      "raw": "Washington University",
+      "canonical": "Washington"
+    },
+    "universityofwashington": {
+      "raw": "University of Washington",
+      "canonical": "Washington"
+    },
+    "oregonuniversity": {
+      "raw": "Oregon University",
+      "canonical": "Oregon"
+    },
+    "universityoforegon": {
+      "raw": "University of Oregon",
+      "canonical": "Oregon"
+    },
+    "wichitastuniversity": {
+      "raw": "Wichita St. University",
+      "canonical": "Wichita St."
+    },
+    "universityofwichitast": {
+      "raw": "University of Wichita St.",
+      "canonical": "Wichita St."
+    },
+    "illinoisuniversity": {
+      "raw": "Illinois University",
+      "canonical": "Illinois"
+    },
+    "universityofillinois": {
+      "raw": "University of Illinois",
+      "canonical": "Illinois"
+    },
+    "americanuniversity": {
+      "raw": "American University",
+      "canonical": "American"
+    },
+    "universityofamerican": {
+      "raw": "University of American",
+      "canonical": "American"
+    },
+    "floridastuniversity": {
+      "raw": "Florida St. University",
+      "canonical": "Florida St."
+    },
+    "universityoffloridast": {
+      "raw": "University of Florida St.",
+      "canonical": "Florida St."
+    },
+    "ucfuniversity": {
+      "raw": "UCF University",
+      "canonical": "UCF"
+    },
+    "universityofucf": {
+      "raw": "University of UCF",
+      "canonical": "UCF"
+    },
+    "drakeuniversity": {
+      "raw": "Drake University",
+      "canonical": "Drake"
+    },
+    "universityofdrake": {
+      "raw": "University of Drake",
+      "canonical": "Drake"
+    },
+    "coloradostuniversity": {
+      "raw": "Colorado St. University",
+      "canonical": "Colorado St."
+    },
+    "universityofcoloradost": {
+      "raw": "University of Colorado St.",
+      "canonical": "Colorado St."
+    },
+    "sfauniversity": {
+      "raw": "SFA University",
+      "canonical": "SFA"
+    },
+    "universityofsfa": {
+      "raw": "University of SFA",
+      "canonical": "SFA"
+    },
+    "oklahomauniversity": {
+      "raw": "Oklahoma University",
+      "canonical": "Oklahoma"
+    },
+    "universityofoklahoma": {
+      "raw": "University of Oklahoma",
+      "canonical": "Oklahoma"
+    },
+    "hofstrauniversity": {
+      "raw": "Hofstra University",
+      "canonical": "Hofstra"
+    },
+    "universityofhofstra": {
+      "raw": "University of Hofstra",
+      "canonical": "Hofstra"
+    },
+    "fgcuuniversity": {
+      "raw": "FGCU University",
+      "canonical": "FGCU"
+    },
+    "universityoffgcu": {
+      "raw": "University of FGCU",
+      "canonical": "FGCU"
+    },
+    "easternkyuniversity": {
+      "raw": "Eastern Ky. University",
+      "canonical": "Eastern Ky."
+    },
+    "universityofeasternky": {
+      "raw": "University of Eastern Ky.",
+      "canonical": "Eastern Ky."
+    },
+    "michiganstuniversity": {
+      "raw": "Michigan St. University",
+      "canonical": "Michigan St."
+    },
+    "universityofmichiganst": {
+      "raw": "University of Michigan St.",
+      "canonical": "Michigan St."
+    },
+    "southdakotauniversity": {
+      "raw": "South Dakota University",
+      "canonical": "South Dakota"
+    },
+    "universityofsouthdakota": {
+      "raw": "University of South Dakota",
+      "canonical": "South Dakota"
+    },
+    "stthomasmnuniversity": {
+      "raw": "St. Thomas (MN) University",
+      "canonical": "St. Thomas (MN)"
+    },
+    "universityofstthomasmn": {
+      "raw": "University of St. Thomas (MN)",
+      "canonical": "St. Thomas (MN)"
+    },
+    "uconnuniversity": {
+      "raw": "UConn University",
+      "canonical": "UConn"
+    },
+    "universityofuconn": {
+      "raw": "University of UConn",
+      "canonical": "UConn"
+    },
+    "boisestuniversity": {
+      "raw": "Boise St. University",
+      "canonical": "Boise St."
+    },
+    "universityofboisest": {
+      "raw": "University of Boise St.",
+      "canonical": "Boise St."
+    },
+    "etsuuniversity": {
+      "raw": "ETSU University",
+      "canonical": "ETSU"
+    },
+    "universityofetsu": {
+      "raw": "University of ETSU",
+      "canonical": "ETSU"
+    },
+    "longbeachstuniversity": {
+      "raw": "Long Beach St. University",
+      "canonical": "Long Beach St."
+    },
+    "universityoflongbeachst": {
+      "raw": "University of Long Beach St.",
+      "canonical": "Long Beach St."
+    },
+    "olemissuniversity": {
+      "raw": "Ole Miss University",
+      "canonical": "Ole Miss"
+    },
+    "universityofolemiss": {
+      "raw": "University of Ole Miss",
+      "canonical": "Ole Miss"
+    },
+    "flaatlanticuniversity": {
+      "raw": "Fla. Atlantic University",
+      "canonical": "Fla. Atlantic"
+    },
+    "universityofflaatlantic": {
+      "raw": "University of Fla. Atlantic",
+      "canonical": "Fla. Atlantic"
+    },
+    "georgiauniversity": {
+      "raw": "Georgia University",
+      "canonical": "Georgia"
+    },
+    "universityofgeorgia": {
+      "raw": "University of Georgia",
+      "canonical": "Georgia"
+    },
+    "fiuuniversity": {
+      "raw": "FIU University",
+      "canonical": "FIU"
+    },
+    "universityoffiu": {
+      "raw": "University of FIU",
+      "canonical": "FIU"
+    },
+    "utrgvuniversity": {
+      "raw": "UTRGV University",
+      "canonical": "UTRGV"
+    },
+    "universityofutrgv": {
+      "raw": "University of UTRGV",
+      "canonical": "UTRGV"
+    },
+    "lsuuniversity": {
+      "raw": "LSU University",
+      "canonical": "LSU"
+    },
+    "universityoflsu": {
+      "raw": "University of LSU",
+      "canonical": "LSU"
+    },
+    "princetonuniversity": {
+      "raw": "Princeton University",
+      "canonical": "Princeton"
+    },
+    "universityofprinceton": {
+      "raw": "University of Princeton",
+      "canonical": "Princeton"
+    },
+    "highpointuniversity": {
+      "raw": "High Point University",
+      "canonical": "High Point"
+    },
+    "universityofhighpoint": {
+      "raw": "University of High Point",
+      "canonical": "High Point"
+    },
+    "jacksonvilleuniversity": {
+      "raw": "Jacksonville University",
+      "canonical": "Jacksonville"
+    },
+    "universityofjacksonville": {
+      "raw": "University of Jacksonville",
+      "canonical": "Jacksonville"
+    },
+    "grandcanyonuniversity": {
+      "raw": "Grand Canyon University",
+      "canonical": "Grand Canyon"
+    },
+    "universityofgrandcanyon": {
+      "raw": "University of Grand Canyon",
+      "canonical": "Grand Canyon"
+    },
+    "kennesawstuniversity": {
+      "raw": "Kennesaw St. University",
+      "canonical": "Kennesaw St."
+    },
+    "universityofkennesawst": {
+      "raw": "University of Kennesaw St.",
+      "canonical": "Kennesaw St."
+    },
+    "northtexasuniversity": {
+      "raw": "North Texas University",
+      "canonical": "North Texas"
+    },
+    "universityofnorthtexas": {
+      "raw": "University of North Texas",
+      "canonical": "North Texas"
+    },
+    "westvirginiauniversity": {
+      "raw": "West Virginia University",
+      "canonical": "West Virginia"
+    },
+    "universityofwestvirginia": {
+      "raw": "University of West Virginia",
+      "canonical": "West Virginia"
+    },
+    "armywestpointuniversity": {
+      "raw": "Army West Point University",
+      "canonical": "Army West Point"
+    },
+    "universityofarmywestpoint": {
+      "raw": "University of Army West Point",
+      "canonical": "Army West Point"
+    },
+    "utahtechuniversity": {
+      "raw": "Utah Tech University",
+      "canonical": "Utah Tech"
+    },
+    "universityofutahtech": {
+      "raw": "University of Utah Tech",
+      "canonical": "Utah Tech"
+    },
+    "moreheadstuniversity": {
+      "raw": "Morehead St. University",
+      "canonical": "Morehead St."
+    },
+    "universityofmoreheadst": {
+      "raw": "University of Morehead St.",
+      "canonical": "Morehead St."
+    },
+    "clemsonuniversity": {
+      "raw": "Clemson University",
+      "canonical": "Clemson"
+    },
+    "universityofclemson": {
+      "raw": "University of Clemson",
+      "canonical": "Clemson"
+    },
+    "coastalcarolinauniversity": {
+      "raw": "Coastal Carolina University",
+      "canonical": "Coastal Carolina"
+    },
+    "universityofcoastalcarolina": {
+      "raw": "University of Coastal Carolina",
+      "canonical": "Coastal Carolina"
+    },
+    "toledouniversity": {
+      "raw": "Toledo University",
+      "canonical": "Toledo"
+    },
+    "universityoftoledo": {
+      "raw": "University of Toledo",
+      "canonical": "Toledo"
+    },
+    "northerncolouniversity": {
+      "raw": "Northern Colo. University",
+      "canonical": "Northern Colo."
+    },
+    "universityofnortherncolo": {
+      "raw": "University of Northern Colo.",
+      "canonical": "Northern Colo."
+    },
+    "colgateuniversity": {
+      "raw": "Colgate University",
+      "canonical": "Colgate"
+    },
+    "universityofcolgate": {
+      "raw": "University of Colgate",
+      "canonical": "Colgate"
+    },
+    "northwesternuniversity": {
+      "raw": "Northwestern University",
+      "canonical": "Northwestern"
+    },
+    "universityofnorthwestern": {
+      "raw": "University of Northwestern",
+      "canonical": "Northwestern"
+    },
+    "wyominguniversity": {
+      "raw": "Wyoming University",
+      "canonical": "Wyoming"
+    },
+    "universityofwyoming": {
+      "raw": "University of Wyoming",
+      "canonical": "Wyoming"
+    },
+    "campbelluniversity": {
+      "raw": "Campbell University",
+      "canonical": "Campbell"
+    },
+    "universityofcampbell": {
+      "raw": "University of Campbell",
+      "canonical": "Campbell"
+    },
+    "southalabamauniversity": {
+      "raw": "South Alabama University",
+      "canonical": "South Alabama"
+    },
+    "universityofsouthalabama": {
+      "raw": "University of South Alabama",
+      "canonical": "South Alabama"
+    },
+    "alabamauniversity": {
+      "raw": "Alabama University",
+      "canonical": "Alabama"
+    },
+    "universityofalabama": {
+      "raw": "University of Alabama",
+      "canonical": "Alabama"
+    },
+    "fairfielduniversity": {
+      "raw": "Fairfield University",
+      "canonical": "Fairfield"
+    },
+    "universityoffairfield": {
+      "raw": "University of Fairfield",
+      "canonical": "Fairfield"
+    },
+    "centralarkuniversity": {
+      "raw": "Central Ark. University",
+      "canonical": "Central Ark."
+    },
+    "universityofcentralark": {
+      "raw": "University of Central Ark.",
+      "canonical": "Central Ark."
+    },
+    "uicuniversity": {
+      "raw": "UIC University",
+      "canonical": "UIC"
+    },
+    "universityofuic": {
+      "raw": "University of UIC",
+      "canonical": "UIC"
+    },
+    "oregonstuniversity": {
+      "raw": "Oregon St. University",
+      "canonical": "Oregon St."
+    },
+    "universityoforegonst": {
+      "raw": "University of Oregon St.",
+      "canonical": "Oregon St."
+    },
+    "easternilluniversity": {
+      "raw": "Eastern Ill. University",
+      "canonical": "Eastern Ill."
+    },
+    "universityofeasternill": {
+      "raw": "University of Eastern Ill.",
+      "canonical": "Eastern Ill."
+    },
+    "mississippistuniversity": {
+      "raw": "Mississippi St. University",
+      "canonical": "Mississippi St."
+    },
+    "universityofmississippist": {
+      "raw": "University of Mississippi St.",
+      "canonical": "Mississippi St."
+    },
+    "yaleuniversity": {
+      "raw": "Yale University",
+      "canonical": "Yale"
+    },
+    "universityofyale": {
+      "raw": "University of Yale",
+      "canonical": "Yale"
+    },
+    "winthropuniversity": {
+      "raw": "Winthrop University",
+      "canonical": "Winthrop"
+    },
+    "universityofwinthrop": {
+      "raw": "University of Winthrop",
+      "canonical": "Winthrop"
+    },
+    "southcarolinauniversity": {
+      "raw": "South Carolina University",
+      "canonical": "South Carolina"
+    },
+    "universityofsouthcarolina": {
+      "raw": "University of South Carolina",
+      "canonical": "South Carolina"
+    },
+    "northernkyuniversity": {
+      "raw": "Northern Ky. University",
+      "canonical": "Northern Ky."
+    },
+    "universityofnorthernky": {
+      "raw": "University of Northern Ky.",
+      "canonical": "Northern Ky."
+    },
+    "loyolachicagouniversity": {
+      "raw": "Loyola Chicago University",
+      "canonical": "Loyola Chicago"
+    },
+    "universityofloyolachicago": {
+      "raw": "University of Loyola Chicago",
+      "canonical": "Loyola Chicago"
+    },
+    "wrightstuniversity": {
+      "raw": "Wright St. University",
+      "canonical": "Wright St."
+    },
+    "universityofwrightst": {
+      "raw": "University of Wright St.",
+      "canonical": "Wright St."
+    },
+    "colofcharlestonuniversity": {
+      "raw": "Col. of Charleston University",
+      "canonical": "Col. of Charleston"
+    },
+    "universityofcolofcharleston": {
+      "raw": "University of Col. of Charleston",
+      "canonical": "Col. of Charleston"
+    },
+    "iowauniversity": {
+      "raw": "Iowa University",
+      "canonical": "Iowa"
+    },
+    "universityofiowa": {
+      "raw": "University of Iowa",
+      "canonical": "Iowa"
+    },
+    "vanderbiltuniversity": {
+      "raw": "Vanderbilt University",
+      "canonical": "Vanderbilt"
+    },
+    "universityofvanderbilt": {
+      "raw": "University of Vanderbilt",
+      "canonical": "Vanderbilt"
+    },
+    "ncstateuniversity": {
+      "raw": "NC State University",
+      "canonical": "NC State"
+    },
+    "universityofncstate": {
+      "raw": "University of NC State",
+      "canonical": "NC State"
+    },
+    "utahvalleyuniversity": {
+      "raw": "Utah Valley University",
+      "canonical": "Utah Valley"
+    },
+    "universityofutahvalley": {
+      "raw": "University of Utah Valley",
+      "canonical": "Utah Valley"
+    },
+    "notredameuniversity": {
+      "raw": "Notre Dame University",
+      "canonical": "Notre Dame"
+    },
+    "universityofnotredame": {
+      "raw": "University of Notre Dame",
+      "canonical": "Notre Dame"
+    },
+    "libertyuniversity": {
+      "raw": "Liberty University",
+      "canonical": "Liberty"
+    },
+    "universityofliberty": {
+      "raw": "University of Liberty",
+      "canonical": "Liberty"
+    },
+    "appstateuniversity": {
+      "raw": "App State University",
+      "canonical": "App State"
+    },
+    "universityofappstate": {
+      "raw": "University of App State",
+      "canonical": "App State"
+    },
+    "gasouthernuniversity": {
+      "raw": "Ga. Southern University",
+      "canonical": "Ga. Southern"
+    },
+    "universityofgasouthern": {
+      "raw": "University of Ga. Southern",
+      "canonical": "Ga. Southern"
+    },
+    "charlotteuniversity": {
+      "raw": "Charlotte University",
+      "canonical": "Charlotte"
+    },
+    "universityofcharlotte": {
+      "raw": "University of Charlotte",
+      "canonical": "Charlotte"
+    },
+    "vcuuniversity": {
+      "raw": "VCU University",
+      "canonical": "VCU"
+    },
+    "universityofvcu": {
+      "raw": "University of VCU",
+      "canonical": "VCU"
+    },
+    "northernarizuniversity": {
+      "raw": "Northern Ariz. University",
+      "canonical": "Northern Ariz."
+    },
+    "universityofnorthernariz": {
+      "raw": "University of Northern Ariz.",
+      "canonical": "Northern Ariz."
+    },
+    "georgiastuniversity": {
+      "raw": "Georgia St. University",
+      "canonical": "Georgia St."
+    },
+    "universityofgeorgiast": {
+      "raw": "University of Georgia St.",
+      "canonical": "Georgia St."
+    },
+    "wofforduniversity": {
+      "raw": "Wofford University",
+      "canonical": "Wofford"
+    },
+    "universityofwofford": {
+      "raw": "University of Wofford",
+      "canonical": "Wofford"
+    },
+    "bowlinggreenuniversity": {
+      "raw": "Bowling Green University",
+      "canonical": "Bowling Green"
+    },
+    "universityofbowlinggreen": {
+      "raw": "University of Bowling Green",
+      "canonical": "Bowling Green"
+    },
+    "georgetownuniversity": {
+      "raw": "Georgetown University",
+      "canonical": "Georgetown"
+    },
+    "universityofgeorgetown": {
+      "raw": "University of Georgetown",
+      "canonical": "Georgetown"
+    },
+    "georgewashingtonuniversity": {
+      "raw": "George Washington University",
+      "canonical": "George Washington"
+    },
+    "universityofgeorgewashington": {
+      "raw": "University of George Washington",
+      "canonical": "George Washington"
+    },
+    "templeuniversity": {
+      "raw": "Temple University",
+      "canonical": "Temple"
+    },
+    "universityoftemple": {
+      "raw": "University of Temple",
+      "canonical": "Temple"
+    },
+    "virginiauniversity": {
+      "raw": "Virginia University",
+      "canonical": "Virginia"
+    },
+    "universityofvirginia": {
+      "raw": "University of Virginia",
+      "canonical": "Virginia"
+    },
+    "uiwuniversity": {
+      "raw": "UIW University",
+      "canonical": "UIW"
+    },
+    "universityofuiw": {
+      "raw": "University of UIW",
+      "canonical": "UIW"
+    },
+    "southeasternlauniversity": {
+      "raw": "Southeastern La. University",
+      "canonical": "Southeastern La."
+    },
+    "universityofsoutheasternla": {
+      "raw": "University of Southeastern La.",
+      "canonical": "Southeastern La."
+    },
+    "ncatuniversity": {
+      "raw": "N.C. A&T University",
+      "canonical": "N.C. A&T"
+    },
+    "universityofncat": {
+      "raw": "University of N.C. A&T",
+      "canonical": "N.C. A&T"
+    },
+    "valparaisouniversity": {
+      "raw": "Valparaiso University",
+      "canonical": "Valparaiso"
+    },
+    "universityofvalparaiso": {
+      "raw": "University of Valparaiso",
+      "canonical": "Valparaiso"
+    },
+    "denveruniversity": {
+      "raw": "Denver University",
+      "canonical": "Denver"
+    },
+    "universityofdenver": {
+      "raw": "University of Denver",
+      "canonical": "Denver"
+    },
+    "sacramentostuniversity": {
+      "raw": "Sacramento St. University",
+      "canonical": "Sacramento St."
+    },
+    "universityofsacramentost": {
+      "raw": "University of Sacramento St.",
+      "canonical": "Sacramento St."
+    },
+    "westernmichuniversity": {
+      "raw": "Western Mich. University",
+      "canonical": "Western Mich."
+    },
+    "universityofwesternmich": {
+      "raw": "University of Western Mich.",
+      "canonical": "Western Mich."
+    },
+    "southerninduniversity": {
+      "raw": "Southern Ind. University",
+      "canonical": "Southern Ind."
+    },
+    "universityofsouthernind": {
+      "raw": "University of Southern Ind.",
+      "canonical": "Southern Ind."
+    },
+    "towsonuniversity": {
+      "raw": "Towson University",
+      "canonical": "Towson"
+    },
+    "universityoftowson": {
+      "raw": "University of Towson",
+      "canonical": "Towson"
+    },
+    "louisianauniversity": {
+      "raw": "Louisiana University",
+      "canonical": "Louisiana"
+    },
+    "universityoflouisiana": {
+      "raw": "University of Louisiana",
+      "canonical": "Louisiana"
+    },
+    "cornelluniversity": {
+      "raw": "Cornell University",
+      "canonical": "Cornell"
+    },
+    "universityofcornell": {
+      "raw": "University of Cornell",
+      "canonical": "Cornell"
+    },
+    "georgemasonuniversity": {
+      "raw": "George Mason University",
+      "canonical": "George Mason"
+    },
+    "universityofgeorgemason": {
+      "raw": "University of George Mason",
+      "canonical": "George Mason"
+    },
+    "wakeforestuniversity": {
+      "raw": "Wake Forest University",
+      "canonical": "Wake Forest"
+    },
+    "universityofwakeforest": {
+      "raw": "University of Wake Forest",
+      "canonical": "Wake Forest"
+    },
+    "akronuniversity": {
+      "raw": "Akron University",
+      "canonical": "Akron"
+    },
+    "universityofakron": {
+      "raw": "University of Akron",
+      "canonical": "Akron"
+    },
+    "furmanuniversity": {
+      "raw": "Furman University",
+      "canonical": "Furman"
+    },
+    "universityoffurman": {
+      "raw": "University of Furman",
+      "canonical": "Furman"
+    },
+    "depauluniversity": {
+      "raw": "DePaul University",
+      "canonical": "DePaul"
+    },
+    "universityofdepaul": {
+      "raw": "University of DePaul",
+      "canonical": "DePaul"
+    },
+    "montanauniversity": {
+      "raw": "Montana University",
+      "canonical": "Montana"
+    },
+    "universityofmontana": {
+      "raw": "University of Montana",
+      "canonical": "Montana"
+    },
+    "lipscombuniversity": {
+      "raw": "Lipscomb University",
+      "canonical": "Lipscomb"
+    },
+    "universityoflipscomb": {
+      "raw": "University of Lipscomb",
+      "canonical": "Lipscomb"
+    },
+    "uabuniversity": {
+      "raw": "UAB University",
+      "canonical": "UAB"
+    },
+    "universityofuab": {
+      "raw": "University of UAB",
+      "canonical": "UAB"
+    },
+    "washingtonstuniversity": {
+      "raw": "Washington St. University",
+      "canonical": "Washington St."
+    },
+    "universityofwashingtonst": {
+      "raw": "University of Washington St.",
+      "canonical": "Washington St."
+    },
+    "illinoisstuniversity": {
+      "raw": "Illinois St. University",
+      "canonical": "Illinois St."
+    },
+    "universityofillinoisst": {
+      "raw": "University of Illinois St.",
+      "canonical": "Illinois St."
+    },
+    "utsauniversity": {
+      "raw": "UTSA University",
+      "canonical": "UTSA"
+    },
+    "universityofutsa": {
+      "raw": "University of UTSA",
+      "canonical": "UTSA"
+    },
+    "duquesneuniversity": {
+      "raw": "Duquesne University",
+      "canonical": "Duquesne"
+    },
+    "universityofduquesne": {
+      "raw": "University of Duquesne",
+      "canonical": "Duquesne"
+    },
+    "northdakotastuniversity": {
+      "raw": "North Dakota St. University",
+      "canonical": "North Dakota St."
+    },
+    "universityofnorthdakotast": {
+      "raw": "University of North Dakota St.",
+      "canonical": "North Dakota St."
+    },
+    "brownuniversity": {
+      "raw": "Brown University",
+      "canonical": "Brown"
+    },
+    "universityofbrown": {
+      "raw": "University of Brown",
+      "canonical": "Brown"
+    },
+    "southernmissuniversity": {
+      "raw": "Southern Miss University",
+      "canonical": "Southern Miss."
+    },
+    "universityofsouthernmiss": {
+      "raw": "University of Southern Miss",
+      "canonical": "Southern Miss."
+    },
+    "hawaiiuniversity": {
+      "raw": "Hawaii University",
+      "canonical": "Hawaii"
+    },
+    "universityofhawaii": {
+      "raw": "University of Hawaii",
+      "canonical": "Hawaii"
+    },
+    "weberstuniversity": {
+      "raw": "Weber St. University",
+      "canonical": "Weber St."
+    },
+    "universityofweberst": {
+      "raw": "University of Weber St.",
+      "canonical": "Weber St."
+    },
+    "houstonuniversity": {
+      "raw": "Houston University",
+      "canonical": "Houston"
+    },
+    "universityofhouston": {
+      "raw": "University of Houston",
+      "canonical": "Houston"
+    },
+    "miamiohuniversity": {
+      "raw": "Miami (OH) University",
+      "canonical": "Miami (OH)"
+    },
+    "universityofmiamioh": {
+      "raw": "University of Miami (OH)",
+      "canonical": "Miami (OH)"
+    },
+    "southeastmostuniversity": {
+      "raw": "Southeast Mo. St. University",
+      "canonical": "Southeast Mo. St."
+    },
+    "universityofsoutheastmost": {
+      "raw": "University of Southeast Mo. St.",
+      "canonical": "Southeast Mo. St."
+    },
+    "santaclarauniversity": {
+      "raw": "Santa Clara University",
+      "canonical": "Santa Clara"
+    },
+    "universityofsantaclara": {
+      "raw": "University of Santa Clara",
+      "canonical": "Santa Clara"
+    },
+    "marshalluniversity": {
+      "raw": "Marshall University",
+      "canonical": "Marshall"
+    },
+    "universityofmarshall": {
+      "raw": "University of Marshall",
+      "canonical": "Marshall"
+    },
+    "californiauniversity": {
+      "raw": "California University",
+      "canonical": "California"
+    },
+    "universityofcalifornia": {
+      "raw": "University of California",
+      "canonical": "California"
+    },
+    "syracuseuniversity": {
+      "raw": "Syracuse University",
+      "canonical": "Syracuse"
+    },
+    "universityofsyracuse": {
+      "raw": "University of Syracuse",
+      "canonical": "Syracuse"
+    },
+    "sandiegostuniversity": {
+      "raw": "San Diego St. University",
+      "canonical": "San Diego St."
+    },
+    "universityofsandiegost": {
+      "raw": "University of San Diego St.",
+      "canonical": "San Diego St."
+    },
+    "umbcuniversity": {
+      "raw": "UMBC University",
+      "canonical": "UMBC"
+    },
+    "universityofumbc": {
+      "raw": "University of UMBC",
+      "canonical": "UMBC"
+    },
+    "eastcarolinauniversity": {
+      "raw": "East Carolina University",
+      "canonical": "East Carolina"
+    },
+    "universityofeastcarolina": {
+      "raw": "University of East Carolina",
+      "canonical": "East Carolina"
+    },
+    "queensncuniversity": {
+      "raw": "Queens (NC) University",
+      "canonical": "Queens (NC)"
+    },
+    "universityofqueensnc": {
+      "raw": "University of Queens (NC)",
+      "canonical": "Queens (NC)"
+    },
+    "troyuniversity": {
+      "raw": "Troy University",
+      "canonical": "Troy"
+    },
+    "universityoftroy": {
+      "raw": "University of Troy",
+      "canonical": "Troy"
+    },
+    "stonybrookuniversity": {
+      "raw": "Stony Brook University",
+      "canonical": "Stony Brook"
+    },
+    "universityofstonybrook": {
+      "raw": "University of Stony Brook",
+      "canonical": "Stony Brook"
+    },
+    "bostoncollegeuniversity": {
+      "raw": "Boston College University",
+      "canonical": "Boston College"
+    },
+    "universityofbostoncollege": {
+      "raw": "University of Boston College",
+      "canonical": "Boston College"
+    },
+    "ohiouniversity": {
+      "raw": "Ohio University",
+      "canonical": "Ohio"
+    },
+    "universityofohio": {
+      "raw": "University of Ohio",
+      "canonical": "Ohio"
+    },
+    "arkansasuniversity": {
+      "raw": "Arkansas University",
+      "canonical": "Arkansas"
+    },
+    "universityofarkansas": {
+      "raw": "University of Arkansas",
+      "canonical": "Arkansas"
+    },
+    "rutgersuniversity": {
+      "raw": "Rutgers University",
+      "canonical": "Rutgers"
+    },
+    "universityofrutgers": {
+      "raw": "University of Rutgers",
+      "canonical": "Rutgers"
+    },
+    "csununiversity": {
+      "raw": "CSUN University",
+      "canonical": "CSUN"
+    },
+    "universityofcsun": {
+      "raw": "University of CSUN",
+      "canonical": "CSUN"
+    },
+    "northfloridauniversity": {
+      "raw": "North Florida University",
+      "canonical": "North Florida"
+    },
+    "universityofnorthflorida": {
+      "raw": "University of North Florida",
+      "canonical": "North Florida"
+    },
+    "sanjosestuniversity": {
+      "raw": "San Jose St. University",
+      "canonical": "San Jose St."
+    },
+    "universityofsanjosest": {
+      "raw": "University of San Jose St.",
+      "canonical": "San Jose St."
+    },
+    "ualbanyuniversity": {
+      "raw": "UAlbany University",
+      "canonical": "UAlbany"
+    },
+    "universityofualbany": {
+      "raw": "University of UAlbany",
+      "canonical": "UAlbany"
+    },
+    "butleruniversity": {
+      "raw": "Butler University",
+      "canonical": "Butler"
+    },
+    "universityofbutler": {
+      "raw": "University of Butler",
+      "canonical": "Butler"
+    },
+    "tarletonstuniversity": {
+      "raw": "Tarleton St. University",
+      "canonical": "Tarleton St."
+    },
+    "universityoftarletonst": {
+      "raw": "University of Tarleton St.",
+      "canonical": "Tarleton St."
+    },
+    "samforduniversity": {
+      "raw": "Samford University",
+      "canonical": "Samford"
+    },
+    "universityofsamford": {
+      "raw": "University of Samford",
+      "canonical": "Samford"
+    },
+    "missouristuniversity": {
+      "raw": "Missouri St. University",
+      "canonical": "Missouri St."
+    },
+    "universityofmissourist": {
+      "raw": "University of Missouri St.",
+      "canonical": "Missouri St."
+    },
+    "ohiostuniversity": {
+      "raw": "Ohio St. University",
+      "canonical": "Ohio St."
+    },
+    "universityofohiost": {
+      "raw": "University of Ohio St.",
+      "canonical": "Ohio St."
+    },
+    "texastechuniversity": {
+      "raw": "Texas Tech University",
+      "canonical": "Texas Tech"
+    },
+    "universityoftexastech": {
+      "raw": "University of Texas Tech",
+      "canonical": "Texas Tech"
+    },
+    "uncgreensborouniversity": {
+      "raw": "UNC Greensboro University",
+      "canonical": "UNC Greensboro"
+    },
+    "universityofuncgreensboro": {
+      "raw": "University of UNC Greensboro",
+      "canonical": "UNC Greensboro"
+    },
+    "airforceuniversity": {
+      "raw": "Air Force University",
+      "canonical": "Air Force"
+    },
+    "universityofairforce": {
+      "raw": "University of Air Force",
+      "canonical": "Air Force"
+    },
+    "stjohnsnyuniversity": {
+      "raw": "St. John's (NY) University",
+      "canonical": "St. John's (NY)"
+    },
+    "universityofstjohnsny": {
+      "raw": "University of St. John's (NY)",
+      "canonical": "St. John's (NY)"
+    },
+    "amcorpuschristiuniversity": {
+      "raw": "A&M-Corpus Christi University",
+      "canonical": "A&M-Corpus Christi"
+    },
+    "universityofamcorpuschristi": {
+      "raw": "University of A&M-Corpus Christi",
+      "canonical": "A&M-Corpus Christi"
+    },
+    "unlvuniversity": {
+      "raw": "UNLV University",
+      "canonical": "UNLV"
+    },
+    "universityofunlv": {
+      "raw": "University of UNLV",
+      "canonical": "UNLV"
+    },
+    "jacksonvillestuniversity": {
+      "raw": "Jacksonville St. University",
+      "canonical": "Jacksonville St."
+    },
+    "universityofjacksonvillest": {
+      "raw": "University of Jacksonville St.",
+      "canonical": "Jacksonville St."
+    },
+    "marylanduniversity": {
+      "raw": "Maryland University",
+      "canonical": "Maryland"
+    },
+    "universityofmaryland": {
+      "raw": "University of Maryland",
+      "canonical": "Maryland"
+    },
+    "coppinstuniversity": {
+      "raw": "Coppin St. University",
+      "canonical": "Coppin St."
+    },
+    "universityofcoppinst": {
+      "raw": "University of Coppin St.",
+      "canonical": "Coppin St."
+    },
+    "tulaneuniversity": {
+      "raw": "Tulane University",
+      "canonical": "Tulane"
+    },
+    "universityoftulane": {
+      "raw": "University of Tulane",
+      "canonical": "Tulane"
+    },
+    "howarduniversity": {
+      "raw": "Howard University",
+      "canonical": "Howard"
+    },
+    "universityofhoward": {
+      "raw": "University of Howard",
+      "canonical": "Howard"
+    },
+    "lehighuniversity": {
+      "raw": "Lehigh University",
+      "canonical": "Lehigh"
+    },
+    "universityoflehigh": {
+      "raw": "University of Lehigh",
+      "canonical": "Lehigh"
+    },
+    "bucknelluniversity": {
+      "raw": "Bucknell University",
+      "canonical": "Bucknell"
+    },
+    "universityofbucknell": {
+      "raw": "University of Bucknell",
+      "canonical": "Bucknell"
+    },
+    "samhoustonuniversity": {
+      "raw": "Sam Houston University",
+      "canonical": "Sam Houston"
+    },
+    "universityofsamhouston": {
+      "raw": "University of Sam Houston",
+      "canonical": "Sam Houston"
+    },
+    "binghamtonuniversity": {
+      "raw": "Binghamton University",
+      "canonical": "Binghamton"
+    },
+    "universityofbinghamton": {
+      "raw": "University of Binghamton",
+      "canonical": "Binghamton"
+    },
+    "lmucauniversity": {
+      "raw": "LMU (CA) University",
+      "canonical": "LMU (CA)"
+    },
+    "universityoflmuca": {
+      "raw": "University of LMU (CA)",
+      "canonical": "LMU (CA)"
+    },
+    "navyuniversity": {
+      "raw": "Navy University",
+      "canonical": "Navy"
+    },
+    "universityofnavy": {
+      "raw": "University of Navy",
+      "canonical": "Navy"
+    },
+    "northalauniversity": {
+      "raw": "North Ala. University",
+      "canonical": "North Ala."
+    },
+    "universityofnorthala": {
+      "raw": "University of North Ala.",
+      "canonical": "North Ala."
+    },
+    "universityofgonzaga": {
+      "raw": "University of Gonzaga",
+      "canonical": "Gonzaga"
+    },
+    "iuindyuniversity": {
+      "raw": "IU Indy University",
+      "canonical": "IU Indy"
+    },
+    "universityofiuindy": {
+      "raw": "University of IU Indy",
+      "canonical": "IU Indy"
+    },
+    "montanastuniversity": {
+      "raw": "Montana St. University",
+      "canonical": "Montana St."
+    },
+    "universityofmontanast": {
+      "raw": "University of Montana St.",
+      "canonical": "Montana St."
+    },
+    "saintmaryscauniversity": {
+      "raw": "Saint Mary's (CA) University",
+      "canonical": "Saint Mary's (CA)"
+    },
+    "universityofsaintmarysca": {
+      "raw": "University of Saint Mary's (CA)",
+      "canonical": "Saint Mary's (CA)"
+    },
+    "ucirvineuniversity": {
+      "raw": "UC Irvine University",
+      "canonical": "UC Irvine"
+    },
+    "universityofucirvine": {
+      "raw": "University of UC Irvine",
+      "canonical": "UC Irvine"
+    },
+    "littlerockuniversity": {
+      "raw": "Little Rock University",
+      "canonical": "Little Rock"
+    },
+    "universityoflittlerock": {
+      "raw": "University of Little Rock",
+      "canonical": "Little Rock"
+    },
+    "bradleyuniversity": {
+      "raw": "Bradley University",
+      "canonical": "Bradley"
+    },
+    "universityofbradley": {
+      "raw": "University of Bradley",
+      "canonical": "Bradley"
+    },
+    "saintfrancisuniversity": {
+      "raw": "Saint Francis University",
+      "canonical": "Saint Francis"
+    },
+    "universityofsaintfrancis": {
+      "raw": "University of Saint Francis",
+      "canonical": "Saint Francis"
+    },
+    "davidsonuniversity": {
+      "raw": "Davidson University",
+      "canonical": "Davidson"
+    },
+    "universityofdavidson": {
+      "raw": "University of Davidson",
+      "canonical": "Davidson"
+    },
+    "niuuniversity": {
+      "raw": "NIU University",
+      "canonical": "NIU"
+    },
+    "universityofniu": {
+      "raw": "University of NIU",
+      "canonical": "NIU"
+    },
+    "saintlouisuniversity": {
+      "raw": "Saint Louis University",
+      "canonical": "Saint Louis"
+    },
+    "universityofsaintlouis": {
+      "raw": "University of Saint Louis",
+      "canonical": "Saint Louis"
+    },
+    "quinnipiacuniversity": {
+      "raw": "Quinnipiac University",
+      "canonical": "Quinnipiac"
+    },
+    "universityofquinnipiac": {
+      "raw": "University of Quinnipiac",
+      "canonical": "Quinnipiac"
+    },
+    "omahauniversity": {
+      "raw": "Omaha University",
+      "canonical": "Omaha"
+    },
+    "universityofomaha": {
+      "raw": "University of Omaha",
+      "canonical": "Omaha"
+    },
+    "bryantuniversity": {
+      "raw": "Bryant University",
+      "canonical": "Bryant"
+    },
+    "universityofbryant": {
+      "raw": "University of Bryant",
+      "canonical": "Bryant"
+    },
+    "rideruniversity": {
+      "raw": "Rider University",
+      "canonical": "Rider"
+    },
+    "universityofrider": {
+      "raw": "University of Rider",
+      "canonical": "Rider"
+    },
+    "williammaryuniversity": {
+      "raw": "William & Mary University",
+      "canonical": "William & Mary"
+    },
+    "universityofwilliammary": {
+      "raw": "University of William & Mary",
+      "canonical": "William & Mary"
+    },
+    "liuuniversity": {
+      "raw": "LIU University",
+      "canonical": "LIU"
+    },
+    "universityofliu": {
+      "raw": "University of LIU",
+      "canonical": "LIU"
+    },
+    "newmexicouniversity": {
+      "raw": "New Mexico University",
+      "canonical": "New Mexico"
+    },
+    "universityofnewmexico": {
+      "raw": "University of New Mexico",
+      "canonical": "New Mexico"
+    },
+    "stetsonuniversity": {
+      "raw": "Stetson University",
+      "canonical": "Stetson"
+    },
+    "universityofstetson": {
+      "raw": "University of Stetson",
+      "canonical": "Stetson"
+    },
+    "idahostuniversity": {
+      "raw": "Idaho St. University",
+      "canonical": "Idaho St."
+    },
+    "universityofidahost": {
+      "raw": "University of Idaho St.",
+      "canonical": "Idaho St."
+    },
+    "pennuniversity": {
+      "raw": "Penn University",
+      "canonical": "Penn"
+    },
+    "universityofpenn": {
+      "raw": "University of Penn",
+      "canonical": "Penn"
+    },
+    "portlanduniversity": {
+      "raw": "Portland University",
+      "canonical": "Portland"
+    },
+    "universityofportland": {
+      "raw": "University of Portland",
+      "canonical": "Portland"
+    },
+    "belmontuniversity": {
+      "raw": "Belmont University",
+      "canonical": "Belmont"
+    },
+    "universityofbelmont": {
+      "raw": "University of Belmont",
+      "canonical": "Belmont"
+    },
+    "chattanoogauniversity": {
+      "raw": "Chattanooga University",
+      "canonical": "Chattanooga"
+    },
+    "universityofchattanooga": {
+      "raw": "University of Chattanooga",
+      "canonical": "Chattanooga"
+    },
+    "uncashevilleuniversity": {
+      "raw": "UNC Asheville University",
+      "canonical": "UNC Asheville"
+    },
+    "universityofuncasheville": {
+      "raw": "University of UNC Asheville",
+      "canonical": "UNC Asheville"
+    },
+    "olddominionuniversity": {
+      "raw": "Old Dominion University",
+      "canonical": "Old Dominion"
+    },
+    "universityofolddominion": {
+      "raw": "University of Old Dominion",
+      "canonical": "Old Dominion"
+    },
+    "lamaruniversityuniversity": {
+      "raw": "Lamar University University",
+      "canonical": "Lamar University"
+    },
+    "universityoflamaruniversity": {
+      "raw": "University of Lamar University",
+      "canonical": "Lamar University"
+    },
+    "virginiatechuniversity": {
+      "raw": "Virginia Tech University",
+      "canonical": "Virginia Tech"
+    },
+    "universityofvirginiatech": {
+      "raw": "University of Virginia Tech",
+      "canonical": "Virginia Tech"
+    },
+    "universityoftennesseetech": {
+      "raw": "University of Tennessee Tech",
+      "canonical": "Tennessee Tech"
+    },
+    "bellarmineuniversity": {
+      "raw": "Bellarmine University",
+      "canonical": "Bellarmine"
+    },
+    "universityofbellarmine": {
+      "raw": "University of Bellarmine",
+      "canonical": "Bellarmine"
+    },
+    "providenceuniversity": {
+      "raw": "Providence University",
+      "canonical": "Providence"
+    },
+    "universityofprovidence": {
+      "raw": "University of Providence",
+      "canonical": "Providence"
+    },
+    "charlestonsouniversity": {
+      "raw": "Charleston So. University",
+      "canonical": "Charleston So."
+    },
+    "universityofcharlestonso": {
+      "raw": "University of Charleston So.",
+      "canonical": "Charleston So."
+    },
+    "southernilluniversity": {
+      "raw": "Southern Ill. University",
+      "canonical": "Southern Ill."
+    },
+    "universityofsouthernill": {
+      "raw": "University of Southern Ill.",
+      "canonical": "Southern Ill."
+    },
+    "middletennuniversity": {
+      "raw": "Middle Tenn. University",
+      "canonical": "Middle Tenn."
+    },
+    "universityofmiddletenn": {
+      "raw": "University of Middle Tenn.",
+      "canonical": "Middle Tenn."
+    },
+    "youngstownstuniversity": {
+      "raw": "Youngstown St. University",
+      "canonical": "Youngstown St."
+    },
+    "universityofyoungstownst": {
+      "raw": "University of Youngstown St.",
+      "canonical": "Youngstown St."
+    },
+    "memphisuniversity": {
+      "raw": "Memphis University",
+      "canonical": "Memphis"
+    },
+    "universityofmemphis": {
+      "raw": "University of Memphis",
+      "canonical": "Memphis"
+    },
+    "milwaukeeuniversity": {
+      "raw": "Milwaukee University",
+      "canonical": "Milwaukee"
+    },
+    "universityofmilwaukee": {
+      "raw": "University of Milwaukee",
+      "canonical": "Milwaukee"
+    },
+    "newmexicostuniversity": {
+      "raw": "New Mexico St. University",
+      "canonical": "New Mexico St."
+    },
+    "universityofnewmexicost": {
+      "raw": "University of New Mexico St.",
+      "canonical": "New Mexico St."
+    },
+    "centralmichuniversity": {
+      "raw": "Central Mich. University",
+      "canonical": "Central Mich."
+    },
+    "universityofcentralmich": {
+      "raw": "University of Central Mich.",
+      "canonical": "Central Mich."
+    },
+    "abilenechristianuniversity": {
+      "raw": "Abilene Christian University",
+      "canonical": "Abilene Christian"
+    },
+    "universityofabilenechristian": {
+      "raw": "University of Abilene Christian",
+      "canonical": "Abilene Christian"
+    },
+    "easternmichuniversity": {
+      "raw": "Eastern Mich. University",
+      "canonical": "Eastern Mich."
+    },
+    "universityofeasternmich": {
+      "raw": "University of Eastern Mich.",
+      "canonical": "Eastern Mich."
+    },
+    "buffalouniversity": {
+      "raw": "Buffalo University",
+      "canonical": "Buffalo"
+    },
+    "universityofbuffalo": {
+      "raw": "University of Buffalo",
+      "canonical": "Buffalo"
+    },
+    "uscupstateuniversity": {
+      "raw": "USC Upstate University",
+      "canonical": "USC Upstate"
+    },
+    "universityofuscupstate": {
+      "raw": "University of USC Upstate",
+      "canonical": "USC Upstate"
+    },
+    "newhampshireuniversity": {
+      "raw": "New Hampshire University",
+      "canonical": "New Hampshire"
+    },
+    "universityofnewhampshire": {
+      "raw": "University of New Hampshire",
+      "canonical": "New Hampshire"
+    },
+    "easttexasamuniversity": {
+      "raw": "East Texas A&M University",
+      "canonical": "East Texas A&M"
+    },
+    "universityofeasttexasam": {
+      "raw": "University of East Texas A&M",
+      "canonical": "East Texas A&M"
+    },
+    "prairieviewuniversity": {
+      "raw": "Prairie View University",
+      "canonical": "Prairie View"
+    },
+    "universityofprairieview": {
+      "raw": "University of Prairie View",
+      "canonical": "Prairie View"
+    },
+    "greenbayuniversity": {
+      "raw": "Green Bay University",
+      "canonical": "Green Bay"
+    },
+    "universityofgreenbay": {
+      "raw": "University of Green Bay",
+      "canonical": "Green Bay"
+    },
+    "northeasternuniversity": {
+      "raw": "Northeastern University",
+      "canonical": "Northeastern"
+    },
+    "universityofnortheastern": {
+      "raw": "University of Northeastern",
+      "canonical": "Northeastern"
+    },
+    "fduuniversity": {
+      "raw": "FDU University",
+      "canonical": "FDU"
+    },
+    "universityoffdu": {
+      "raw": "University of FDU",
+      "canonical": "FDU"
+    },
+    "fordhamuniversity": {
+      "raw": "Fordham University",
+      "canonical": "Fordham"
+    },
+    "universityoffordham": {
+      "raw": "University of Fordham",
+      "canonical": "Fordham"
+    },
+    "houstonchristianuniversity": {
+      "raw": "Houston Christian University",
+      "canonical": "Houston Christian"
+    },
+    "universityofhoustonchristian": {
+      "raw": "University of Houston Christian",
+      "canonical": "Houston Christian"
+    },
+    "radforduniversity": {
+      "raw": "Radford University",
+      "canonical": "Radford"
+    },
+    "universityofradford": {
+      "raw": "University of Radford",
+      "canonical": "Radford"
+    },
+    "delawareuniversity": {
+      "raw": "Delaware University",
+      "canonical": "Delaware"
+    },
+    "universityofdelaware": {
+      "raw": "University of Delaware",
+      "canonical": "Delaware"
+    },
+    "dukeuniversity": {
+      "raw": "Duke University",
+      "canonical": "Duke"
+    },
+    "universityofduke": {
+      "raw": "University of Duke",
+      "canonical": "Duke"
+    },
+    "bethunecookmanuniversity": {
+      "raw": "Bethune-Cookman University",
+      "canonical": "Bethune-Cookman"
+    },
+    "universityofbethunecookman": {
+      "raw": "University of Bethune-Cookman",
+      "canonical": "Bethune-Cookman"
+    },
+    "portlandstuniversity": {
+      "raw": "Portland St. University",
+      "canonical": "Portland St."
+    },
+    "universityofportlandst": {
+      "raw": "University of Portland St.",
+      "canonical": "Portland St."
+    },
+    "merceruniversity": {
+      "raw": "Mercer University",
+      "canonical": "Mercer"
+    },
+    "universityofmercer": {
+      "raw": "University of Mercer",
+      "canonical": "Mercer"
+    },
+    "sanfranciscouniversity": {
+      "raw": "San Francisco University",
+      "canonical": "San Francisco"
+    },
+    "universityofsanfrancisco": {
+      "raw": "University of San Francisco",
+      "canonical": "San Francisco"
+    },
+    "fresnostuniversity": {
+      "raw": "Fresno St. University",
+      "canonical": "Fresno St."
+    },
+    "universityoffresnost": {
+      "raw": "University of Fresno St.",
+      "canonical": "Fresno St."
+    },
+    "dartmouthuniversity": {
+      "raw": "Dartmouth University",
+      "canonical": "Dartmouth"
+    },
+    "universityofdartmouth": {
+      "raw": "University of Dartmouth",
+      "canonical": "Dartmouth"
+    },
+    "elonuniversity": {
+      "raw": "Elon University",
+      "canonical": "Elon"
+    },
+    "universityofelon": {
+      "raw": "University of Elon",
+      "canonical": "Elon"
+    },
+    "utarlingtonuniversity": {
+      "raw": "UT Arlington University",
+      "canonical": "UT Arlington"
+    },
+    "universityofutarlington": {
+      "raw": "University of UT Arlington",
+      "canonical": "UT Arlington"
+    },
+    "indianastuniversity": {
+      "raw": "Indiana St. University",
+      "canonical": "Indiana St."
+    },
+    "universityofindianast": {
+      "raw": "University of Indiana St.",
+      "canonical": "Indiana St."
+    },
+    "lindenwooduniversity": {
+      "raw": "Lindenwood University",
+      "canonical": "Lindenwood"
+    },
+    "universityoflindenwood": {
+      "raw": "University of Lindenwood",
+      "canonical": "Lindenwood"
+    },
+    "westerncarouniversity": {
+      "raw": "Western Caro. University",
+      "canonical": "Western Caro."
+    },
+    "universityofwesterncaro": {
+      "raw": "University of Western Caro.",
+      "canonical": "Western Caro."
+    },
+    "floridaamuniversity": {
+      "raw": "Florida A&M University",
+      "canonical": "Florida A&M"
+    },
+    "universityoffloridaam": {
+      "raw": "University of Florida A&M",
+      "canonical": "Florida A&M"
+    },
+    "ucsandiegouniversity": {
+      "raw": "UC San Diego University",
+      "canonical": "UC San Diego"
+    },
+    "universityofucsandiego": {
+      "raw": "University of UC San Diego",
+      "canonical": "UC San Diego"
+    },
+    "ucriversideuniversity": {
+      "raw": "UC Riverside University",
+      "canonical": "UC Riverside"
+    },
+    "universityofucriverside": {
+      "raw": "University of UC Riverside",
+      "canonical": "UC Riverside"
+    },
+    "nevadauniversity": {
+      "raw": "Nevada University",
+      "canonical": "Nevada"
+    },
+    "universityofnevada": {
+      "raw": "University of Nevada",
+      "canonical": "Nevada"
+    },
+    "ulmuniversity": {
+      "raw": "ULM University",
+      "canonical": "ULM"
+    },
+    "universityofulm": {
+      "raw": "University of ULM",
+      "canonical": "ULM"
+    },
+    "louisianatechuniversity": {
+      "raw": "Louisiana Tech University",
+      "canonical": "Louisiana Tech"
+    },
+    "universityoflouisianatech": {
+      "raw": "University of Louisiana Tech",
+      "canonical": "Louisiana Tech"
+    },
+    "gardnerwebbuniversity": {
+      "raw": "Gardner-Webb University",
+      "canonical": "Gardner-Webb"
+    },
+    "universityofgardnerwebb": {
+      "raw": "University of Gardner-Webb",
+      "canonical": "Gardner-Webb"
+    },
+    "harvarduniversity": {
+      "raw": "Harvard University",
+      "canonical": "Harvard"
+    },
+    "universityofharvard": {
+      "raw": "University of Harvard",
+      "canonical": "Harvard"
+    },
+    "loyolamarylanduniversity": {
+      "raw": "Loyola Maryland University",
+      "canonical": "Loyola Maryland"
+    },
+    "universityofloyolamaryland": {
+      "raw": "University of Loyola Maryland",
+      "canonical": "Loyola Maryland"
+    },
+    "alabamaamuniversity": {
+      "raw": "Alabama A&M University",
+      "canonical": "Alabama A&M"
+    },
+    "universityofalabamaam": {
+      "raw": "University of Alabama A&M",
+      "canonical": "Alabama A&M"
+    },
+    "presbyterianuniversity": {
+      "raw": "Presbyterian University",
+      "canonical": "Presbyterian"
+    },
+    "universityofpresbyterian": {
+      "raw": "University of Presbyterian",
+      "canonical": "Presbyterian"
+    },
+    "evansvilleuniversity": {
+      "raw": "Evansville University",
+      "canonical": "Evansville"
+    },
+    "universityofevansville": {
+      "raw": "University of Evansville",
+      "canonical": "Evansville"
+    },
+    "alabamastuniversity": {
+      "raw": "Alabama St. University",
+      "canonical": "Alabama St."
+    },
+    "universityofalabamast": {
+      "raw": "University of Alabama St.",
+      "canonical": "Alabama St."
+    },
+    "uncwuniversity": {
+      "raw": "UNCW University",
+      "canonical": "UNCW"
+    },
+    "universityofuncw": {
+      "raw": "University of UNCW",
+      "canonical": "UNCW"
+    },
+    "setonhalluniversity": {
+      "raw": "Seton Hall University",
+      "canonical": "Seton Hall"
+    },
+    "universityofsetonhall": {
+      "raw": "University of Seton Hall",
+      "canonical": "Seton Hall"
+    },
+    "delawarestuniversity": {
+      "raw": "Delaware St. University",
+      "canonical": "Delaware St."
+    },
+    "universityofdelawarest": {
+      "raw": "University of Delaware St.",
+      "canonical": "Delaware St."
+    },
+    "universityofcaliforniabaptist": {
+      "raw": "University of California Baptist",
+      "canonical": "California Baptist"
+    },
+    "kentstuniversity": {
+      "raw": "Kent St. University",
+      "canonical": "Kent St."
+    },
+    "universityofkentst": {
+      "raw": "University of Kent St.",
+      "canonical": "Kent St."
+    },
+    "siueuniversity": {
+      "raw": "SIUE University",
+      "canonical": "SIUE"
+    },
+    "universityofsiue": {
+      "raw": "University of SIUE",
+      "canonical": "SIUE"
+    },
+    "mcneeseuniversity": {
+      "raw": "McNeese University",
+      "canonical": "McNeese"
+    },
+    "universityofmcneese": {
+      "raw": "University of McNeese",
+      "canonical": "McNeese"
+    },
+    "sacredheartuniversity": {
+      "raw": "Sacred Heart University",
+      "canonical": "Sacred Heart"
+    },
+    "universityofsacredheart": {
+      "raw": "University of Sacred Heart",
+      "canonical": "Sacred Heart"
+    },
+    "lafayetteuniversity": {
+      "raw": "Lafayette University",
+      "canonical": "Lafayette"
+    },
+    "universityoflafayette": {
+      "raw": "University of Lafayette",
+      "canonical": "Lafayette"
+    },
+    "umesuniversity": {
+      "raw": "UMES University",
+      "canonical": "UMES"
+    },
+    "universityofumes": {
+      "raw": "University of UMES",
+      "canonical": "UMES"
+    },
+    "canisiusuniversity": {
+      "raw": "Canisius University",
+      "canonical": "Canisius"
+    },
+    "universityofcanisius": {
+      "raw": "University of Canisius",
+      "canonical": "Canisius"
+    },
+    "robertmorrisuniversity": {
+      "raw": "Robert Morris University",
+      "canonical": "Robert Morris"
+    },
+    "universityofrobertmorris": {
+      "raw": "University of Robert Morris",
+      "canonical": "Robert Morris"
+    },
+    "niagarauniversity": {
+      "raw": "Niagara University",
+      "canonical": "Niagara"
+    },
+    "universityofniagara": {
+      "raw": "University of Niagara",
+      "canonical": "Niagara"
+    },
+    "jacksonstuniversity": {
+      "raw": "Jackson St. University",
+      "canonical": "Jackson St."
+    },
+    "universityofjacksonst": {
+      "raw": "University of Jackson St.",
+      "canonical": "Jackson St."
+    },
+    "murraystuniversity": {
+      "raw": "Murray St. University",
+      "canonical": "Murray St."
+    },
+    "universityofmurrayst": {
+      "raw": "University of Murray St.",
+      "canonical": "Murray St."
+    },
+    "rhodeislanduniversity": {
+      "raw": "Rhode Island University",
+      "canonical": "Rhode Island"
+    },
+    "universityofrhodeisland": {
+      "raw": "University of Rhode Island",
+      "canonical": "Rhode Island"
+    },
+    "csubakersfielduniversity": {
+      "raw": "CSU Bakersfield University",
+      "canonical": "CSU Bakersfield"
+    },
+    "universityofcsubakersfield": {
+      "raw": "University of CSU Bakersfield",
+      "canonical": "CSU Bakersfield"
+    },
+    "northdakotauniversity": {
+      "raw": "North Dakota University",
+      "canonical": "North Dakota"
+    },
+    "universityofnorthdakota": {
+      "raw": "University of North Dakota",
+      "canonical": "North Dakota"
+    },
+    "pacificuniversity": {
+      "raw": "Pacific University",
+      "canonical": "Pacific"
+    },
+    "universityofpacific": {
+      "raw": "University of Pacific",
+      "canonical": "Pacific"
+    },
+    "clevelandstuniversity": {
+      "raw": "Cleveland St. University",
+      "canonical": "Cleveland St."
+    },
+    "universityofclevelandst": {
+      "raw": "University of Cleveland St.",
+      "canonical": "Cleveland St."
+    },
+    "oaklanduniversity": {
+      "raw": "Oakland University",
+      "canonical": "Oakland"
+    },
+    "universityofoakland": {
+      "raw": "University of Oakland",
+      "canonical": "Oakland"
+    },
+    "nichollsuniversity": {
+      "raw": "Nicholls University",
+      "canonical": "Nicholls"
+    },
+    "universityofnicholls": {
+      "raw": "University of Nicholls",
+      "canonical": "Nicholls"
+    },
+    "maristuniversity": {
+      "raw": "Marist University",
+      "canonical": "Marist"
+    },
+    "universityofmarist": {
+      "raw": "University of Marist",
+      "canonical": "Marist"
+    },
+    "neworleansuniversity": {
+      "raw": "New Orleans University",
+      "canonical": "New Orleans"
+    },
+    "universityofneworleans": {
+      "raw": "University of New Orleans",
+      "canonical": "New Orleans"
+    },
+    "seattleuuniversity": {
+      "raw": "Seattle U University",
+      "canonical": "Seattle U"
+    },
+    "universityofseattleu": {
+      "raw": "University of Seattle U",
+      "canonical": "Seattle U"
+    },
+    "calstfullertonuniversity": {
+      "raw": "Cal St. Fullerton University",
+      "canonical": "Cal St. Fullerton"
+    },
+    "universityofcalstfullerton": {
+      "raw": "University of Cal St. Fullerton",
+      "canonical": "Cal St. Fullerton"
+    },
+    "nccentraluniversity": {
+      "raw": "N.C. Central University",
+      "canonical": "N.C. Central"
+    },
+    "universityofnccentral": {
+      "raw": "University of N.C. Central",
+      "canonical": "N.C. Central"
+    },
+    "morganstuniversity": {
+      "raw": "Morgan St. University",
+      "canonical": "Morgan St."
+    },
+    "universityofmorganst": {
+      "raw": "University of Morgan St.",
+      "canonical": "Morgan St."
+    },
+    "sienauniversity": {
+      "raw": "Siena University",
+      "canonical": "Siena"
+    },
+    "universityofsiena": {
+      "raw": "University of Siena",
+      "canonical": "Siena"
+    },
+    "mercyhurstuniversity": {
+      "raw": "Mercyhurst University",
+      "canonical": "Mercyhurst"
+    },
+    "universityofmercyhurst": {
+      "raw": "University of Mercyhurst",
+      "canonical": "Mercyhurst"
+    },
+    "universityofsouthernutah": {
+      "raw": "University of Southern Utah",
+      "canonical": "Southern Utah"
+    },
+    "southernuuniversity": {
+      "raw": "Southern U. University",
+      "canonical": "Southern U."
+    },
+    "universityofsouthernu": {
+      "raw": "University of Southern U.",
+      "canonical": "Southern U."
+    },
+    "austinpeayuniversity": {
+      "raw": "Austin Peay University",
+      "canonical": "Austin Peay"
+    },
+    "universityofaustinpeay": {
+      "raw": "University of Austin Peay",
+      "canonical": "Austin Peay"
+    },
+    "merrimackuniversity": {
+      "raw": "Merrimack University",
+      "canonical": "Merrimack"
+    },
+    "universityofmerrimack": {
+      "raw": "University of Merrimack",
+      "canonical": "Merrimack"
+    },
+    "texassouthernuniversity": {
+      "raw": "Texas Southern University",
+      "canonical": "Texas Southern"
+    },
+    "universityoftexassouthern": {
+      "raw": "University of Texas Southern",
+      "canonical": "Texas Southern"
+    },
+    "oralrobertsuniversity": {
+      "raw": "Oral Roberts University",
+      "canonical": "Oral Roberts"
+    },
+    "universityoforalroberts": {
+      "raw": "University of Oral Roberts",
+      "canonical": "Oral Roberts"
+    },
+    "kansascityuniversity": {
+      "raw": "Kansas City University",
+      "canonical": "Kansas City"
+    },
+    "universityofkansascity": {
+      "raw": "University of Kansas City",
+      "canonical": "Kansas City"
+    },
+    "ionauniversity": {
+      "raw": "Iona University",
+      "canonical": "Iona"
+    },
+    "universityofiona": {
+      "raw": "University of Iona",
+      "canonical": "Iona"
+    },
+    "westgauniversity": {
+      "raw": "West Ga. University",
+      "canonical": "West Ga."
+    },
+    "universityofwestga": {
+      "raw": "University of West Ga.",
+      "canonical": "West Ga."
+    },
+    "holycrossuniversity": {
+      "raw": "Holy Cross University",
+      "canonical": "Holy Cross"
+    },
+    "universityofholycross": {
+      "raw": "University of Holy Cross",
+      "canonical": "Holy Cross"
+    },
+    "idahouniversity": {
+      "raw": "Idaho University",
+      "canonical": "Idaho"
+    },
+    "universityofidaho": {
+      "raw": "University of Idaho",
+      "canonical": "Idaho"
+    },
+    "westernilluniversity": {
+      "raw": "Western Ill. University",
+      "canonical": "Western Ill."
+    },
+    "universityofwesternill": {
+      "raw": "University of Western Ill.",
+      "canonical": "Western Ill."
+    },
+    "thecitadeluniversity": {
+      "raw": "The Citadel University",
+      "canonical": "The Citadel"
+    },
+    "universityofthecitadel": {
+      "raw": "University of The Citadel",
+      "canonical": "The Citadel"
+    },
+    "norfolkstuniversity": {
+      "raw": "Norfolk St. University",
+      "canonical": "Norfolk St."
+    },
+    "universityofnorfolkst": {
+      "raw": "University of Norfolk St.",
+      "canonical": "Norfolk St."
+    },
+    "easternwashuniversity": {
+      "raw": "Eastern Wash. University",
+      "canonical": "Eastern Wash."
+    },
+    "universityofeasternwash": {
+      "raw": "University of Eastern Wash.",
+      "canonical": "Eastern Wash."
+    },
+    "njituniversity": {
+      "raw": "NJIT University",
+      "canonical": "NJIT"
+    },
+    "universityofnjit": {
+      "raw": "University of NJIT",
+      "canonical": "NJIT"
+    },
+    "columbiauniversity": {
+      "raw": "Columbia University",
+      "canonical": "Columbia"
+    },
+    "universityofcolumbia": {
+      "raw": "University of Columbia",
+      "canonical": "Columbia"
+    },
+    "utmartinuniversity": {
+      "raw": "UT Martin University",
+      "canonical": "UT Martin"
+    },
+    "universityofutmartin": {
+      "raw": "University of UT Martin",
+      "canonical": "UT Martin"
+    },
+    "universityofhampton": {
+      "raw": "University of Hampton",
+      "canonical": "Hampton"
+    },
+    "purduefortwayneuniversity": {
+      "raw": "Purdue Fort Wayne University",
+      "canonical": "Purdue Fort Wayne"
+    },
+    "universityofpurduefortwayne": {
+      "raw": "University of Purdue Fort Wayne",
+      "canonical": "Purdue Fort Wayne"
+    },
+    "northwesternstuniversity": {
+      "raw": "Northwestern St. University",
+      "canonical": "Northwestern St."
+    },
+    "universityofnorthwesternst": {
+      "raw": "University of Northwestern St.",
+      "canonical": "Northwestern St."
+    },
+    "centralconnstuniversity": {
+      "raw": "Central Conn. St. University",
+      "canonical": "Central Conn. St."
+    },
+    "universityofcentralconnst": {
+      "raw": "University of Central Conn. St.",
+      "canonical": "Central Conn. St."
+    },
+    "southcarolinastuniversity": {
+      "raw": "South Carolina St. University",
+      "canonical": "South Carolina St."
+    },
+    "universityofsouthcarolinast": {
+      "raw": "University of South Carolina St.",
+      "canonical": "South Carolina St."
+    },
+    "saintpetersuniversity": {
+      "raw": "Saint Peter's University",
+      "canonical": "Saint Peter's"
+    },
+    "universityofsaintpeters": {
+      "raw": "University of Saint Peter's",
+      "canonical": "Saint Peter's"
+    },
+    "gramblinguniversity": {
+      "raw": "Grambling University",
+      "canonical": "Grambling"
+    },
+    "universityofgrambling": {
+      "raw": "University of Grambling",
+      "canonical": "Grambling"
+    },
+    "manhattanuniversity": {
+      "raw": "Manhattan University",
+      "canonical": "Manhattan"
+    },
+    "universityofmanhattan": {
+      "raw": "University of Manhattan",
+      "canonical": "Manhattan"
+    },
+    "stonehilluniversity": {
+      "raw": "Stonehill University",
+      "canonical": "Stonehill"
+    },
+    "universityofstonehill": {
+      "raw": "University of Stonehill",
+      "canonical": "Stonehill"
+    },
+    "newhavenuniversity": {
+      "raw": "New Haven University",
+      "canonical": "New Haven"
+    },
+    "universityofnewhaven": {
+      "raw": "University of New Haven",
+      "canonical": "New Haven"
+    },
+    "chicagostuniversity": {
+      "raw": "Chicago St. University",
+      "canonical": "Chicago St."
+    },
+    "universityofchicagost": {
+      "raw": "University of Chicago St.",
+      "canonical": "Chicago St."
+    },
+    "lemoyneuniversity": {
+      "raw": "Le Moyne University",
+      "canonical": "Le Moyne"
+    },
+    "universityoflemoyne": {
+      "raw": "University of Le Moyne",
+      "canonical": "Le Moyne"
+    },
+    "tennesseestuniversity": {
+      "raw": "Tennessee St. University",
+      "canonical": "Tennessee St."
+    },
+    "universityoftennesseest": {
+      "raw": "University of Tennessee St.",
+      "canonical": "Tennessee St."
+    },
+    "mississippivaluniversity": {
+      "raw": "Mississippi Val. University",
+      "canonical": "Mississippi Val."
+    },
+    "universityofmississippival": {
+      "raw": "University of Mississippi Val.",
+      "canonical": "Mississippi Val."
+    },
+    "alcornuniversity": {
+      "raw": "Alcorn University",
+      "canonical": "Alcorn"
+    },
+    "universityofalcorn": {
+      "raw": "University of Alcorn",
+      "canonical": "Alcorn"
+    },
+    "arkpinebluffuniversity": {
+      "raw": "Ark.-Pine Bluff University",
+      "canonical": "Ark.-Pine Bluff"
+    },
+    "universityofarkpinebluff": {
+      "raw": "University of Ark.-Pine Bluff",
+      "canonical": "Ark.-Pine Bluff"
+    },
+    "tampauniversity": {
+      "raw": "Tampa University",
+      "canonical": "Tampa"
+    },
+    "universityoftampa": {
+      "raw": "University of Tampa",
+      "canonical": "Tampa"
+    },
+    "flasouthernuniversity": {
+      "raw": "Fla. Southern University",
+      "canonical": "Fla. Southern"
+    },
+    "universityofflasouthern": {
+      "raw": "University of Fla. Southern",
+      "canonical": "Fla. Southern"
+    },
+    "southwestminnstuniversity": {
+      "raw": "Southwest Minn. St. University",
+      "canonical": "Southwest Minn. St."
+    },
+    "universityofsouthwestminnst": {
+      "raw": "University of Southwest Minn. St.",
+      "canonical": "Southwest Minn. St."
+    },
+    "wheelinguniversity": {
+      "raw": "Wheeling University",
+      "canonical": "Wheeling"
+    },
+    "universityofwheeling": {
+      "raw": "University of Wheeling",
+      "canonical": "Wheeling"
+    },
+    "montreatuniversity": {
+      "raw": "Montreat University",
+      "canonical": "Montreat"
+    },
+    "universityofmontreat": {
+      "raw": "University of Montreat",
+      "canonical": "Montreat"
+    },
+    "claflinuniversity": {
+      "raw": "Claflin University",
+      "canonical": "Claflin"
+    },
+    "universityofclaflin": {
+      "raw": "University of Claflin",
+      "canonical": "Claflin"
+    },
+    "bowiestuniversity": {
+      "raw": "Bowie St. University",
+      "canonical": "Bowie St."
+    },
+    "universityofbowiest": {
+      "raw": "University of Bowie St.",
+      "canonical": "Bowie St."
+    },
+    "tuskegeeuniversity": {
+      "raw": "Tuskegee University",
+      "canonical": "Tuskegee"
+    },
+    "universityoftuskegee": {
+      "raw": "University of Tuskegee",
+      "canonical": "Tuskegee"
+    },
+    "rutgerscamdenuniversity": {
+      "raw": "Rutgers-Camden University",
+      "canonical": "Rutgers-Camden"
+    },
+    "universityofrutgerscamden": {
+      "raw": "University of Rutgers-Camden",
+      "canonical": "Rutgers-Camden"
+    },
+    "dillarduniversity": {
+      "raw": "Dillard University",
+      "canonical": "Dillard"
+    },
+    "universityofdillard": {
+      "raw": "University of Dillard",
+      "canonical": "Dillard"
+    },
+    "wileyuniversity": {
+      "raw": "Wiley University",
+      "canonical": "Wiley"
+    },
+    "universityofwiley": {
+      "raw": "University of Wiley",
+      "canonical": "Wiley"
+    },
+    "hendersonstuniversity": {
+      "raw": "Henderson St. University",
+      "canonical": "Henderson St."
+    },
+    "universityofhendersonst": {
+      "raw": "University of Henderson St.",
+      "canonical": "Henderson St."
+    },
+    "uttyleruniversity": {
+      "raw": "UT Tyler University",
+      "canonical": "UT Tyler"
+    },
+    "universityofuttyler": {
+      "raw": "University of UT Tyler",
+      "canonical": "UT Tyler"
+    },
+    "erskineuniversity": {
+      "raw": "Erskine University",
+      "canonical": "Erskine"
+    },
+    "universityoferskine": {
+      "raw": "University of Erskine",
+      "canonical": "Erskine"
+    },
+    "southernneworleansuniversity": {
+      "raw": "Southern-New Orleans University",
+      "canonical": "Southern-New Orleans"
+    },
+    "universityofsouthernneworleans": {
+      "raw": "University of Southern-New Orleans",
+      "canonical": "Southern-New Orleans"
+    },
+    "pittuniversity": {
+      "raw": "Pitt University",
+      "canonical": "Pittsburgh"
+    },
+    "universityofpitt": {
+      "raw": "University of Pitt",
+      "canonical": "Pittsburgh"
+    },
+    "untuniversity": {
+      "raw": "UNT University",
+      "canonical": "North Texas"
+    },
+    "universityofunt": {
+      "raw": "University of UNT",
+      "canonical": "North Texas"
+    },
+    "queensuniversity": {
+      "raw": "Queens University",
+      "canonical": "Queens (NC)"
+    },
+    "universityofqueens": {
+      "raw": "University of Queens",
+      "canonical": "Queens (NC)"
+    },
+    "uscuniversity": {
+      "raw": "USC University",
+      "canonical": "Southern California"
+    },
+    "universityofusc": {
+      "raw": "University of USC",
+      "canonical": "Southern California"
+    },
+    "calstatebakersfielduniversity": {
+      "raw": "Cal State Bakersfield University",
+      "canonical": "CSU Bakersfield"
+    },
+    "universityofcalstatebakersfield": {
+      "raw": "University of Cal State Bakersfield",
+      "canonical": "CSU Bakersfield"
+    },
+    "charlestonuniversity": {
+      "raw": "Charleston University",
+      "canonical": "Col. of Charleston"
+    },
+    "universityofcharleston": {
+      "raw": "University of Charleston",
+      "canonical": "Col. of Charleston"
+    },
+    "collegeofcharlestonuniversity": {
+      "raw": "College of Charleston University",
+      "canonical": "Col. of Charleston"
+    },
+    "universityofcollegeofcharleston": {
+      "raw": "University of College of Charleston",
+      "canonical": "Col. of Charleston"
+    },
+    "mtsuuniversity": {
+      "raw": "MTSU University",
+      "canonical": "Middle Tenn."
+    },
+    "universityofmtsu": {
+      "raw": "University of MTSU",
+      "canonical": "Middle Tenn."
+    },
+    "wkuuniversity": {
+      "raw": "WKU University",
+      "canonical": "Western Ky."
+    },
+    "universityofwku": {
+      "raw": "University of WKU",
+      "canonical": "Western Ky."
+    },
+    "nmstateuniversity": {
+      "raw": "NM State University",
+      "canonical": "New Mexico St."
+    },
+    "universityofnmstate": {
+      "raw": "University of NM State",
+      "canonical": "New Mexico St."
+    },
+    "jaxstateuniversity": {
+      "raw": "Jax State University",
+      "canonical": "Jacksonville St."
+    },
+    "universityofjaxstate": {
+      "raw": "University of Jax State",
+      "canonical": "Jacksonville St."
+    },
+    "universityofnorthernillinois": {
+      "raw": "University of Northern Illinois",
+      "canonical": "NIU"
+    },
+    "northernillinoisuniversityuniversity": {
+      "raw": "Northern Illinois University University",
+      "canonical": "NIU"
+    },
+    "universityofnorthernillinoisuniversity": {
+      "raw": "University of Northern Illinois University",
+      "canonical": "NIU"
+    },
+    "northcarolinacentraluniversity": {
+      "raw": "North Carolina Central University",
+      "canonical": "N.C. Central"
+    },
+    "universityofnorthcarolinacentral": {
+      "raw": "University of North Carolina Central",
+      "canonical": "N.C. Central"
+    },
+    "marylandeasternshoreuniversity": {
+      "raw": "Maryland Eastern Shore University",
+      "canonical": "UMES"
+    },
+    "universityofmarylandeasternshore": {
+      "raw": "University of Maryland Eastern Shore",
+      "canonical": "UMES"
+    },
+    "sanjosstateuniversity": {
+      "raw": "San Jos\ufffd State University",
+      "canonical": "San Jose St."
+    },
+    "universityofsanjosstate": {
+      "raw": "University of San Jos\ufffd State",
+      "canonical": "San Jose St."
+    },
+    "centralconnecticutuniversity": {
+      "raw": "Central Connecticut University",
+      "canonical": "Central Conn. St."
+    },
+    "universityofcentralconnecticut": {
+      "raw": "University of Central Connecticut",
+      "canonical": "Central Conn. St."
+    },
+    "southeastmissouriuniversity": {
+      "raw": "Southeast Missouri University",
+      "canonical": "Southeast Mo. St."
+    },
+    "universityofsoutheastmissouri": {
+      "raw": "University of Southeast Missouri",
+      "canonical": "Southeast Mo. St."
+    },
+    "southeasternuniversity": {
+      "raw": "Southeastern University",
+      "canonical": "Southeastern La."
+    },
+    "universityofsoutheastern": {
+      "raw": "University of Southeastern",
+      "canonical": "Southeastern La."
+    },
+    "hcuuniversity": {
+      "raw": "HCU University",
+      "canonical": "Houston Christian"
+    },
+    "universityofhcu": {
+      "raw": "University of HCU",
+      "canonical": "Houston Christian"
+    },
+    "lsuneworleansuniversity": {
+      "raw": "LSU New Orleans University",
+      "canonical": "New Orleans"
+    },
+    "universityoflsuneworleans": {
+      "raw": "University of LSU New Orleans",
+      "canonical": "New Orleans"
+    },
+    "universityofsouthern": {
+      "raw": "University of Southern",
+      "canonical": "Southern U."
+    },
+    "mississippivalleystateuniversity": {
+      "raw": "Mississippi Valley State University",
+      "canonical": "Mississippi Val."
+    },
+    "universityofmississippivalleystate": {
+      "raw": "University of Mississippi Valley State",
+      "canonical": "Mississippi Val."
+    },
+    "gramblingstateuniversity": {
+      "raw": "Grambling State University",
+      "canonical": "Grambling"
+    },
+    "universityofgramblingstate": {
+      "raw": "University of Grambling State",
+      "canonical": "Grambling"
+    },
+    "alcornstateuniversity": {
+      "raw": "Alcorn State University",
+      "canonical": "Alcorn"
+    },
+    "universityofalcornstate": {
+      "raw": "University of Alcorn State",
+      "canonical": "Alcorn"
+    },
+    "prairieviewamuniversity": {
+      "raw": "Prairie View A&M University",
+      "canonical": "Prairie View"
+    },
+    "universityofprairieviewam": {
+      "raw": "University of Prairie View A&M",
+      "canonical": "Prairie View"
+    },
+    "fauuniversity": {
+      "raw": "FAU University",
+      "canonical": "Fla. Atlantic"
+    },
+    "universityoffau": {
+      "raw": "University of FAU",
+      "canonical": "Fla. Atlantic"
+    },
+    "stephenfaustinuniversity": {
+      "raw": "Stephen F. Austin University",
+      "canonical": "SFA"
+    },
+    "universityofstephenfaustin": {
+      "raw": "University of Stephen F. Austin",
+      "canonical": "SFA"
+    },
+    "northerniowauniversity": {
+      "raw": "Northern Iowa University",
+      "canonical": "UNI"
+    },
+    "universityofnortherniowa": {
+      "raw": "University of Northern Iowa",
+      "canonical": "UNI"
+    },
+    "gcuuniversity": {
+      "raw": "GCU University",
+      "canonical": "Grand Canyon"
+    },
+    "universityofgcu": {
+      "raw": "University of GCU",
+      "canonical": "Grand Canyon"
+    },
+    "usfuniversity": {
+      "raw": "USF University",
+      "canonical": "South Fla."
+    },
+    "universityofusf": {
+      "raw": "University of USF",
+      "canonical": "South Fla."
+    },
+    "northcarolinaatuniversity": {
+      "raw": "North Carolina A&T University",
+      "canonical": "N.C. A&T"
+    },
+    "universityofnorthcarolinaat": {
+      "raw": "University of North Carolina A&T",
+      "canonical": "N.C. A&T"
+    },
+    "northcarolinaatstateuniversity": {
+      "raw": "North Carolina A&T State University",
+      "canonical": "N.C. A&T"
+    },
+    "universityofnorthcarolinaatstate": {
+      "raw": "University of North Carolina A&T State",
+      "canonical": "N.C. A&T"
+    },
+    "universityofsouthernindianauniversity": {
+      "raw": "University of Southern Indiana University",
+      "canonical": "Southern Ind."
+    },
+    "universityofuniversityofsouthernindiana": {
+      "raw": "University of University of Southern Indiana",
+      "canonical": "Southern Ind."
+    },
+    "universityofnortherncoloradouniversity": {
+      "raw": "University of Northern Colorado University",
+      "canonical": "Northern Colo."
+    },
+    "universityofuniversityofnortherncolorado": {
+      "raw": "University of University of Northern Colorado",
+      "canonical": "Northern Colo."
+    },
+    "universityofutahuniversity": {
+      "raw": "University of Utah University",
+      "canonical": "Utah"
+    },
+    "universityofuniversityofutah": {
+      "raw": "University of University of Utah",
+      "canonical": "Utah"
+    },
+    "ndsuuniversity": {
+      "raw": "NDSU University",
+      "canonical": "North Dakota St."
+    },
+    "universityofndsu": {
+      "raw": "University of NDSU",
+      "canonical": "North Dakota St."
+    },
+    "houstonbaptistuniversity": {
+      "raw": "Houston Baptist University",
+      "canonical": "Houston Christian"
+    },
+    "universityofhoustonbaptist": {
+      "raw": "University of Houston Baptist",
+      "canonical": "Houston Christian"
+    },
+    "utauniversity": {
+      "raw": "UTA University",
+      "canonical": "UT Arlington"
+    },
+    "universityofuta": {
+      "raw": "University of UTA",
+      "canonical": "UT Arlington"
+    },
+    "tarletonuniversity": {
+      "raw": "Tarleton University",
+      "canonical": "Tarleton St."
+    },
+    "universityoftarleton": {
+      "raw": "University of Tarleton",
+      "canonical": "Tarleton St."
+    },
+    "arkansaspinebluffuniversity": {
+      "raw": "Arkansas Pine Bluff University",
+      "canonical": "Ark.-Pine Bluff"
+    },
+    "universityofarkansaspinebluff": {
+      "raw": "University of Arkansas Pine Bluff",
+      "canonical": "Ark.-Pine Bluff"
+    },
+    "selouisianauniversity": {
+      "raw": "SE Louisiana University",
+      "canonical": "Southeastern La."
+    },
+    "universityofselouisiana": {
+      "raw": "University of SE Louisiana",
+      "canonical": "Southeastern La."
+    },
+    "louisianalafayetteuniversity": {
+      "raw": "Louisiana Lafayette University",
+      "canonical": "Louisiana"
+    },
+    "universityoflouisianalafayette": {
+      "raw": "University of Louisiana Lafayette",
+      "canonical": "Louisiana"
+    },
+    "southcarolinaupstateuniversity": {
+      "raw": "South Carolina Upstate University",
+      "canonical": "USC Upstate"
+    },
+    "universityofsouthcarolinaupstate": {
+      "raw": "University of South Carolina Upstate",
+      "canonical": "USC Upstate"
+    },
+    "unfuniversity": {
+      "raw": "UNF University",
+      "canonical": "North Florida"
+    },
+    "universityofunf": {
+      "raw": "University of UNF",
+      "canonical": "North Florida"
+    },
+    "loyolamarymountuniversity": {
+      "raw": "Loyola Marymount University",
+      "canonical": "LMU (CA)"
+    },
+    "universityofloyolamarymount": {
+      "raw": "University of Loyola Marymount",
+      "canonical": "LMU (CA)"
+    },
+    "ucauniversity": {
+      "raw": "UCA University",
+      "canonical": "Central Ark."
+    },
+    "universityofuca": {
+      "raw": "University of UCA",
+      "canonical": "Central Ark."
+    },
+    "caluniversity": {
+      "raw": "Cal University",
+      "canonical": "California"
+    },
+    "universityofcal": {
+      "raw": "University of Cal",
+      "canonical": "California"
+    },
+    "sunouniversity": {
+      "raw": "SUNO University",
+      "canonical": "Southern-New Orleans"
+    },
+    "universityofsuno": {
+      "raw": "University of SUNO",
+      "canonical": "Southern-New Orleans"
+    },
+    "wileycollegeuniversity": {
+      "raw": "Wiley College University",
+      "canonical": "Wiley"
+    },
+    "universityofwileycollege": {
+      "raw": "University of Wiley College",
+      "canonical": "Wiley"
+    },
+    "floridastateuniversity": {
+      "raw": "Florida State University",
+      "canonical": "Florida St."
+    },
+    "universityoffloridastate": {
+      "raw": "University of Florida State",
+      "canonical": "Florida St."
+    },
+    "floridaatlanticuniversity": {
+      "raw": "Florida Atlantic University",
+      "canonical": "Fla. Atlantic"
+    },
+    "universityoffloridaatlantic": {
+      "raw": "University of Florida Atlantic",
+      "canonical": "Fla. Atlantic"
+    },
+    "wichitastateuniversity": {
+      "raw": "Wichita State University",
+      "canonical": "Wichita St."
+    },
+    "universityofwichitastate": {
+      "raw": "University of Wichita State",
+      "canonical": "Wichita St."
+    },
+    "southfloridauniversity": {
+      "raw": "South Florida University",
+      "canonical": "South Fla."
+    },
+    "universityofsouthflorida": {
+      "raw": "University of South Florida",
+      "canonical": "South Fla."
+    },
+    "westfloridauniversity": {
+      "raw": "West Florida University",
+      "canonical": "West Florida"
+    },
+    "universityofwestflorida": {
+      "raw": "University of West Florida",
+      "canonical": "West Florida"
+    },
+    "kansasstateuniversity": {
+      "raw": "Kansas State University",
+      "canonical": "Kansas St."
+    },
+    "universityofkansasstate": {
+      "raw": "University of Kansas State",
+      "canonical": "Kansas St."
+    },
+    "arizonastateuniversity": {
+      "raw": "Arizona State University",
+      "canonical": "Arizona St."
+    },
+    "universityofarizonastate": {
+      "raw": "University of Arizona State",
+      "canonical": "Arizona St."
+    },
+    "iowastateuniversity": {
+      "raw": "Iowa State University",
+      "canonical": "Iowa St."
+    },
+    "universityofiowastate": {
+      "raw": "University of Iowa State",
+      "canonical": "Iowa St."
+    },
+    "stjohnsuniversity": {
+      "raw": "St. John's University",
+      "canonical": "St. John's (NY)"
+    },
+    "universityofstjohns": {
+      "raw": "University of St. John's",
+      "canonical": "St. John's (NY)"
+    },
+    "weberstateuniversity": {
+      "raw": "Weber State University",
+      "canonical": "Weber St."
+    },
+    "universityofweberstate": {
+      "raw": "University of Weber State",
+      "canonical": "Weber St."
+    },
+    "idahostateuniversity": {
+      "raw": "Idaho State University",
+      "canonical": "Idaho St."
+    },
+    "universityofidahostate": {
+      "raw": "University of Idaho State",
+      "canonical": "Idaho St."
+    },
+    "montanastateuniversity": {
+      "raw": "Montana State University",
+      "canonical": "Montana St."
+    },
+    "universityofmontanastate": {
+      "raw": "University of Montana State",
+      "canonical": "Montana St."
+    },
+    "northernarizonauniversity": {
+      "raw": "Northern Arizona University",
+      "canonical": "Northern Ariz."
+    },
+    "universityofnorthernarizona": {
+      "raw": "University of Northern Arizona",
+      "canonical": "Northern Ariz."
+    },
+    "easternwashingtonuniversity": {
+      "raw": "Eastern Washington University",
+      "canonical": "Eastern Wash."
+    },
+    "universityofeasternwashington": {
+      "raw": "University of Eastern Washington",
+      "canonical": "Eastern Wash."
+    },
+    "northerncoloradouniversity": {
+      "raw": "Northern Colorado University",
+      "canonical": "Northern Colo."
+    },
+    "portlandstateuniversity": {
+      "raw": "Portland State University",
+      "canonical": "Portland St."
+    },
+    "universityofportlandstate": {
+      "raw": "University of Portland State",
+      "canonical": "Portland St."
+    },
+    "charlestonsouthernuniversity": {
+      "raw": "Charleston Southern University",
+      "canonical": "Charleston So."
+    },
+    "universityofcharlestonsouthern": {
+      "raw": "University of Charleston Southern",
+      "canonical": "Charleston So."
+    },
+    "michiganstateuniversity": {
+      "raw": "Michigan State University",
+      "canonical": "Michigan St."
+    },
+    "universityofmichiganstate": {
+      "raw": "University of Michigan State",
+      "canonical": "Michigan St."
+    },
+    "pennstateuniversity": {
+      "raw": "Penn State University",
+      "canonical": "Penn St."
+    },
+    "universityofpennstate": {
+      "raw": "University of Penn State",
+      "canonical": "Penn St."
+    },
+    "ohiostateuniversity": {
+      "raw": "Ohio State University",
+      "canonical": "Ohio St."
+    },
+    "universityofohiostate": {
+      "raw": "University of Ohio State",
+      "canonical": "Ohio St."
+    },
+    "longbeachstateuniversity": {
+      "raw": "Long Beach State University",
+      "canonical": "Long Beach St."
+    },
+    "universityoflongbeachstate": {
+      "raw": "University of Long Beach State",
+      "canonical": "Long Beach St."
+    },
+    "sacramentostateuniversity": {
+      "raw": "Sacramento State University",
+      "canonical": "Sacramento St."
+    },
+    "universityofsacramentostate": {
+      "raw": "University of Sacramento State",
+      "canonical": "Sacramento St."
+    },
+    "calstatefullertonuniversity": {
+      "raw": "Cal State Fullerton University",
+      "canonical": "Cal St. Fullerton"
+    },
+    "universityofcalstatefullerton": {
+      "raw": "University of Cal State Fullerton",
+      "canonical": "Cal St. Fullerton"
+    },
+    "missouristateuniversity": {
+      "raw": "Missouri State University",
+      "canonical": "Missouri St."
+    },
+    "universityofmissouristate": {
+      "raw": "University of Missouri State",
+      "canonical": "Missouri St."
+    },
+    "kennesawstateuniversity": {
+      "raw": "Kennesaw State University",
+      "canonical": "Kennesaw St."
+    },
+    "universityofkennesawstate": {
+      "raw": "University of Kennesaw State",
+      "canonical": "Kennesaw St."
+    },
+    "wrightstateuniversity": {
+      "raw": "Wright State University",
+      "canonical": "Wright St."
+    },
+    "universityofwrightstate": {
+      "raw": "University of Wright State",
+      "canonical": "Wright St."
+    },
+    "northernkentuckyuniversity": {
+      "raw": "Northern Kentucky University",
+      "canonical": "Northern Ky."
+    },
+    "universityofnorthernkentucky": {
+      "raw": "University of Northern Kentucky",
+      "canonical": "Northern Ky."
+    },
+    "youngstownstateuniversity": {
+      "raw": "Youngstown State University",
+      "canonical": "Youngstown St."
+    },
+    "universityofyoungstownstate": {
+      "raw": "University of Youngstown State",
+      "canonical": "Youngstown St."
+    },
+    "clevelandstateuniversity": {
+      "raw": "Cleveland State University",
+      "canonical": "Cleveland St."
+    },
+    "universityofclevelandstate": {
+      "raw": "University of Cleveland State",
+      "canonical": "Cleveland St."
+    },
+    "ballstateuniversity": {
+      "raw": "Ball State University",
+      "canonical": "Ball St."
+    },
+    "universityofballstate": {
+      "raw": "University of Ball State",
+      "canonical": "Ball St."
+    },
+    "westernmichiganuniversity": {
+      "raw": "Western Michigan University",
+      "canonical": "Western Mich."
+    },
+    "universityofwesternmichigan": {
+      "raw": "University of Western Michigan",
+      "canonical": "Western Mich."
+    },
+    "kentstateuniversity": {
+      "raw": "Kent State University",
+      "canonical": "Kent St."
+    },
+    "universityofkentstate": {
+      "raw": "University of Kent State",
+      "canonical": "Kent St."
+    },
+    "easternmichiganuniversity": {
+      "raw": "Eastern Michigan University",
+      "canonical": "Eastern Mich."
+    },
+    "universityofeasternmichigan": {
+      "raw": "University of Eastern Michigan",
+      "canonical": "Eastern Mich."
+    },
+    "centralmichiganuniversity": {
+      "raw": "Central Michigan University",
+      "canonical": "Central Mich."
+    },
+    "universityofcentralmichigan": {
+      "raw": "University of Central Michigan",
+      "canonical": "Central Mich."
+    },
+    "delawarestateuniversity": {
+      "raw": "Delaware State University",
+      "canonical": "Delaware St."
+    },
+    "universityofdelawarestate": {
+      "raw": "University of Delaware State",
+      "canonical": "Delaware St."
+    },
+    "coppinstateuniversity": {
+      "raw": "Coppin State University",
+      "canonical": "Coppin St."
+    },
+    "universityofcoppinstate": {
+      "raw": "University of Coppin State",
+      "canonical": "Coppin St."
+    },
+    "norfolkstateuniversity": {
+      "raw": "Norfolk State University",
+      "canonical": "Norfolk St."
+    },
+    "universityofnorfolkstate": {
+      "raw": "University of Norfolk State",
+      "canonical": "Norfolk St."
+    },
+    "southcarolinastateuniversity": {
+      "raw": "South Carolina State University",
+      "canonical": "South Carolina St."
+    },
+    "universityofsouthcarolinastate": {
+      "raw": "University of South Carolina State",
+      "canonical": "South Carolina St."
+    },
+    "morganstateuniversity": {
+      "raw": "Morgan State University",
+      "canonical": "Morgan St."
+    },
+    "universityofmorganstate": {
+      "raw": "University of Morgan State",
+      "canonical": "Morgan St."
+    },
+    "sanjosestateuniversity": {
+      "raw": "San Jose State University",
+      "canonical": "San Jose St."
+    },
+    "universityofsanjosestate": {
+      "raw": "University of San Jose State",
+      "canonical": "San Jose St."
+    },
+    "illinoisstateuniversity": {
+      "raw": "Illinois State University",
+      "canonical": "Illinois St."
+    },
+    "universityofillinoisstate": {
+      "raw": "University of Illinois State",
+      "canonical": "Illinois St."
+    },
+    "indianastateuniversity": {
+      "raw": "Indiana State University",
+      "canonical": "Indiana St."
+    },
+    "universityofindianastate": {
+      "raw": "University of Indiana State",
+      "canonical": "Indiana St."
+    },
+    "southernillinoisuniversity": {
+      "raw": "Southern Illinois University",
+      "canonical": "Southern Ill."
+    },
+    "universityofsouthernillinois": {
+      "raw": "University of Southern Illinois",
+      "canonical": "Southern Ill."
+    },
+    "murraystateuniversity": {
+      "raw": "Murray State University",
+      "canonical": "Murray St."
+    },
+    "universityofmurraystate": {
+      "raw": "University of Murray State",
+      "canonical": "Murray St."
+    },
+    "universityofchicagostate": {
+      "raw": "University of Chicago State",
+      "canonical": "Chicago St."
+    },
+    "southernindianauniversity": {
+      "raw": "Southern Indiana University",
+      "canonical": "Southern Ind."
+    },
+    "moreheadstateuniversity": {
+      "raw": "Morehead State University",
+      "canonical": "Morehead St."
+    },
+    "universityofmoreheadstate": {
+      "raw": "University of Morehead State",
+      "canonical": "Morehead St."
+    },
+    "universityofeasternillinois": {
+      "raw": "University of Eastern Illinois",
+      "canonical": "Eastern Ill."
+    },
+    "universityoftennesseestate": {
+      "raw": "University of Tennessee State",
+      "canonical": "Tennessee St."
+    },
+    "westernillinoisuniversity": {
+      "raw": "Western Illinois University",
+      "canonical": "Western Ill."
+    },
+    "universityofwesternillinois": {
+      "raw": "University of Western Illinois",
+      "canonical": "Western Ill."
+    },
+    "coloradostateuniversityuniversity": {
+      "raw": "Colorado State University University",
+      "canonical": "Colorado St."
+    },
+    "universityofcoloradostateuniversity": {
+      "raw": "University of Colorado State University",
+      "canonical": "Colorado St."
+    },
+    "boisestateuniversityuniversity": {
+      "raw": "Boise State University University",
+      "canonical": "Boise St."
+    },
+    "universityofboisestateuniversity": {
+      "raw": "University of Boise State University",
+      "canonical": "Boise St."
+    },
+    "sandiegostateuniversityuniversity": {
+      "raw": "San Diego State University University",
+      "canonical": "San Diego St."
+    },
+    "universityofsandiegostateuniversity": {
+      "raw": "University of San Diego State University",
+      "canonical": "San Diego St."
+    },
+    "washingtonstateuniversityuniversity": {
+      "raw": "Washington State University University",
+      "canonical": "Washington St."
+    },
+    "universityofwashingtonstateuniversity": {
+      "raw": "University of Washington State University",
+      "canonical": "Washington St."
+    },
+    "fresnostateuniversity": {
+      "raw": "Fresno State University",
+      "canonical": "Fresno St."
+    },
+    "universityoffresnostate": {
+      "raw": "University of Fresno State",
+      "canonical": "Fresno St."
+    },
+    "oregonstateuniversity": {
+      "raw": "Oregon State University",
+      "canonical": "Oregon St."
+    },
+    "universityoforegonstate": {
+      "raw": "University of Oregon State",
+      "canonical": "Oregon St."
+    },
+    "texasstateuniversityuniversity": {
+      "raw": "Texas State University University",
+      "canonical": "Texas St."
+    },
+    "universityoftexasstateuniversity": {
+      "raw": "University of Texas State University",
+      "canonical": "Texas St."
+    },
+    "gonzagauniversityuniversity": {
+      "raw": "Gonzaga University University",
+      "canonical": "Gonzaga"
+    },
+    "universityofgonzagauniversity": {
+      "raw": "University of Gonzaga University",
+      "canonical": "Gonzaga"
+    },
+    "utahstateuniversityuniversity": {
+      "raw": "Utah State University University",
+      "canonical": "Utah St."
+    },
+    "universityofutahstateuniversity": {
+      "raw": "University of Utah State University",
+      "canonical": "Utah St."
+    },
+    "mississippistateuniversity": {
+      "raw": "Mississippi State University",
+      "canonical": "Mississippi St."
+    },
+    "universityofmississippistate": {
+      "raw": "University of Mississippi State",
+      "canonical": "Mississippi St."
+    },
+    "westerncarolinauniversity": {
+      "raw": "Western Carolina University",
+      "canonical": "Western Caro."
+    },
+    "universityofwesterncarolina": {
+      "raw": "University of Western Carolina",
+      "canonical": "Western Caro."
+    },
+    "northwesternstateuniversity": {
+      "raw": "Northwestern State University",
+      "canonical": "Northwestern St."
+    },
+    "universityofnorthwesternstate": {
+      "raw": "University of Northwestern State",
+      "canonical": "Northwestern St."
+    },
+    "universityoflamar": {
+      "raw": "University of Lamar",
+      "canonical": "Lamar University"
+    },
+    "universityofnorthdakotastate": {
+      "raw": "University of North Dakota State",
+      "canonical": "North Dakota St."
+    },
+    "southdakotastateuniversity": {
+      "raw": "South Dakota State University",
+      "canonical": "South Dakota St."
+    },
+    "universityofsouthdakotastate": {
+      "raw": "University of South Dakota State",
+      "canonical": "South Dakota St."
+    },
+    "stthomasuniversity": {
+      "raw": "St. Thomas University",
+      "canonical": "St. Thomas (MN)"
+    },
+    "universityofstthomas": {
+      "raw": "University of St. Thomas",
+      "canonical": "St. Thomas (MN)"
+    },
+    "georgiasouthernuniversity": {
+      "raw": "Georgia Southern University",
+      "canonical": "Ga. Southern"
+    },
+    "universityofgeorgiasouthern": {
+      "raw": "University of Georgia Southern",
+      "canonical": "Ga. Southern"
+    },
+    "georgiastateuniversity": {
+      "raw": "Georgia State University",
+      "canonical": "Georgia St."
+    },
+    "universityofgeorgiastate": {
+      "raw": "University of Georgia State",
+      "canonical": "Georgia St."
+    },
+    "arkansasstateuniversity": {
+      "raw": "Arkansas State University",
+      "canonical": "Arkansas St."
+    },
+    "universityofarkansasstate": {
+      "raw": "University of Arkansas State",
+      "canonical": "Arkansas St."
+    },
+    "jacksonstateuniversity": {
+      "raw": "Jackson State University",
+      "canonical": "Jackson St."
+    },
+    "universityofjacksonstate": {
+      "raw": "University of Jackson State",
+      "canonical": "Jackson St."
+    },
+    "alabamastateuniversity": {
+      "raw": "Alabama State University",
+      "canonical": "Alabama St."
+    },
+    "universityofalabamastate": {
+      "raw": "University of Alabama State",
+      "canonical": "Alabama St."
+    },
+    "easternkentuckyuniversity": {
+      "raw": "Eastern Kentucky University",
+      "canonical": "Eastern Ky."
+    },
+    "universityofeasternkentucky": {
+      "raw": "University of Eastern Kentucky",
+      "canonical": "Eastern Ky."
+    },
+    "northalabamauniversity": {
+      "raw": "North Alabama University",
+      "canonical": "North Ala."
+    },
+    "universityofnorthalabama": {
+      "raw": "University of North Alabama",
+      "canonical": "North Ala."
+    },
+    "westgeorgiauniversity": {
+      "raw": "West Georgia University",
+      "canonical": "West Ga."
+    },
+    "universityofwestgeorgia": {
+      "raw": "University of West Georgia",
+      "canonical": "West Ga."
+    },
+    "tarletonstateuniversity": {
+      "raw": "Tarleton State University",
+      "canonical": "Tarleton St."
+    },
+    "universityoftarletonstate": {
+      "raw": "University of Tarleton State",
+      "canonical": "Tarleton St."
+    },
+    "centralarkansasuniversity": {
+      "raw": "Central Arkansas University",
+      "canonical": "Central Ark."
+    },
+    "universityofcentralarkansas": {
+      "raw": "University of Central Arkansas",
+      "canonical": "Central Ark."
+    },
+    "lmuuniversity": {
+      "raw": "LMU University",
+      "canonical": "LMU (CA)"
+    },
+    "universityoflmu": {
+      "raw": "University of LMU",
+      "canonical": "LMU (CA)"
+    },
+    "saintmarysuniversity": {
+      "raw": "Saint Mary's University",
+      "canonical": "Saint Mary's (CA)"
+    },
+    "universityofsaintmarys": {
+      "raw": "University of Saint Mary's",
+      "canonical": "Saint Mary's (CA)"
+    },
+    "jacksonvillestateuniversity": {
+      "raw": "Jacksonville State University",
+      "canonical": "Jacksonville St."
+    },
+    "universityofjacksonvillestate": {
+      "raw": "University of Jacksonville State",
+      "canonical": "Jacksonville St."
+    },
+    "universityofsandiegostate": {
+      "raw": "University of San Diego State",
+      "canonical": "San Diego St."
+    },
+    "universityofboisestate": {
+      "raw": "University of Boise State",
+      "canonical": "Boise St."
+    },
+    "universityofwashingtonstate": {
+      "raw": "University of Washington State",
+      "canonical": "Washington St."
+    },
+    "universityofutahstate": {
+      "raw": "University of Utah State",
+      "canonical": "Utah St."
+    },
+    "southeastmostateuniversity": {
+      "raw": "Southeast Mo. State University",
+      "canonical": "Southeast Mo. St."
+    },
+    "universityofsoutheastmostate": {
+      "raw": "University of Southeast Mo. State",
+      "canonical": "Southeast Mo. St."
+    },
+    "chicagostateuniversityuniversity": {
+      "raw": "Chicago State University University",
+      "canonical": "Chicago St."
+    },
+    "universityofchicagostateuniversity": {
+      "raw": "University of Chicago State University",
+      "canonical": "Chicago St."
+    },
+    "tennesseestateuniversityuniversity": {
+      "raw": "Tennessee State University University",
+      "canonical": "Tennessee St."
+    },
+    "universityoftennesseestateuniversity": {
+      "raw": "University of Tennessee State University",
+      "canonical": "Tennessee St."
+    },
+    "tennesseetechuniversityuniversity": {
+      "raw": "Tennessee Tech University University",
+      "canonical": "Tennessee Tech"
+    },
+    "universityoftennesseetechuniversity": {
+      "raw": "University of Tennessee Tech University",
+      "canonical": "Tennessee Tech"
+    },
+    "easternillinoisuniversityuniversity": {
+      "raw": "Eastern Illinois University University",
+      "canonical": "Eastern Ill."
+    },
+    "universityofeasternillinoisuniversity": {
+      "raw": "University of Eastern Illinois University",
+      "canonical": "Eastern Ill."
+    },
+    "hamptonuniversityuniversity": {
+      "raw": "Hampton University University",
+      "canonical": "Hampton"
+    },
+    "universityofhamptonuniversity": {
+      "raw": "University of Hampton University",
+      "canonical": "Hampton"
+    },
+    "universityofcoloradostate": {
+      "raw": "University of Colorado State",
+      "canonical": "Colorado St."
+    },
+    "northdakotastateuniversityuniversity": {
+      "raw": "North Dakota State University University",
+      "canonical": "North Dakota St."
+    },
+    "universityofnorthdakotastateuniversity": {
+      "raw": "University of North Dakota State University",
+      "canonical": "North Dakota St."
+    },
+    "southernutahuniversityuniversity": {
+      "raw": "Southern Utah University University",
+      "canonical": "Southern Utah"
+    },
+    "universityofsouthernutahuniversity": {
+      "raw": "University of Southern Utah University",
+      "canonical": "Southern Utah"
+    },
+    "californiabaptistuniversityuniversity": {
+      "raw": "California Baptist University University",
+      "canonical": "California Baptist"
+    },
+    "universityofcaliforniabaptistuniversity": {
+      "raw": "University of California Baptist University",
+      "canonical": "California Baptist"
+    },
+    "universityoftexasstate": {
+      "raw": "University of Texas State",
+      "canonical": "Texas St."
+    },
+    "southernuniversityuniversity": {
+      "raw": "Southern University University",
+      "canonical": "Southern U."
+    },
+    "universityofsouthernuniversity": {
+      "raw": "University of Southern University",
+      "canonical": "Southern U."
+    },
+    "universityofpittsburghuniversity": {
+      "raw": "University of Pittsburgh University",
+      "canonical": "Pittsburgh"
+    },
+    "universityofuniversityofpittsburgh": {
+      "raw": "University of University of Pittsburgh",
+      "canonical": "Pittsburgh"
+    },
+    "universityofconnecticutuniversity": {
+      "raw": "University of Connecticut University",
+      "canonical": "UConn"
+    },
+    "universityofuniversityofconnecticut": {
+      "raw": "University of University of Connecticut",
+      "canonical": "UConn"
+    },
+    "universityofsouthernmississippiuniversity": {
+      "raw": "University of Southern Mississippi University",
+      "canonical": "Southern Miss."
+    },
+    "universityofuniversityofsouthernmississippi": {
+      "raw": "University of University of Southern Mississippi",
+      "canonical": "Southern Miss."
+    },
+    "floridainternationaluniversityuniversity": {
+      "raw": "Florida International University University",
+      "canonical": "FIU"
+    },
+    "universityoffloridainternationaluniversity": {
+      "raw": "University of Florida International University",
+      "canonical": "FIU"
+    },
+    "texasamcorpuschristiuniversity": {
+      "raw": "Texas A&M - Corpus Christi University",
+      "canonical": "A&M-Corpus Christi"
+    },
+    "universityoftexasamcorpuschristi": {
+      "raw": "University of Texas A&M - Corpus Christi",
+      "canonical": "A&M-Corpus Christi"
+    },
+    "uapbuniversity": {
+      "raw": "UAPB University",
+      "canonical": "Ark.-Pine Bluff"
+    },
+    "universityofuapb": {
+      "raw": "University of UAPB",
+      "canonical": "Ark.-Pine Bluff"
+    },
+    "stonehillcollegeuniversity": {
+      "raw": "Stonehill College University",
+      "canonical": "Stonehill"
+    },
+    "universityofstonehillcollege": {
+      "raw": "University of Stonehill College",
+      "canonical": "Stonehill"
+    },
+    "seattleuniversity": {
+      "raw": "Seattle University",
+      "canonical": "Seattle U"
+    },
+    "universityofseattle": {
+      "raw": "University of Seattle",
+      "canonical": "Seattle U"
+    }
+  },
+  "nonD1": {
+    "Tampa": "NCAA D-II",
+    "Fla. Southern": "NCAA D-II",
+    "Southwest Minn. St.": "NCAA D-II",
+    "Wheeling": "NCAA D-II",
+    "Montreat": "NAIA",
+    "Claflin": "NCAA D-II",
+    "Bowie St.": "NCAA D-II",
+    "Tuskegee": "NCAA D-II",
+    "Rutgers-Camden": "NCAA D-III",
+    "Dillard": "NAIA",
+    "Wiley": "NAIA",
+    "Henderson St.": "NCAA D-II",
+    "UT Tyler": "NCAA D-II",
+    "Erskine": "NCAA D-II",
+    "Missouri S&T": "NCAA D-II",
+    "Southern-New Orleans": "NAIA"
+  },
+  "supplements": [
+    {
+      "id": "gap-ucriverside",
+      "team": "UC Riverside",
+      "url": "http://bigwest.org/schedule.aspx?schedule=2862",
+      "file": "C:\\Users\\BrodeMcDonald\\Documents\\Codex\\2026-09-21\\got-x20\\work\\conference-data\\gap-ucriverside.html",
+      "confid": "bigwest"
+    },
+    {
+      "id": "gap-southcarolinast",
+      "team": "South Carolina St.",
+      "url": "https://meacsports.com/schedule.aspx?schedule=5672",
+      "file": "C:\\Users\\BrodeMcDonald\\Documents\\Codex\\2026-09-21\\got-x20\\work\\conference-data\\gap-southcarolinast.html",
+      "confid": "meac"
+    },
+    {
+      "id": "gap-southernu",
+      "team": "Southern U.",
+      "url": "https://swac.org/schedule.aspx?schedule=2483",
+      "file": "C:\\Users\\BrodeMcDonald\\Documents\\Codex\\2026-09-21\\got-x20\\work\\conference-data\\gap-southernu.html",
+      "confid": "swac"
+    },
+    {
+      "id": "gap-mississippival",
+      "team": "Mississippi Val.",
+      "url": "https://swac.org/schedule.aspx?schedule=2486",
+      "file": "C:\\Users\\BrodeMcDonald\\Documents\\Codex\\2026-09-21\\got-x20\\work\\conference-data\\gap-mississippival.html",
+      "confid": "swac"
+    }
+  ],
+  "corrections": [
+    {
+      "date": "2026-08-29",
+      "confid": "asun",
+      "team": "Jacksonville",
+      "wrong": "SMU",
+      "right": "Southern Miss.",
+      "url": "https://asunsports.org/schedule.aspx?schedule=3618",
+      "note": "ASUN statistics mislabeled Southern Miss. as SMU; team schedule and Sun Belt results identify Southern Miss."
+    },
+    {
+      "date": "2026-09-05",
+      "confid": "swac",
+      "team": "Ark.-Pine Bluff",
+      "wrong": "Missouri St.",
+      "right": "Missouri S&T",
+      "url": "https://minerathletics.com/story.aspx?file_date=9-6-2026&filename=womens-volleyball-miners-earn-another-split-on-final-day-of-reddie-tiger",
+      "note": "SWAC statistics mislabeled Division II Missouri S&T as Missouri State; corrected from Missouri S&T match recap."
+    }
+  ],
+  "methodology": "Base, unadjusted RPI = 25% D1 winning percentage + 50% opponents winning percentage (excluding games against the rated team) + 25% opponents opponents winning percentage. Repeated opponents are weighted per match. Non-D1 and exhibitions are excluded. NCAA bonuses/penalties and selection eligibility are not modeled.",
+  "methodSource": "https://ncaaorg.s3.amazonaws.com/championships/sports/volleyball/d1/women/2025-26D1WVB_PreChampsManual.pdf",
+  "matchTypes": [
+    {
+      "date": "2026-08-30",
+      "a": "Georgia St.",
+      "b": "South Alabama",
+      "kind": "Nonconference",
+      "note": "Reviewed correction: both schools identify the Jaguar Classic match as nonconference; conference statistics mark it with an asterisk.",
+      "url": "https://georgiastatesports.com/news/2026/7/22/untitled-story.aspx | https://usajaguars.com/news/2026/5/20/womens-volleyball-jaguars-announce-2026-schedule.aspx"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isTcsUser() {
+      return signedIn()
+        && request.auth.token.email_verified == true
+        && request.auth.token.email.matches('^[^@]+@triplecrownsports\\.com$');
+    }
+
+    function userRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    function isAdmin() {
+      return isTcsUser() && userRole() == 'admin';
+    }
+
+    match /users/{uid} {
+      allow read: if isTcsUser();
+      allow create: if isTcsUser() && request.auth.uid == uid;
+      allow update: if isAdmin() || (isTcsUser() && request.auth.uid == uid
+        && request.resource.data.role == resource.data.role);
+      allow delete: if isAdmin();
+    }
+
+    match /outreach/{school} {
+      allow read: if isTcsUser();
+      allow create: if isTcsUser()
+        && request.resource.data.keys().hasOnly([
+          'school', 'watchlist', 'ncaaSelection', 'stage', 'owner', 'contactName',
+          'email', 'lastContact', 'nextStep', 'hostInterest', 'notes',
+          'updatedBy', 'updatedByName', 'updatedAt'
+        ])
+        && request.resource.data.updatedBy == request.auth.uid;
+      allow update: if isTcsUser()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'school', 'watchlist', 'ncaaSelection', 'stage', 'owner', 'contactName',
+          'email', 'lastContact', 'nextStep', 'hostInterest', 'notes',
+          'updatedBy', 'updatedByName', 'updatedAt'
+        ])
+        && request.resource.data.updatedBy == request.auth.uid;
+      allow delete: if false;
+    }
+
+    match /config/rules {
+      allow read: if isTcsUser();
+      allow create, update: if isTcsUser();
+      allow delete: if false;
+    }
+
+    match /config/rules/history/{entry} {
+      allow read: if isTcsUser();
+      allow create: if isTcsUser() && request.resource.data.updatedBy == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    match /config/sources {
+      allow read: if isTcsUser();
+      allow write: if isAdmin();
+    }
+
+    match /schoolNames/{alias} {
+      allow read: if isTcsUser();
+      allow write: if isAdmin();
+    }
+
+    match /{collection}/{document} {
+      allow read: if isTcsUser()
+        && collection in ['rankings', 'standings', 'matches', 'baseline2025', 'runs', 'method'];
+      allow write: if false;
+    }
+
+    match /runs/{runId}/{subcollection}/{document} {
+      allow read: if isTcsUser();
+      allow write: if false;
+    }
+  }
+}
