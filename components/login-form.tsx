@@ -36,6 +36,14 @@ function firebaseMessage(error: unknown): string {
       return "Firebase temporarily limited sign-in attempts. Wait a few minutes and try again.";
     case "auth/network-request-failed":
       return "Firebase could not be reached. Check your connection and try again.";
+    case "auth/unauthorized-continue-uri":
+    case "auth/unauthorized-domain":
+      return "Firebase is not authorized for this site. Contact the app administrator.";
+    case "auth/operation-not-allowed":
+      return "Email and password accounts are not enabled. Contact the app administrator.";
+    case "auth/invalid-api-key":
+    case "auth/app-not-authorized":
+      return "The Firebase configuration is invalid. Contact the app administrator.";
     default:
       return "Firebase could not complete the request. Check the information and try again.";
   }
@@ -101,9 +109,13 @@ export function LoginForm({ nextPath, initialNotice = "" }: { nextPath: string; 
     await setPersistence(firebaseAuth, inMemoryPersistence);
     const credential = await createUserWithEmailAndPassword(firebaseAuth, normalized, password);
     await updateProfile(credential.user, { displayName: displayName.trim() });
-    await sendEmailVerification(credential.user, { url: actionUrl("verified") });
     setPendingUser(credential.user);
     setMode("verify");
+    try {
+      await sendEmailVerification(credential.user, { url: actionUrl("verified") });
+    } catch (verificationError) {
+      throw new Error(`Your account was created, but the verification email was not sent. ${firebaseMessage(verificationError)}`);
+    }
     setNotice(`Verification sent to ${normalized}. Open that message before signing in.`);
   }
 
