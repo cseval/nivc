@@ -1,0 +1,13 @@
+.git/
+.next/
+node_modules/
+.env
+.env.*
+reference/
+tests/
+scripts/
+work/
+outputs/
+*.xls
+*.xlsx
+*.xlsm

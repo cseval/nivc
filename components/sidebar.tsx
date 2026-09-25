@@ -21,7 +21,7 @@ const reference = [
 
 export function Sidebar() {
   const pathname = usePathname();
-  const { preview, user, signOutUser } = useSession();
+  const { displayName, email, signingOut, signOutUser } = useSession();
   const [open, setOpen] = useState(false);
 
   const renderLinks = (links: typeof primary) =>
@@ -63,14 +63,10 @@ export function Sidebar() {
         {renderLinks(reference)}
       </nav>
       <div className="sidebar-footer">
-        <p>{preview ? "Workbook preview" : user?.displayName ?? user?.email}</p>
-        {preview ? (
-          <span className="badge badge-info">Fixture mode</span>
-        ) : (
-          <button className="btn btn-secondary" onClick={() => void signOutUser()}>
-            Sign out
-          </button>
-        )}
+        <p title={email}>{displayName || email}</p>
+        <button className="btn btn-secondary" disabled={signingOut} onClick={() => void signOutUser()}>
+          {signingOut ? "Signing out…" : "Sign out"}
+        </button>
       </div>
     </aside>
   );

@@ -1,7 +1,10 @@
 "use client";
 
-import { Fragment, useMemo, useState } from "react";
-import type { MatchInput, RankingResult } from "@/lib/rpi/types";
+import { Fragment, useCallback, useEffect, useRef, useState } from "react";
+import { responseMessage } from "@/lib/auth/client";
+import { PaginationControls } from "@/components/pagination-controls";
+import type { PageResult, SchoolScheduleRow } from "@/lib/data/query";
+import type { RankingResult } from "@/lib/rpi/types";
 
 const columns: Array<{ key: keyof RankingResult; label: string; digits?: number }> = [
   { key: "conference", label: "Conference" },
@@ -43,33 +46,73 @@ function display(value: unknown, digits?: number): string {
   return String(value);
 }
 
-export function RankingsTable({ rows, matches }: { rows: RankingResult[]; matches: MatchInput[] }) {
+export function RankingsTable({ initialPage, conferences }: { initialPage: PageResult<RankingResult>; conferences: string[] }) {
+  const [pageData, setPageData] = useState(initialPage);
   const [search, setSearch] = useState("");
   const [conference, setConference] = useState("");
   const [reviewOnly, setReviewOnly] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
-  const conferences = useMemo(() => Array.from(new Set(rows.map((row) => row.conference))).sort(), [rows]);
-  const rankBySchool = useMemo(() => new Map(rows.map((row) => [row.school, row.baseRank])), [rows]);
-  const filtered = rows
-    .filter((row) => !search || row.school.toLowerCase().includes(search.toLowerCase()))
-    .filter((row) => !conference || row.conference === conference)
-    .filter((row) => !reviewOnly || row.standingsCheck !== "Matches standings")
-    .sort((left, right) => (left.adjustedRank ?? 9999) - (right.adjustedRank ?? 9999));
+  const [schedules, setSchedules] = useState<Record<string, SchoolScheduleRow[]>>({});
+  const [loading, setLoading] = useState(false);
+  const [loadingSchedule, setLoadingSchedule] = useState("");
+  const [loadError, setLoadError] = useState("");
+  const [scheduleError, setScheduleError] = useState("");
+  const firstRender = useRef(true);
+  const activeRequest = useRef<AbortController | null>(null);
 
-  function schoolMatches(school: string) {
-    return matches
-      .filter((match) =>
-        match.division1 === "D1" &&
-        match.division2 === "D1" &&
-        (match.school1 === school || match.school2 === school)
-      )
-      .map((match) => {
-        const schoolIsFirst = match.school1 === school;
-        const opponent = schoolIsFirst ? match.school2 : match.school1;
-        const won = schoolIsFirst ? match.sets1 > match.sets2 : match.sets2 > match.sets1;
-        return { match, opponent, opponentRank: rankBySchool.get(opponent), won };
-      })
-      .sort((left, right) => left.match.date.localeCompare(right.match.date));
+  const loadPage = useCallback(async (page: number) => {
+    activeRequest.current?.abort();
+    const controller = new AbortController();
+    activeRequest.current = controller;
+    const params = new URLSearchParams({ page: String(page) });
+    if (search.trim()) params.set("search", search.trim());
+    if (conference) params.set("conference", conference);
+    if (reviewOnly) params.set("reviewOnly", "true");
+    setLoading(true);
+    setLoadError("");
+    try {
+      const response = await fetch(`/api/rankings?${params}`, { cache: "no-store", credentials: "same-origin", signal: controller.signal });
+      if (!response.ok) throw new Error(await responseMessage(response, "Rankings could not be loaded."));
+      setPageData(await response.json() as PageResult<RankingResult>);
+      setExpanded(null);
+    } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") return;
+      setLoadError(error instanceof Error ? error.message : "Rankings could not be loaded. Refresh the page and try again.");
+    } finally {
+      if (activeRequest.current === controller) setLoading(false);
+    }
+  }, [conference, reviewOnly, search]);
+
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false;
+      return;
+    }
+    const timeout = window.setTimeout(() => void loadPage(1), 250);
+    return () => window.clearTimeout(timeout);
+  }, [loadPage]);
+
+  useEffect(() => () => activeRequest.current?.abort(), []);
+
+  async function toggleSchedule(school: string) {
+    if (expanded === school) {
+      setExpanded(null);
+      return;
+    }
+    setExpanded(school);
+    setScheduleError("");
+    if (schedules[school]) return;
+    setLoadingSchedule(school);
+    try {
+      const response = await fetch(`/api/rankings/schedule?school=${encodeURIComponent(school)}`, { cache: "no-store", credentials: "same-origin" });
+      if (!response.ok) throw new Error(await responseMessage(response, "The school schedule could not be loaded."));
+      const body = await response.json() as { schedule: SchoolScheduleRow[] };
+      setSchedules((current) => ({ ...current, [school]: body.schedule }));
+    } catch (error) {
+      setScheduleError(error instanceof Error ? error.message : "The school schedule could not be loaded. Close the row and try again.");
+    } finally {
+      setLoadingSchedule("");
+    }
   }
 
   return (
@@ -79,15 +122,16 @@ export function RankingsTable({ rows, matches }: { rows: RankingResult[]; matche
         <div className="form-group"><label htmlFor="ranking-conference">Conference</label><select id="ranking-conference" value={conference} onChange={(event) => setConference(event.target.value)}><option value="">All conferences</option>{conferences.map((value) => <option key={value}>{value}</option>)}</select></div>
         <label className="filter-checkbox"><input type="checkbox" checked={reviewOnly} onChange={(event) => setReviewOnly(event.target.checked)} /> Review flags</label>
       </div>
-      <div className="table-summary"><span>{filtered.length} schools</span><span>Select a school to inspect its D1 schedule</span></div>
-      <div className="table-container desktop-table">
+      {loadError ? <div className="status-note status-note-error" role="alert">{loadError}</div> : null}
+      <div className="table-summary"><span>{loading ? "Loading filtered rankings…" : `${pageData.items.length} schools on this page`}</span><span>Select a school to load its D1 schedule</span></div>
+      <div className="table-container desktop-table" aria-busy={loading}>
         <table>
           <thead><tr><th className="sticky-column">School</th>{columns.map((column) => <th key={column.key}>{column.label}</th>)}</tr></thead>
           <tbody>
-            {filtered.map((row) => (
+            {pageData.items.map((row) => (
               <Fragment key={row.school}>
-                <tr className="clickable" onClick={() => setExpanded(expanded === row.school ? null : row.school)}>
-                  <td className="sticky-column"><button className="school-button">{row.school}</button></td>
+                <tr>
+                  <td className="sticky-column"><button className="school-button" aria-expanded={expanded === row.school} onClick={() => void toggleSchedule(row.school)}>{row.school}</button></td>
                   {columns.map((column) => {
                     const value = row[column.key];
                     const status = column.key === "standingsCheck";
@@ -95,14 +139,15 @@ export function RankingsTable({ rows, matches }: { rows: RankingResult[]; matche
                   })}
                 </tr>
                 {expanded === row.school ? (
-                  <tr className="expanded-row"><td colSpan={32}><div className="expanded-panel"><div><h3>{row.school} D1 schedule</h3><p className="data-muted">Opponent rank uses the unadjusted base rank.</p></div><div className="table-container" style={{ gridColumn: "1 / -1", maxHeight: 320 }}><table><thead><tr><th>Date</th><th>Opponent</th><th>Opponent base rank</th><th>Result</th><th>Match type</th></tr></thead><tbody>{schoolMatches(row.school).map(({ match, opponent, opponentRank, won }) => <tr key={match.id}><td className="numeric">{match.date}</td><td>{opponent}</td><td className="numeric">{opponentRank ?? "—"}</td><td><span className={won ? "badge badge-success" : "badge badge-danger"}>{won ? "Win" : "Loss"}</span> {match.school1 === row.school ? `${match.sets1}-${match.sets2}` : `${match.sets2}-${match.sets1}`}</td><td>{match.matchType}</td></tr>)}</tbody></table></div></div></td></tr>
+                  <tr className="expanded-row"><td colSpan={32}><div className="expanded-panel schedule-panel"><div><h3>{row.school} D1 schedule</h3><p className="data-muted">Opponent rank uses the unadjusted base rank.</p></div>{loadingSchedule === row.school ? <div className="loading compact-loading">Loading {row.school}&apos;s schedule…</div> : scheduleError ? <div className="status-note status-note-error" role="alert">{scheduleError}</div> : <div className="table-container schedule-table"><table><thead><tr><th>Date</th><th>Opponent</th><th>Opponent base rank</th><th>Result</th><th>Match type</th></tr></thead><tbody>{(schedules[row.school] ?? []).map((match) => <tr key={match.id}><td className="numeric">{match.date}</td><td>{match.opponent}</td><td className="numeric">{match.opponentRank ?? "—"}</td><td><span className={match.won ? "badge badge-success" : "badge badge-danger"}>{match.won ? "Win" : "Loss"}</span> {match.score}</td><td>{match.matchType}</td></tr>)}</tbody></table></div>}</div></td></tr>
                 ) : null}
               </Fragment>
             ))}
           </tbody>
         </table>
       </div>
-      <div className="mobile-card-list">{filtered.map((row) => <article className="mobile-data-card" key={row.school}><header><h2>{row.school}</h2><span className="pill">#{row.adjustedRank}</span></header><dl><div><dt>Base rank</dt><dd>{row.baseRank}</dd></div><div><dt>Adjusted RPI</dt><dd className="numeric">{row.adjustedRpi?.toFixed(6)}</dd></div><div><dt>Change</dt><dd>{row.rankChange && row.rankChange > 0 ? `+${row.rankChange}` : row.rankChange}</dd></div></dl></article>)}</div>
+      <div className="mobile-card-list" aria-busy={loading}>{pageData.items.map((row) => <article className="mobile-data-card" key={row.school}><header><h2>{row.school}</h2><span className="pill">#{row.adjustedRank}</span></header><dl><div><dt>Base rank</dt><dd>{row.baseRank}</dd></div><div><dt>Adjusted RPI</dt><dd className="numeric">{row.adjustedRpi?.toFixed(6)}</dd></div><div><dt>Change</dt><dd>{row.rankChange && row.rankChange > 0 ? `+${row.rankChange}` : row.rankChange}</dd></div></dl></article>)}</div>
+      <PaginationControls page={pageData.page} pageCount={pageData.pageCount} total={pageData.total} itemLabel="schools" loading={loading} onPageChange={(page) => void loadPage(page)} />
     </section>
   );
 }

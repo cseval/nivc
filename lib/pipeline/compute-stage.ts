@@ -1,4 +1,5 @@
 import { FieldValue } from "firebase-admin/firestore";
+import { invalidatePublishedDataCache } from "@/lib/data/cache";
 import { getAdminDb } from "@/lib/firebase/admin";
 import { sendFailureAlert } from "@/lib/pipeline/alerts";
 import { deleteMissingDocuments, writeDocuments } from "@/lib/pipeline/firestore";
@@ -52,6 +53,7 @@ export async function runComputeStage(runId: string) {
     const throughGames = matches.map((match) => match.date).sort().at(-1) ?? null;
     await db.doc("config/publication").set({ runId, schoolCount: standings.length, matchCount: matches.length, sourcePulledAt: run.data()?.sourcePulledAt, throughGames, standingsDiscrepancies: discrepancies, publishedAt: FieldValue.serverTimestamp() });
     await runRef.set({ status: "succeeded", stages: { compute: "succeeded" }, counts: { schools: standings.length, matches: matches.length, discrepancies }, throughGames, finishedAt: FieldValue.serverTimestamp(), error: FieldValue.delete() }, { merge: true });
+    invalidatePublishedDataCache();
   } catch (error) {
     await runRef.set({ status: "failed", stages: { compute: "failed" }, error: error instanceof Error ? error.message : String(error), finishedAt: FieldValue.serverTimestamp() }, { merge: true });
     await sendFailureAlert(runId, "compute", error);

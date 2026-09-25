@@ -1,10 +1,10 @@
 "use client";
 
-import { collection, doc, onSnapshot, serverTimestamp, setDoc } from "firebase/firestore";
-import { Fragment, useEffect, useMemo, useState } from "react";
-import { useSession } from "@/components/auth-provider";
+import { Fragment, useCallback, useEffect, useRef, useState } from "react";
+import { responseMessage, secureFetch } from "@/lib/auth/client";
+import { PaginationControls } from "@/components/pagination-controls";
+import type { PageResult } from "@/lib/data/query";
 import type { OutreachField, OutreachRecord, TrackingRow } from "@/lib/data/types";
-import { firebaseDb } from "@/lib/firebase/client";
 
 const STAGES = ["Not started", "Researching", "Contacted", "Follow-up", "Complete"];
 const YES_NO = ["No", "Yes"];
@@ -27,17 +27,17 @@ function editorTitle(outreach: OutreachRecord): string {
   return `Last edited by ${outreach.updatedByName} on ${new Date(outreach.updatedAt).toLocaleString()}`;
 }
 
-function normalizeOutreach(record: OutreachRecord & { updatedAt?: unknown }): OutreachRecord {
-  const value = record.updatedAt;
-  const updatedAt = value && typeof value === "object" && "toDate" in value
-    ? (value as { toDate: () => Date }).toDate().toISOString()
-    : typeof value === "string" ? value : null;
-  return { ...record, updatedAt };
-}
-
-export function TrackingTable({ initialRows }: { initialRows: TrackingRow[] }) {
-  const session = useSession();
-  const [rows, setRows] = useState(initialRows);
+export function TrackingTable({
+  initialPage,
+  conferences,
+  owners
+}: {
+  initialPage: PageResult<TrackingRow>;
+  conferences: string[];
+  owners: string[];
+}) {
+  const [pageData, setPageData] = useState(initialPage);
+  const [rows, setRows] = useState(initialPage.items);
   const [search, setSearch] = useState("");
   const [watchlistOnly, setWatchlistOnly] = useState(false);
   const [stage, setStage] = useState("");
@@ -48,60 +48,52 @@ export function TrackingTable({ initialRows }: { initialRows: TrackingRow[] }) {
   const [reviewOnly, setReviewOnly] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
   const [savedCell, setSavedCell] = useState("");
+  const [saveError, setSaveError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [loadError, setLoadError] = useState("");
+  const firstRender = useRef(true);
+  const activeRequest = useRef<AbortController | null>(null);
+
+  const loadPage = useCallback(async (page: number) => {
+    activeRequest.current?.abort();
+    const controller = new AbortController();
+    activeRequest.current = controller;
+    const params = new URLSearchParams({ page: String(page) });
+    if (search.trim()) params.set("search", search.trim());
+    if (watchlistOnly) params.set("watchlistOnly", "true");
+    if (stage) params.set("stage", stage);
+    if (owner) params.set("owner", owner);
+    if (conference) params.set("conference", conference);
+    if (minimumRank) params.set("minimumRank", minimumRank);
+    if (maximumRank) params.set("maximumRank", maximumRank);
+    if (reviewOnly) params.set("reviewOnly", "true");
+    setLoading(true);
+    setLoadError("");
+    try {
+      const response = await fetch(`/api/tracking?${params}`, { cache: "no-store", credentials: "same-origin", signal: controller.signal });
+      if (!response.ok) throw new Error(await responseMessage(response, "Tracking rows could not be loaded."));
+      const result = await response.json() as PageResult<TrackingRow>;
+      setPageData(result);
+      setRows(result.items);
+      setExpanded(null);
+    } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") return;
+      setLoadError(error instanceof Error ? error.message : "Tracking rows could not be loaded. Refresh the page and try again.");
+    } finally {
+      if (activeRequest.current === controller) setLoading(false);
+    }
+  }, [conference, maximumRank, minimumRank, owner, reviewOnly, search, stage, watchlistOnly]);
 
   useEffect(() => {
-    if (!session.preview || typeof window === "undefined") return;
-    const saved = window.localStorage.getItem("nivc-outreach-preview");
-    if (!saved) return;
-    const patches = JSON.parse(saved) as Record<string, Partial<OutreachRecord>>;
-    setRows((current) =>
-      current.map((row) => ({
-        ...row,
-        outreach: { ...row.outreach, ...(patches[row.id] ?? {}) }
-      }))
-    );
-  }, [session.preview]);
+    if (firstRender.current) {
+      firstRender.current = false;
+      return;
+    }
+    const timeout = window.setTimeout(() => void loadPage(1), 250);
+    return () => window.clearTimeout(timeout);
+  }, [loadPage]);
 
-  useEffect(() => {
-    if (!firebaseDb) return;
-    return onSnapshot(collection(firebaseDb, "outreach"), (snapshot) => {
-      const updates = new Map(snapshot.docs.map((item) => [item.id, normalizeOutreach(item.data() as OutreachRecord)]));
-      setRows((current) =>
-        current.map((row) => ({
-          ...row,
-          outreach: updates.has(row.id) ? { ...row.outreach, ...updates.get(row.id)! } : row.outreach
-        }))
-      );
-    });
-  }, []);
-
-  const conferences = useMemo(
-    () => Array.from(new Set(rows.map((row) => row.standing?.conference).filter(Boolean))).sort() as string[],
-    [rows]
-  );
-  const owners = useMemo(
-    () => Array.from(new Set(rows.map((row) => row.outreach.owner).filter(Boolean))).sort(),
-    [rows]
-  );
-
-  const filtered = useMemo(() => {
-    const needle = search.trim().toLowerCase();
-    return rows.filter((row) => {
-      const adjustedRank = row.ranking?.adjustedRank ?? null;
-      if (
-        needle &&
-        !`${row.school} ${row.outreach.notes} ${row.outreach.nextStep}`.toLowerCase().includes(needle)
-      ) return false;
-      if (watchlistOnly && row.outreach.watchlist !== "Yes") return false;
-      if (stage && row.outreach.stage !== stage) return false;
-      if (owner && row.outreach.owner !== owner) return false;
-      if (conference && row.standing?.conference !== conference) return false;
-      if (minimumRank && (adjustedRank == null || adjustedRank < Number(minimumRank))) return false;
-      if (maximumRank && (adjustedRank == null || adjustedRank > Number(maximumRank))) return false;
-      if (reviewOnly && row.ranking?.standingsCheck === "Matches standings") return false;
-      return true;
-    });
-  }, [rows, search, watchlistOnly, stage, owner, conference, minimumRank, maximumRank, reviewOnly]);
+  useEffect(() => () => activeRequest.current?.abort(), []);
 
   function updateValue(id: string, field: OutreachField, value: string | null) {
     setRows((current) =>
@@ -113,53 +105,24 @@ export function TrackingTable({ initialRows }: { initialRows: TrackingRow[] }) {
 
   async function commit(id: string, field: OutreachField, value: string | null) {
     const key = `${id}:${field}`;
-    const now = new Date().toISOString();
     setSavedCell(`${key}:saving`);
+    setSaveError("");
     try {
-      if (firebaseDb && session.user) {
-        await setDoc(
-          doc(firebaseDb, "outreach", id),
-          {
-            [field]: value,
-            updatedBy: session.user.uid,
-            updatedByName: session.user.displayName ?? session.user.email ?? "Team member",
-            updatedAt: serverTimestamp()
-          },
-          { merge: true }
-        );
-      } else if (typeof window !== "undefined") {
-        const existing = JSON.parse(window.localStorage.getItem("nivc-outreach-preview") ?? "{}") as Record<
-          string,
-          Partial<OutreachRecord>
-        >;
-        existing[id] = {
-          ...(existing[id] ?? {}),
-          [field]: value,
-          updatedBy: "preview-user",
-          updatedByName: "Preview user",
-          updatedAt: now
-        };
-        window.localStorage.setItem("nivc-outreach-preview", JSON.stringify(existing));
-        setRows((current) =>
-          current.map((row) =>
-            row.id === id
-              ? {
-                  ...row,
-                  outreach: {
-                    ...row.outreach,
-                    updatedBy: "preview-user",
-                    updatedByName: "Preview user",
-                    updatedAt: now
-                  }
-                }
-              : row
-          )
-        );
-      }
+      const response = await secureFetch(`/api/outreach/${encodeURIComponent(id)}`, {
+        method: "PATCH",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ field, value })
+      });
+      if (!response.ok) throw new Error(await responseMessage(response, "The outreach change was not saved."));
+      const saved = await response.json() as Pick<OutreachRecord, "updatedBy" | "updatedByName" | "updatedAt">;
+      setRows((current) => current.map((row) => row.id === id
+        ? { ...row, outreach: { ...row.outreach, ...saved, [field]: value } }
+        : row));
       setSavedCell(`${key}:saved`);
       window.setTimeout(() => setSavedCell(""), 1400);
-    } catch {
+    } catch (error) {
       setSavedCell(`${key}:error`);
+      setSaveError(error instanceof Error ? error.message : "The outreach change was not saved. Refresh the page and try again.");
     }
   }
 
@@ -211,6 +174,8 @@ export function TrackingTable({ initialRows }: { initialRows: TrackingRow[] }) {
 
   return (
     <section className="card">
+      {saveError ? <div className="status-note status-note-error" role="alert">{saveError}</div> : null}
+      {loadError ? <div className="status-note status-note-error" role="alert">{loadError}</div> : null}
       <div className="filters">
         <div className="form-group grow">
           <label htmlFor="tracking-search">Search school or notes</label>
@@ -249,8 +214,8 @@ export function TrackingTable({ initialRows }: { initialRows: TrackingRow[] }) {
         <button className="btn btn-secondary btn-sm" onClick={resetFilters}>Clear filters</button>
       </div>
 
-      <div className="table-summary"><span>{filtered.length} of {rows.length} schools</span><span>Editable fields save one at a time</span></div>
-      <div className="table-container desktop-table">
+      <div className="table-summary"><span>{loading ? "Loading filtered schools…" : `${rows.length} schools on this page`}</span><span>Editable fields save one at a time</span></div>
+      <div className="table-container desktop-table" aria-busy={loading}>
         <table>
           <thead>
             <tr>
@@ -260,7 +225,7 @@ export function TrackingTable({ initialRows }: { initialRows: TrackingRow[] }) {
             </tr>
           </thead>
           <tbody>
-            {filtered.map((row) => (
+            {rows.map((row) => (
               <Fragment key={row.id}>
                 <tr>
                   <td className="sticky-column"><button className="school-button" onClick={() => setExpanded(expanded === row.id ? null : row.id)}>{row.school}</button></td>
@@ -307,8 +272,8 @@ export function TrackingTable({ initialRows }: { initialRows: TrackingRow[] }) {
         </table>
       </div>
 
-      <div className="mobile-card-list">
-        {filtered.map((row) => (
+      <div className="mobile-card-list" aria-busy={loading}>
+        {rows.map((row) => (
           <article className="mobile-data-card" key={row.id}>
             <header><h2>{row.school}</h2><span className="pill">#{row.ranking?.adjustedRank ?? "—"}</span></header>
             <dl><div><dt>Conference</dt><dd>{row.standing?.conference ?? "—"}</dd></div><div><dt>Stage</dt><dd>{row.outreach.stage}</dd></div><div><dt>Owner</dt><dd>{row.outreach.owner || "Unassigned"}</dd></div></dl>
@@ -317,6 +282,7 @@ export function TrackingTable({ initialRows }: { initialRows: TrackingRow[] }) {
           </article>
         ))}
       </div>
+      <PaginationControls page={pageData.page} pageCount={pageData.pageCount} total={pageData.total} itemLabel="schools" loading={loading} onPageChange={(page) => void loadPage(page)} />
     </section>
   );
 }
