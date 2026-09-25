@@ -57,6 +57,10 @@ New users must verify their `@triplecrownsports.com` address before the server c
 
 ## Vercel deployment and refresh pipeline
 
+Production: [nivc-rpi-tracker.vercel.app](https://nivc-rpi-tracker.vercel.app)
+
+The Vercel project is connected to `cseval/nivc`; every push to `main` creates a production deployment. Pull-request and non-production branch pushes create preview deployments.
+
 Add all Firebase variables plus:
 
 - `CRON_SECRET`: Vercel's cron bearer secret.
@@ -64,7 +68,7 @@ Add all Firebase variables plus:
 - `APP_BASE_URL`: the production HTTPS origin.
 - `RESEND_API_KEY`, `ALERT_EMAIL_FROM`, and `ALERT_EMAIL_TO`: optional failed-refresh email configuration.
 
-Deploy from the private local directory or a private repository; `.vercelignore` excludes the workbook and local artifacts. `vercel.json` schedules `/api/cron/refresh` for 06:00 UTC daily. Each pipeline stage is separately dispatched so a large source refresh does not rely on one long serverless request. Raw responses and parsed staging collections remain under `runs/{runId}` for audit and debugging; completed runs older than 90 days are pruned.
+Secret environment files stay untracked, and `.vercelignore` excludes the workbook and local artifacts from deployments. `vercel.json` schedules `/api/cron/refresh` for 06:00 UTC daily. Each pipeline stage is separately dispatched so a large source refresh does not rely on one long serverless request. Raw responses and parsed staging collections remain under `runs/{runId}` for audit and debugging; completed runs older than 90 days are pruned.
 
 Validation failures stop before publication, record the failed stage and error, preserve the current published dataset, and send an alert when email is configured.
 
