@@ -1,6 +1,7 @@
 import { FieldValue } from "firebase-admin/firestore";
 import { getAdminDb } from "@/lib/firebase/admin";
 import { enqueueStage } from "@/lib/pipeline/enqueue";
+import { saveRawPayload } from "@/lib/pipeline/raw-payload";
 import { sendFailureAlert } from "@/lib/pipeline/alerts";
 import type { ConferenceSource, SourceConfig } from "@/lib/pipeline/types";
 import sourceConfigJson from "@/fixtures/seed/source-config.json";
@@ -35,10 +36,6 @@ async function fetchPayload(url: string, label: string): Promise<{ payload: stri
   throw lastError;
 }
 
-async function saveRaw(runId: string, id: string, value: Record<string, unknown>) {
-  await getAdminDb().doc(`runs/${runId}/raw/${id}`).set({ id, ...value });
-}
-
 async function fetchConference(runId: string, conference: ConferenceSource) {
   if (conference.id !== "sec") {
     const [standings, stats] = await Promise.all([
@@ -46,15 +43,15 @@ async function fetchConference(runId: string, conference: ConferenceSource) {
       fetchPayload(conference.urls.stats, `${conference.name} match results`)
     ]);
     await Promise.all([
-      saveRaw(runId, `${conference.id}-standings`, { ...standings, url: conference.urls.standings, conferenceId: conference.id, dataType: "Standings" }),
-      saveRaw(runId, `${conference.id}-stats`, { ...stats, url: conference.urls.stats, conferenceId: conference.id, dataType: "Match results" })
+      saveRawPayload(runId, `${conference.id}-standings`, { ...standings, url: conference.urls.standings, conferenceId: conference.id, dataType: "Standings" }),
+      saveRawPayload(runId, `${conference.id}-stats`, { ...stats, url: conference.urls.stats, conferenceId: conference.id, dataType: "Match results" })
     ]);
     return;
   }
 
   const seasonUrl = "https://www.secsports.com/api/schedules?per_page=100&filter%5Bsport_id%5D=14&include%5B%5D=season";
   const seasons = await fetchPayload(seasonUrl, "SEC season registry");
-  await saveRaw(runId, "sec-seasons", { ...seasons, url: seasonUrl, conferenceId: "sec", dataType: "Season registry" });
+  await saveRawPayload(runId, "sec-seasons", { ...seasons, url: seasonUrl, conferenceId: "sec", dataType: "Season registry" });
   const registry = JSON.parse(seasons.payload);
   const selected = (registry.data ?? []).filter((item: any) => item.season?.name === "2026");
   if (selected.length !== 1) throw new Error("SEC 2026 season could not be identified.");
@@ -65,20 +62,20 @@ async function fetchConference(runId: string, conference: ConferenceSource) {
   do {
     const url = `https://www.secsports.com/api/schedule-events?per_page=200&page=${page}&filter%5Bschedule.sport_id%5D=14&filter%5Bschedule.season_id%5D=${seasonId}&include%5B%5D=firstOpponent.school&include%5B%5D=secondOpponent.school`;
     const events = await fetchPayload(url, `SEC match results page ${page}`);
-    await saveRaw(runId, `sec-events-${String(page).padStart(2, "0")}`, { ...events, url, conferenceId: "sec", dataType: "Match results" });
+    await saveRawPayload(runId, `sec-events-${String(page).padStart(2, "0")}`, { ...events, url, conferenceId: "sec", dataType: "Match results" });
     lastPage = Number(JSON.parse(events.payload).meta?.last_page ?? 1);
     page += 1;
     if (page > 20) throw new Error("Unexpected SEC pagination.");
   } while (page <= lastPage);
   const standingsUrl = `https://www.secsports.com/api/schedules/${scheduleId}/standings?include%5B%5D=school`;
   const standings = await fetchPayload(standingsUrl, "SEC standings");
-  await saveRaw(runId, "sec-standings-api", { ...standings, url: standingsUrl, conferenceId: "sec", dataType: "Standings" });
+  await saveRawPayload(runId, "sec-standings-api", { ...standings, url: standingsUrl, conferenceId: "sec", dataType: "Standings" });
 }
 
 async function executeTask(runId: string, task: FetchTask) {
   if (task.type === "conference") return fetchConference(runId, task.conference);
   const response = await fetchPayload(task.supplement.url, `${task.supplement.team} supplemental schedule`);
-  await saveRaw(runId, `supplement-${task.supplement.id}`, { ...response, url: task.supplement.url, conferenceId: task.supplement.confid, dataType: "Supplemental schedule" });
+  await saveRawPayload(runId, `supplement-${task.supplement.id}`, { ...response, url: task.supplement.url, conferenceId: task.supplement.confid, dataType: "Supplemental schedule" });
 }
 
 export async function runFetchBatch(runId: string) {

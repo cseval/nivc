@@ -6,6 +6,7 @@ import { enqueueStage } from "@/lib/pipeline/enqueue";
 import { writeDocuments } from "@/lib/pipeline/firestore";
 import { validateParsedDataset } from "@/lib/pipeline/gates";
 import { parseRunPayloads, type StoredPayload } from "@/lib/pipeline/parse-run";
+import { readRawPayloads } from "@/lib/pipeline/raw-payload";
 import type { SourceConfig } from "@/lib/pipeline/types";
 
 export async function runParseStage(runId: string) {
@@ -19,8 +20,7 @@ export async function runParseStage(runId: string) {
       return;
     }
     await runRef.set({ status: "parsing", stages: { parse: "running" }, updatedAt: FieldValue.serverTimestamp() }, { merge: true });
-    const raw = await runRef.collection("raw").get();
-    const payloads = raw.docs.map((document) => document.data() as StoredPayload);
+    const payloads: StoredPayload[] = await readRawPayloads(runId);
     const parsed = parseRunPayloads(sourceConfigJson as SourceConfig, payloads);
     validateParsedDataset(parsed.standings, parsed.matches, (sourceConfigJson as SourceConfig).conferences.length);
     await writeDocuments(db, `runs/${runId}/parsedStandings`, parsed.standings);
