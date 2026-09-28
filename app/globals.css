@@ -234,6 +234,9 @@ a { color: inherit; }
 .refresh-facts div { min-width: 62px; }
 .refresh-facts dt { color: var(--text-muted); font: 700 10px/1.2 var(--font-condensed); letter-spacing: var(--ls-caps); text-transform: uppercase; }
 .refresh-facts dd { color: var(--navy-800); font: 700 18px/1.3 var(--font-mono); margin: 2px 0 0; }
+.refresh-banner-side, .refresh-control { display: grid; gap: 8px; }
+.refresh-control .btn { width: 100%; }
+.refresh-control .status-note { margin: 0; }
 .estimate-warning { background: var(--warning-bg); border-radius: var(--radius); color: var(--warning-text); font-size: 12px; margin: 0; padding: 8px 10px; }
 
 .filters { align-items: flex-end; display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }

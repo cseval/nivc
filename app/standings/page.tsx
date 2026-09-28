@@ -4,7 +4,8 @@ import { getRankings, getStandings } from "@/lib/data/server";
 
 export const dynamic = "force-dynamic";
 
-export default async function StandingsPage() {
+export default async function StandingsPage({ searchParams }: { searchParams: Promise<{ review?: string }> }) {
+  const params = await searchParams;
   const [standings, rankings] = await Promise.all([getStandings(), getRankings()]);
-  return <><PageHeader title="Standings" description="Conference-published records compared with the completed match ledger." /><StandingsTable standings={standings} rankings={rankings} /></>;
+  return <><PageHeader title="Standings" description="Conference-published records compared with the completed match ledger." /><StandingsTable standings={standings} rankings={rankings} initialReviewOnly={params.review === "1"} /></>;
 }
