@@ -29,7 +29,7 @@ export function parseRunPayloads(config: SourceConfig, payloads: StoredPayload[]
     const standingPayload = byId.get(`${conference.id}-standings`);
     const resultPayload = byId.get(`${conference.id}-stats`);
     if (!standingPayload || !resultPayload) throw new Error(`${conference.name} fetch payloads are incomplete.`);
-    if (["bigten", "socon"].includes(conference.id)) {
+    if (conference.id === "socon") {
       rawStandings.push(...parseNextStandings(standingPayload.payload, { id: conference.id, name: conference.name, url: conference.urls.standings }));
       rawGames.push(...parseNextSchedule(resultPayload.payload, { id: conference.id, name: conference.name, url: conference.urls.stats }, (name, id) => resolver.resolve(name, id)));
     } else {

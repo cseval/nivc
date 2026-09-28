@@ -23,10 +23,10 @@ export function parseSidearmStandings(
   if (tables.length !== 1) throw new Error(`${conference.name} ${season} standings table is missing.`);
   const table = tables.first();
   const headers = cells($, table.find("thead").first());
-  const overallIndex = headers.findIndex((header) => ["Overall", "OVERALL", "W-L"].includes(header));
+  const overallIndex = headers.findIndex((header) => ["Overall", "OVERALL", "Ovr", "W-L"].includes(header));
   if (overallIndex < 0) throw new Error(`${conference.name} overall record column is missing.`);
   const conferenceIndexes = headers
-    .map((header, index) => (/^(Conf\.?|Conference|Conf\. W-L|ACC|Big South|BW|PL|SLC)$/.test(header) ? index : -1))
+    .map((header, index) => (/^(Conf\.?|Conference|Conf\. W-L|ACC|Big South|BW|PL|SLC)$/i.test(header) ? index : -1))
     .filter((index) => index >= 0);
   if (conferenceIndexes.length !== 1) throw new Error(`${conference.name} conference record column is missing or ambiguous.`);
   const conferenceIndex = conferenceIndexes[0];

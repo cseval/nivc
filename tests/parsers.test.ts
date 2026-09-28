@@ -6,7 +6,7 @@ import { parseSec } from "@/lib/pipeline/parsers/sec";
 
 describe("source parsers", () => {
   it("parses Sidearm standings while ignoring responsive duplicate cells", () => {
-    const html = `<table class="sidearm-standings-table"><caption>2026 Women's Volleyball</caption><thead><tr><th>School</th><th>Conf.</th><th aria-hidden="true">Conf.</th><th>Overall</th></tr></thead><tbody><tr><td>Example U.</td><td>2-1</td><td aria-hidden="true">2-1</td><td>8-2</td></tr></tbody></table>`;
+    const html = `<table class="sidearm-standings-table"><caption>2026 Women's Volleyball</caption><thead><tr><th>School</th><th>CONFERENCE</th><th aria-hidden="true">Conf.</th><th>Ovr</th></tr></thead><tbody><tr><td>Example U.</td><td>2-1</td><td aria-hidden="true">2-1</td><td>8-2</td></tr></tbody></table>`;
     expect(parseSidearmStandings(html, { id: "example", name: "Example", url: "https://example.test/standings" })).toEqual([{ sourceName: "Example U.", conferenceId: "example", conference: "Example", overallWins: 8, overallLosses: 2, conferenceWins: 2, conferenceLosses: 1, sourceUrl: "https://example.test/standings" }]);
   });
 

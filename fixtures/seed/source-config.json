@@ -97,8 +97,8 @@
       "base": "https://bigten.org",
       "sport": "wvb",
       "urls": {
-        "standings": "https://bigten.org/wvb/standings/2026/",
-        "stats": "https://bigten.org/wvb/schedule/2026/"
+        "standings": "https://bigten.org/standings.aspx?path=wvball",
+        "stats": "https://bigten.org/stats.aspx?path=wvball&year=2026"
       }
     },
     {
@@ -6426,6 +6426,14 @@
     "universityofseattle": {
       "raw": "University of Seattle",
       "canonical": "Seattle U"
+    },
+    "fortvalleyst": {
+      "raw": "Fort Valley St.",
+      "canonical": "Fort Valley St."
+    },
+    "fortvalleystate": {
+      "raw": "Fort Valley State",
+      "canonical": "Fort Valley St."
     }
   },
   "nonD1": {
@@ -6444,7 +6452,8 @@
     "UT Tyler": "NCAA D-II",
     "Erskine": "NCAA D-II",
     "Missouri S&T": "NCAA D-II",
-    "Southern-New Orleans": "NAIA"
+    "Southern-New Orleans": "NAIA",
+    "Fort Valley St.": "NCAA D-II"
   },
   "supplements": [
     {
