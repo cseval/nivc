@@ -253,17 +253,17 @@ export function TrackingTable({
 
       <div className="table-summary"><span>{loading ? "Loading filtered schools…" : `${rows.length} schools on this page`}</span><span>Editable fields save one at a time</span></div>
       <div className="table-container desktop-table" aria-busy={loading}>
-        <table aria-label="Tracking table with collapsible ranking, CRM and data-check groups">
+        <table className="tracking-table" aria-label="Tracking table with collapsible ranking, CRM and data-check groups">
           <thead>
             <tr className="tracking-group-row">
               <th className="sticky-column tracking-school-column" rowSpan={2} scope="col">School</th>
-              <th className="tracking-group-header" colSpan={rankingExpanded ? 13 : 1} scope="colgroup">
+              <th className={`tracking-group-header tracking-ranking-group${rankingExpanded ? "" : " is-collapsed"}`} colSpan={rankingExpanded ? 13 : 1} scope="colgroup">
                 <GroupToggle expanded={rankingExpanded} label="Ranking info" onToggle={() => setRankingExpanded((value) => !value)} />
               </th>
-              <th className="tracking-group-header" colSpan={crmExpanded ? 10 : 1} scope="colgroup">
+              <th className={`tracking-group-header tracking-crm-group${crmExpanded ? "" : " is-collapsed"}`} colSpan={crmExpanded ? 10 : 1} scope="colgroup">
                 <GroupToggle expanded={crmExpanded} label="CRM & notes" onToggle={() => setCrmExpanded((value) => !value)} />
               </th>
-              <th className="tracking-group-header" colSpan={dataCheckExpanded ? 2 : 1} scope="colgroup">
+              <th className={`tracking-group-header tracking-check-group${dataCheckExpanded ? "" : " is-collapsed"}`} colSpan={dataCheckExpanded ? 2 : 1} scope="colgroup">
                 <GroupToggle expanded={dataCheckExpanded} label="Data check" onToggle={() => setDataCheckExpanded((value) => !value)} />
               </th>
             </tr>
@@ -272,13 +272,13 @@ export function TrackingTable({
                 <>
                   <th scope="col">2025 rank</th><th scope="col">Conference</th><th scope="col">Overall</th><th scope="col">Conference W-L</th><th scope="col">Adjusted rank</th><th scope="col">Base rank</th><th scope="col">Rank change</th><th scope="col">Adjusted RPI</th><th scope="col">Base RPI</th><th scope="col">Results</th><th scope="col">D1 record</th><th scope="col">Non-D1</th><th scope="col">2025 record</th>
                 </>
-              ) : <th scope="col">RPI</th>}
+              ) : <th className="tracking-ranking-summary" scope="col">RPI</th>}
               {crmExpanded ? (
                 <>
                   <th scope="col">Watchlist</th><th scope="col">NCAA selection</th><th scope="col">Outreach stage</th><th scope="col">Owner</th><th scope="col">Contact name</th><th scope="col">Email</th><th scope="col">Last contact</th><th scope="col">Host interest</th><th scope="col">Next step</th><th scope="col">Notes</th>
                 </>
-              ) : <th scope="col">CRM</th>}
-              {dataCheckExpanded ? <><th scope="col">Status</th><th scope="col">Record comparison</th></> : <th scope="col">Check</th>}
+              ) : <th className="tracking-crm-summary" scope="col">CRM</th>}
+              {dataCheckExpanded ? <><th scope="col">Status</th><th scope="col">Record comparison</th></> : <th className="tracking-check-summary" scope="col">Check</th>}
             </tr>
           </thead>
           <tbody>
@@ -318,7 +318,7 @@ export function TrackingTable({
                       </td>
                     </>
                   ) : (
-                    <td className="editable-cell">
+                    <td className="editable-cell tracking-crm-summary">
                       <div className="tracking-summary-cell">
                         <span className={`badge ${stageBadgeClass(row.outreach.stage)}`}>{row.outreach.stage}</span>
                         <button className="btn btn-secondary btn-sm" aria-expanded={expanded === row.id} onClick={() => setExpanded(expanded === row.id ? null : row.id)}>{expanded === row.id ? "Close" : "Open"}</button>
