@@ -326,6 +326,8 @@ tbody tr:hover td { background: var(--cream); }
 tbody tr.clickable:hover td { background: var(--clay); }
 .sticky-column { box-shadow: 2px 0 0 var(--border); left: 0; min-width: 190px; position: sticky; z-index: 4; }
 th.sticky-column { z-index: 8; }
+.tracking-school-column { max-width: 190px; min-width: 190px; width: 190px; }
+.tracking-school-column .school-button { display: block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .numeric { font-family: var(--font-mono); text-align: right; }
 .data-muted { color: var(--text-muted); }
 .computed-cell { background: var(--off-white); }

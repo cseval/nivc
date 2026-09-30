@@ -256,7 +256,7 @@ export function TrackingTable({
         <table aria-label="Tracking table with collapsible ranking, CRM and data-check groups">
           <thead>
             <tr className="tracking-group-row">
-              <th className="sticky-column" rowSpan={2} scope="col">School</th>
+              <th className="sticky-column tracking-school-column" rowSpan={2} scope="col">School</th>
               <th className="tracking-group-header" colSpan={rankingExpanded ? 13 : 1} scope="colgroup">
                 <GroupToggle expanded={rankingExpanded} label="Ranking info" onToggle={() => setRankingExpanded((value) => !value)} />
               </th>
@@ -285,7 +285,7 @@ export function TrackingTable({
             {rows.map((row) => (
               <Fragment key={row.id}>
                 <tr>
-                  <td className="sticky-column"><button className="school-button" onClick={() => setExpanded(expanded === row.id ? null : row.id)}>{row.school}</button></td>
+                  <td className="sticky-column tracking-school-column"><button className="school-button" onClick={() => setExpanded(expanded === row.id ? null : row.id)}>{row.school}</button></td>
                   {rankingExpanded ? (
                     <>
                       <td className="computed-cell numeric">{row.baseline?.rank ?? "New"}</td>
