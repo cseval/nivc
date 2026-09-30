@@ -27,6 +27,35 @@ function editorTitle(outreach: OutreachRecord): string {
   return `Last edited by ${outreach.updatedByName} on ${new Date(outreach.updatedAt).toLocaleString()}`;
 }
 
+function stageBadgeClass(stage: string): string {
+  if (stage === "Complete") return "badge-success";
+  if (stage === "Contacted" || stage === "Follow-up") return "badge-info";
+  return "badge-warning";
+}
+
+function GroupToggle({
+  expanded,
+  label,
+  onToggle
+}: {
+  expanded: boolean;
+  label: string;
+  onToggle: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      className="tracking-group-toggle"
+      aria-expanded={expanded}
+      aria-label={`${expanded ? "Collapse" : "Expand"} ${label.toLowerCase()}`}
+      onClick={onToggle}
+    >
+      <span className="tracking-chevron" aria-hidden="true">{expanded ? "‹" : "›"}</span>
+      <span>{label}</span>
+    </button>
+  );
+}
+
 export function TrackingTable({
   initialPage,
   conferences,
@@ -46,6 +75,9 @@ export function TrackingTable({
   const [minimumRank, setMinimumRank] = useState("");
   const [maximumRank, setMaximumRank] = useState("");
   const [reviewOnly, setReviewOnly] = useState(false);
+  const [rankingExpanded, setRankingExpanded] = useState(true);
+  const [crmExpanded, setCrmExpanded] = useState(false);
+  const [dataCheckExpanded, setDataCheckExpanded] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
   const [savedCell, setSavedCell] = useState("");
   const [saveError, setSaveError] = useState("");
@@ -172,6 +204,11 @@ export function TrackingTable({
     setReviewOnly(false);
   }
 
+  const visibleColumnCount = 1
+    + (rankingExpanded ? 13 : 1)
+    + (crmExpanded ? 10 : 1)
+    + (dataCheckExpanded ? 2 : 1);
+
   return (
     <section className="card">
       {saveError ? <div className="status-note status-note-error" role="alert">{saveError}</div> : null}
@@ -216,12 +253,32 @@ export function TrackingTable({
 
       <div className="table-summary"><span>{loading ? "Loading filtered schools…" : `${rows.length} schools on this page`}</span><span>Editable fields save one at a time</span></div>
       <div className="table-container desktop-table" aria-busy={loading}>
-        <table>
+        <table aria-label="Tracking table with collapsible ranking, CRM and data-check groups">
           <thead>
-            <tr>
-              <th className="sticky-column">School</th><th>2025 rank</th><th>Conference</th><th>Overall</th><th>Conference W-L</th><th>Adjusted rank</th><th>Base rank</th><th>Rank change</th><th>Adjusted RPI</th><th>Base RPI</th>
-              <th>Watchlist</th><th>NCAA selection</th><th>Outreach stage</th><th>Owner</th><th>Contact name</th><th>Email</th><th>Last contact</th><th>Next step</th><th>Host interest</th><th>Notes</th>
-              <th>Data check</th><th>Results</th><th>D1 record</th><th>Non-D1</th><th>2025 record</th>
+            <tr className="tracking-group-row">
+              <th className="sticky-column" rowSpan={2} scope="col">School</th>
+              <th className="tracking-group-header" colSpan={rankingExpanded ? 13 : 1} scope="colgroup">
+                <GroupToggle expanded={rankingExpanded} label="Ranking info" onToggle={() => setRankingExpanded((value) => !value)} />
+              </th>
+              <th className="tracking-group-header" colSpan={crmExpanded ? 10 : 1} scope="colgroup">
+                <GroupToggle expanded={crmExpanded} label="CRM & notes" onToggle={() => setCrmExpanded((value) => !value)} />
+              </th>
+              <th className="tracking-group-header" colSpan={dataCheckExpanded ? 2 : 1} scope="colgroup">
+                <GroupToggle expanded={dataCheckExpanded} label="Data check" onToggle={() => setDataCheckExpanded((value) => !value)} />
+              </th>
+            </tr>
+            <tr className="tracking-column-row">
+              {rankingExpanded ? (
+                <>
+                  <th scope="col">2025 rank</th><th scope="col">Conference</th><th scope="col">Overall</th><th scope="col">Conference W-L</th><th scope="col">Adjusted rank</th><th scope="col">Base rank</th><th scope="col">Rank change</th><th scope="col">Adjusted RPI</th><th scope="col">Base RPI</th><th scope="col">Results</th><th scope="col">D1 record</th><th scope="col">Non-D1</th><th scope="col">2025 record</th>
+                </>
+              ) : <th scope="col">RPI</th>}
+              {crmExpanded ? (
+                <>
+                  <th scope="col">Watchlist</th><th scope="col">NCAA selection</th><th scope="col">Outreach stage</th><th scope="col">Owner</th><th scope="col">Contact name</th><th scope="col">Email</th><th scope="col">Last contact</th><th scope="col">Host interest</th><th scope="col">Next step</th><th scope="col">Notes</th>
+                </>
+              ) : <th scope="col">CRM</th>}
+              {dataCheckExpanded ? <><th scope="col">Status</th><th scope="col">Record comparison</th></> : <th scope="col">Check</th>}
             </tr>
           </thead>
           <tbody>
@@ -229,34 +286,57 @@ export function TrackingTable({
               <Fragment key={row.id}>
                 <tr>
                   <td className="sticky-column"><button className="school-button" onClick={() => setExpanded(expanded === row.id ? null : row.id)}>{row.school}</button></td>
-                  <td className="computed-cell numeric">{row.baseline?.rank ?? "New"}</td>
-                  <td className="computed-cell">{row.standing?.conference ?? "—"}</td>
-                  <td className="computed-cell numeric">{row.standing ? `${row.standing.overallWins}-${row.standing.overallLosses}` : "—"}</td>
-                  <td className="computed-cell numeric">{row.standing ? `${row.standing.conferenceWins}-${row.standing.conferenceLosses}` : "—"}</td>
-                  <td className="computed-cell numeric">{row.ranking?.adjustedRank ?? "—"}</td>
-                  <td className="computed-cell numeric">{row.ranking?.baseRank ?? "—"}</td>
-                  <td className="computed-cell numeric">{rankMovement(row.ranking?.rankChange)}</td>
-                  <td className="computed-cell numeric">{percent(row.ranking?.adjustedRpi)}</td>
-                  <td className="computed-cell numeric">{percent(row.ranking?.baseRpi)}</td>
-                  {selectCell(row, "watchlist", YES_NO)}
-                  {selectCell(row, "ncaaSelection", SELECTION)}
-                  {selectCell(row, "stage", STAGES)}
-                  {inputCell(row, "owner")}
-                  {inputCell(row, "contactName")}
-                  {inputCell(row, "email", "email")}
-                  {inputCell(row, "lastContact", "date")}
-                  <td className="editable-cell"><button className="btn btn-secondary btn-sm" onClick={() => setExpanded(row.id)}>Open</button></td>
-                  {selectCell(row, "hostInterest", HOST)}
-                  <td className="editable-cell"><button className="btn btn-secondary btn-sm" onClick={() => setExpanded(row.id)}>Open</button></td>
-                  <td className="computed-cell">{row.ranking?.standingsCheck === "Matches standings" ? <span className="badge badge-success">Matches standings</span> : <span className="badge badge-warning">{row.ranking?.standingsCheck ?? "Not in 2026 D1 source"}</span>}</td>
-                  <td className="computed-cell numeric">{row.ranking ? `${row.ranking.resultsWins}-${row.ranking.resultsLosses}` : "—"}</td>
-                  <td className="computed-cell numeric">{row.ranking ? `${row.ranking.d1Wins}-${row.ranking.d1Losses}` : "—"}</td>
-                  <td className="computed-cell numeric">{row.ranking?.nonD1Matches ?? "—"}</td>
-                  <td className="computed-cell numeric">{row.baseline?.record ?? "—"}</td>
+                  {rankingExpanded ? (
+                    <>
+                      <td className="computed-cell numeric">{row.baseline?.rank ?? "New"}</td>
+                      <td className="computed-cell">{row.standing?.conference ?? "—"}</td>
+                      <td className="computed-cell numeric">{row.standing ? `${row.standing.overallWins}-${row.standing.overallLosses}` : "—"}</td>
+                      <td className="computed-cell numeric">{row.standing ? `${row.standing.conferenceWins}-${row.standing.conferenceLosses}` : "—"}</td>
+                      <td className="computed-cell numeric">{row.ranking?.adjustedRank ?? "—"}</td>
+                      <td className="computed-cell numeric">{row.ranking?.baseRank ?? "—"}</td>
+                      <td className="computed-cell numeric">{rankMovement(row.ranking?.rankChange)}</td>
+                      <td className="computed-cell numeric">{percent(row.ranking?.adjustedRpi)}</td>
+                      <td className="computed-cell numeric">{percent(row.ranking?.baseRpi)}</td>
+                      <td className="computed-cell numeric">{row.ranking ? `${row.ranking.resultsWins}-${row.ranking.resultsLosses}` : "—"}</td>
+                      <td className="computed-cell numeric">{row.ranking ? `${row.ranking.d1Wins}-${row.ranking.d1Losses}` : "—"}</td>
+                      <td className="computed-cell numeric">{row.ranking?.nonD1Matches ?? "—"}</td>
+                      <td className="computed-cell numeric">{row.baseline?.record ?? "—"}</td>
+                    </>
+                  ) : <td className="computed-cell numeric rpi-summary-cell">{percent(row.ranking?.adjustedRpi)}</td>}
+                  {crmExpanded ? (
+                    <>
+                      {selectCell(row, "watchlist", YES_NO)}
+                      {selectCell(row, "ncaaSelection", SELECTION)}
+                      {selectCell(row, "stage", STAGES)}
+                      {inputCell(row, "owner")}
+                      {inputCell(row, "contactName")}
+                      {inputCell(row, "email", "email")}
+                      {inputCell(row, "lastContact", "date")}
+                      {selectCell(row, "hostInterest", HOST)}
+                      <td className="editable-cell tracking-notes-cell" colSpan={2}>
+                        <button className="btn btn-secondary btn-sm" aria-expanded={expanded === row.id} onClick={() => setExpanded(expanded === row.id ? null : row.id)}>{expanded === row.id ? "Close" : "Open"}</button>
+                      </td>
+                    </>
+                  ) : (
+                    <td className="editable-cell">
+                      <div className="tracking-summary-cell">
+                        <span className={`badge ${stageBadgeClass(row.outreach.stage)}`}>{row.outreach.stage}</span>
+                        <button className="btn btn-secondary btn-sm" aria-expanded={expanded === row.id} onClick={() => setExpanded(expanded === row.id ? null : row.id)}>{expanded === row.id ? "Close" : "Open"}</button>
+                      </div>
+                    </td>
+                  )}
+                  {dataCheckExpanded ? (
+                    <>
+                      <td className="computed-cell">{row.ranking?.standingsCheck === "Matches standings" ? <span className="badge badge-success">Matches standings</span> : <span className="badge badge-warning">{row.ranking?.standingsCheck ?? "Not in 2026 D1 source"}</span>}</td>
+                      <td className="computed-cell data-check-comparison">{row.ranking && row.standing ? `Standings ${row.standing.overallWins}-${row.standing.overallLosses} · Ledger ${row.ranking.resultsWins}-${row.ranking.resultsLosses}` : "Comparison unavailable"}</td>
+                    </>
+                  ) : (
+                    <td className="computed-cell data-check-summary">{row.ranking?.standingsCheck === "Matches standings" ? <span className="badge badge-success">Matches</span> : <span className="badge badge-warning">Review</span>}</td>
+                  )}
                 </tr>
                 {expanded === row.id ? (
                   <tr className="expanded-row">
-                    <td colSpan={25}>
+                    <td colSpan={visibleColumnCount}>
                       <div className="expanded-panel">
                         <div className="form-group"><label htmlFor={`${row.id}-next`}>Next step</label><textarea id={`${row.id}-next`} value={row.outreach.nextStep} onChange={(event) => updateValue(row.id, "nextStep", event.target.value)} onBlur={(event) => void commit(row.id, "nextStep", event.target.value)} placeholder="Add the next outreach action" /></div>
                         <div className="form-group"><label htmlFor={`${row.id}-notes`}>Notes</label><textarea id={`${row.id}-notes`} value={row.outreach.notes} onChange={(event) => updateValue(row.id, "notes", event.target.value)} onBlur={(event) => void commit(row.id, "notes", event.target.value)} placeholder="Add selection-team context" /></div>
@@ -277,7 +357,7 @@ export function TrackingTable({
           <article className="mobile-data-card" key={row.id}>
             <header><h2>{row.school}</h2><span className="pill">#{row.ranking?.adjustedRank ?? "—"}</span></header>
             <dl><div><dt>Conference</dt><dd>{row.standing?.conference ?? "—"}</dd></div><div><dt>Stage</dt><dd>{row.outreach.stage}</dd></div><div><dt>Owner</dt><dd>{row.outreach.owner || "Unassigned"}</dd></div></dl>
-            <button className="btn btn-secondary" onClick={() => setExpanded(row.id)}>Edit outreach</button>
+            <button className="btn btn-secondary" aria-expanded={expanded === row.id} onClick={() => setExpanded(expanded === row.id ? null : row.id)}>{expanded === row.id ? "Close" : "Open"}</button>
             {expanded === row.id ? <div className="expanded-panel"><div className="form-group"><label>Stage</label><select value={row.outreach.stage} onChange={(event) => { updateValue(row.id, "stage", event.target.value); void commit(row.id, "stage", event.target.value); }}>{STAGES.map((value) => <option key={value}>{value}</option>)}</select></div><div className="form-group"><label>Owner</label><input value={row.outreach.owner} onChange={(event) => updateValue(row.id, "owner", event.target.value)} onBlur={(event) => void commit(row.id, "owner", event.target.value)} /></div><div className="form-group"><label>Next step</label><textarea value={row.outreach.nextStep} onChange={(event) => updateValue(row.id, "nextStep", event.target.value)} onBlur={(event) => void commit(row.id, "nextStep", event.target.value)} /></div><div className="form-group"><label>Notes</label><textarea value={row.outreach.notes} onChange={(event) => updateValue(row.id, "notes", event.target.value)} onBlur={(event) => void commit(row.id, "notes", event.target.value)} /></div></div> : null}
           </article>
         ))}

@@ -283,6 +283,43 @@ th {
   white-space: nowrap;
   z-index: 5;
 }
+.tracking-group-header {
+  background: var(--clay);
+  border-left: 1px solid var(--border-strong);
+  border-right: 1px solid var(--border-strong);
+  padding: 4px 6px;
+  text-align: left;
+  z-index: 7;
+}
+.tracking-group-toggle {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius);
+  color: var(--navy-800);
+  cursor: pointer;
+  display: inline-flex;
+  font: 700 11px/1.2 var(--font-condensed);
+  gap: 6px;
+  justify-content: flex-start;
+  letter-spacing: 0.03em;
+  min-height: 32px;
+  padding: 4px 7px;
+  text-transform: uppercase;
+  transition: background-color var(--t-fast), color var(--t-fast), box-shadow var(--t-fast);
+  width: 100%;
+}
+.tracking-group-toggle:hover { background: var(--cream); color: var(--navy-700); }
+.tracking-group-toggle:focus-visible { box-shadow: 0 0 0 3px rgba(46, 109, 156, 0.18); outline: none; }
+.tracking-chevron {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 12px;
+  font: 900 18px/1 var(--font-display);
+  justify-content: flex-start;
+  width: 12px;
+}
+.tracking-column-row th { top: 40px; }
 td { background: var(--white); border-bottom: 1px solid var(--border); font-size: 14px; padding: 8px 10px; vertical-align: middle; }
 tbody tr:last-child td { border-bottom: 0; }
 tbody tr:hover td { background: var(--cream); }
@@ -295,6 +332,11 @@ th.sticky-column { z-index: 8; }
 .editable-cell { background: var(--stone-30); padding: 4px 6px; }
 .editable-cell input, .editable-cell select { background: transparent; border-color: transparent; min-height: 32px; min-width: 118px; padding: 5px 6px; width: 100%; }
 .editable-cell input:focus, .editable-cell select:focus { background: var(--white); }
+.rpi-summary-cell { font-weight: 700; }
+.tracking-summary-cell { align-items: center; display: flex; gap: 8px; justify-content: space-between; min-width: 190px; }
+.tracking-notes-cell { min-width: 156px; text-align: center; }
+.data-check-summary { text-align: center; }
+.data-check-comparison { color: var(--text-secondary); font-size: 12px; min-width: 220px; }
 .save-indicator { color: var(--success-text); font-size: 10px; margin-left: 5px; }
 .rank-up { color: var(--success-text); font-weight: 700; }
 .rank-down { color: var(--red); font-weight: 700; }
