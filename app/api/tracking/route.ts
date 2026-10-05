@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getTrackingPageForApi } from "@/lib/data/server";
+import { isTrackingSortKey, type SortDirection, type TrackingSortKey } from "@/lib/data/query";
 import { apiError, RequestError } from "@/lib/http/api";
 
 export const dynamic = "force-dynamic";
@@ -18,6 +19,20 @@ function optionalRank(params: URLSearchParams, name: string): number | null {
   return parsed;
 }
 
+function sortKey(params: URLSearchParams): TrackingSortKey | undefined {
+  const value = text(params, "sort", 40);
+  if (!value) return undefined;
+  if (!isTrackingSortKey(value)) throw new RequestError("sort is not a supported tracking column.");
+  return value;
+}
+
+function sortDirection(params: URLSearchParams): SortDirection | undefined {
+  const value = params.get("direction")?.trim() ?? "";
+  if (!value) return undefined;
+  if (value !== "asc" && value !== "desc") throw new RequestError("direction must be asc or desc.");
+  return value;
+}
+
 export async function GET(request: Request) {
   try {
     const params = new URL(request.url).searchParams;
@@ -29,7 +44,9 @@ export async function GET(request: Request) {
       conference: text(params, "conference", 160),
       minimumRank: optionalRank(params, "minimumRank"),
       maximumRank: optionalRank(params, "maximumRank"),
-      reviewOnly: params.get("reviewOnly") === "true"
+      reviewOnly: params.get("reviewOnly") === "true",
+      sortKey: sortKey(params),
+      sortDirection: sortDirection(params)
     }, Number(params.get("page") || 1));
     return NextResponse.json(result, { headers: { "cache-control": "private, no-store" } });
   } catch (error) {

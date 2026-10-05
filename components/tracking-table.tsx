@@ -3,7 +3,12 @@
 import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import { responseMessage, secureFetch } from "@/lib/auth/client";
 import { PaginationControls } from "@/components/pagination-controls";
-import type { PageResult } from "@/lib/data/query";
+import {
+  defaultTrackingSortDirection,
+  type PageResult,
+  type SortDirection,
+  type TrackingSortKey
+} from "@/lib/data/query";
 import type { OutreachField, OutreachRecord, TrackingRow } from "@/lib/data/types";
 
 const STAGES = ["Not started", "Researching", "Contacted", "Follow-up", "Complete"];
@@ -56,6 +61,61 @@ function GroupToggle({
   );
 }
 
+function SortIcon({ active, direction }: { active: boolean; direction: SortDirection }) {
+  return (
+    <svg
+      className={`table-sort-icon${active ? ` is-${direction}` : ""}`}
+      viewBox="0 0 16 20"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path className="sort-chevron-up" d="M3.5 8 8 3.5 12.5 8" />
+      <path className="sort-chevron-down" d="m3.5 12 4.5 4.5 4.5-4.5" />
+    </svg>
+  );
+}
+
+function SortableHeader({
+  label,
+  column,
+  activeColumn,
+  direction,
+  onSort,
+  className,
+  rowSpan
+}: {
+  label: string;
+  column: TrackingSortKey;
+  activeColumn: TrackingSortKey;
+  direction: SortDirection;
+  onSort: (column: TrackingSortKey) => void;
+  className?: string;
+  rowSpan?: number;
+}) {
+  const active = column === activeColumn;
+  const nextDirection = active
+    ? (direction === "asc" ? "descending" : "ascending")
+    : (defaultTrackingSortDirection(column) === "asc" ? "ascending" : "descending");
+  return (
+    <th
+      className={`sortable-header${className ? ` ${className}` : ""}`}
+      rowSpan={rowSpan}
+      scope="col"
+      aria-sort={active ? (direction === "asc" ? "ascending" : "descending") : "none"}
+    >
+      <button
+        type="button"
+        className="table-sort-button"
+        aria-label={`Sort ${label} ${nextDirection}`}
+        onClick={() => onSort(column)}
+      >
+        <span>{label}</span>
+        <SortIcon active={active} direction={direction} />
+      </button>
+    </th>
+  );
+}
+
 export function TrackingTable({
   initialPage,
   conferences,
@@ -75,6 +135,8 @@ export function TrackingTable({
   const [minimumRank, setMinimumRank] = useState("");
   const [maximumRank, setMaximumRank] = useState("");
   const [reviewOnly, setReviewOnly] = useState(false);
+  const [sortKey, setSortKey] = useState<TrackingSortKey>("adjustedRank");
+  const [sortDirection, setSortDirection] = useState<SortDirection>("asc");
   const [rankingExpanded, setRankingExpanded] = useState(true);
   const [crmExpanded, setCrmExpanded] = useState(false);
   const [dataCheckExpanded, setDataCheckExpanded] = useState(false);
@@ -99,6 +161,8 @@ export function TrackingTable({
     if (minimumRank) params.set("minimumRank", minimumRank);
     if (maximumRank) params.set("maximumRank", maximumRank);
     if (reviewOnly) params.set("reviewOnly", "true");
+    params.set("sort", sortKey);
+    params.set("direction", sortDirection);
     setLoading(true);
     setLoadError("");
     try {
@@ -114,7 +178,7 @@ export function TrackingTable({
     } finally {
       if (activeRequest.current === controller) setLoading(false);
     }
-  }, [conference, maximumRank, minimumRank, owner, reviewOnly, search, stage, watchlistOnly]);
+  }, [conference, maximumRank, minimumRank, owner, reviewOnly, search, sortDirection, sortKey, stage, watchlistOnly]);
 
   useEffect(() => {
     if (firstRender.current) {
@@ -204,6 +268,31 @@ export function TrackingTable({
     setReviewOnly(false);
   }
 
+  function sortBy(column: TrackingSortKey) {
+    setExpanded(null);
+    if (sortKey === column) {
+      setSortDirection((current) => current === "asc" ? "desc" : "asc");
+      return;
+    }
+    setSortKey(column);
+    setSortDirection(defaultTrackingSortDirection(column));
+  }
+
+  function sortableHeader(label: string, column: TrackingSortKey, className?: string, rowSpan?: number) {
+    return (
+      <SortableHeader
+        key={column}
+        label={label}
+        column={column}
+        activeColumn={sortKey}
+        direction={sortDirection}
+        onSort={sortBy}
+        className={className}
+        rowSpan={rowSpan}
+      />
+    );
+  }
+
   const visibleColumnCount = 1
     + (rankingExpanded ? 13 : 1)
     + (crmExpanded ? 10 : 1)
@@ -256,7 +345,7 @@ export function TrackingTable({
         <table className="tracking-table" aria-label="Tracking table with collapsible ranking, CRM and data-check groups">
           <thead>
             <tr className="tracking-group-row">
-              <th className="sticky-column tracking-school-column" rowSpan={2} scope="col">School</th>
+              {sortableHeader("School", "school", "sticky-column tracking-school-column", 2)}
               <th className={`tracking-group-header tracking-ranking-group${rankingExpanded ? "" : " is-collapsed"}`} colSpan={rankingExpanded ? 13 : 1} scope="colgroup">
                 <GroupToggle expanded={rankingExpanded} label="Ranking info" onToggle={() => setRankingExpanded((value) => !value)} />
               </th>
@@ -270,15 +359,38 @@ export function TrackingTable({
             <tr className="tracking-column-row">
               {rankingExpanded ? (
                 <>
-                  <th scope="col">2025 rank</th><th scope="col">Conference</th><th scope="col">Overall</th><th scope="col">Conference W-L</th><th scope="col">Adjusted rank</th><th scope="col">Base rank</th><th scope="col">Rank change</th><th scope="col">Adjusted RPI</th><th scope="col">Base RPI</th><th scope="col">Results</th><th scope="col">D1 record</th><th scope="col">Non-D1</th><th scope="col">2025 record</th>
+                  {sortableHeader("2025 rank", "baselineRank")}
+                  {sortableHeader("Conference", "conference")}
+                  {sortableHeader("Overall", "overallRecord")}
+                  {sortableHeader("Conference W-L", "conferenceRecord")}
+                  {sortableHeader("Adjusted rank", "adjustedRank")}
+                  {sortableHeader("Base rank", "baseRank")}
+                  {sortableHeader("Rank change", "rankChange")}
+                  {sortableHeader("Adjusted RPI", "adjustedRpi")}
+                  {sortableHeader("Base RPI", "baseRpi")}
+                  {sortableHeader("Results", "resultsRecord")}
+                  {sortableHeader("D1 record", "d1Record")}
+                  {sortableHeader("Non-D1", "nonD1Matches")}
+                  {sortableHeader("2025 record", "baselineRecord")}
                 </>
-              ) : <th className="tracking-ranking-summary" scope="col">RPI</th>}
+              ) : sortableHeader("RPI", "adjustedRpi", "tracking-ranking-summary")}
               {crmExpanded ? (
                 <>
-                  <th scope="col">Watchlist</th><th scope="col">NCAA selection</th><th scope="col">Outreach stage</th><th scope="col">Owner</th><th scope="col">Contact name</th><th scope="col">Email</th><th scope="col">Last contact</th><th scope="col">Host interest</th><th scope="col">Next step</th><th scope="col">Notes</th>
+                  {sortableHeader("Watchlist", "watchlist")}
+                  {sortableHeader("NCAA selection", "ncaaSelection")}
+                  {sortableHeader("Outreach stage", "stage")}
+                  {sortableHeader("Owner", "owner")}
+                  {sortableHeader("Contact name", "contactName")}
+                  {sortableHeader("Email", "email")}
+                  {sortableHeader("Last contact", "lastContact")}
+                  {sortableHeader("Host interest", "hostInterest")}
+                  {sortableHeader("Next step", "nextStep")}
+                  {sortableHeader("Notes", "notes")}
                 </>
-              ) : <th className="tracking-crm-summary" scope="col">CRM</th>}
-              {dataCheckExpanded ? <><th scope="col">Status</th><th scope="col">Record comparison</th></> : <th className="tracking-check-summary" scope="col">Check</th>}
+              ) : sortableHeader("CRM", "stage", "tracking-crm-summary")}
+              {dataCheckExpanded
+                ? <>{sortableHeader("Status", "dataCheck")}{sortableHeader("Record comparison", "recordDifference")}</>
+                : sortableHeader("Check", "dataCheck", "tracking-check-summary")}
             </tr>
           </thead>
           <tbody>

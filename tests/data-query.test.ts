@@ -36,4 +36,17 @@ describe("paged data queries", () => {
     expect(result.items.length).toBeLessThanOrEqual(10);
     expect(result.total).toBe(rows.filter((row) => row.outreach.watchlist === "Yes").length);
   });
+
+  it("sorts conference standings before paginating tracking rows", () => {
+    const sourceRows = buildTrackingRows().filter((row) => row.standing).slice(0, 3);
+    expect(sourceRows).toHaveLength(3);
+    const rows = [
+      { ...sourceRows[0], school: "Middle", standing: { ...sourceRows[0].standing!, conferenceWins: 4, conferenceLosses: 2 } },
+      { ...sourceRows[1], school: "Best", standing: { ...sourceRows[1].standing!, conferenceWins: 6, conferenceLosses: 0 } },
+      { ...sourceRows[2], school: "Last", standing: { ...sourceRows[2].standing!, conferenceWins: 1, conferenceLosses: 5 } }
+    ];
+    const result = queryTrackingRows(rows, { sortKey: "conferenceRecord", sortDirection: "desc" }, 1, 2);
+    expect(result.items.map((row) => row.school)).toEqual(["Best", "Middle"]);
+    expect(result.total).toBe(3);
+  });
 });
