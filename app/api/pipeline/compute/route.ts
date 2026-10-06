@@ -2,6 +2,8 @@ import { waitUntil } from "@vercel/functions";
 import { assertPipelineSecret } from "@/lib/pipeline/enqueue";
 import { runComputeStage } from "@/lib/pipeline/compute-stage";
 
+export const maxDuration = 300;
+
 export async function POST(request: Request) {
   try {
     assertPipelineSecret(request);

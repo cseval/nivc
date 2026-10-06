@@ -1,6 +1,6 @@
 import { FieldValue } from "firebase-admin/firestore";
 import { getAdminDb } from "@/lib/firebase/admin";
-import { enqueueStage } from "@/lib/pipeline/enqueue";
+import { runParseStage } from "@/lib/pipeline/parse-stage";
 import { saveRawPayload } from "@/lib/pipeline/raw-payload";
 import { sendFailureAlert } from "@/lib/pipeline/alerts";
 import type { ConferenceSource, SourceConfig } from "@/lib/pipeline/types";
@@ -87,18 +87,28 @@ export async function runFetchBatch(runId: string) {
     if (run.data()?.status === "succeeded") return;
     const completed = new Set<string>(run.data()?.completedFetchTasks ?? []);
     const pending = tasks().filter((task) => !completed.has(task.id));
-    const batch = pending.slice(0, 6);
     await runRef.set({ status: "fetching", stages: { fetch: "running" }, updatedAt: FieldValue.serverTimestamp() }, { merge: true });
-    await Promise.all(batch.map((task) => executeTask(runId, task)));
-    await runRef.set({ completedFetchTasks: FieldValue.arrayUnion(...batch.map((task) => task.id)), fetchedTaskCount: completed.size + batch.length, updatedAt: FieldValue.serverTimestamp() }, { merge: true });
-    if (pending.length > batch.length) await enqueueStage("fetch", runId);
-    else {
-      await runRef.set({ stages: { fetch: "succeeded" }, fetchedAt: FieldValue.serverTimestamp() }, { merge: true });
-      await enqueueStage("parse", runId);
+
+    let fetchedTaskCount = completed.size;
+    for (let offset = 0; offset < pending.length; offset += 6) {
+      const batch = pending.slice(offset, offset + 6);
+      await Promise.all(batch.map((task) => executeTask(runId, task)));
+      fetchedTaskCount += batch.length;
+      await runRef.set({
+        completedFetchTasks: FieldValue.arrayUnion(...batch.map((task) => task.id)),
+        fetchedTaskCount,
+        updatedAt: FieldValue.serverTimestamp()
+      }, { merge: true });
     }
+
+    await runRef.set({ stages: { fetch: "succeeded" }, fetchedAt: FieldValue.serverTimestamp() }, { merge: true });
   } catch (error) {
     await runRef.set({ status: "failed", stages: { fetch: "failed" }, error: error instanceof Error ? error.message : String(error), finishedAt: FieldValue.serverTimestamp() }, { merge: true });
     await sendFailureAlert(runId, "fetch", error);
     throw error;
   }
+
+  // Keep the remaining stages in this invocation. Vercel rejects a function
+  // recursively dispatching back into the same deployment with HTTP 508.
+  await runParseStage(runId);
 }
