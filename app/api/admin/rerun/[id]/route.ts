@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { requireApiSession } from "@/lib/auth/session";
+import { invalidatePublishedDataCache } from "@/lib/data/cache";
 import { getAdminDb } from "@/lib/firebase/admin";
 import { apiError } from "@/lib/http/api";
 
@@ -17,6 +18,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ id:
     const run = await getAdminDb().doc(`runs/${id}`).get();
     if (!run.exists) return NextResponse.json({ error: "Refresh run was not found." }, { status: 404 });
     const data = run.data() ?? {};
+    if (data.status === "succeeded") invalidatePublishedDataCache();
     return NextResponse.json({
       id,
       status: String(data.status ?? "queued"),
