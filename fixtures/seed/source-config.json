@@ -255,10 +255,10 @@
       "id": "socon",
       "name": "SoCon",
       "base": "https://soconsports.com",
-      "sport": "wvball",
+      "sport": "vb",
       "urls": {
-        "standings": "https://soconsports.com/wvb/standings/2026/",
-        "stats": "https://soconsports.com/wvb/schedule/2026/"
+        "standings": "https://soconsports.com/standings.aspx?path=vb",
+        "stats": "https://soconsports.com/stats.aspx?path=vb&year=2026"
       }
     },
     {
@@ -813,6 +813,10 @@
     },
     "appstate": {
       "raw": "App State",
+      "canonical": "App State"
+    },
+    "appalachianstate": {
+      "raw": "Appalachian State",
       "canonical": "App State"
     },
     "gasouthern": {

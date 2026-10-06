@@ -13,6 +13,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
+    "check:sources": "tsx scripts/check-live-sources.ts",
     "seed:extract": "tsx scripts/seed.ts",
     "seed:firestore": "tsx scripts/load-firestore.ts"
   },

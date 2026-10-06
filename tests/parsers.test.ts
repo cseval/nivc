@@ -16,6 +16,21 @@ describe("source parsers", () => {
     expect(games[0]).toMatchObject({ date: "2026-08-29", school1: "Alpha", school2: "Beta", sets1: 3, sets2: 1, matchType: "Conference" });
   });
 
+  it("parses the current SoCon Sidearm standings and results format", () => {
+    const standingsHtml = `<table class="sidearm-standings-table"><caption>2026 Volleyball Standings</caption><thead><tr><th>Team</th><th>Conf</th><th>Ovr</th></tr></thead><tbody><tr><td>Wofford</td><td>2-0</td><td>9-5</td></tr></tbody></table>`;
+    const resultsHtml = `<table><caption>Overall Results</caption><tr><td>Date</td><td>Site</td><td>Result</td></tr><tr><td>10/03/2026</td><td>Away</td><td>*Wofford 3 - 0 UNC Greensboro</td></tr></table>`;
+    const conference = { id: "socon", name: "SoCon", url: "https://soconsports.com" };
+
+    expect(parseSidearmStandings(standingsHtml, conference)).toEqual([
+      { sourceName: "Wofford", conferenceId: "socon", conference: "SoCon", overallWins: 9, overallLosses: 5, conferenceWins: 2, conferenceLosses: 0, sourceUrl: conference.url }
+    ]);
+    expect(parseSidearmResults(resultsHtml, conference, (name) => name.replace(/^\*/, "").trim())[0]).toMatchObject({
+      school1: "Wofford",
+      school2: "UNC Greensboro",
+      matchType: "Conference"
+    });
+  });
+
   it("parses Next.js standings and converts game time to the local date", () => {
     const standings = { props: { pageProps: { params: { season: 2026 }, fallback: { "x/standings/table": { data: [{ market: "Alpha", data: [{ ovr_record: "8-2" }, { conf_record: "2-1" }] }] } } } } };
     const schedule = { props: { pageProps: { params: { season: 2026 }, fallback: { 'x contentTypeUid:"schedule"': [{ results: { status: "COMPLETE", away_points: 3, home_points: 2 }, teams: { away_team: [{ market: "Alpha" }], home_team: [{ market: "Beta" }] }, datetime: { date_scheduled: "2026-09-02T01:30:00Z", timezone: "America/Denver" } }] } } } };

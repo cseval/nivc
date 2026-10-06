@@ -1,7 +1,6 @@
 import { slugify } from "@/lib/slug";
 import { NameResolver } from "@/lib/pipeline/name-resolution";
 import { applyCorrections, mergeGames } from "@/lib/pipeline/merge";
-import { parseNextSchedule, parseNextStandings } from "@/lib/pipeline/parsers/next-data";
 import { parseSec } from "@/lib/pipeline/parsers/sec";
 import { parseSidearmResults, parseSidearmStandings } from "@/lib/pipeline/parsers/sidearm";
 import { parseSupplement } from "@/lib/pipeline/parsers/supplement";
@@ -29,13 +28,8 @@ export function parseRunPayloads(config: SourceConfig, payloads: StoredPayload[]
     const standingPayload = byId.get(`${conference.id}-standings`);
     const resultPayload = byId.get(`${conference.id}-stats`);
     if (!standingPayload || !resultPayload) throw new Error(`${conference.name} fetch payloads are incomplete.`);
-    if (conference.id === "socon") {
-      rawStandings.push(...parseNextStandings(standingPayload.payload, { id: conference.id, name: conference.name, url: conference.urls.standings }));
-      rawGames.push(...parseNextSchedule(resultPayload.payload, { id: conference.id, name: conference.name, url: conference.urls.stats }, (name, id) => resolver.resolve(name, id)));
-    } else {
-      rawStandings.push(...parseSidearmStandings(standingPayload.payload, { id: conference.id, name: conference.name, url: conference.urls.standings }));
-      rawGames.push(...parseSidearmResults(resultPayload.payload, { id: conference.id, name: conference.name, url: conference.urls.stats }, (name, id) => resolver.resolve(name, id)));
-    }
+    rawStandings.push(...parseSidearmStandings(standingPayload.payload, { id: conference.id, name: conference.name, url: conference.urls.standings }));
+    rawGames.push(...parseSidearmResults(resultPayload.payload, { id: conference.id, name: conference.name, url: conference.urls.stats }, (name, id) => resolver.resolve(name, id)));
   }
 
   const pulledAt = payloads.map((payload) => payload.fetchedAt).sort().at(-1) ?? new Date(0).toISOString();
