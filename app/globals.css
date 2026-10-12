@@ -390,9 +390,6 @@ th.sticky-column { z-index: 8; }
 .data-check-summary { text-align: center; }
 .data-check-comparison { color: var(--text-secondary); font-size: 12px; min-width: 220px; }
 .save-indicator { color: var(--success-text); font-size: 10px; margin-left: 5px; }
-.rank-up { color: var(--success-text); font-weight: 700; }
-.rank-down { color: var(--red); font-weight: 700; }
-.rank-flat { color: var(--text-muted); }
 .school-button { background: transparent; border: 0; color: var(--navy-800); cursor: pointer; font-weight: 700; padding: 0; text-align: left; }
 .school-button:hover { color: var(--navy-600); text-decoration: underline; }
 .expanded-row td { background: var(--cream); padding: 0; }

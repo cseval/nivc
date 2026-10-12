@@ -20,13 +20,6 @@ function percent(value: number | null | undefined): string {
   return value == null ? "—" : value.toFixed(6);
 }
 
-function rankMovement(value: number | null | undefined) {
-  if (value == null) return <span className="data-muted">—</span>;
-  if (value > 0) return <span className="rank-up">+{value}</span>;
-  if (value < 0) return <span className="rank-down">{value}</span>;
-  return <span className="rank-flat">0</span>;
-}
-
 function editorTitle(outreach: OutreachRecord): string {
   if (!outreach.updatedAt) return `Last edited by ${outreach.updatedByName}`;
   return `Last edited by ${outreach.updatedByName} on ${new Date(outreach.updatedAt).toLocaleString()}`;
@@ -298,7 +291,7 @@ export function TrackingTable({
   }
 
   const visibleColumnCount = 1
-    + (rankingExpanded ? 13 : 1)
+    + (rankingExpanded ? 3 : 1)
     + (crmExpanded ? 10 : 1)
     + (dataCheckExpanded ? 2 : 1);
 
@@ -333,10 +326,10 @@ export function TrackingTable({
           </select>
         </div>
         <div className="form-group">
-          <label>Adjusted rank</label>
+          <label>2026 rank</label>
           <div className="range-inputs">
-            <input aria-label="Minimum adjusted rank" inputMode="numeric" placeholder="Min" value={minimumRank} onChange={(event) => setMinimumRank(event.target.value)} />
-            <input aria-label="Maximum adjusted rank" inputMode="numeric" placeholder="Max" value={maximumRank} onChange={(event) => setMaximumRank(event.target.value)} />
+            <input aria-label="Minimum 2026 rank" inputMode="numeric" placeholder="Min" value={minimumRank} onChange={(event) => setMinimumRank(event.target.value)} />
+            <input aria-label="Maximum 2026 rank" inputMode="numeric" placeholder="Max" value={maximumRank} onChange={(event) => setMaximumRank(event.target.value)} />
           </div>
         </div>
         <label className="filter-checkbox"><input type="checkbox" checked={watchlistOnly} onChange={(event) => setWatchlistOnly(event.target.checked)} /> Watchlist only</label>
@@ -350,7 +343,7 @@ export function TrackingTable({
           <thead>
             <tr className="tracking-group-row">
               {sortableHeader("School", "school", "sticky-column tracking-school-column", 2)}
-              <th className={`tracking-group-header tracking-ranking-group${rankingExpanded ? "" : " is-collapsed"}`} colSpan={rankingExpanded ? 13 : 1} scope="colgroup">
+              <th className={`tracking-group-header tracking-ranking-group${rankingExpanded ? "" : " is-collapsed"}`} colSpan={rankingExpanded ? 3 : 1} scope="colgroup">
                 <GroupToggle expanded={rankingExpanded} label="Ranking info" onToggle={() => setRankingExpanded((value) => !value)} />
               </th>
               <th className={`tracking-group-header tracking-crm-group${crmExpanded ? "" : " is-collapsed"}`} colSpan={crmExpanded ? 10 : 1} scope="colgroup">
@@ -364,20 +357,10 @@ export function TrackingTable({
               {rankingExpanded ? (
                 <>
                   {sortableHeader("2025 rank", "baselineRank")}
-                  {sortableHeader("Conference", "conference")}
-                  {sortableHeader("Overall", "overallRecord")}
-                  {sortableHeader("Conference W-L", "conferenceRecord")}
-                  {sortableHeader("Adjusted rank", "adjustedRank")}
-                  {sortableHeader("Base rank", "baseRank")}
-                  {sortableHeader("Rank change", "rankChange")}
-                  {sortableHeader("Adjusted RPI", "adjustedRpi")}
-                  {sortableHeader("Base RPI", "baseRpi")}
-                  {sortableHeader("Results", "resultsRecord")}
-                  {sortableHeader("D1 record", "d1Record")}
-                  {sortableHeader("Non-D1", "nonD1Matches")}
-                  {sortableHeader("2025 record", "baselineRecord")}
+                  {sortableHeader("2026 rank", "adjustedRank")}
+                  {sortableHeader("2026 RPI", "adjustedRpi")}
                 </>
-              ) : sortableHeader("RPI", "adjustedRpi", "tracking-ranking-summary")}
+              ) : sortableHeader("2026 RPI", "adjustedRpi", "tracking-ranking-summary")}
               {crmExpanded ? (
                 <>
                   {sortableHeader("Watchlist", "watchlist")}
@@ -416,18 +399,8 @@ export function TrackingTable({
                   {rankingExpanded ? (
                     <>
                       <td className="computed-cell numeric">{row.baseline?.rank ?? "New"}</td>
-                      <td className="computed-cell">{row.standing?.conference ?? "—"}</td>
-                      <td className="computed-cell numeric">{row.standing ? `${row.standing.overallWins}-${row.standing.overallLosses}` : "—"}</td>
-                      <td className="computed-cell numeric">{row.standing ? `${row.standing.conferenceWins}-${row.standing.conferenceLosses}` : "—"}</td>
                       <td className="computed-cell numeric">{row.ranking?.adjustedRank ?? "—"}</td>
-                      <td className="computed-cell numeric">{row.ranking?.baseRank ?? "—"}</td>
-                      <td className="computed-cell numeric">{rankMovement(row.ranking?.rankChange)}</td>
                       <td className="computed-cell numeric">{percent(row.ranking?.adjustedRpi)}</td>
-                      <td className="computed-cell numeric">{percent(row.ranking?.baseRpi)}</td>
-                      <td className="computed-cell numeric">{row.ranking ? `${row.ranking.resultsWins}-${row.ranking.resultsLosses}` : "—"}</td>
-                      <td className="computed-cell numeric">{row.ranking ? `${row.ranking.d1Wins}-${row.ranking.d1Losses}` : "—"}</td>
-                      <td className="computed-cell numeric">{row.ranking?.nonD1Matches ?? "—"}</td>
-                      <td className="computed-cell numeric">{row.baseline?.record ?? "—"}</td>
                     </>
                   ) : <td className="computed-cell numeric rpi-summary-cell">{percent(row.ranking?.adjustedRpi)}</td>}
                   {crmExpanded ? (
@@ -467,7 +440,7 @@ export function TrackingTable({
                       <div className="expanded-panel">
                         <div className="form-group"><label htmlFor={`${row.id}-next`}>Next step</label><textarea id={`${row.id}-next`} value={row.outreach.nextStep} onChange={(event) => updateValue(row.id, "nextStep", event.target.value)} onBlur={(event) => void commit(row.id, "nextStep", event.target.value)} placeholder="Add the next outreach action" /></div>
                         <div className="form-group"><label htmlFor={`${row.id}-notes`}>Notes</label><textarea id={`${row.id}-notes`} value={row.outreach.notes} onChange={(event) => updateValue(row.id, "notes", event.target.value)} onBlur={(event) => void commit(row.id, "notes", event.target.value)} placeholder="Add selection-team context" /></div>
-                        <div><h3>{row.school}</h3><p>{row.standing?.conference ?? "Not in the 2026 D1 source"}</p><p className="data-muted">Adjusted rank {row.ranking?.adjustedRank ?? "—"} · 2025 rank {row.baseline?.rank ?? "New"}</p></div>
+                        <div><h3>{row.school}</h3><p>{row.standing?.conference ?? "Not in the 2026 D1 source"}</p><p className="data-muted">2026 rank {row.ranking?.adjustedRank ?? "—"} · 2025 rank {row.baseline?.rank ?? "New"}</p></div>
                         <div className="expanded-panel-footer"><span>{editorTitle(row.outreach)}</span><button className="btn btn-secondary btn-sm" onClick={() => setExpanded(null)}>Close details</button></div>
                       </div>
                     </td>
