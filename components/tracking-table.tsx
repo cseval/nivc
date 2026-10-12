@@ -38,6 +38,10 @@ function stageBadgeClass(stage: string): string {
   return "badge-warning";
 }
 
+function hasOutreachContext(outreach: OutreachRecord): boolean {
+  return Boolean(outreach.nextStep.trim() || outreach.notes.trim());
+}
+
 function GroupToggle({
   expanded,
   label,
@@ -394,10 +398,21 @@ export function TrackingTable({
             </tr>
           </thead>
           <tbody>
-            {rows.map((row) => (
+            {rows.map((row) => {
+              const hasContext = hasOutreachContext(row.outreach);
+              return (
               <Fragment key={row.id}>
-                <tr>
-                  <td className="sticky-column tracking-school-column"><button className="school-button" onClick={() => setExpanded(expanded === row.id ? null : row.id)}>{row.school}</button></td>
+                <tr className={hasContext ? "tracking-row has-context" : "tracking-row"}>
+                  <td className="sticky-column tracking-school-column">
+                    <button
+                      className="school-button"
+                      aria-label={hasContext ? `${row.school}, has notes or a next step` : row.school}
+                      onClick={() => setExpanded(expanded === row.id ? null : row.id)}
+                    >
+                      <span className="school-button-label">{row.school}</span>
+                      {hasContext ? <span className="tracking-context-marker" aria-hidden="true" title="Has notes or a next step" /> : null}
+                    </button>
+                  </td>
                   {rankingExpanded ? (
                     <>
                       <td className="computed-cell numeric">{row.baseline?.rank ?? "New"}</td>
@@ -459,20 +474,30 @@ export function TrackingTable({
                   </tr>
                 ) : null}
               </Fragment>
-            ))}
+              );
+            })}
           </tbody>
         </table>
       </div>
 
       <div className="mobile-card-list" aria-busy={loading}>
-        {rows.map((row) => (
-          <article className="mobile-data-card" key={row.id}>
-            <header><h2>{row.school}</h2><span className="pill">#{row.ranking?.adjustedRank ?? "—"}</span></header>
+        {rows.map((row) => {
+          const hasContext = hasOutreachContext(row.outreach);
+          return (
+          <article className={hasContext ? "mobile-data-card has-context" : "mobile-data-card"} key={row.id}>
+            <header>
+              <div className="mobile-school-heading">
+                <h2>{row.school}</h2>
+                {hasContext ? <span className="tracking-context-marker" role="img" aria-label="Has notes or a next step" title="Has notes or a next step" /> : null}
+              </div>
+              <span className="pill">#{row.ranking?.adjustedRank ?? "—"}</span>
+            </header>
             <dl><div><dt>Conference</dt><dd>{row.standing?.conference ?? "—"}</dd></div><div><dt>Stage</dt><dd>{row.outreach.stage}</dd></div><div><dt>Owner</dt><dd>{row.outreach.owner || "Unassigned"}</dd></div></dl>
             <button className="btn btn-secondary" aria-expanded={expanded === row.id} onClick={() => setExpanded(expanded === row.id ? null : row.id)}>{expanded === row.id ? "Close" : "Open"}</button>
             {expanded === row.id ? <div className="expanded-panel"><div className="form-group"><label>Stage</label><select value={row.outreach.stage} onChange={(event) => { updateValue(row.id, "stage", event.target.value); void commit(row.id, "stage", event.target.value); }}>{STAGES.map((value) => <option key={value}>{value}</option>)}</select></div><div className="form-group"><label>Owner</label><input value={row.outreach.owner} onChange={(event) => updateValue(row.id, "owner", event.target.value)} onBlur={(event) => void commit(row.id, "owner", event.target.value)} /></div><div className="form-group"><label>Next step</label><textarea value={row.outreach.nextStep} onChange={(event) => updateValue(row.id, "nextStep", event.target.value)} onBlur={(event) => void commit(row.id, "nextStep", event.target.value)} /></div><div className="form-group"><label>Notes</label><textarea value={row.outreach.notes} onChange={(event) => updateValue(row.id, "notes", event.target.value)} onBlur={(event) => void commit(row.id, "notes", event.target.value)} /></div></div> : null}
           </article>
-        ))}
+          );
+        })}
       </div>
       <PaginationControls page={pageData.page} pageCount={pageData.pageCount} total={pageData.total} itemLabel="schools" loading={loading} onPageChange={(page) => void loadPage(page)} />
     </section>

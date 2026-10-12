@@ -18,6 +18,8 @@
   --purple: #572c5f;
   --stone: #d1ccbd;
   --stone-30: rgba(209, 204, 189, 0.3);
+  --tracking-context-bg: #f0ebf1;
+  --tracking-context-hover: #e8e0ea;
   --white: #ffffff;
   --off-white: #f9f9fa;
   --cream: #f5f8fc;
@@ -368,10 +370,14 @@ td { background: var(--white); border-bottom: 1px solid var(--border); font-size
 tbody tr:last-child td { border-bottom: 0; }
 tbody tr:hover td { background: var(--cream); }
 tbody tr.clickable:hover td { background: var(--clay); }
+.tracking-row.has-context td { background: var(--tracking-context-bg); }
+.tracking-row.has-context:hover td { background: var(--tracking-context-hover); }
 .sticky-column { box-shadow: 2px 0 0 var(--border); left: 0; min-width: 190px; position: sticky; z-index: 4; }
 th.sticky-column { z-index: 8; }
 .tracking-school-column { max-width: 190px; min-width: 190px; width: 190px; }
-.tracking-school-column .school-button { display: block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tracking-school-column .school-button { align-items: center; display: flex; gap: 8px; max-width: 100%; }
+.school-button-label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tracking-context-marker { background: var(--purple); border-radius: 50%; box-shadow: 0 0 0 3px var(--white); display: inline-block; flex: 0 0 7px; height: 7px; width: 7px; }
 .numeric { font-family: var(--font-mono); text-align: right; }
 .data-muted { color: var(--text-muted); }
 .computed-cell { background: var(--off-white); }
@@ -402,6 +408,8 @@ th.sticky-column { z-index: 8; }
 .mobile-data-card + .mobile-data-card { margin-top: 10px; }
 .mobile-data-card header { align-items: center; display: flex; justify-content: space-between; }
 .mobile-data-card h2 { color: var(--navy-800); font-size: 16px; margin: 0; }
+.mobile-data-card.has-context { background: var(--tracking-context-bg); }
+.mobile-school-heading { align-items: center; display: flex; gap: 8px; min-width: 0; }
 .mobile-data-card dl { display: grid; gap: 8px; grid-template-columns: repeat(3, 1fr); margin: 12px 0 0; }
 .mobile-data-card dt { color: var(--text-muted); font: 700 10px/1.2 var(--font-condensed); letter-spacing: var(--ls-caps); text-transform: uppercase; }
 .mobile-data-card dd { margin: 2px 0 0; }

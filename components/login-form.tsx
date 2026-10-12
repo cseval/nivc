@@ -10,10 +10,12 @@ import {
   setPersistence,
   signInWithEmailAndPassword,
   signOut,
-  updateProfile
+  updateProfile,
+  validatePassword
 } from "firebase/auth";
 import { FormEvent, useState } from "react";
 import { responseMessage, secureFetch } from "@/lib/auth/client";
+import { passwordPolicyMessage } from "@/lib/auth/password-policy";
 import { isAllowedEmail, normalizeEmail } from "@/lib/auth/policy";
 import { firebaseAuth, firebaseEnabled } from "@/lib/firebase/client";
 
@@ -31,7 +33,10 @@ function firebaseMessage(error: unknown): string {
     case "auth/email-already-in-use":
       return "That account could not be created. Sign in or reset the password instead.";
     case "auth/weak-password":
+    case "auth/password-does-not-meet-requirements":
       return "Use at least 12 characters with uppercase, lowercase, a number and a symbol.";
+    case "auth/invalid-email":
+      return "Enter a valid Triple Crown Sports email address.";
     case "auth/too-many-requests":
       return "Firebase temporarily limited sign-in attempts. Wait a few minutes and try again.";
     case "auth/network-request-failed":
@@ -104,8 +109,10 @@ export function LoginForm({ nextPath, initialNotice = "" }: { nextPath: string; 
     if (!firebaseAuth) throw new Error("Firebase web configuration is missing. Add it to .env.local and restart the app.");
     const normalized = validateCompanyEmail();
     if (!displayName.trim()) throw new Error("Enter your name so teammates can identify your updates.");
-    if (password.length < 12) throw new Error("Use at least 12 characters for your password.");
     if (password !== confirmPassword) throw new Error("The passwords do not match.");
+    const passwordStatus = await validatePassword(firebaseAuth, password);
+    const passwordError = passwordPolicyMessage(passwordStatus);
+    if (passwordError) throw new Error(passwordError);
     await setPersistence(firebaseAuth, inMemoryPersistence);
     const credential = await createUserWithEmailAndPassword(firebaseAuth, normalized, password);
     await updateProfile(credential.user, { displayName: displayName.trim() });
