@@ -29,6 +29,7 @@ export function Sidebar() {
       <Link
         key={item.href}
         href={item.href}
+        prefetch={false}
         className={pathname === item.href ? "nav-link active" : "nav-link"}
         onClick={() => setOpen(false)}
       >

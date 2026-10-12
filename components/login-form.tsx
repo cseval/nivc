@@ -14,7 +14,7 @@ import {
   validatePassword
 } from "firebase/auth";
 import { FormEvent, useState } from "react";
-import { responseMessage, secureFetch } from "@/lib/auth/client";
+import { secureFetch } from "@/lib/auth/client";
 import { passwordPolicyMessage } from "@/lib/auth/password-policy";
 import { isAllowedEmail, normalizeEmail } from "@/lib/auth/policy";
 import { firebaseAuth, firebaseEnabled } from "@/lib/firebase/client";
@@ -58,6 +58,39 @@ function actionUrl(action: "verified" | "reset"): string {
   return new URL(`/login?${action}=1`, window.location.origin).toString();
 }
 
+async function withTimeout<T>(operation: Promise<T>, message: string, timeoutMs = 20_000): Promise<T> {
+  let timeout: number | undefined;
+  const deadline = new Promise<never>((_resolve, reject) => {
+    timeout = window.setTimeout(() => reject(new Error(message)), timeoutMs);
+  });
+  try {
+    return await Promise.race([operation, deadline]);
+  } finally {
+    if (timeout) window.clearTimeout(timeout);
+  }
+}
+
+async function createSecureSession(user: User): Promise<void> {
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    const idToken = await withTimeout(
+      user.getIdToken(true),
+      "Firebase took too long to verify your account. Wait a moment and try again."
+    );
+    const response = await secureFetch("/api/auth/session", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ idToken, synchronizeRole: attempt === 0 })
+    });
+    const body = await response.json().catch(() => ({})) as { error?: string; status?: string };
+    if (!response.ok) throw new Error(body.error || "The secure session could not be created.");
+    if (body.status === "signed-in") return;
+    if (body.status !== "refresh-claims" || attempt === 1) {
+      throw new Error("The secure session response was incomplete. Refresh the page and try again.");
+    }
+  }
+  throw new Error("The secure session could not be created. Refresh the page and try again.");
+}
+
 export function LoginForm({ nextPath, initialNotice = "" }: { nextPath: string; initialNotice?: string }) {
   const [mode, setMode] = useState<Mode>("sign-in");
   const [email, setEmail] = useState("");
@@ -87,20 +120,17 @@ export function LoginForm({ nextPath, initialNotice = "" }: { nextPath: string; 
     if (!firebaseAuth) throw new Error("Firebase web configuration is missing. Add it to .env.local and restart the app.");
     const normalized = validateCompanyEmail();
     await setPersistence(firebaseAuth, inMemoryPersistence);
-    const credential = await signInWithEmailAndPassword(firebaseAuth, normalized, password);
+    const credential = await withTimeout(
+      signInWithEmailAndPassword(firebaseAuth, normalized, password),
+      "Firebase took too long to sign in. Check your connection and try again."
+    );
     if (!credential.user.emailVerified) {
       setPendingUser(credential.user);
       setMode("verify");
       setNotice("Verify your email before signing in. Use the link already sent, or send a new one below.");
       return;
     }
-    const idToken = await credential.user.getIdToken(true);
-    const response = await secureFetch("/api/auth/session", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ idToken })
-    });
-    if (!response.ok) throw new Error(await responseMessage(response, "The secure session could not be created."));
+    await createSecureSession(credential.user);
     await signOut(firebaseAuth).catch(() => undefined);
     window.location.assign(nextPath);
   }

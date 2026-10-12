@@ -4,6 +4,7 @@ import { getAdminDb } from "@/lib/firebase/admin";
 import { sendFailureAlert } from "@/lib/pipeline/alerts";
 import { deleteMissingDocuments, writeDocuments } from "@/lib/pipeline/firestore";
 import { validateComputePublish } from "@/lib/pipeline/gates";
+import { prunePublishedRunArtifacts } from "@/lib/pipeline/run";
 import type { MergedGame, ParsedStanding } from "@/lib/pipeline/types";
 import { computeRankings } from "@/lib/rpi/engine";
 import type { RpiRules } from "@/lib/rpi/types";
@@ -54,6 +55,11 @@ export async function runComputeStage(runId: string) {
     await db.doc("config/publication").set({ runId, schoolCount: standings.length, matchCount: matches.length, sourcePulledAt: run.data()?.sourcePulledAt, throughGames, standingsDiscrepancies: discrepancies, publishedAt: FieldValue.serverTimestamp() });
     await runRef.set({ status: "succeeded", stages: { compute: "succeeded" }, counts: { schools: standings.length, matches: matches.length, discrepancies }, throughGames, finishedAt: FieldValue.serverTimestamp(), error: FieldValue.delete() }, { merge: true });
     invalidatePublishedDataCache();
+    try {
+      await prunePublishedRunArtifacts(runId);
+    } catch (cleanupError) {
+      console.error(`Parsed artifacts for run ${runId} could not be pruned.`, cleanupError);
+    }
   } catch (error) {
     await runRef.set({ status: "failed", stages: { compute: "failed" }, error: error instanceof Error ? error.message : String(error), finishedAt: FieldValue.serverTimestamp() }, { merge: true });
     await sendFailureAlert(runId, "compute", error);

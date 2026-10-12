@@ -1,7 +1,7 @@
 import { cache } from "react";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { getAdminAuth, getAdminDb } from "@/lib/firebase/admin";
+import { getAdminAuth } from "@/lib/firebase/admin";
 import { isAllowedEmail } from "@/lib/auth/policy";
 import { SESSION_COOKIE_NAME } from "@/lib/auth/constants";
 
@@ -24,6 +24,11 @@ export class AuthenticationError extends Error {
   }
 }
 
+function appRole(value: unknown): AppRole | null {
+  if (value === "admin" || value === "member") return value;
+  return null;
+}
+
 async function resolveSession(): Promise<AppSession | null> {
   const cookieStore = await cookies();
   const sessionCookie = cookieStore.get(SESSION_COOKIE_NAME)?.value;
@@ -32,15 +37,12 @@ async function resolveSession(): Promise<AppSession | null> {
   try {
     const decoded = await getAdminAuth().verifySessionCookie(sessionCookie, true);
     if (!decoded.email_verified || !isAllowedEmail(decoded.email)) return null;
-
-    const userDocument = await getAdminDb().doc(`users/${decoded.uid}`).get();
-    if (!userDocument.exists) return null;
-    const userData = userDocument.data();
-    const role: AppRole = userData?.role === "admin" ? "admin" : "member";
+    const role = appRole(decoded.appRole);
+    if (!role) return null;
     return {
       uid: decoded.uid,
       email: decoded.email,
-      displayName: String(userData?.displayName || decoded.name || decoded.email),
+      displayName: String(decoded.name || decoded.email),
       role
     };
   } catch {

@@ -27,7 +27,6 @@ import { computeRankings } from "@/lib/rpi/engine";
 import { parseRpiRules } from "@/lib/rpi/rules";
 import type { MatchInput, RankingResult, RpiRules } from "@/lib/rpi/types";
 
-const CACHE_SECONDS = 300;
 const serverFirebaseEnabled = Boolean(
   process.env.FIREBASE_PROJECT_ID && process.env.FIREBASE_CLIENT_EMAIL && process.env.FIREBASE_PRIVATE_KEY
 );
@@ -160,16 +159,16 @@ async function readSourceLog(): Promise<SourceLogRecord[]> {
   }, async () => (await import("@/lib/data/fixtures")).sourceLog);
 }
 
-const cachedStandings = unstable_cache(readStandings, ["nivc-standings"], { revalidate: CACHE_SECONDS, tags: [DATA_CACHE_TAGS.standings] });
-const cachedMatches = unstable_cache(readMatches, ["nivc-matches"], { revalidate: CACHE_SECONDS, tags: [DATA_CACHE_TAGS.matches] });
-const cachedRankings = unstable_cache(readRankings, ["nivc-rankings"], { revalidate: CACHE_SECONDS, tags: [DATA_CACHE_TAGS.rankings] });
-const cachedBaseline = unstable_cache(readBaseline, ["nivc-baseline"], { revalidate: CACHE_SECONDS, tags: [DATA_CACHE_TAGS.baseline] });
-const cachedOutreach = unstable_cache(readOutreach, ["nivc-outreach"], { revalidate: CACHE_SECONDS, tags: [DATA_CACHE_TAGS.outreach] });
-const cachedSchoolNames = unstable_cache(readSchoolNames, ["nivc-school-names"], { revalidate: CACHE_SECONDS, tags: [DATA_CACHE_TAGS.schoolNames] });
-const cachedMethod = unstable_cache(readMethod, ["nivc-method"], { revalidate: CACHE_SECONDS, tags: [DATA_CACHE_TAGS.method] });
-const cachedRules = unstable_cache(readRules, ["nivc-rules"], { revalidate: CACHE_SECONDS, tags: [DATA_CACHE_TAGS.rules] });
-const cachedRefreshMetadata = unstable_cache(readRefreshMetadata, ["nivc-publication"], { revalidate: CACHE_SECONDS, tags: [DATA_CACHE_TAGS.publication] });
-const cachedSourceLog = unstable_cache(readSourceLog, ["nivc-source-log"], { revalidate: CACHE_SECONDS, tags: [DATA_CACHE_TAGS.sourceLog, DATA_CACHE_TAGS.publication] });
+const cachedStandings = unstable_cache(readStandings, ["nivc-standings"], { tags: [DATA_CACHE_TAGS.standings] });
+const cachedMatches = unstable_cache(readMatches, ["nivc-matches"], { tags: [DATA_CACHE_TAGS.matches] });
+const cachedRankings = unstable_cache(readRankings, ["nivc-rankings"], { tags: [DATA_CACHE_TAGS.rankings] });
+const cachedBaseline = unstable_cache(readBaseline, ["nivc-baseline"], { tags: [DATA_CACHE_TAGS.baseline] });
+const cachedOutreach = unstable_cache(readOutreach, ["nivc-outreach"], { tags: [DATA_CACHE_TAGS.outreach] });
+const cachedSchoolNames = unstable_cache(readSchoolNames, ["nivc-school-names"], { tags: [DATA_CACHE_TAGS.schoolNames] });
+const cachedMethod = unstable_cache(readMethod, ["nivc-method"], { tags: [DATA_CACHE_TAGS.method] });
+const cachedRules = unstable_cache(readRules, ["nivc-rules"], { tags: [DATA_CACHE_TAGS.rules] });
+const cachedRefreshMetadata = unstable_cache(readRefreshMetadata, ["nivc-publication"], { tags: [DATA_CACHE_TAGS.publication] });
+const cachedSourceLog = unstable_cache(readSourceLog, ["nivc-source-log"], { tags: [DATA_CACHE_TAGS.sourceLog, DATA_CACHE_TAGS.publication] });
 
 async function trackingRows(): Promise<TrackingRow[]> {
   const [standings, rankings, baseline, outreach] = await Promise.all([

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { AuthenticationError } from "@/lib/auth/session";
+import { FIRESTORE_QUOTA_MESSAGE, isFirestoreQuotaError } from "@/lib/firebase/errors";
 
 export class RequestError extends Error {
   status: number;
@@ -14,6 +15,13 @@ export class RequestError extends Error {
 export function apiError(error: unknown, fallback: string): NextResponse {
   if (error instanceof AuthenticationError || error instanceof RequestError) {
     return NextResponse.json({ error: error.message }, { status: error.status, headers: { "cache-control": "no-store" } });
+  }
+  if (isFirestoreQuotaError(error)) {
+    console.error(error);
+    return NextResponse.json(
+      { error: FIRESTORE_QUOTA_MESSAGE },
+      { status: 503, headers: { "cache-control": "no-store", "retry-after": "3600" } }
+    );
   }
   console.error(error);
   return NextResponse.json({ error: fallback }, { status: 500, headers: { "cache-control": "no-store" } });

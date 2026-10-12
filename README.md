@@ -44,7 +44,9 @@ npm run build
 npm run seed:firestore
 ```
 
-New users must verify their `@triplecrownsports.com` address before the server creates a session, and they are created as `member`. Promote authorized staff by setting `users/{uid}.role` to `admin` in Firestore. Admins can maintain aliases and rules and trigger reruns; members can read the application and edit outreach fields.
+New users must verify their `@triplecrownsports.com` address before the server creates a session, and they are created as `member`. Promote authorized staff by setting `users/{uid}.role` to `admin` in Firestore, then have that user sign out and back in so the role is synchronized into their secure Firebase session claim. Admins can maintain aliases and rules and trigger reruns; members can read the application and edit outreach fields.
+
+Published datasets remain cached until a successful refresh or an authorized edit invalidates the corresponding cache tag. Navigation links do not prefetch data-heavy routes. The nightly refresh runs at 08:15 UTC, after Firebase's Pacific-time daily quota reset. Successful runs discard their transient parsed collections; raw payloads are retained for the seven newest completed runs, run summaries for 30 days, and historical cleanup removes at most three heavy runs per night.
 
 ## Authentication security
 

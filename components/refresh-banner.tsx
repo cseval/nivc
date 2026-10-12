@@ -23,8 +23,8 @@ export function RefreshBanner({ metadata }: { metadata: RefreshMetadata }) {
   }).format(new Date(refreshInstant));
 
   async function monitorRefresh(runId: string) {
-    for (let attempt = 0; attempt < 150; attempt += 1) {
-      await new Promise((resolve) => window.setTimeout(resolve, 2_000));
+    for (let attempt = 0; attempt < 60; attempt += 1) {
+      await new Promise((resolve) => window.setTimeout(resolve, 5_000));
       const response = await fetch(`/api/admin/rerun/${encodeURIComponent(runId)}`, { cache: "no-store", credentials: "same-origin" });
       if (!response.ok) throw new Error(await responseMessage(response, "Refresh status could not be loaded."));
       const run = await response.json() as {
